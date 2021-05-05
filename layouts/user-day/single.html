@@ -8,7 +8,7 @@
             {{ if .Params.image }}
                 <img src="{{ .Params.image }}" class="img-left" style="max-width: 200px;" alt="speaker picture"/>
             {{ else }}
-                <img src="/img/people/undraw_male_avatar_323b.png" class="img-left" style="max-width: 200px;" alt="generic avatar"/>
+                <img src="{{ Site.BaseURL }}/img/people/undraw_male_avatar_323b.png" class="img-left" style="max-width: 200px;" alt="generic avatar"/>
             {{ end }}
         </div>
         <div class="col-md-9">
