@@ -2,10 +2,10 @@
   {{ range .Site.Data.clients }}
       {{ if .url }}
         <a href="{{ .url }}" target="_blank">
-          <img src="{{ .image200 }}" alt="{{ .name }}" />
+          <img src="{{ .Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
         </a>
       {{ else }}
-        <img src="{{ .image200 }}" alt="{{ .name }}" />
+        <img src="{{ .Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
       {{ end }}
   {{ end }}
 </div>
