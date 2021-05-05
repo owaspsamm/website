@@ -1,0 +1,13 @@
+# These files come from the model repository, so just ignore any changes
+content/*/business-function/**
+
+# This is hugo generated, ignore it
+public/
+
+# Other dev related files
+.DS_Store
+.vscode/
+.project
+
+# Local Netlify folder
+.netlify

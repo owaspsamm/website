@@ -1,0 +1,16 @@
+- id: contactForm
+  translation: "Drop us a line"
+- id: contactName
+  translation: "Your name"
+- id: contactMail
+  translation: "Your email"
+- id: contactMessage
+  translation: "Your message"
+- id: contactSend
+  translation: "Send message"
+- id: readMore
+  translation: "Read more"
+- id: continueReading
+  translation: "Continue reading"
+- id: selectLanguage
+  translation: "Select a language"
