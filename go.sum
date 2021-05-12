@@ -1,2 +1,4 @@
 github.com/devcows/hugo-universal-theme v0.0.0-20210408074747-23c6efbbe23c h1:78lowsVU99VRlsmwHVTNnGiVRfDTawQK1cpaysHF3Ic=
 github.com/devcows/hugo-universal-theme v0.0.0-20210408074747-23c6efbbe23c/go.mod h1:MqYH15Evmut/wgYkFi7ArsX+k44HfRrH675FbVLBkq0=
+github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a h1:RNba5qaMQd/o6b+y9Q177VOqDYsLhCFHMuSd+alS5qM=
+github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
