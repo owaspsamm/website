@@ -4,9 +4,9 @@ type: user-day
 title: User day
 name: OWASP SAMM to the rescue? On the intricate challenges of setting up a secure CICD pipeline
 speaker: Asier Rivera Fernandez and Nessim Kisserli
-image: /img/people/Asier_Rivera_Fernandez.jpg
-affiliation: 
-role: 
+image: /img/people/Asier_Rivera_Fernandez_Nessim_Kisserli.jpg
+affiliation: PwC Belgium
+role: Technical experts
 linkedin: "http://linkedin.com/in/deveeshree"
 abstract: |
     The last few years have seen a rise in the adoption of CICD pipelines. Today, they are near ubiquitous in organisations building software and have come to play a central role in the development and, increasingly, the deployment of software artefacts. This growth has led to a corresponding increase in complexity, as pipelines leverage stateless containers to orchestrate an ever larger arsenal of build, test, deployment and configuration tools. As a system grows in complexity, so does the challenge of securing it.

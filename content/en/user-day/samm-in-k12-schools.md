@@ -5,8 +5,8 @@ title: User day
 name: Implementation of OWASP SAMM in K12 schools
 speaker: Deveeshree Nayak
 image: /img/people/Deveeshree_Nayak.jpg
-affiliation: 
-role: 
+affiliation: University of Washington, Tacoma 
+role: Assistant Teaching Professor
 linkedin: "http://linkedin.com/in/deveeshree"
 abstract: |
     OWASP SAMM is a prime maturity model for software assurance that offers a great way for k12 schools to analyze and improve their software security posture. Due to COVID19 situations, K12 schools are forced to switch to online. With the implementation OWASP SAMM, K12 schools will be risk-driven in nature and it will help teachers and students to learn, implement and improve secure software practices. In this presentation, I will be discussing possible implementation scenarios of OWASP SAMM in K12 schools. This presentation is targeted to all types audiences because we must offer our children a safe and secure learning environment. 
