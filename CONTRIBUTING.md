@@ -21,9 +21,34 @@ If you need to edit multiple files, or if you want to check the resulting pages 
 $ git clone https://github.com/<your github username>/samm-website.git
 ```
 
-Make your changes, commit to *your* fork of the repository, and create a pull request afterwards. It is very easy to create a PR going to the GitHub Web page of your repo. You will see a "create a pull request" link, so you follow that one and do a pull request against our repository.
+## Testing locally
 
-After we merge your changes, a webhook will be fired to update your changes, and it take up to 5 minutes to go live.
+This website uses [hugo modules](https://gohugo.io/hugo-modules/use-modules/) for its theme and to get the latest model files in markdown format.
+
+If you are testing your own branch from the model, the trick is to *replace* the module that points to the model repo with yours.
+
+These are the rough steps you should follow:
+
+1. You forked [the model](https://github.com/owaspsamm/core) to your own repo, e.g. `https://github.com/<myuser>/samm-core`. After pushing the changes, a build will be fired and the files in compatible format will be stored in the `markdown/<your-new-branch>` in that repo.
+2. Git pull from your model repo, to get the newly created `markdown` branch.
+3. Use `replacements` with hugo modules, by changing the config file, or using environment vars like: `env HUGO_MODULE_REPLACEMENTS="github.com/owaspsamm/core -> ../.." hugo serve -e development`, 
+4. Test you can access the site locally, in the url hugo prints in your console.
+
+If you want to use a different generated branch from upstream, just point to the corresponding branch in the repo:
+```
+❯ hugo mod get github.com/owaspsamm/core@markdown/v2.0.1
+go: downloading github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a
+go get: downgraded github.com/owaspsamm/core v2.0.1+incompatible => v0.0.0-20210520122448-8de72e41633a
+```
+
+In this case, the `@markdown/v2.0.1` indicates that we are using the `markdown/v2.0.1` branch. You can verify it by taking a look at the sha1 hash at the end: both should match. In this case the sha1 sum is `8de72e41633a`.
+
+## Submitting your change
+
+Make your changes, commit to *your* fork of the repository, and push the changes. After pushing, you will see a "create a pull request" link.  Follow that link and do a pull request against our repository.
+
+After we merge your changes, a webhook will be fired to update your changes, and it take up to 5 minutes to go live!
+
 
 ## GitHub
 * [Signup](https://github.com/) for a GitHub account

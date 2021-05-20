@@ -11,9 +11,21 @@ googleAnalytics = "UA-127457120-1"
 # Define the number of posts per page
 paginate = 10
 
+[module]
+
 [[module.imports]]
-    # project theme
-    path = "github.com/devcows/hugo-universal-theme"
+  # project theme
+  path = "github.com/devcows/hugo-universal-theme"
+
+[[module.imports]]
+  # content
+  path = "github.com/owaspsamm/core"
+  disabled = false
+
+  [[module.imports.mounts]]
+  source = "business-function"
+  target = "content/en/business-function"
+  lang = "en"
 
 [menu]
 
