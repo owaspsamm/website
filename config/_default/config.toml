@@ -24,7 +24,7 @@ paginate = 10
 
   [[module.imports.mounts]]
   source = "business-function"
-  target = "content/en/business-function"
+  target = "content/business-function"
   lang = "en"
 
 [menu]
