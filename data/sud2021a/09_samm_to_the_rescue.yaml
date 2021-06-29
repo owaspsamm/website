@@ -1,6 +1,5 @@
 weight: 9
-youtubeUrl:
-downloadUrl:
+youtubeUrl: "https://www.youtube.com/watch?v=SwcswZtigx8&ab_channel=OWASPSAMM"
 url: "owasp-samm-to-the-rescue"
 name: "OWASP SAMM to the rescue? On the intricate challenges of setting up a secure CICD pipeline"
 type: "Presentation"

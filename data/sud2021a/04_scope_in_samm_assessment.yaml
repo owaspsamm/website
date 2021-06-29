@@ -1,6 +1,6 @@
 weight: 4
-youtubeUrl:
-downloadUrl:
+youtubeUrl: "https://www.youtube.com/watch?v=j9-TrdrOfVU&ab_channel=OWASPSAMM"
+downloadUrl: "/presentations/SUD2021/Organisational_Scope_of_a_SAMM_assessment.pptx"
 url: "organizational-scope-of-an-owasp-samm-assessment"
 name: "What should be the organizational scope of an OWASP SAMM assessment?"
 type: "Workshop"
