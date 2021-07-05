@@ -3763,6 +3763,11 @@ a.list-group-item.active > .badge,
     padding-top: 20px;
 }
 
+.samm-table {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
 .samm-table-narrow {
   max-width: 70%;
   margin-top: 30px;
