@@ -74,10 +74,16 @@ paginate = 10
     weight = 6
 
 [[menu.main]]
+    name = "References"
+    parent = "community"
+    url  = "/references/"
+    weight = 7
+
+[[menu.main]]
     name = "Contributing"
     parent = "community"
     url  = "/contributing/"
-    weight = 7
+    weight = 8
 
 [[menu.main]]
     name = "Guidance"
