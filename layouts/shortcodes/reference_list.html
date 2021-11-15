@@ -3,14 +3,14 @@
     {{ with index .Site.Data.references }}
     {{ range sort . "weight" }}
     <div class="event-row">
-        <div class="col-md-3 col-sm-6">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             {{ if and (isset . "image") (not (eq . "image" "")) }}
             <img src="{{ .image }}" class="img-responsive" alt="" >
             {{ else }}
             <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
             {{ end }}
         </div>
-        <div class="col-md-9 col-sm-6">
+        <div class="col-xs-12 col-sm-6 col-lg-3">
             <h4><a href="{{ .url }}" target="_blank">{{ .title }}</a></h4>
             <p class="author-category">{{ .date }}</p>
             {{ if and (isset . "type") (not (eq . "type" "")) }}

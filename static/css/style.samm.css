@@ -4074,7 +4074,13 @@ a.list-group-item.active > .badge,
   max-width: 100%;
   max-height: 100%;
 }
-
+/*
+@media (min-width: 540px) {
+  .event-row .img-responsive {
+    max-width: 40%;
+  }
+}
+*/
 .event {
   padding: 0px !important;
 }
