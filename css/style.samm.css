@@ -2254,8 +2254,16 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-homepage .post .read-more {
   margin-top: 20px;
 }
+#blog-post {
+  padding-right: 80px;
+}
 #blog-post #post-content {
   margin-bottom: 20px;
+  margin-right: 60px;
+  line-height: 1.5;
+}
+#blog-post #post-content p {
+  margin-bottom: 40px;
 }
 #blog-post .comment {
   margin-bottom: 25px;
