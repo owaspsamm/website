@@ -27,9 +27,8 @@ A key objective of the SAMM overview training is for attendees to begin applying
  
 The ideal length for a SAMM Train the Trainer event is two days' worth of class time - typically, 13 - 14 hours of instruction. Although face-to-face interaction is always preferable, the class materials are suitable for virtual presentation. Our inaugural class was taught by its developer, John DiLeo; he's a member of the core SAMM project team, and he lives and works in Auckland, New Zealand. John presented the class in a series of seven (7) two-hour sessions over a two-week period, via Zoom, to Motorola staff located in Canada, Poland, and throughout the United States. 
  
-The materials for the SAMM Train the Trainer class are freely available and may be obtained [here](). Before launching a SAMM Train the Trainer program, however, we recommend prospective instructors attend the SAMM overview class (even if you're already familiar with SAMM), followed by a Train the Trainer event presented by the SAMM Project team. 
+The materials for the SAMM Train the Trainer class are freely available and may be obtained [here](https://drive.google.com/drive/folders/1MWN_Yzf7dW5aA0rYXkUyUb3R4g6F3Yna?usp=sharing). Before launching a SAMM Train the Trainer program, however, we recommend prospective instructors attend the SAMM overview class (even if you're already familiar with SAMM), followed by a Train the Trainer event presented by the SAMM Project team. 
  
 ### Want to Learn More?
  
 For more information about upcoming training and events, please visit our [events](/events) page. To get involved in the community of SAMM users, come chat with us in our [Slack channel](https://owasp.slack.com/messages/C0VF1EJGH). And be sure to join us for our monthly project update calls on the second Wednesday of the month at 9:30 p.m. Central European Time / 3:30 p.m. US Eastern Time.
-
