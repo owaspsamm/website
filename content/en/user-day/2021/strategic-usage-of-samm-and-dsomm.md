@@ -1,5 +1,5 @@
 ---
-url: /user-day/strategic-usage-of-samm-and-dsomm/
+url: /user-day/2021/strategic-usage-of-samm-and-dsomm/
 type: user-day
 title: User day
 name: Strategic use of OWASP SAMM and OWASP DSOMM

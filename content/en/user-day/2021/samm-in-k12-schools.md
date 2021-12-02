@@ -1,5 +1,5 @@
 ---
-url: /user-day/implementation-of-samm-in-k12-schools/
+url: /user-day/2021/implementation-of-samm-in-k12-schools/
 type: user-day
 title: User day
 name: Implementation of OWASP SAMM in K12 schools
