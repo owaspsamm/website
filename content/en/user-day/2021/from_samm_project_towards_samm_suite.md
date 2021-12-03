@@ -1,5 +1,5 @@
 ---
-url: /user-day/from-samm-project-towards-samm-suite/
+url: /user-day/2021/from-samm-project-towards-samm-suite/
 type: user-day
 title: User day
 name: From SAMM Project towards SAMM Suite

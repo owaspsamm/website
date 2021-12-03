@@ -1,5 +1,5 @@
 ---
-url: /user-day/owasp-samm-to-the-rescue/
+url: /user-day/2021/owasp-samm-to-the-rescue/
 type: user-day
 title: User day
 name: OWASP SAMM to the rescue? On the intricate challenges of setting up a secure CICD pipeline

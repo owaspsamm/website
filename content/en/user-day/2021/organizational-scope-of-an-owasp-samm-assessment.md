@@ -1,5 +1,5 @@
 ---
-url: /user-day/organizational-scope-of-an-owasp-samm-assessment/
+url: /user-day/2021/organizational-scope-of-an-owasp-samm-assessment/
 type: user-day
 title: User day
 name: What should be the organizational scope of an OWASP SAMM assessment?
