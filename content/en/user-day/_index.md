@@ -5,19 +5,17 @@ description: User Day May 27th, 2021
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
-## One more get together
+## Mini User Day - December 2021
 
-We did not get around to organizing a Fall User Day as announced earlier this year but we will use our last community call of 2021 to deliver:
-- our OWASP 20th anniversary presentation of SAMM
-- a deep dive on Bootstrapping and scoping a SAMM project
+We did not get around to organizing a Fall User Day as announced earlier this year but we used our last community call of 2021 to deliver:
+- {{< external-link "https://www.youtube.com/watch?v=RkvL3a4-T9g&ab_channel=OWASPSAMM" "our OWASP 20th anniversary presentation of SAMM">}}
+- {{< external-link "https://www.youtube.com/watch?v=Y7otI-AhOeU&ab_channel=OWASPSAMM" "a deep dive on Bootstrapping and scoping a SAMM project">}}
 
-<br>
-So, block your agendas for <b>Wednesday, December 8th</b> at 21:30 CET, which is 3:30 pm EST.
-
-Zoom meeting link: https://zoom.us/j/96866048960?pwd=TmZkTSs3ZmlWU09DbHJoSnVZWmdiUT09
 
 <br>
-Looking forward to seeing you online next week!
+Thank you for being part of the OWASP SAMM community!
+<br>
+<br>
  
 ## Archive
 
