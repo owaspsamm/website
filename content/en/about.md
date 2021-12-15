@@ -42,6 +42,7 @@ The structure and setup of the SAMM model support
 * the definition of an implementation roadmap to get there
 * prescriptive advice on how to implement particular activities
 
+{{< responsive-image  "/img/pages/SAMM_v2.svg" "SAMM v2 model overview">}}
 
 
 ## Useful links
