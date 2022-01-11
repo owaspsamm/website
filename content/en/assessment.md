@@ -14,7 +14,7 @@ Your first step towards improvement, is to measure where you are now.
 
 Make sure you first read our [getting started guide](/guidance/quick-start-guide/), then you can start with assessing your current software assurance posture.
 
-You will typically start with a self-assessment to get an overview on your status of software security activities in your organization. We created the OWASP SAMM [Toolbox spreadsheet](https://github.com/owaspsamm/core/releases/download/v2.0.2/SAMM_spreadsheet.xlsx) to do just that. You can also use the Toolbox to support an interview or workshop together with other people that are involved in your software development process.
+You will typically start with a self-assessment to get an overview on your status of software security activities in your organization. We created the OWASP SAMM [Toolbox spreadsheet](https://github.com/owaspsamm/core/releases/latest) to do just that. You can also use the Toolbox to support an interview or workshop together with other people that are involved in your software development process.
 
 Once you downloaded the SAMM Toolbox, check out the tab “Interview”. Here you will see a list of questions for each of the activities in our [SAMM Model](https://owaspsamm.org/model/).
 Each of the questions has a set of quality criteria listed under the question. In order to answer on the assessment question, you need to evaluate if these criteria are actually met. If the quality criteria are not (completely) filled in, you should answer “No”. If you meet the quality criteria, you can choose any of the other options.
