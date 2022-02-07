@@ -3531,6 +3531,13 @@ p {
     font-size: 21px;
   }
 }
+.highlight-box {
+  border: solid 3px #eeeeee;
+  margin: 30px;
+  padding: 20px;
+  font-size: 30px;
+  color: #366867;
+}
 .highlight {
   margin-top: -20px;
   margin-bottom: 40px;
