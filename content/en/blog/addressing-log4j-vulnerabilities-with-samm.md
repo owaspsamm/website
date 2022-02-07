@@ -1,6 +1,6 @@
 +++
 title = "Addressing Log4J vulnerabilities with SAMM"
-date = "2022-02-06T00:00:00+02:00"
+date = "2022-02-07T00:00:00+02:00"
 tags = ["SAMM", "maturity", "model", "training"]
 categories = ["training"]
 banner = "img/banners/undraw_code_inspection_bdl7.png"
