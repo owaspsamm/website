@@ -1,8 +1,8 @@
 +++
 title = "Addressing Log4J vulnerabilities with SAMM"
 date = "2022-02-07T00:00:00+02:00"
-tags = ["SAMM", "maturity", "model", "training"]
-categories = ["training"]
+tags = ["SAMM", "maturity", "model", "incident", "log4j"]
+categories = ["vulnerabilities"]
 banner = "img/banners/undraw_code_inspection_bdl7.png"
 author = "The SAMM Project Team"
 +++
@@ -50,15 +50,11 @@ Activities in [Stream B, Metrics and Feedback](/model/implementation/defect-mana
  
 ### Verification | Security Testing
 
-The aim [here](/model/verification/security-testing/) is to uncover weaknesses in the organization’s applications through both automated and manual tests. Through this practice we should be able to determine whether the software running in the organization is vulnerable to, in this case, Log4Shell. A practical example is to use the [OWASP ZAP Log4Shell Active Scan Rule](https://www.zaproxy.org/blog/2021-12-14-log4shell-detection-with-zap/).
+The aim [here](/model/verification/security-testing/) is to uncover weaknesses in the organization’s applications through both automated and manual tests. Implementing this practice, we should be able to determine whether the software running in the organization is vulnerable to, in this case, Log4Shell. You can focus on breadth through application scans to identify issues, and you can use static code analysis, for example, for a more in-depth approach. A practical example is to use the [OWASP ZAP Log4Shell Active Scan Rule](https://www.zaproxy.org/blog/2021-12-14-log4shell-detection-with-zap/).
 
 ### Verification | Architecture Assessment
 
 [Stream B](/model/verification/architecture-assessment/stream-b/) activities in the Architecture Assessment practice consist of reviewing the architecture for unmitigated threats. In this case it can involve evaluating the architecture for Log4J specific threats. Maturity Level 2 uses input from Threat Modeling and logs unhandled threats as defects. 
- 
-### Verification | Security Testing
-
-In the scope of this article, we would use [this practice](/model/verification/security-testing/) to test for Log4J issues. You can focus on breadth through application scans to identify issues, and you can use static code analysis, for example, for a more in-depth approach.
  
 ### Operations | Incident Management
 
@@ -77,12 +73,9 @@ The best way to lower the risk and get this problem under control is by looking 
 Join us on our [SAMM Slack channel](https://owasp.slack.com/messages/C0VF1EJGH) and let us know how you handled Log4Shell with SAMM practices!
  
 Here are some background links for Log4Shell:
-- A good explanation of Log4Shell  
-    https://nakedsecurity.sophos.com/2021/12/13/log4shell-explained-how-it-works-why-you-need-to-know-and-how-to-fix-it/
-- Software composition analysis tools help identify and track library usage. Some input on why this might be important:  
-    https://blog.sonatype.com/ftc-warning-in-wake-of-log4j?hsLang=en-us
-- A list of recommendations and patching pointers:  
-    https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/
+- {{< external-link "https://nakedsecurity.sophos.com/2021/12/13/log4shell-explained-how-it-works-why-you-need-to-know-and-how-to-fix-it/" "A good explanation">}} of Log4Shell from naked security by Sophos
+- {{< external-link "https://blog.sonatype.com/ftc-warning-in-wake-of-log4j?hsLang=en-us" "Some input">}} on why software composition analysis tools might be important to identify and track library usage
+- A {{< external-link "https://www.reddit.com/r/blueteamsec/comments/rd38z9/log4j_0day_being_exploited/" "list of recommendations and patching pointers">}}
 
 <br/><br/>
 Be a part of the SAMM community!
