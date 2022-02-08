@@ -936,6 +936,12 @@ fieldset[disabled] .btn-template-primary.active {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+@media (max-width: 767px) {
+  .panel.sidebar-menu {
+    max-width: 70%;
+  }
+}
+
 .panel.sidebar-menu .panel-heading {
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -962,6 +968,7 @@ fieldset[disabled] .btn-template-primary.active {
 .panel.sidebar-menu .panel-body {
   padding: 0;
 }
+
 .panel.sidebar-menu .panel-body span.colour {
   display: inline-block;
   width: 15px;
@@ -2257,11 +2264,23 @@ fieldset[disabled] .btn-template-primary.active {
 #blog-post {
   padding-right: 80px;
 }
+@media (max-width: 767px) {
+  #blog-post {
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+}
 #blog-post #post-content {
   margin-bottom: 20px;
   margin-right: 60px;
   line-height: 1.5;
 }
+@media (max-width: 767px) {
+  #blog-post #post-content {
+    margin-right: 10px;
+  }
+}
+
 #blog-post #post-content p {
   margin-bottom: 40px;
 }
@@ -3392,6 +3411,7 @@ label {
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(70, 127, 191, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(70, 127, 191, 0.6);
 }
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -3532,11 +3552,22 @@ p {
   }
 }
 .highlight-box {
-  border: solid 3px #eeeeee;
+  border: none;
+  background-color: #eeeeee;
   margin: 30px;
   padding: 20px;
   font-size: 30px;
   color: #366867;
+}
+@media (max-width: 767px) {
+  .highlight-box  {
+    border: none;
+    background-color: #eeeeee;
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+    font-size: 20px;
+    color: #366867;
+  }
 }
 .highlight {
   margin-top: -20px;
