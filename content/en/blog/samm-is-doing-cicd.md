@@ -34,7 +34,7 @@ Every time the process runs, we get detailed logs for each of the steps. If some
 
 {{< responsive-image  "/img/blog/github-actions.png" "github actions showing successful run of jobs">}}
 
-You can take a look at the full process here: https://github.com/OWASP/samm/blob/master/.github/workflows/yaml-process.yml
+You can take a look at the full process {{< external-link "https://github.com/owaspsamm/core/blob/develop/.github/workflows/yaml-process.yml" "here">}}: 
 
 ### Done is better than perfect
 

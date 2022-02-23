@@ -40,14 +40,14 @@ We want the website to be an interactive place where the community can share the
 
 ### GitHub issues
 
-All of SAMM’s content is on {{< external-link "https://github.com/OWASP/samm/" "Github">}}. 
+All of SAMM’s content is on {{< external-link "https://github.com/owaspsamm/" "Github">}}. 
 
 
 We use 
 - YAML files for the data that makes up the model
 - Hugo for the website
 
-{{< responsive-image-link-medium "/img/pages/Octocat.png" "SAMM on GitHub" "https://github.com/OWASP/samm/" >}}
+{{< responsive-image-link-medium "/img/pages/Octocat.png" "SAMM on GitHub" "https://github.com/owaspsamm/" >}}
 
 #### Familiar with GitHub?
 To make changes to either, follow these steps:
