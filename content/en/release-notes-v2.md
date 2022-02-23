@@ -32,7 +32,7 @@ List of major changes:
 * Activities are now presented in **logical flows** throughout each of the now 15 security practices, divided into two streams, which aligns and links the activities in the practice over the different maturity levels.
 * Each stream has an objective that can be reached in increasing levels of maturity. This way, there are **no “orphan” activities** that seem only relevant on a single maturity level (for instance, code signing in the previous model).
 * The model now supports **maturity measurements both from a coverage and a quality perspective**. There are new quality criteria for all the SAMM activities, and an updated scoring model to help SAMM assessors and organizations with their software assurance.
-* A **single source using [GitHub](https://github.com/OWASP/samm)** allows us to automatically generate PDF documents, the website, the toolbox and applications.
-* All the model content has been converted to **[YAML files](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/Datamodel/Datafiles)**, allowing tools or other SAMM consumers to automatically use the model.
+* A **single source using {{< external-link "https://github.com/owaspsamm" "GitHub">}}** allows us to automatically generate PDF documents, the website, the toolbox and applications.
+* All the model content has been converted to **{{< external-link "https://github.com/owaspsamm/core/tree/develop/model" "YAML files">}}**, allowing tools or other SAMM consumers to automatically use the model.
 * The main publication channel is now the **[OWASP SAMM website](https://owaspsamm.org/)**, not a monolithic document. This allows for iterative improvements, faster publication, and online interactions with the model.
 * We created a **[mapping overview from version 1.5 to 2.0](/mapping-versions)** to visualize how the framework has evolved.

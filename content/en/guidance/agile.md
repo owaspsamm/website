@@ -240,6 +240,6 @@ See [Security Testing](/model/verification/security-testing/) in the SAMM Model.
 
 ### Media
 
-- [Talk at GlobalAppsec Amsterdam 2019](https://www.youtube.com/watch?v=ati80YcVJy8)
+- {{< external-link "https://www.youtube.com/watch?v=ati80YcVJy8" "Talk at GlobalAppsec Amsterdam 2019">}}
 
-- [Slides](https://github.com/OWASP/samm/blob/master/Current%20Releases/head/agile-guidance/20190926-AppsecTalk-SAMMagileNotes.pdf?raw=1)
+- {{< external-link "https://drive.google.com/file/d/14aaHVZtfOGzBj2JKi1GXRtvAeN22_zEf/view?usp=sharing" "Slides">}}

@@ -24,7 +24,7 @@ If you have to send the questionnaire for people to fill out on their own, you c
 2. The second maturity level aims to establish a consistent, repeatable process that can be relied on.
 3. The third maturity level aims to maximize effectiveness through continuous improvement, based on effective and timely feedback.
 
-This content is part of our [data files on GitHub](https://github.com/OWASP/samm/tree/master/Supporting%20Resources/v2.0/Datamodel/Datafiles). We'll work on having it available on the website soon.
+This content is part of our {{< external-link "https://github.com/owaspsamm/core/tree/develop/model" "data files on GitHub">}}. We'll work on having it available on the website soon.
 
 ### Can you explain streams in the SAMM model?
 Streams cover different aspects of a practice inside a business function. For example, in the Requirements-driven testing practice, the streams focus on positive and negative testing.
@@ -32,7 +32,7 @@ See [Requirements-driven Testing](https://owaspsamm.org/model/verification/requi
 Check out our [about page](/about) for more on the structure of the SAMM model.
 
 ### Is there a process for translation efforts of SAMM into other languages?
-Yes! We're using [CrowdIn](https://crowdin.com/project/owasp-samm) and the help of the community to have SAMM translated to other languages.
+Yes! We're using {{< external-link "https://crowdin.com/project/owasp-samm" "CrowdIn">}} and the help of the community to have SAMM translated to other languages.
 
 ### When was SAMM v2 released?
 
@@ -45,8 +45,8 @@ Glad you asked, here is a list of suggestions:
 * Share your experience with a SAMM testimonial? We are building a list of testimonials for the website.
 * Encourage your peers to use SAMM and share their experiences as well.
 * Donate SAMM data sets to our [Benchmark initiative](https://owaspsamm.org/benchmarking/). Get in touch with [Brian](mailto:brian.glas@owasp.org).
-* Check out the list of [open Github issues](https://github.com/OWASP/samm/issues) and let us know if you can help with any of these
-* Help us translate SAMM to other languages on [CrowdIn](https://crowdin.com/project/owasp-samm).
+* Check out the list of open issues in any of our {{< external-link "https://github.com/owaspsamm" "GitHub repositories">}} and let us know if you can help with any of these
+* Help us translate SAMM to other languages on {{< external-link "https://crowdin.com/project/owasp-samm" "CrowdIn">}}.
 * Sponsor SAMM. Get more information [here](https://owaspsamm.org/sponsors/).
 
 ### How can I join SAMM's Slack channel?
