@@ -38,6 +38,10 @@ Yes! We're using {{< external-link "https://crowdin.com/project/owasp-samm" "Cro
 
 We released SAMM version 2 on the 31st of January 2020, check out our [release blog](https://owaspsamm.org/blog/2020/01/31/samm2-release/) (Huray!).
 
+### Is there a list of SAMM assessors?
+We've put together a list of assessors. It's not comprehensive but we hope it's helpful.
+{{< assessors_list >}}
+
 ### How can I contribute to SAMM?
 We regularly get asked, how can we contribute to SAMM?<br>
 Glad you asked, here is a list of suggestions:

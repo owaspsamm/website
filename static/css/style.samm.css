@@ -4102,6 +4102,26 @@ a.list-group-item.active > .badge,
   padding-bottom: 30px;
 }
 
+.assesors-list-container {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 0px;
+  padding-top: 30px;
+  align-items: stretch;
+}
+
+.assesors-list-item {
+  margin: 10px;
+  width: 30%;
+  height: 100%;
+  flex-grow: 1;
+  border: 1px solid #66B8B8;
+  padding: 20px;
+  display: inline-block;
+}
+
 .event-list {
   padding-top: 30px;
 }
