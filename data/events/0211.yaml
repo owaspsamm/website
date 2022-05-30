@@ -7,4 +7,5 @@ type: "Presentation"
 url2: "https://events.humanitix.com/appsecnz-conference"
 url2text: "Registration"
 presenter: "John Ellingsworth"
+display: "false"
 

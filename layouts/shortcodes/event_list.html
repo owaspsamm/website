@@ -2,6 +2,7 @@
     {{ if gt (len .Site.Data.events) 0 }}
     {{ with index .Site.Data.events }}
     {{ range sort . "weight" }}
+    {{ if eq .display "true" }}
     <div class="event-row">
         <div class="col-xs-12 col-sm-6 col-lg-3">
             {{ if and (isset . "image") (not (eq . "image" "")) }}
@@ -20,6 +21,7 @@
         </div>
     </div>
     <!-- /.row -->
+    {{ end }}
     {{ end }}
     {{ end }}
     {{ end }}
