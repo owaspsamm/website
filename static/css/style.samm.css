@@ -4102,7 +4102,7 @@ a.list-group-item.active > .badge,
   padding-bottom: 30px;
 }
 
-.assesors-list-container {
+.practitioners-list-container {
   display: flex; /* or inline-flex */
   flex-direction: row;
   flex-wrap: wrap;
@@ -4112,11 +4112,11 @@ a.list-group-item.active > .badge,
   align-items: stretch;
 }
 
-.assesors-list-item {
+.practitioners-list-item {
   margin: 10px;
   width: 30%;
   height: 100%;
-  flex-grow: 1;
+  flex-grow: 0;
   border: 1px solid #66B8B8;
   padding: 20px;
   display: inline-block;

@@ -1,6 +1,7 @@
 weight: 7
-company: "Fox-IT"
+company: "Fox-IT, NCC Group"
 country: "Netherlands"
 url: "https://www.fox-it.com/be-en/assessment-advisory/application-software/"
 image: "/img/events/AppSecNZ21.png"
-contributors: "Part of NCC Group, a SAMM sponsor"
+sponsor: true
+enabled: true

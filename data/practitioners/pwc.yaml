@@ -4,5 +4,7 @@ country: "Worldwide"
 url: "https://www.pwc.be/en/services/cyber-privacy/cybersecurity-verbetertrajecten-voor-kmo-s.html"
 image: "/img/events/AppSecNZ21.png"
 contributors: "Bart De Win"
+sponsor: true
+enabled: true
 
 

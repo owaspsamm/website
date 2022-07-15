@@ -1,8 +1,8 @@
-<div class="assessors-list-container">
-    {{ if gt (len .Site.Data.assessors) 0 }}
-    {{ with index .Site.Data.assessors }}
-    {{ range sort . "weight" }}
-    <div class="assesors-list-item">
+<div class="practitioners-list-container">
+    {{ if gt (len .Site.Data.practitioners) 0 }}
+    {{ with index .Site.Data.practitioners }}
+    {{ range . }}
+    <div class="practitioners-list-item">
         <!--
         <div class="col-xs-12 col-sm-6 col-lg-3">
             {{ if and (isset . "image") (not (eq . "image" "")) }}
@@ -15,8 +15,16 @@
 
         <h4><a href="{{ .url }}" target="_blank">{{ .company }}</a></h4>
         <p>Country: {{ .country }}</p>
+        {{ if .contributors }}
         <p>SAMM contributors: {{ .contributors }}</p>
-
+        {{ else }}
+        <p>&nbsp;</p>
+        {{ end }}
+        {{ if .sponsor }}
+        <p>This practitioner is a SAMM sponsor.</p>
+        {{ else }}
+        <p>&nbsp;</p>
+        {{ end }}
    </div>
     <!-- /.row -->
     {{ end }}
