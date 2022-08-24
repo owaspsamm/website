@@ -4066,8 +4066,9 @@ a.list-group-item.active > .badge,
 
 .sponsors-flex-container img {
   display: inline-block;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 10px 0 0 2%;
 }
 
 .flex-container {
@@ -4088,8 +4089,8 @@ a.list-group-item.active > .badge,
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 .flex-container img:hover {
   max-width: auto;
