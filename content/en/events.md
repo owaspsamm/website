@@ -10,8 +10,6 @@ keywords = ["Events","questions"]
 
 ## From our archive
 
-{{< youtube Zj0znvVvmbY >}}
-
 {{< event_archive >}}
 
 ---
