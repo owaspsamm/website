@@ -18,4 +18,4 @@ After a period of intensive discussions and with input from practitioners and th
 
 For an overview of the version 2 changes, read our [SAMM version 2 release notes](/release-notes-v2).
 
-We generated a bare-bones {{< external-link "https://drive.google.com/file/d/1ZWMk4dpS3zpXjE28wi4cf5Lq6TUjeA5x/view?usp=sharing" "PDF version">}} of the model. We'll continue to work on it to have a final version as soon as possible.
+We've also created a {{< external-link "https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" "PDF version">}} of the model.
