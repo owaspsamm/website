@@ -4,5 +4,4 @@ country: "Italy"
 url: "https://mindedsecurity.com/services/consulting/software-security-advisory/"
 image: "/img/events/AppSecNZ21.png"
 sponsor: true
-
-
+enabled: false

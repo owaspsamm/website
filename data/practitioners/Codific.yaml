@@ -1,0 +1,8 @@
+weight: 3
+company: "Codific"
+country: "Belgium"
+url: "https://www.gdssecurity.com/"
+image: "/img/events/AppSecNZ21.png"
+contributors: "Aram Hovsepyan"
+sponsor: true
+enabled: true
