@@ -3,3 +3,5 @@ company: "Secodis"
 country: "Germany"
 url: "https://www.secodis.com/owasp-samm-assessment/?lang=en"
 image: "/img/events/AppSecNZ21.png"
+sponsor: false
+enabled: true

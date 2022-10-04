@@ -4,3 +4,5 @@ country: "USA"
 url: "https://www.pgsecurityadvisors.com/services"
 image: "/img/events/AppSecNZ21.png"
 contributors: "Brian Glas"
+sponsor: false
+enabled: true
