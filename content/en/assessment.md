@@ -26,10 +26,9 @@ If you need help, do not hesitate to reach out to our SAMM community on {{< exte
 
 ### Online assessment
 
-The SAMMwise tool is part of the offical SAMM toolset and allows you to self-host an online assessment tool.  {{< external-link "https://github.com/owaspsamm/sammwise" "It's github repository and documentation can be found here">}}.
+SAMMwise is part of the official SAMM toolset and allows you to self-host an online assessment tool. You can find its GitHub repository and documentation {{< external-link "https://github.com/owaspsamm/sammwise" "here">}}.
 
-Several 3rd party tools allow you to do online SAMM assessments too! Concord and Codific are both SAMM project sponsors that have created online SAMM assessment tools based on SAMMv2.
-Concord has created the {{< external-link "https://concordusa.com/SAMM/" "online SAMM calculator">}}, while Codific {{< external-link "https://sammy.codific.com/" "has created SAMMY">}}.
+{{< external-link "https://sammy.codific.com/" "SAMMY">}} is a third-party tool by Codific, one of our sponsors, that allows you to do online SAMM assessments, too! 
 
 ### Next steps
 
