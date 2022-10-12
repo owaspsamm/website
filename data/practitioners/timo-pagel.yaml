@@ -5,4 +5,4 @@ url: "https://pagel.pro"
 image: "/img/events/AppSecNZ21.png"
 contributors: "Timo Pagel"
 sponsor: false
-enabled: false
+enabled: true
