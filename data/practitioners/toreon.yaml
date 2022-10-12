@@ -5,4 +5,4 @@ url: "https://www.toreon.com/our-services/secure-development/"
 image: "/img/events/AppSecNZ21.png"
 contributors: "Seba Deleersnyder"
 sponsor: true
-enabled: false
+enabled: true
