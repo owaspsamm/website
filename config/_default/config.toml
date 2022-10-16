@@ -45,75 +45,81 @@ paginate = 10
     name = "Community"
     identifier = "community"
     url  = ""
-    weight = 7
+    weight = 4
 
 [[menu.main]]
     name = "Blog"
     parent = "community"
     url  = "/blog/"
-    weight = 3
+    weight = 41
 
 [[menu.main]]
     name = "Events"
     identifier = "events"
     parent = "community"
     url  = "/events/"
-    weight = 4
+    weight = 42
 
 [[menu.main]]
     name = "Sponsors"
     identifier = "sponsors"
     parent = "community"
     url  = "/sponsors/"
-    weight = 5
+    weight = 43
 
 [[menu.main]]
     name = "FAQ"
     parent = "community"
     url  = "/faq/"
-    weight = 6
+    weight = 44
 
 [[menu.main]]
     name = "References"
     parent = "community"
     url  = "/references/"
-    weight = 7
+    weight = 45
+
+[[menu.main]]
+    name = "Practitioners"
+    parent = "community"
+    url  = "/practitioners/"
+    weight = 46
 
 [[menu.main]]
     name = "Contributing"
     parent = "community"
     url  = "/contributing/"
-    weight = 8
+    weight = 47
 
 [[menu.main]]
     name = "Guidance"
     identifier = "guidance"
     url  = ""
-    weight = 6
+    weight = 3
 
 [[menu.main]]
     name = "Getting started"
     parent = "guidance"
     url  = "/guidance/quick-start-guide/"
-    weight = 5
+    weight = 30
 
 [[menu.main]]
     name = "Agile"
     parent = "guidance"
     url  = "/guidance/agile/"
-    weight = 7
+    weight = 32
 
 [[menu.main]]
     name = "Assessment"
     parent = "guidance"
     url  = "/assessment/"
-    weight = 6
+    weight = 31
 
 [[menu.main]]
     name = "Benchmarking"
     parent = "guidance"
     url  = "/benchmarking/"
-    weight = 7
+    weight = 33
 
 #[[menu.main]]
 #    name = "Version 1.5"
@@ -129,12 +135,12 @@ paginate = 10
 [[menu.main]]
     name = "User Day"
     url  = "/user-day/"
-    weight = 8
+    weight = 5
 
 [[menu.main]]
     name = "Contact"
     url  = "/contact/"
-    weight = 9
+    weight = 6
 
 # Top bar social links menu
 

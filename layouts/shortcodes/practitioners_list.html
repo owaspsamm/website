@@ -1,7 +1,7 @@
 <div class="practitioners-list-container">
     {{ if gt (len .Site.Data.practitioners) 0 }}
     {{ with index .Site.Data.practitioners }}
-    {{ range . }}
+    {{ range sort . "company" }}
     {{ if .enabled }}
     <div class="practitioners-list-item">
         <!--
