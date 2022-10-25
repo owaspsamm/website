@@ -276,12 +276,20 @@ paginate = 10
     subtitle = "We have worked with many clients and we always like to hear they come out from the cooperation happy and satisfied. Have a look what our clients said about us."
 
 [params.see_more]
-    enable = true
+    enable = false
     icon = "fas fa-calendar"
     title = "Do you want to see more?"
     subtitle = "We have prepared a list of upcoming SAMM events and trainings."
     link_url = "/events"
     link_text = "Check SAMM events"
+
+[params.pdf]
+    enable = true
+    icon = "fa solid fa-file"
+    title = "SAMM PDF"
+    subtitle = "We have created a PDF version of the SAMM model."
+    link_url = "https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing"
+    link_text = "View SAMM PDF"
 
 [params.subscribe]
     enable = true
