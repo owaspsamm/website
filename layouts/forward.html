@@ -5,22 +5,19 @@
 
     {{ $targetUrl := .Params.target }}
     
+    {{ $time := 0 }}
     {{ if (isset .Params "time") }}
     {{ $time := .Params.time }}
-    {{ else }}
-    {{ $time := 0 }}
     {{ end }}
 
+    {{ $targetname := $targetUrl }}
     {{ if (isset .Params "targetname") }}
     {{ $targetname := .Params.targetname }}
-    {{ else }}
-    {{ $targetname := $targetUrl }}
     {{ end }}
 
+    {{ $title := "Redirecting" }}
     {{ if (isset .Params "targettitle") }}
     {{ $title := .Params.targettitle }}
-    {{ else }}
-    {{ $title := "Redirecting" }}
     {{ end }}
 
     <meta http-equiv="refresh" content="{{ $time }};url={{ $targetUrl }}"/>
