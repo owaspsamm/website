@@ -3,23 +3,26 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% $targetUrl := .Params.target %}
-    {% $time := 0 %}
-    {% $targetname := .Params.target %}
-    {% $title := "Redirecting" %}
- 
-    {% if .Params.time %}
+    {{ $targetUrl := .Params.target }}
+    
+    {{ if (isset .Params "time") }}
     {% $time := .Params.time %}
-    {% endif %}
-    
-    {% if .Params.targetname %}
-    {% $targetname := .Params.targetname %}
-    {% endif %}
+    {{ else }}
+    {% $time := 0 %}
+    {{ end }}
 
-    {% if .Params.targettitle %}
+    {{ if (isset .Params "targetname") }}
+    {% $targetname := .Params.targetname %}
+    {{ else }}
+    {% $targetname := $targetUrl %}
+    {{ end }}
+
+    {{ if (isset .Params "targettitle") }}
     {% $title := .Params.targettitle %}
-    {% endif %}
-    
+    {{ else }}
+    {% $title := "Redirecting" %}
+    {{ end }}
+
     <meta http-equiv="refresh" content="{{ $time }};url={{ $targetUrl }}"/>
     <link rel="canonical" href="{{ $targetUrl }}"/>
     <title>{{ $title }}</title>
@@ -34,11 +37,11 @@
 <body>
     <h1>{{ $title }}</h1>
    
-    {% if .Params.message %}
-    <p>{{ .Params.message }}</p>
-    {% else %}
+    {{ with .Param.message }}
+    <p>{{ . }}</p>
+    {{ else }}
     <p>This document has moved!</p>
-    {% endif %}
+    {{ end }}
 
     <p>Redirecting to <a href="{{ $targetUrl }}">{{ $targetname }}</a> in {{ $time }} seconds.</p>
 
