@@ -1,6 +1,6 @@
 ---
 layout: forward
 target: https://owaspsamm.org/model/governance/policy-and-compliance/
-targetname: Activity G-PC
+targetname: Practice G-PC
 targettitle: Redirecting to Practice information page
 ---
