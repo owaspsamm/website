@@ -1,6 +1,6 @@
 ---
 layout: forward
 target: https://owaspsamm.org/model/governance/policy-and-compliance/stream-b/
-targetname: Activity G-PC-B
+targetname: Activity Stream G-PC-B
 targettitle: Redirecting to Activity Stream information page
 ---
