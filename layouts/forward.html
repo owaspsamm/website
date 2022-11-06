@@ -37,7 +37,7 @@
 <body>
     <h1>{{ $title }}</h1>
    
-    {{ with .Param.message }}
+    {{ with .Params.message }}
     <p>{{ . }}</p>
     {{ else }}
     <p>This document has moved!</p>
