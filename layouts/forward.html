@@ -3,24 +3,26 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% assign time = 0 %}
-    {% assign targetname = page.target %}
+    {% $targetUrl := .Params.target %}
+    {% $time := 0 %}
+    {% $targetname := .Params.target %}
+    {% $title := "Redirecting" %}
  
-    {% if page.time %}
-    {% assign time = page.time %}
+    {% if .Params.time %}
+    {% $time := .Params.time %}
     {% endif %}
     
-    {% if page.targetname %}
-    {% assign targetname = page.targetname %}
+    {% if .Params.targetname %}
+    {% $targetname := .Params.targetname %}
     {% endif %}
 
-    {% capture title %}Redirecting to {{ targetname }}{% endcapture %}
-    {% if page.targettitle %}
-    {% assign title = page.targettitle %}
+    {% if .Params.targettitle %}
+    {% $title := .Params.targettitle %}
     {% endif %}
-    <meta http-equiv="refresh" content="{{ time }};url={{ page.target }}"/>
-    <link rel="canonical" href="{{ page.target }}"/>
-    <title>{{ title }}</title>
+    
+    <meta http-equiv="refresh" content="{{ $time }};url={{ $targetUrl }}"/>
+    <link rel="canonical" href="{{ $targetUrl }}"/>
+    <title>{{ $title }}</title>
     <style>
         body {
             font-family: sans-serif;
@@ -30,15 +32,15 @@
     </style>
 </head>
 <body>
-    <h1>{{ title }}</h1>
+    <h1>{{ $title }}</h1>
    
-    {% if page.message %}
-    <p>{{ page.message }}</p>
+    {% if .Params.message %}
+    <p>{{ .Params.message }}</p>
     {% else %}
     <p>This document has moved!</p>
     {% endif %}
 
-    <p>Redirecting to <a href="{{ page.target }}">{{ targetname }}</a> in {{ time }} seconds.</p>
+    <p>Redirecting to <a href="{{ $targetUrl }}">{{ $targetname }}</a> in {{ $time }} seconds.</p>
 
 </body>
 </html>
