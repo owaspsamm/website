@@ -6,21 +6,21 @@
     {{ $targetUrl := .Params.target }}
     
     {{ if (isset .Params "time") }}
-    {% $time := .Params.time %}
+    {{ $time := .Params.time }}
     {{ else }}
-    {% $time := 0 %}
+    {{ $time := 0 }}
     {{ end }}
 
     {{ if (isset .Params "targetname") }}
-    {% $targetname := .Params.targetname %}
+    {{ $targetname := .Params.targetname }}
     {{ else }}
-    {% $targetname := $targetUrl %}
+    {{ $targetname := $targetUrl }}
     {{ end }}
 
     {{ if (isset .Params "targettitle") }}
-    {% $title := .Params.targettitle %}
+    {{ $title := .Params.targettitle }}
     {{ else }}
-    {% $title := "Redirecting" %}
+    {{ $title := "Redirecting" }}
     {{ end }}
 
     <meta http-equiv="refresh" content="{{ $time }};url={{ $targetUrl }}"/>
