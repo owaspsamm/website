@@ -1,7 +1,7 @@
 <div class="event-list">
     {{ if gt (len .Site.Data.eventsarchive) 0 }}
     {{ with index .Site.Data.eventsarchive }}
-    {{ range sort . "weight" }}
+    {{ range sort . "date" }}
     <div>
         <h4>{{ .title }}</h4>
         <p class="author-category">{{ .text }}</p>
