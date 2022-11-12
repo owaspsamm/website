@@ -3996,6 +3996,12 @@ a.list-group-item.active > .badge,
   transform: scale(1.1, 1.1);
 }
 
+.text-wrap-img-left {
+  float: left;
+  margin: 10px;
+  width: 200px;
+}
+
 .text-wrap-img {
   float: right;
   margin: 10px;

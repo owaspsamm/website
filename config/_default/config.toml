@@ -11,6 +11,13 @@ googleAnalytics = "UA-127457120-1"
 # Define the number of posts per page
 paginate = 10
 
+# Taxonomies
+[taxonomies]
+  category = 'categories'
+  resource_category = 'resource_categories'
+  tag = 'tags'
+  resource_tag = 'resource_tags' 
+
 [module]
 
 [[module.imports]]
