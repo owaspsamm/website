@@ -4,17 +4,54 @@ on:
   push:
     branches:
       - main  # Set a branch to deploy
+  repository_dispatch:
+    types: [samm-core-released]
+
+env:
+  hugo_version: '0.81.0'
 
 jobs:
-  deploy:
-    runs-on: ubuntu-18.04
+  updateHugoMod:
+    runs-on: ubuntu-latest
+    if: github.event.repository_dispatch
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - uses: actions/cache@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: ${{ env.hugo_version }}
+          extended: true
+
+      - name: Get new release and commit to main
+        run: |
+          echo "We got a new SAMM release: ${{ github.event.client_payload.release }}"
+          hugo mod get
+          cat go.mod go.sum
+
+      # Do not commit files until we can verify the previous steps are working
+      - name: Commit updated files to git
+        if: false
+        uses: EndBug/add-and-commit@v9 
+        with:
+          add: '.'
+          default_author: github_actions
+          message: 'New SAMM release: ${{ github.event.client_payload.release }}'
+
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
@@ -24,7 +61,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.81.0'
+          hugo-version: ${{ env.hugo_version }}
           extended: true
 
       - name: Build
