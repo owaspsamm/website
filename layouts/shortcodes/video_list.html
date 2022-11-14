@@ -1,0 +1,19 @@
+{{ if gt (len .Site.Data.video) 0 }}
+{{ with index .Site.Data.video }}
+{{ range sort . "weight" }}
+{{ if .display }}
+<div>
+    {{ if and (isset . "videoid") (not (eq . "videoid" "")) }}
+    <iframe width="400" height="225" 
+        src="https://www.youtube.com/embed/{{ .videoid }}" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;">
+    </iframe>
+    {{ else }}
+        <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
