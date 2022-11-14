@@ -12,3 +12,18 @@ author = ""
 ## Watch SAMM videos
 
 From model deep-dive sessions to presentations and project updates, our {{< external-link "https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" "YouTube channel">}} is a source of information on the project you don't want to miss.
+
+<br/><br/>
+
+## Featured video
+
+During the first weekend of November, the SAMM Core Team got together in Boston for an extremely productive few days of discussions and work iterations on the items from our roadmap. Take a look at some of the outcomes.
+
+{{< youtube _YLWqT5I4Bg >}}
+
+## Deep-dive sessions
+
+For the past few months, we've taken advantage of our community calls to look at our model in depth. We will continue to do this for each SAMM security practice, so expect more content!
+
+{{< video_list >}}
+

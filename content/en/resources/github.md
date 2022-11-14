@@ -11,4 +11,15 @@ author = ""
 
 ## One project, many repos
 
-Here's the link to our {{< external-link "https://github.com/owaspsamm" "GitHub organization">}}, where you can find all the repositories related to the SAMM project, including the core model, assessment tools, website, PDF generator, and more.
+After the release of SAMM v2, we moved all of our GitHub content to the {{< external-link "https://github.com/owaspsamm" "OWASP SAMM GitHub organization">}}. Here, you can find all the repositories related to the SAMM project.
+
+<br/><br/>
+
+Some of the repos you can find there are: 
+* {{< external-link "https://github.com/owaspsamm/core" "Core Model">}} 
+* {{< external-link "https://github.com/owaspsamm/website" "Website">}} 
+* {{< external-link "https://github.com/owaspsamm/sammwise" "Samwise (assessment tool)">}} 
+
+<br/>
+
+Also, don't miss the {{< external-link "https://github.com/orgs/owaspsamm/discussions/" "Discussions">}}  section, where you can pitch your ideas, ask questions, and provide feedback.
