@@ -1,74 +1,75 @@
 name: github pages
-
 on:
   push:
     branches:
-      - main  # Set a branch to deploy
+      - main # Set a branch to deploy
   repository_dispatch:
     types: [samm-core-released]
-
 env:
   hugo_version: '0.81.0'
-
 jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
     if: github.event_name == 'repository_dispatch'
     steps:
+      - name: Parse semver string
+        id: semver_parser
+        uses: booxmedialtd/ws-action-parse-semver@v1
+        with:
+          input_string: ${{ github.event.client_payload.release }}
+          version_extractor_regex: '\/v(.*)$'
+      - name: Check release semver sanity
+        env:
+          RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
+        run: |
+          if [ "${RELEASE}" = "v" ]; then
+            echo "::error title={Bad Semver}::{Release version is not semver compatible}"
+            exit 1
+          fi
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.hugo_version }}
           extended: true
-
       - name: Get new release and commit to main
         env:
-          RELEASE: ${{ github.event.client_payload.release }}
+          RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
-          echo "We got a new SAMM release: ${RELEASE}"
-          hugo mod get github.com/owaspsamm/core@markdown/${RELEASE}
-          cat go.mod go.sum
-
+          echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
+          hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
+          cat go.mod 
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
         if: false
-        uses: EndBug/add-and-commit@v9 
+        uses: EndBug/add-and-commit@v9
         with:
-          add: '.'
+          add: '["go.mod", "go.sum"]'
           default_author: github_actions
           message: 'New SAMM release: ${{ github.event.client_payload.release }}'
-
-
-
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-
+          submodules: true # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
       - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-hugomod-
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: ${{ env.hugo_version }}
           extended: true
-
       - name: Build
         run: hugo --gc --minify -v --cleanDestinationDir --environment production
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
