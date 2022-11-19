@@ -13,7 +13,7 @@ env:
 jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
-    if: github.event.repository_dispatch
+    if: github.event_name == 'repository_dispatch'
     steps:
       - uses: actions/checkout@v3
         with:
@@ -27,9 +27,11 @@ jobs:
           extended: true
 
       - name: Get new release and commit to main
+        env:
+          RELEASE: ${{ github.event.client_payload.release }}
         run: |
-          echo "We got a new SAMM release: ${{ github.event.client_payload.release }}"
-          hugo mod get
+          echo "We got a new SAMM release: ${RELEASE}"
+          hugo mod get github.com/owaspsamm/core@markdown/${RELEASE}
           cat go.mod go.sum
 
       # Do not commit files until we can verify the previous steps are working
