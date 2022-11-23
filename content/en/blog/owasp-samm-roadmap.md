@@ -2,7 +2,7 @@
 title = "OWASP SAMM Roadmap"
 date = "2021-02-09T00:00:00+02:00"
 tags = ["roadmap", "samm", "next", "what's new"]
-categories = ["roadmap"]
+categories = ["SAMM project"]
 banner = "img/banners/undraw_navigator_a479.png"
 author = "The SAMM Project Team"
 +++

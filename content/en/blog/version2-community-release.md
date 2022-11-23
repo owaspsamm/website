@@ -2,7 +2,7 @@
 title = "SAMM V2 community release"
 date = "2019-12-20T12:00:00+02:00"
 tags = ["release", "what's new"]
-categories = ["events"]
+categories = ["SAMM project"]
 banner = "img/banners/undraw_explore_7ofa.png"
 author = "The SAMM Project Team"
 +++
