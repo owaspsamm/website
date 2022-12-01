@@ -21,7 +21,7 @@ It's created by the SAMM core team based on their experience and expertise.
 These are your contributions and can include any resources to help organizations achieve a certain maturity level in a given SAMM Stream. Third party tools are welcome, but do note that we will favor resources that list all alternative tool offerings rather than individual tools. The OWASP SAMM core team will curate community guidance, reviewing it before making it public.
 
 ### How to contribute
-To contribute to the Community guidance, complete the {{< external-link "https://docs.google.com/spreadsheets/d/1jmLVltRhuG19AX5cLUcWH1Qox2Uic17rD29gMVG5zDE/view#gid=1716553355" "SAMM Guidance Google Form">}} and submit it.
+To contribute to the Community guidance, complete the {{< external-link "https://forms.gle/bJUCAUYnK5BNhgWa9" "SAMM Guidance Google Form">}} and submit it.
 
 Next is a list of the fields in the document and a brief explanation for each.
 
