@@ -3808,6 +3808,12 @@ a.list-group-item.active > .badge,
     padding-bottom: 20px;
     padding-top: 20px;
 }
+.samm-page-content h3 {
+  padding-top: 30px;
+}
+.samm-page-content h4 {
+  padding-top: 20px;
+}
 
 .samm-table {
   margin-top: 30px;
