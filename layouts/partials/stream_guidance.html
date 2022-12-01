@@ -47,9 +47,9 @@
             {{ end }}
         {{ end }}
         <!-- if there isn't a file for this stream -->
-        {{ if not ($scratch.Get "foundstream") }}
+        {{ if not (eq ($scratch.Get "foundstream") "true") }}
             <p>
-                There's no guidance for this Stream, yet. Be the first to contribute!
+                There's no guidance for this Stream, yet. Be the first to provide Community guidance!
                 <br>
                 <br>
             </p>
@@ -59,13 +59,13 @@
     <h4>Want to contribute?</h4>
     <p>
         Complete this <a href="https://forms.gle/bJUCAUYnK5BNhgWa9" target="_blank">Google Form</a>  
-        <i class="link-icon fas fa-external-link-alt"></i> with guidance for this Stream.
+        <i class="link-icon fas fa-external-link-alt"></i> with guidance for this Stream.  
     </p>
     <br>
     <br>
 
     <blockquote>
-        <p>To learn more about Stream guidance for the SAMM model, see the <strong><a href="#">Stream guidance</a></strong> page.</p>
+        <p>To learn more about Stream guidance for the SAMM model, see the <strong><a href="/stream-guidance">Stream guidance</a></strong> page.</p>
     </blockquote>
 </div>
 
