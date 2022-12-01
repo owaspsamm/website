@@ -1,0 +1,71 @@
+<!-- streams:
+  stream: "Governance-Education-and-Guidance-A"
+    team: "https://docs.google.com/document/d/1RKlccdupNTc02UR2-qlZhaqAJQRk_NHhh2biBOjKBNs/edit#heading=h.eqif3gh93fc4"
+    community: ""
+-->
+{{ $scratch := newScratch }}
+{{ $scratch.Add "streamname" (.Params.business_function_url | urlize) }}
+{{ $scratch.Add "streamname" "-" }}
+{{ $scratch.Add "streamname" ((replace .Params.practice "&" "and")  | urlize) }}
+{{ $scratch.Add "streamname" "-" }}
+{{ $scratch.Add "streamname" .Params.stream }}
+{{ $scratch.Add "foundstream" "false" }}
+<div>
+    <h2>Stream Guidance</h2>
+    <!-- find yaml files in the folder -->
+    {{ if gt (len .Site.Data.streamguidance) 0 }}
+        {{ range .Site.Data.streamguidance }} 
+            <!-- is it the file for this stream? -->
+            {{ if eq (lower .stream) (lower ($scratch.Get "streamname")) }}
+                <!-- found a file for this stream -->
+                {{ $scratch.Set "foundstream" "true" }}
+                <p>
+                    <ul>
+                        {{ if .team_guidance }}
+                        <li>
+                            <strong>SAMM team</strong> guidance <a href="{{ .team_guidance }}" target="_blank">Google Doc</a>  <i class="link-icon fas fa-external-link-alt"></i>
+                            <br><br>
+                        </li>
+                        {{ else }}
+                        <li>
+                            Team guidance for this Stream is coming soon.
+                            <br><br>
+                        </li>
+                        {{ end }}
+                        {{ if .community_guidance }}
+                        <li>
+                            <strong>Community</strong> guidance <a href="#" target="_blank">Google Doc</a>  <i class="link-icon fas fa-external-link-alt"></i>
+                        </li>
+                        {{ else }}
+                        <li>
+                            Be the first to add to the Community guidance for this Stream!
+                            <br><br>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </p>
+            {{ end }}
+        {{ end }}
+        <!-- if there isn't a file for this stream -->
+        {{ if not ($scratch.Get "foundstream") }}
+            <p>
+                There's no guidance for this Stream, yet. Be the first to contribute!
+                <br>
+                <br>
+            </p>
+        {{ end }}
+    {{ end }}
+
+    <h4>Want to contribute?</h4>
+    <p>
+        Complete this <a href="https://forms.gle/bJUCAUYnK5BNhgWa9" target="_blank">Google Form</a>  
+        <i class="link-icon fas fa-external-link-alt"></i> with guidance for this Stream.
+    </p>
+    <br>
+    <br>
+
+    <blockquote>
+        <p>To learn more about Stream guidance for the SAMM model, see the <strong><a href="#">Stream guidance</a></strong> page.</p>
+    </blockquote>
+</div>
+
