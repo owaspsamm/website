@@ -1,8 +1,8 @@
 +++
 title = "SAMM is doing CI/CD    "
 date = "2020-03-31T00:00:00+02:00"
-tags = ["ci/cd", "cicd", "process", "automation", "what's new"]
-categories = ["process"]
+tags = ["ci/cd", "cicd", "process", "automation"]
+categories = ["SAMM project"]
 banner = "img/banners/undraw_process_e90d.png"
 author = "The SAMM Project Team"
 +++

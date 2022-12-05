@@ -1,8 +1,8 @@
 +++
 title = "V2 Toolkit"
-date = "2019-09-03T13:39:46+02:00"
-tags = ["samm, toolkit, V2"]
-categories = ["measurement model"]
+date = "2119-09-03T13:39:46+02:00"
+tags = ["toolkit", "V2"]
+categories = ["assessment"]
 banner = "img/banners/undraw_online_discussion_5wgl.png"
 +++
 

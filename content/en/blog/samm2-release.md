@@ -1,8 +1,8 @@
 +++
 title = "OWASP SAMM version 2 - public release"
 date = "2020-01-31T00:00:00+02:00"
-tags = ["version 2", "release", "what's new"]
-categories = ["release"]
+tags = ["version 2", "release"]
+categories = ["SAMM project"]
 banner = "img/banners/undraw_celebration_0jvk.png"
 author = "The SAMM Project Team"
 +++

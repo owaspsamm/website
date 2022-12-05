@@ -1,7 +1,7 @@
 +++
 title = "OWASP SAMM Train the Trainer"
 date = "2021-11-30T00:00:00+02:00"
-tags = ["SAMM", "maturity", "model", "training"]
+tags = ["maturity", "model"]
 categories = ["training"]
 banner = "img/banners/training.png"
 author = "The SAMM Project Team"
