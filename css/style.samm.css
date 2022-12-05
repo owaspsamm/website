@@ -4167,3 +4167,29 @@ a.list-group-item.active > .badge,
 .formspree-input{
   display: none;
 }
+
+.quote {
+  border: none;
+  padding: 20px;
+  margin: 10px;
+  font-size: 20px;
+}
+.quote .text {
+  padding-top: 20px;
+}
+
+.quote .icon-left {
+  color: #71b8b8;
+  font-size: 30px;
+  float: left;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.quote .icon-right {
+  color: #71b8b8;
+  font-size: 30px;
+  float: right;
+  padding-left: 10px;
+  margin-top: -60px;
+}
