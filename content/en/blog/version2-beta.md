@@ -2,7 +2,7 @@
 title = "Version 2 Beta"
 date = "2019-02-02T21:49:20+02:00"
 tags = ["beta", "release", "what's new"]
-categories = ["beta"]
+categories = ["SAMM project"]
 banner = "img/banners/undraw_up_to_date_rmbm.png"
 author = "The SAMM Project Team"
 +++
