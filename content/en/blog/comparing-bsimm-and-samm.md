@@ -1,8 +1,8 @@
 +++
 title = "Comparing BSIMM & SAMM"
 date = "2020-10-29T00:00:00+02:00"
-tags = ["BSIMM", "SAMM", "maturity", "model"]
-categories = ["models"]
+tags = ["BSIMM", "maturity", "model"]
+categories = ["guidance"]
 banner = "img/banners/undraw_Working_oh83.png"
 author = "Brian Glas"
 +++
