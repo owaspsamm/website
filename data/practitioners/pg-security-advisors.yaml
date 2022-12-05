@@ -2,7 +2,7 @@ weight: 5
 company: "PG Security Advisors"
 country: "USA"
 url: "https://www.pgsecurityadvisors.com/services"
-image: "/img/events/AppSecNZ21.png"
+image: ""
 contributors: "Brian Glas"
 sponsor: false
 enabled: true

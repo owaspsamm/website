@@ -2,7 +2,7 @@ weight: 3
 company: "Codific"
 country: "Belgium"
 url: "https://codific.com/owasp-samm-assessment/"
-image: "/img/events/AppSecNZ21.png"
+image: ""
 contributors: "Aram Hovsepyan"
 sponsor: true
 enabled: true
