@@ -2,7 +2,7 @@ weight: 2
 company: "PWC"
 country: "Worldwide"
 url: "https://www.pwc.be/en/services/cyber-privacy.html"
-image: "/img/events/AppSecNZ21.png"
+image: ""
 contributors: "Bart De Win"
 sponsor: true
 enabled: true

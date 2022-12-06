@@ -33,10 +33,12 @@ We do reserve the right to reject or remove any of the practitioners.
 
 We’ve realized there’s a growing number of organizations adopting SAMM. Some of those organizations need to call on external practitioners, which makes the list on the website even more useful. We know this is a helpful service for our community and we hope we’ve made good on our promise to continue to give back to you. 
 
-You can also hear more about our SAMM Practitioners on the latest monthly Community call video available on our YouTube Channel. 
+Check out the [SAMM Practitioner](/practitioners) page now!
+
+You can also hear more about SAMM Practitioners on the latest monthly Community call {{< external-link "https://www.youtube.com/watch?v=_YLWqT5I4Bg" "video">}} available on our {{< external-link "https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" "YouTube Channel">}}. 
 
 ---
 Be a part of the SAMM community!
 
-* Join our Slack channel, where you'll meet other users, ask questions, give feedback, and be in the loop of all things SAMM.
+* Join our {{< external-link "https://owasp.slack.com/messages/C0VF1EJGH" "Slack channel">}}, where you'll meet other users, ask questions, give feedback, and be in the loop of all things SAMM.
 * Join our monthly community calls, where we discuss different topics, exchange experiences and ideas, and review SAMM’s security practices in depth.
