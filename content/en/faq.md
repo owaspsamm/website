@@ -59,7 +59,7 @@ Glad you asked, here is a list of suggestions:
 Yes! We're using {{< external-link "https://crowdin.com/project/owasp-samm" "CrowdIn">}} and the help of the community to have SAMM translated to other languages.
 
 #### How can I join SAMM's Slack channel?
-You can try with the direct link to our [Slack channel](https://owasp.slack.com/messages/C0VF1EJGH). If that doesn't work, you need and invitation. Click {{< external-link "https://owasp-slack.herokuapp.com" "here">}} to get it.
+You can try with the direct link to our [Slack channel](https://owasp.slack.com/messages/C0VF1EJGH). If that doesn't work, you need and invitation. Click {{< external-link "https://owasp.org/slack/invite" "here">}} to get it.
 
 ---
 
