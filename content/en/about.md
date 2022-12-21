@@ -25,7 +25,7 @@ SAMM does not insist that all organizations achieve the maximum maturity level i
 
 SAMM is based around 15 security practices grouped into 5 business functions. Every security practice contains a set of activities, structured into 3 maturity levels. The activities on a lower maturity level are typically easier to execute and require less formalization than the ones on a higher maturity level.
 
-{{< responsive-image  "/img/pages/SAMM_model_structure.png" "business function with security practices, security practices with activites">}}
+{{< responsive-image  "/img/pages/SAMM_model_structure.svg" "business function with security practices, security practices with activites">}}
 
 At the highest level, SAMM defines five business functions. Each business function is a category of activities that any organization involved with software development must fulfill to some degree.
 
@@ -42,7 +42,7 @@ The structure and setup of the SAMM model support
 * the definition of an implementation roadmap to get there
 * prescriptive advice on how to implement particular activities
 
-{{< responsive-image  "/img/pages/SAMM_v2.svg" "SAMM v2 model overview">}}
+{{< responsive-image  "/img/pages/SAMM_v2_diagram.svg" "SAMM v2 model overview">}}
 
 
 ## Useful links
