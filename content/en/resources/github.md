@@ -18,7 +18,7 @@ After the release of SAMM v2, we moved all of our GitHub content to the {{< exte
 Some of the repos you can find there are: 
 * {{< external-link "https://github.com/owaspsamm/core" "Core Model">}} 
 * {{< external-link "https://github.com/owaspsamm/website" "Website">}} 
-* {{< external-link "https://github.com/owaspsamm/sammwise" "Samwise (assessment tool)">}} 
+* {{< external-link "https://github.com/owaspsamm/sammwise" "SAMMwise (assessment tool)">}} 
 
 <br/>
 

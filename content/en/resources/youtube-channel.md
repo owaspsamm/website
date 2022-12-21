@@ -17,7 +17,7 @@ From model deep-dive sessions to presentations and project updates, our {{< exte
 
 ## Featured video
 
-During the first weekend of November, the SAMM Core Team got together in Boston for an extremely productive few days of discussions and work iterations on the items from our roadmap. Take a look at some of the outcomes.
+During the first weekend of November 2022, the SAMM Core Team got together in Boston for an extremely productive few days of discussions and work iterations on the items from our roadmap. Take a look at some of the outcomes.
 
 {{< youtube _YLWqT5I4Bg >}}
 
