@@ -4,14 +4,14 @@
     {{ range sort . "weight" }}
     {{ if eq .display "true" }}
     <div class="event-row">
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
             {{ if and (isset . "image") (not (eq . "image" "")) }}
             <img src="{{ .image }}" class="img-responsive" alt="" >
             {{ else }}
             <img src="{{ .Site.BaseURL}}img/placeholder.png" class="img-responsive" alt="">
             {{ end }}
         </div>
-        <div class="col-xs-12 col-sm-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-lg-4">
             <h4><a href="{{ .url }}" target="_blank">{{ .title }}</a></h4>
             <p class="author-category">{{ .date }}</p>
             <p class="author-category">{{ .type }} by {{ .presenter }}</p>
