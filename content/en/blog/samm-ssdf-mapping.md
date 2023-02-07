@@ -1,6 +1,6 @@
 +++
 title = "Tackling App Security with SAMM-NIST SSDF Mapping"
-date = "2023-01-30T00:00:00+02:00"
+date = "2023-02-06T00:00:00+02:00"
 tags = ["model", "NIST", "SSDF"]
 categories = ["mapping"]
 banner = "img/banners/samm-ssdf.png"
