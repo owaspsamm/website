@@ -2281,6 +2281,7 @@ fieldset[disabled] .btn-template-primary.active {
   }
 }
 
+#blog-post #post-content ul,
 #blog-post #post-content p {
   margin-bottom: 40px;
 }
