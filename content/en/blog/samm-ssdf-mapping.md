@@ -21,14 +21,14 @@ The increasing dependence on software in our daily lives has made the challenge 
 
 ### Application Security Regulation
 
-Fortunately, both the US and the EU have been adding regulations to steer organizations towards a systematic solution. In particular, the Executive Order M-22-18 now mandates all US Federal agency vendors to adopt NIST SSDF. SSDF provides a comprehensive approach to application security. However, **SSDF is very broad by design** and does not prescribe how to implement each security practice. SSDF does include a plethora of resources and references to other industry standards. Nonetheless, for organizations without any security expertise it is challenging to pick SSDF and start implementing these guidelines.
+Fortunately, both the US and the EU have been adding regulations to steer organizations towards a systematic solution. In particular, the {{< external-link "https://www.whitehouse.gov/wp-content/uploads/2022/09/M-22-18.pdf" "Executive Order M-22-18">}} now mandates all US Federal agency vendors to adopt NIST SSDF. SSDF provides a comprehensive approach to application security. However, **SSDF is very broad by design** and does not prescribe how to implement each security practice. SSDF does include a plethora of resources and references to other industry standards. Nonetheless, for organizations without any security expertise it is challenging to pick SSDF and start implementing these guidelines.
 
 We firmly believe that OWASP SAMM is the ideal starting point for implementing and achieving SSDF compliance. SAMM is a security assurance program that helps you assess and develop a risk-informed and balanced plan for enhancing your security posture. To support this process, we have created a **comprehensive mapping between SAMM and NIST SSDF**. NIST is currently reviewing the final draft submission of this mapping.
 
 
 ### NIST SSDF
 
-The NIST Secure Software Development Framework (NIST SSDF) is a set of guidelines and best practices for developing secure software. SSDF is intended to help organizations create software that is resistant to cybersecurity threats. The framework organizes security practices into four groups. Each practice is split into one or more tasks that organizations need to fulfill to perform the practice. SSDF comes with notional implementation examples for each task. However, these are neither necessary nor sufficient conditions to claim the correct fulfillment of a specific practice.
+The NIST Secure Software Development Framework ({{< external-link "https://csrc.nist.gov/Projects/ssdf" "NIST SSDF">}}) is a set of guidelines and best practices for developing secure software. SSDF is intended to help organizations create software that is resistant to cybersecurity threats. The framework organizes security practices into four groups. Each practice is split into one or more tasks that organizations need to fulfill to perform the practice. SSDF comes with notional implementation examples for each task. However, these are neither necessary nor sufficient conditions to claim the correct fulfillment of a specific practice.
 
 ### OWASP SAMM
 OWASP SAMM is a framework that has similar goals to SSDF: to help organizations improve their security posture. However, SAMM is built with three key observations that effectively flatten the learning curve for organizations.
