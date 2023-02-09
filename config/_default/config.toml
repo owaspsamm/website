@@ -183,13 +183,19 @@ paginate = 10
     pre = "<i class='fab fa-2x fa-twitter'></i>"
 
 [[menu.topbar]]
-    weight = 5
+    weight = 6
     name = "YouTube"
     url = "https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g"
     pre = "<i class='fa fa-2x fa-youtube'></i>"
 
 [[menu.topbar]]
-    weight = 6
+    weight = 5
+    name = "Meetup"
+    url = "https://www.meetup.com/owasp-samm/"
+    pre = "<i class='fab fa-2x fa-meetup'></i>"
+
+[[menu.topbar]]
+    weight = 7
     name = "Email"
     url = "mailto:info@owaspsamm.org"
     pre = "<i class='fa fa-2x fa-envelope'></i>"
