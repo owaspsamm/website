@@ -7,8 +7,7 @@ title = "OWASP SAMM"
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "UA-127457120-1"
-# Google Analytics 4
-googleAnalyticsID = "G-44N5RHDT94"
+# Google Analytics 4 in params
 
 # Define the number of posts per page
 paginate = 10
@@ -204,6 +203,9 @@ paginate = 10
 
 
 [params]
+    # Google Analytics 4
+    googleAnalyticsID = "G-44N5RHDT94"
+
     viewMorePostLink = "/blog/"
     author = "OWASP SAMM"
     defaultKeywords = ["owasp", "samm", "maturity", "model", "software"]
