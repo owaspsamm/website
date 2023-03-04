@@ -1,6 +1,6 @@
 +++
 title = "The \"Not Applicable\" Question"
-date = "2122-11-30T00:00:00+02:00"
+date = "2023-02-28T00:00:00+02:00"
 tags = ["model", "scoring"]
 categories = ["assessment"]
 banner = "img/banners/discussion.png"
@@ -74,12 +74,12 @@ For visualization, let’s assume the following baseline and target scores are i
 When reporting on the maturity improvement program’s progress to senior stakeholders, reported values can be expressed in terms of how much of the journey has been completed. For example, if the organization’s score for the Security Architecture practice has increased to 1.25 after one year, 50% of the planned improvement has been achieved. This can be presented visually using a level meter (with the target score, 2.00, as the maximum level) or a progress bar (0% - 100%).
 
 #### We’re keen to start making Activities Not Applicable. How can we help make that happen?
-As an outcome from SAMM Core Team Summit, we’ve created a Feature Request in our Github project (link), to add support for Not Applicable responses in SAMM tools – including potential support for the visualization approach described above.
+As an outcome from SAMM Core Team Summit, we’ve created an {{< external-link "https://github.com/owaspsamm/samm-suite" "issues repository">}} on Github project. Create an issue there to request adding support for Not Applicable responses in SAMM tools – including potential support for the visualization approach described above.
 
-If you see this as an essential missing feature in SAMM’s tooling, consider taking some time to help the team make it happen. You can start by adding your comments and suggestions to the Feature Request issue. If you’d like to help implement the new feature in the Excel or Google Sheets toolbox, reach out to the Core Team at (<email address>).
+If you see this as an essential missing feature in SAMM’s tooling, consider taking some time to help the team make it happen. You can start by adding your comments to {{< external-link "https://github.com/orgs/owaspsamm/discussions" "SAMM discussions">}} on Github. If you’d like to help implement the new feature in the Excel or Google Sheets toolbox, please [email us](mailto:info@owaspsamm.org).
 
 ---
 Be a part of the SAMM community!
 
-* Join our Slack channel, where you'll meet other users, ask questions, give feedback, and be in the loop of all things SAMM.
+* Join our  {{< external-link "https://owasp.slack.com/messages/C0VF1EJGH" "Slack channel">}}, where you'll meet other users, ask questions, give feedback, and be in the loop of all things SAMM.
 * Join our monthly community calls, where we discuss different topics, exchange experiences and ideas, and review SAMM’s security practices in depth.
