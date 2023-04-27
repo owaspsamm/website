@@ -1,13 +1,17 @@
 +++
-title = "SAMM YouTube Channel"
+title = "SAMM YouTube channel"
 date = ""
 resource_tags = ["youtube", "training"]
 resource_categories = ["video"]
-banner = ""
+banner = "img/resources/video.png"
 author = ""
 +++
 
 {{< responsive-image-small-left  "/img/resources/youtube_icon.png" "YouTube icon">}}
+
+## Watch SAMM videos
+
+
 
 ## Watch SAMM videos
 

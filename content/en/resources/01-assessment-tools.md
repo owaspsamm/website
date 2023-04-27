@@ -3,7 +3,7 @@ title = "SAMM assessment tools"
 date = ""
 resource_tags = ["model", "assessment", "toolkit"]
 resource_categories = ["assessment tools"]
-banner = ""
+banner = "img/resources/tools.png"
 author = ""
 +++
 

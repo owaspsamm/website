@@ -3,7 +3,7 @@ title = "SAMM GitHub repositories"
 date = ""
 resource_tags = ["model", "website", "assessment", "toolkit", "samm suite"]
 resource_categories = ["github"]
-banner = ""
+banner = "img/resources/github_resource.png"
 author = ""
 +++
 
@@ -22,4 +22,4 @@ Some of the repos you can find there are:
 
 <br/>
 
-Also, don't miss the {{< external-link "https://github.com/orgs/owaspsamm/discussions/" "Discussions">}}  section, where you can pitch your ideas, ask questions, and provide feedback.
+Also, don't miss the {{< external-link "https://github.com/orgs/owaspsamm/discussions/" "Discussions">}} section, where you can pitch your ideas, ask questions, and provide feedback.
