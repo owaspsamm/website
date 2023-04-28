@@ -50,90 +50,101 @@ paginate = 10
     weight = 2
 
 [[menu.main]]
+    name = "Resources"
+    url  = "/resources/"
+    weight = 3
+
+[[menu.main]]
     name = "Community"
     identifier = "community"
     url  = ""
-    weight = 4
+    weight = 5
 
 [[menu.main]]
     name = "Blog"
     parent = "community"
     url  = "/blog/"
-    weight = 41
+    weight = 51
+
+[[menu.main]]
+    name = "User Day"
+    parent = "community"
+    url  = "/blog/"
+    weight = 52
 
 [[menu.main]]
     name = "Events"
     identifier = "events"
     parent = "community"
     url  = "/events/"
-    weight = 42
+    weight = 53
 
 [[menu.main]]
     name = "Sponsors"
     identifier = "sponsors"
     parent = "community"
     url  = "/sponsors/"
-    weight = 43
-
-[[menu.main]]
-    name = "FAQ"
-    parent = "community"
-    url  = "/faq/"
-    weight = 44
+    weight = 54
 
 [[menu.main]]
     name = "References"
     parent = "community"
     url  = "/references/"
-    weight = 45
+    weight = 55
 
 [[menu.main]]
     name = "Practitioners"
     parent = "community"
     url  = "/practitioners/"
-    weight = 46
+    weight = 56
+
+[[menu.main]]
+    name = "FAQ"
+    parent = "community"
+    url  = "/faq/"
+    weight = 57
 
 [[menu.main]]
     name = "Contributing"
     parent = "community"
     url  = "/contributing/"
-    weight = 47
+    weight = 48
 
 [[menu.main]]
     name = "Guidance"
     identifier = "guidance"
     url  = ""
-    weight = 3
+    weight = 4
 
 [[menu.main]]
     name = "Getting started"
     parent = "guidance"
     url  = "/guidance/quick-start-guide/"
-    weight = 30
-
-[[menu.main]]
-    name = "Agile"
-    parent = "guidance"
-    url  = "/guidance/agile/"
-    weight = 32
+    weight = 40
 
 [[menu.main]]
     name = "Assessment"
     parent = "guidance"
     url  = "/assessment/"
-    weight = 31
+    weight = 41
+
+[[menu.main]]
+    name = "Agile"
+    parent = "guidance"
+    url  = "/guidance/agile/"
+    weight = 42
 
 [[menu.main]]
     name = "Benchmarking"
     parent = "guidance"
     url  = "/benchmarking/"
-    weight = 33
+    weight = 43
 
 [[menu.main]]
     name = "Stream guidance"
     parent = "guidance"
     url  = "/stream-guidance/"
-    weight = 33
+    weight = 44
 
 
 #[[menu.main]]
@@ -152,10 +163,10 @@ paginate = 10
     url  = "/user-day/"
     weight = 5
 
-[[menu.main]]
-    name = "Contact"
-    url  = "/contact/"
-    weight = 6
+#[[menu.main]]
+#    name = "Contact"
+#    url  = "/contact/"
+#    weight = 6
 
 # Top bar social links menu
 

@@ -47,26 +47,13 @@
                                         </p>
                                     </div>
                                     <p class="intro">{{ .Summary }}</p>
-                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "continueReading" }}</a>
+                                    <p class="read-more"><a href="{{ .Permalink }}" class="btn btn-template-main">{{ i18n "readMore" }}</a>
                                     </p>
                                 </div>
                             </div>
                         </section>
                         {{ end }}
 
-                        <ul class="pager">
-                            {{ if .Paginator.HasPrev }}
-                            <li class="previous"><a href="{{ .Site.BaseURL }}{{ .Paginator.Prev.URL }}">&larr; {{ i18n "newer" }}</a></li>
-                            {{ else }}
-                            <li class="previous disabled"><a href="#">&larr; {{ i18n "newer" }}</a></li>
-                            {{ end }}
-
-                            {{ if .Paginator.HasNext }}
-                            <li class="next"><a href="{{ .Site.BaseURL }}{{ .Paginator.Next.URL }}">{{ i18n "older" }} &rarr;</a></li>
-                            {{ else }}
-                            <li class="next disabled"><a href="#">{{ i18n "older" }} &rarr;</a></li>
-                            {{ end }}
-                        </ul>
                     </div>
                     <!-- /.col-md-9 -->
 

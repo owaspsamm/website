@@ -3,7 +3,7 @@ title = "SAMM PDF"
 date = ""
 resource_tags = ["SAMM", "model", "print"]
 resource_categories = ["pdf"]
-banner = ""
+banner = "img/resources/pdf.png"
 author = ""
 +++
 
