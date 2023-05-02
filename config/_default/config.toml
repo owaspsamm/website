@@ -69,7 +69,7 @@ paginate = 10
 [[menu.main]]
     name = "User Day"
     parent = "community"
-    url  = "/blog/"
+    url  = "/user-day/"
     weight = 52
 
 [[menu.main]]
@@ -158,10 +158,10 @@ paginate = 10
 
 #     weight = 7
 
-[[menu.main]]
-    name = "User Day"
-    url  = "/user-day/"
-    weight = 5
+#[[menu.main]]
+#    name = "User Day"
+#    url  = "/user-day/"
+#    weight = 5
 
 #[[menu.main]]
 #    name = "Contact"
