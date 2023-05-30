@@ -5,6 +5,7 @@ resource_tags = ["SAMM", "model", "print"]
 resource_categories = ["pdf"]
 banner = "img/resources/pdf.png"
 author = ""
+weight = 2
 +++
 
 {{< responsive-image-small-left  "/img/resources/PDF_file_icon.svg.png" "PDF icon">}}

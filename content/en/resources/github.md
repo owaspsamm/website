@@ -5,6 +5,7 @@ resource_tags = ["model", "website", "assessment", "toolkit", "samm suite"]
 resource_categories = ["github"]
 banner = "img/resources/github_resource.png"
 author = ""
+weight = 5
 +++
 
 {{< responsive-image-small-left  "/img/resources/Octocat.png" "GitHub logo">}}

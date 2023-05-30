@@ -22,7 +22,7 @@
 
                     <div class="col-md-9" id="blog-listing-medium">
 
-                        {{ $paginator := .Paginate (where .Data.Pages "Type" "resources") }}
+                        {{ $paginator := .Paginate (where .Data.Pages.ByWeight "Type" "resources") }}
                         {{ range $paginator.Pages }}
                         <section class="post">
                             <div class="row">

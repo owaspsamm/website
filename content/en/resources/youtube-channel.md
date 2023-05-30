@@ -5,6 +5,7 @@ resource_tags = ["youtube", "training"]
 resource_categories = ["video"]
 banner = "img/resources/video.png"
 author = ""
+weight = 3
 +++
 
 {{< responsive-image-small-left  "/img/resources/youtube_icon.png" "YouTube icon">}}

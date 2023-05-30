@@ -5,6 +5,7 @@ resource_tags = ["newsletter", "subscribe"]
 resource_categories = ["news"]
 banner = "img/resources/news.png"
 author = ""
+weight = 6
 +++
 
 {{< responsive-image-small-left  "/img/resources/mailchimp.png" "Mailchimp icon">}}
