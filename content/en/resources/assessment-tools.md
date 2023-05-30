@@ -5,6 +5,7 @@ resource_tags = ["model", "assessment", "toolkit"]
 resource_categories = ["assessment tools"]
 banner = "img/resources/tools.png"
 author = ""
+weight = 1
 +++
 
 ## Links to info and tools

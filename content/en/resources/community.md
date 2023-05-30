@@ -5,6 +5,7 @@ resource_tags = ["meeting", "chat"]
 resource_categories = ["community"]
 banner = "img/resources/community.png"
 author = ""
+weight = 4
 +++
 
 ## External and internal SAMM resources
@@ -16,7 +17,7 @@ Here you'll find links to places outside this website where you can interact wit
 
 We host community calls on the second Wednesday of every month. Here, we provide project updates, do model deep-dive sessions and interact with the community of SAMM users. This goes from helping out people who are getting started with SAMM to discussing tools and ways to go about the different SAMM activities.
 
-You can join us on Meetups for reminders: {{< external-link "https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" "SAMM Meetup">}}
+You can join us on Meetups for reminders: {{< external-link "https://www.meetup.com/owasp-samm/" "SAMM Meetup">}}
 
 {{< responsive-image-small-left  "/img/resources/slack.png" "Slack icon">}}
 ## Slack
