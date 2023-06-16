@@ -38,6 +38,10 @@ steps:
                 heading: SAMM downloads
                 type: link
                 description: https://owaspsamm.org/about/
+                resource3:
+                heading: Blog post on determining scope
+                type: link
+                description: https://owaspsamm.org/blog/2023/05/24/determining-scope-when-implementing-samm/
         best_practices:
             - Pre-screen software development maturity to have realistic expectations
             - The smaller the scope, the easier the exercise
