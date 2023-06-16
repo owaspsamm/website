@@ -20,4 +20,4 @@ We'll be sharing the space with the Global AppSec DC event and have our SAMM Use
 
 Here you can find the previous SAMM User Day pages with the full list of talks, downloadable material, and YouTube links.
 
-{{< buttons "2021" "2021 User Day page" "2020" "2020 User Day page">}}
+{{< buttons "user-day/2021" "2021 User Day page" "user-day/2020" "2020 User Day page">}}
