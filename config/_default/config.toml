@@ -108,7 +108,13 @@ paginate = 10
     name = "Contributing"
     parent = "community"
     url  = "/contributing/"
-    weight = 48
+    weight = 58
+
+[[menu.main]]
+    name = "Contact"
+    parent = "community"
+    url  = "/contact/"
+    weight = 59
 
 [[menu.main]]
     name = "Guidance"
@@ -155,7 +161,6 @@ paginate = 10
 # [[menu.main]]
 #     name = "FAQ"
 #     url  = "/faq/"
-
 #     weight = 7
 
 #[[menu.main]]

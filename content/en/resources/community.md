@@ -8,7 +8,7 @@ author = ""
 weight = 4
 +++
 
-## External and internal SAMM resources
+## External and internal SAMM community resources
 
 Here you'll find links to places outside this website where you can interact with the SAMM team and with other SAMM users. Also, a reminder of the community-related content here on this website.
 
@@ -34,15 +34,16 @@ Apart from Slack, we've added {{< external-link "https://github.com/orgs/owaspsa
 </br>
 </br>
 
-## Other community resources
+## SAMM website community resources
 
 From the Community menu item on this website you can find information on
 
-* Blog articles
-* User Days
-* Events
-* Sponsors
-* References
-* Practitioners
-* Frequently asked questions
-* Contributing to SAMM
+* [Blog articles](/blog)
+* [User Days](/user-day)
+* [Events](/events)
+* [Sponsors](/sponsors)
+* [References](/references)
+* [Practitioners](/practitioners)
+* [Frequently asked questions](/faq)
+* [Contributing to SAMM](/contributing)
+* [Contact form](/contact)
