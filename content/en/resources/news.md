@@ -18,8 +18,9 @@ If you haven't already, {{< external-link "https://owaspsamm.us9.list-manage.com
 
 ## Issues
 
-This year's issues
+This year's issues  
 * {{< external-link "https://mailchi.mp/cafc17315aff/owasp-samm-newsletter-1-6120125?e=%5BUNIQID%5D" "February 2023">}}
+* {{< external-link "https://mailchi.mp/690efa553197/owasp-samm-newsletter-1-6135326" "May 2023">}}
 
 
 For the full list, including issues since 2015, check out {{< external-link "https://docs.google.com/spreadsheets/d/1OLogWjvteoilaMbWAVeaa6BaKypEMyfyXCEoM6gPiHE/edit?usp=sharing" "this spreadsheet">}}.
