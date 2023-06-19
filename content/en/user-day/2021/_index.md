@@ -17,4 +17,4 @@ Here you can find links to videos and presentations for the talks and workshop w
 You can also visit the 2020 SAMM User Day page, where you can see the full list of talks, with downloadable material and YouTube links.
 
 
-{{< button "2020" "Visit the 2020 User Day page">}}
+{{< button "user-day/2020" "Visit the 2020 User Day page">}}
