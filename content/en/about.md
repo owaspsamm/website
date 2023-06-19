@@ -52,3 +52,6 @@ The structure and setup of the SAMM model support
 * [Version 1.5](/v1-5)
 * [Acronyms and Abbreviations](/acronyms-and-abbreviations)
 
+---
+
+SAMM is a community-based project. Don't hesitate to [contact us](/contact) with any feedback or questions.

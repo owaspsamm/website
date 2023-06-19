@@ -63,4 +63,4 @@ The following data elements are required - marked with (required) - or optional:
 
 ### Updates
 We will be updating this page and the process as the project progresses.
-If you have any questions, please send an email to <brian.glas@owasp.org>.
+If you have any questions, please [contact us](/contact).
