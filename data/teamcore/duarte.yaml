@@ -1,0 +1,11 @@
+name : Patricia Duarte
+image : img/team/pat.jpg
+designation : Core Team member
+content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+social :
+  - icon : ab fa-github
+    link : "#"
+  - icon : fab fa-twitter
+    link : "#"
+  - icon : fab fa-github
+    link : "#"
