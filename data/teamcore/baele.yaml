@@ -4,8 +4,6 @@ designation : Core Team member
 content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
 social :
   - icon : fab fa-linkedin-in
-    link : "#"
-  - icon : fab fa-twitter
-    link : "#"
+    link : "https://www.linkedin.com/in/maximbaele/"
   - icon : fab fa-github
-    link : "#"
+    link : "https://github.com/maximbaele"

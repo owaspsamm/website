@@ -1,9 +1,7 @@
-name : Aram Hovsepyan
-image : img/team/aram.jpg
+name : Romuald Szkudlarek
+image : img/team/romuald.jpg
 designation : Core Team member
 content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
 social :
   - icon : fab fa-linkedin-in
-    link : "https://www.linkedin.com/in/aramhovsep/"
-  - icon : fab fa-github
-    link : "https://github.com/aramhovsepyan"
+    link : "https://www.linkedin.com/in/romuald-szkudlarek-4463671/"

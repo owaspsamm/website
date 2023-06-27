@@ -19,6 +19,7 @@ Anyone can contribute to SAMM. If you want to learn more, check out our **[contr
 ## The OWASP SAMM Core Team
 
 These are the people who are currently part of the Core Team, participating actively in regular meetings and summits, and contributing to the project with their work.
+<br/><br/>
 
 {{< team_members >}}
 

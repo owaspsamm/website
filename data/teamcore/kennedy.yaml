@@ -3,9 +3,9 @@ image : img/team/johnK.jpg
 designation : Core Team member
 content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
 social :
-  - icon : ab fa-github
-    link : "#"
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/kennedygroupab/"
   - icon : fab fa-twitter
-    link : "#"
+    link : "https://twitter.com/KA_Growth"
   - icon : fab fa-github
-    link : "#"
+    link : "https://github.com/KGABSWEDEN"
