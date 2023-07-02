@@ -1,0 +1,11 @@
+name : Seba Deleersnyder
+image : img/team/seba.jpg
+designation : Project leader
+content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/sebadele/"
+  - icon : fab fa-twitter
+    link : "https://twitter.com/sebadele"
+  - icon : fab fa-github
+    link : "https://github.com/SebaDele"

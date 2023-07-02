@@ -1,0 +1,11 @@
+name : John DiLeo
+image : img/team/johndi.jpg
+designation : Core Team member
+content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/john-dileo/"
+  - icon : fab fa-twitter
+    link : "https://twitter.com/gr4ybeard"
+  - icon : fab fa-github
+    link : "https://github.com/johndileo/"
