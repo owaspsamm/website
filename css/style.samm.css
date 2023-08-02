@@ -330,7 +330,7 @@ div.section {
 .navbar ul.nav > li.active > a,
 .navbar ul.nav > li.open > a {
   text-decoration: none !important;
-  border-top: solid 5px #294d76;
+  border-top: solid 5px #71b8b8;
 }
 @media (max-width: 768px) {
   .navbar ul.nav > li.active > a,
@@ -342,12 +342,12 @@ div.section {
   }
 }
 .navbar.navbar-light ul.nav > li.active > a {
-  border-top: solid 5px #294d76;
+  border-top: solid 5px #71b8b8;
   background: #fff !important;
   color: #555555 !important;
 }
 .navbar.navbar-light ul.nav > li.active > a:hover {
-  border-top: solid 5px #294d76;
+  border-top: solid 5px #71b8b8;
 }
 .navbar.navbar-light ul.nav > li > a:hover,
 .navbar.navbar-light ul.nav > li.open > a:hover,
@@ -3416,7 +3416,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #cccccc;
+  color: #366867;
   text-decoration: underline;
 }
 a:focus {
