@@ -68,8 +68,8 @@ To be considered for presentation at the OWASP SAMM Conference, please submit th
 For submissions, please use {{< external-link "https://forms.gle/2xYo8z4w7VyoxTqf8" "this form">}} no later than September 10. 
 
 #### Important Dates
-Submission deadline: September 10, 2023  
-Notification of acceptance: September 30, 2023  
+Submission deadline: September 25, 2023  
+Notification of acceptance: October 10, 2023  
 SUD date: November 1, 2023  
 
 <strong>Note:</strong> Presenters are responsible for their own travel and accommodation expenses. 
