@@ -1,7 +1,7 @@
 ---
 title: User Day
 layout: main-page
-description: User Day May 27th, 2021
+description: User Day Nov 1, 2023
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
