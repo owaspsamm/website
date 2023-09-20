@@ -10,11 +10,8 @@ keywords = ["team","project"]
 
 SAMM is a community-based project and there have been many contributors throughout its history.
 
-The OWASP SAMM community is powered by security knowledgeable volunteers from businesses and educational organizations. The global community works to create freely-available articles, methodologies, documentation, tools, and technologies. 
+The OWASP SAMM community is powered by security knowledgeable volunteers from businesses and educational organizations. This global collective collaborates to create freely-available articles, methodologies, documentation, tools, and technologies. 
 
-## Contributors
-
-Anyone can contribute to SAMM. If you want to learn more, check out our **[contributing]("/contributing")** page.
 
 ## The OWASP SAMM Core Team
 
@@ -23,7 +20,21 @@ These are the people who are currently part of the Core Team, participating acti
 
 {{< team_members >}}
 
-## Useful links
+## Contributors
 
-* [Contributing to SAMM](/contributing)
+SAMM has also been enriched by a diverse group of contributors who have poured their expertise and passion into shaping the project. To all our contributors, we extend our heartfelt thanks for your dedication and invaluable contributions. Your tireless efforts are truly appreciated and, together, we are making the digital world a safer place.
+
+* Sebastian Arriada
+* Brett Crawley
+* Bruce Jenkins
+* Yan Kravchenko
+* Timo Pagel
+* Hardik Parekh
+* Felipe Zipitria
+
+If you think someone is missing, do let us know!
+
+---
+
+Willing to contribute? If you want to learn more, check out our **[contributing]("/contributing")** page.
 
