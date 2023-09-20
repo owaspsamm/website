@@ -1,0 +1,11 @@
+name : Brian Glas
+image : img/team/brian.jpg
+designation : Core Team member
+content : Professor and security consultant.
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/brianglas/"
+  - icon : fab fa-twitter
+    link : "https://twitter.com/infosecdad"
+  - icon : fab fa-github
+    link : "https://github.com/infosecdad"
