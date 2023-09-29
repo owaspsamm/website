@@ -1,11 +1,9 @@
 name : Daniel Kefer
 image : img/team/daniel.jpg
 designation : Core Team member
-content : Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam, culpa odio.
+content : Head of IT Security at 1&1 Mail & Media Applications SE - WEB.DE
 social :
   - icon : fab fa-linkedin-in
-    link : "#"
-  - icon : fab fa-twitter
-    link : "#"
+    link : "https://www.linkedin.com/in/kefer/"
   - icon : fab fa-github
-    link : "#"
+    link : "https://github.com/dkefer"
