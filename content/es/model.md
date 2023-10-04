@@ -1,10 +1,12 @@
 ---
 title: El Modelo
 description: El modelo
-keywords: ["model","How do I","questions","what if"]
+keywords:
+  - "model"
+  - "How do I"
+  - "questions"
+  - "what if"
 ---
-
-{{< language-dropdown >}}
 
 ## Visión general del modelo SAMM
 
