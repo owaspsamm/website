@@ -1,11 +1,11 @@
 ---
-title: The Model
-description: The model
+title: Le modèle
+description: Le modèle
 keywords:
-  - "model"
-  - "How do I"
+  - "modèle"
+  - "Comment faire"
   - "questions"
-  - "what if"
+  - "Et si"
 ---
 
 ## SAMM model overview
