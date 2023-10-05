@@ -7,15 +7,22 @@ keywords: ["about","what is","questions", "event", "user"]
 
 ## Join Us at SAMM User Day 2023!
 
+{{< responsive-image-link  "/img/pages/sud23.svg" "2023 SAMM User Day November 1 Washington DC" "https://www.eventbrite.com/e/owasp-global-appsec-washington-dc-2023-tickets-519195877847">}}
+
 We are excited to invite you to the SAMM User Day 2023, a dynamic event dedicated to exploring the practical implementation and real-world experiences of OWASP SAMM. This year's event promises to be an enlightening and interactive gathering, where professionals like you can network, learn, and contribute to the software security community.
 
 SAMM User Day 2023 will feature insightful presentations, engaging panel discussions, and ample opportunities to connect with fellow software security enthusiasts. You will gain valuable insights into the latest updates, best practices, and case studies related to SAMM. It's an event you won't want to miss!
 
 We'll be sharing the space with the Global AppSec DC event and have our SAMM User day on Wednesday, Nov 1 at the Marriott Marquis Washington DC.
 
-Read about <strong>[registration](#registration)</strong> and <strong>[call for presentations](#call)</strong>.
+Read about <strong>[registration](#registration)</strong> and the event's <strong>[agenda](#agenda)</strong>.
 
-{{< responsive-image  "/img/pages/sud23_announcement.svg" "2023 SAMM User Day announcement">}}
+
+
+## <a name="agenda"></a>Agenda
+
+{{< user_day_agenda_2023 >}}
+
 
 ## <a name="registration"></a>Registration
 
@@ -30,6 +37,8 @@ Registration for SAMM User Day 2023 is open on {{< external-link "https://www.ev
 We can't wait to see you there: SAMM User Day 2023 will surely be an inspiring and informative event, thanks to the participation of software security experts like you. Join us in shaping the future of software assurance and building secure software development practices.
 
 If you have any questions or require further information, please don't hesitate to contact us at info@owaspsamm.org. And remember to spread the word about SAMM User Day 2023 to your colleagues and peers who might be interested!
+
+<!--- 
 
 <br/><br/>
 
@@ -78,6 +87,7 @@ SUD date: November 1, 2023
 We look forward to your submissions. Should you have any questions, please contact info@owaspsamm.org.
 
 Please share this call for presentations with anyone who might be interested.
+--->
 
 {{< responsive-image  "/img/pages/sponsor_sud.svg" "Sponsor the 2023 SAMM User Day">}}
 
