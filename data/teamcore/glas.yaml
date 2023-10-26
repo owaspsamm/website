@@ -5,7 +5,7 @@ content : Professor and security consultant <br/><br/><br/><br/>
 social :
   - icon : fab fa-linkedin-in
     link : "https://www.linkedin.com/in/brianglas/"
-  - icon : fab fa-twitter
+  - icon : fa-brands fa-x-twitter
     link : "https://twitter.com/infosecdad"
   - icon : fab fa-github
     link : "https://github.com/infosecdad"

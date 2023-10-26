@@ -197,7 +197,7 @@ paginate = 10
     weight = 4
     name = "Twitter"
     url = "https://twitter.com/OwaspSAMM"
-    pre = "<i class='fab fa-2x fa-twitter'></i>"
+    pre = "<i class='fa-brands fa-2x fa-x-twitter'></i>"
 
 [[menu.topbar]]
     weight = 6
