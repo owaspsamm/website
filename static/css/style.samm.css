@@ -1402,19 +1402,6 @@ fieldset[disabled] .btn-template-primary.active {
   margin-left: 10px;
 }
 
-.team-member {
-  background-color: #ffffff;
-  margin-bottom: 10px;
-}
-
-.team-member:hover .mask {
-  cursor: pointer;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: rotateY(0deg) scale(1, 1);
-  transform: rotateY(0deg) scale(1, 1);
-}
-
 .member-photo {
   overflow: hidden;
   position: relative;
@@ -1491,11 +1478,26 @@ fieldset[disabled] .btn-template-primary.active {
   font-size: 12px;
 }
 
+.team-member-container {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
 
 .team-member {
   text-align: center;
-  margin-bottom: 40px;
+  background-color: #ffffff;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
+
+.team-member:hover .mask {
+  cursor: pointer;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: rotateY(0deg) scale(1, 1);
+  transform: rotateY(0deg) scale(1, 1);
+}
+
 .team-member h3 {
   font-size: 18px;
   text-transform: uppercase;

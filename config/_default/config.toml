@@ -72,11 +72,18 @@ paginate = 10
     url  = "/user-day/"
     weight = 52
 
+# [[menu.main]]
+#     name = "Events"
+#     identifier = "events"
+#     parent = "community"
+#     url  = "/events/"
+#     weight = 53
+
 [[menu.main]]
-    name = "Events"
-    identifier = "events"
+    name = "The team"
+    identifier = "team"
     parent = "community"
-    url  = "/events/"
+    url  = "/team/"
     weight = 53
 
 [[menu.main]]
@@ -86,11 +93,11 @@ paginate = 10
     url  = "/sponsors/"
     weight = 54
 
-[[menu.main]]
-    name = "References"
-    parent = "community"
-    url  = "/references/"
-    weight = 55
+# [[menu.main]]
+#     name = "References"
+#     parent = "community"
+#     url  = "/references/"
+#     weight = 55
 
 [[menu.main]]
     name = "Practitioners"
