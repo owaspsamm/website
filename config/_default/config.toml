@@ -339,8 +339,16 @@ paginate = 10
     link_url = "/events"
     link_text = "Check SAMM events"
 
-[params.pdf]
+[params.course]
     enable = true
+    icon = "fa-solid fa-graduation-cap"
+    title = "SAMM Fundamentals Course"
+    subtitle = "A free, self-paced course to get you started with SAMM"
+    link_url = "https://owaspsamm.thinkific.com/courses/samm"
+    link_text = "Visit the SAMM Fundamentals Course page"
+
+[params.pdf]
+    enable = false
     icon = "fa solid fa-file"
     title = "SAMM PDF"
     subtitle = "We have created a PDF version of the SAMM model."
