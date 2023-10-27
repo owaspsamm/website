@@ -41,8 +41,24 @@ paginate = 10
 
 [[menu.main]]
     name = "About SAMM"
-    url  = "/about/"
+    identifier = "aboutsamm"
+    url  = ""
     weight = 1
+
+[[menu.main]]
+    name = "What is SAMM"
+    identifier = "about"
+    parent = "aboutsamm"
+    url  = "/about/"
+    weight = 11
+
+[[menu.main]]
+    name = "The team"
+    identifier = "team"
+    parent = "aboutsamm"
+    url  = "/team/"
+    weight = 12
+
 
 [[menu.main]]
     name = "The model"
@@ -78,13 +94,6 @@ paginate = 10
 #     parent = "community"
 #     url  = "/events/"
 #     weight = 53
-
-[[menu.main]]
-    name = "The team"
-    identifier = "team"
-    parent = "community"
-    url  = "/team/"
-    weight = 53
 
 [[menu.main]]
     name = "Sponsors"
