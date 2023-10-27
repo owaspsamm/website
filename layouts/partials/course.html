@@ -1,0 +1,21 @@
+{{ if isset .Site.Params "course" }}
+{{ if .Site.Params.course.enable }}
+<section class="bar background-image-fixed-3 no-mb color-white text-center">
+    <div class="dark-mask"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="icon icon-lg"><i class="{{ .Site.Params.course.icon }}"></i>
+                </div>
+                <h3 class="text-uppercase">{{ .Site.Params.course.title }}</h3>
+                <p class="lead">{{ .Site.Params.course.subtitle }}</p>
+                <p class="text-center">
+                    <a href="{{ .Site.Params.course.link_url }}" target="_blank" class="btn btn-template-transparent-black btn-lg">{{ .Site.Params.course.link_text }}</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
