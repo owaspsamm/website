@@ -35,6 +35,8 @@ We accept data from SAMM v1.5, SAMM v2.x, and beyond. There is support for parti
 4. The practitioner sends an email with the required metadata and SAMM assessment results to benchmark@owaspsamm.org 
 5. The data becomes part of the benchmark
 
+We have a {{< external-link "https://www.youtube.com/watch?v=zF4k0TXCvGw" "demo video">}} of the process.
+
 ### Metadata
 The following metadata are (*) required or optional when submitting benchmark datasets:
 * \* Contributor Name (submitter name) 
