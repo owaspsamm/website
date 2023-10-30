@@ -38,7 +38,7 @@ In turn, an ISO certified ISMS can facilitate implementing an SDLC with SAMM. Fo
 
 Implementing SAMM, you measure progress and build roadmaps but it will never be the simple stamp of approval you get from an audit. While SAMM offers tools to keep track of your progress along maturity levels, there is no such thing as an “approved SAMM implementation” quality label. SAMM is not meant to be a certification.
 
-That being said, the SAMM team is working on a benchmarking initiative that will allow you to compare your organization’s security posture to your industry peers’. 
+That being said, the SAMM team is working on a benchmark initiative that will allow you to compare your organization’s security posture to your industry peers’. 
 
 
 ### Conclusion

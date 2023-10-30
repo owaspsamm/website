@@ -34,4 +34,4 @@ SAMMwise is part of the official SAMM toolset and allows you to self-host an onl
 
 Based on your assessment, you can now set targets for improvement and use the Toolbox to create and track your own SAMM roadmap.
 
-We encourage you to share your SAMM assessment data with our [Benchmark](/benchmarking/) project. Once we have enough data available, you can start to compare yourself with your peers!
+We encourage you to share your SAMM assessment data with our [Benchmark](/benchmark/) project. Once we have enough data available, you can start to compare yourself with your peers!

@@ -50,7 +50,7 @@ Glad you asked, here is a list of suggestions:
 
 * Share your experience with a SAMM testimonial? We are building a list of testimonials for the website.
 * Encourage your peers to use SAMM and share their experiences as well.
-* Donate SAMM data sets to our [Benchmark initiative](https://owaspsamm.org/benchmarking/). Get in touch with [Brian](mailto:brian.glas@owasp.org).
+* Donate SAMM data sets to our [Benchmark initiative](https://owaspsamm.org/benchmark/). Get in touch with [Brian](mailto:brian.glas@owasp.org).
 * Check out the list of open issues in any of our {{< external-link "https://github.com/owaspsamm" "GitHub repositories">}} and let us know if you can help with any of these
 * Help us translate SAMM to other languages on {{< external-link "https://crowdin.com/project/owasp-samm" "CrowdIn">}}.
 * Sponsor SAMM. Get more information [here](https://owaspsamm.org/sponsors/).

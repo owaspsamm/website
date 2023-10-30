@@ -95,7 +95,7 @@ steps:
         resources:
             resource1:
                 heading: SAMM roadmap chart
-                description: Worksheet (part of the SAMM Benchmarking as a comparative source)
+                description: Worksheet (part of the SAMM Benchmark as a comparative source)
             resource3:
                 heading: 
                 description: Leverage the Roadmap worksheet in the SAMM Toolbox to help calculate maturity score improvements based on future answers
