@@ -88,7 +88,7 @@ When determining your scope, set realistic expectations and targets. This means 
 
 Starting with a single team is an effective strategy when introducing SAMM in your organization. By focusing on one willing team, you can build a solid foundation for future growth. You can build momentum and create a positive environment where relevant stakeholders feel motivated to continue improving. With the foundation in place, you can expand your efforts to other teams or areas, building on the success of the initial team to create a more robust and secure SDLC.
 
-Once you have a full SAMM cycle, consider donating your datasets to the benchmarking initiative. What is a full SAMM cycle, you ask? Follow these scoping guidelines, perform your assessments, carry out the roadmap plan, and have all your teams aligned. Then, you’ll be ready to contribute to a stronger community and better SAMM.
+Once you have a full SAMM cycle, consider donating your datasets to the benchmark initiative. What is a full SAMM cycle, you ask? Follow these scoping guidelines, perform your assessments, carry out the roadmap plan, and have all your teams aligned. Then, you’ll be ready to contribute to a stronger community and better SAMM.
 
 
 

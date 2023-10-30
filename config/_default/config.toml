@@ -157,9 +157,9 @@ paginate = 10
     weight = 42
 
 [[menu.main]]
-    name = "Benchmarking"
+    name = "Benchmark"
     parent = "guidance"
-    url  = "/benchmarking/"
+    url  = "/benchmark/"
     weight = 43
 
 [[menu.main]]
