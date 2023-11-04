@@ -25,31 +25,9 @@ There are 2 ways of submitting data
 * Uploading it to the Benchmark folder  
     Please, refer to {{< external-link "https://www.youtube.com/watch?v=zF4k0TXCvGw" "this video">}} for instructions.
 
-<<<<<<< HEAD
-We have a {{< external-link "https://www.youtube.com/watch?v=zF4k0TXCvGw" "demo video">}} of the process.
-
-### Metadata
-The following metadata are (*) required or optional when submitting benchmark datasets:
-* \* Contributor Name (submitter name) 
-* \* Contributor Contact Email
-* \* Date assessment conducted (MM/YYYY) 
-* \* Type of Assessment (Self or 3rd Party) 
-* \* Scope of Assessment (Org, BU, Product, Team, … )
-* \* Answers to the SAMM Assessment Questions 
-* Geographic Region (Africa, Asia-Pacific, Europe, Latin America, North America, Global)
-* Primary Industry (Multiple, Government, Critical Infrastructure, Defense, Aerospace, Automotive, Manufacturing, Healthcare, Finance, Fintech, IoT, Cloud, ISV, Retail, Other -please expand)
-* Approximate number of developers in org (1-100, 101-1000, 1001-10000, 10000+)
-* Approximate number of developers in scope of assessment (1-100, 101-1000, 1001-10000, 10000+)
-* Approximate number of primary appsec (1-5, 6-10, 11-20, 20+)
-* Approximate number of secondary appsec (0-20, 21-50, 51-100, 100+)
-* Primary SDL Methodology (Waterfall, Agile, DevOps, Other )
-The more information provided, the better the comparative analysis will be.
-<br/>
-=======
 * Sending it by email to benchmark@owaspsamm.org 
 
 The data is collected in an anonymous way. During the submission process we will ask for some metadata. The more information provided, the better the comparative analysis will be.
->>>>>>> 46199cf (Simplifies benchmark page, adds cta)
 <br/>
 <br/> 
 
