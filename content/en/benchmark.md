@@ -16,13 +16,13 @@ As an added benefit, this project can facilitate research on secure development 
 ## Roles
 
 This initiative can only succeed with the help of the community of SAMM users and [practitioners](/practitioners) that surround the OWASP SAMM project. 
-SAMM users and Practitioners help organizations with SAMM assessments and serve as their benchmark data owner. They might be internal to the organization that is submitting data, or external consultants, performing SAMM assessment organizations according to the guidelines you can find in our [Getting started](/getting-started) page, [Determining Scope](/blog/2023/05/24/determining-scope-when-implementing-samm/) blog post, and {{< external-link "https://owaspsamm.thinkific.com/courses/samm" "Fundamentals Course">}}.
+SAMM users and Practitioners help organizations with SAMM assessments and serve as their benchmark data owner. They might be internal to the organization that is submitting data, or external consultants, performing SAMM assessment organizations according to the guidelines you can find in our [Getting started](/guidance/quick-start-guide) page, [Determining Scope](/blog/2023/05/24/determining-scope-when-implementing-samm/) blog post, and {{< external-link "https://owaspsamm.thinkific.com/courses/samm" "Fundamentals Course">}}.
+<br/>
 <br/>
 
-
-### Submission process
+## Submission process
 There are 2 ways of submitting data
-* Uploading it to the Benchmark folder  
+* Uploading it to the {{< external-link "https://bit.ly/sammbenchmarksubmission" "Benchmark folder">}}  
     Please, refer to {{< external-link "https://www.youtube.com/watch?v=zF4k0TXCvGw" "this video">}} for instructions.
 
 * Sending it by email to benchmark@owaspsamm.org 
