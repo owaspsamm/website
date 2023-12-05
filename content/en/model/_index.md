@@ -2,6 +2,9 @@
 title: The Model
 description: The model
 keywords: ["model","How do I","questions","what if"]
+url: model/
+layout: single
+type: page
 ---
 
 ## SAMM model overview
