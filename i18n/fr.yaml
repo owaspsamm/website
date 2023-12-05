@@ -1,0 +1,72 @@
+- id: aboutsamm
+  translation: "A propos de SAMM"
+
+- id: themodel
+  translation: "Le modèle"
+
+- id: resources
+  translation: "Ressources"
+
+- id: guidance
+  translation: "Conseils"
+
+- id: community
+  translation: "Communauté"
+
+- id: model
+  translation: "Modèle"
+
+- id: maturitylevel
+  translation: "Niveau de maturité"
+
+- id: benefit
+  translation: "Avantage"
+
+- id: activity
+  translation: "Activité"
+
+- id: question
+  translation: "Question"
+
+- id: qualitycriteria
+  translation: "Critères de qualité"
+
+- id: answers
+  translation: "Réponses"
+
+- id: "false"
+  translation: "Non"
+
+- id: steamguidance
+  translation: "Conseils pour ce flux"
+
+- id: noguidance
+  translation: "Il n’y a pas encore de conseils pour ce flux. Soyez le premier de la communauté à contribuer !"
+
+- id: contribute
+  translation: "Vous souhaitez contribuer ?"
+
+- id: guidancecompletethis1
+  translation: "Remplissez ce formulaire"
+
+- id: guidancecompletethis2
+  translation: "avec vos conseils sur ce flux"
+
+- id: guidancelearnmore1
+  translation: "Pour en apprendre plus sur les"
+- id: guidancelearnmore2
+  translation: "conseils sur les Flux"
+- id: guidancelearnmore3
+  translation: "pour le modèle SAMM, visitez la page sur les Conseils sur les Flux"
+
+- id: owaspproject
+  translation: "Ceci est un projet de l’OWASP"
+
+- id: owaspcommunity
+  translation: "L’OWASP est une communauté ouverte dont l’objectif est de permettre aux organisations de concevoir, de développer, d’acquérir, d’exploiter et de maintenir des applications de confiance. Tous les outils, documents, forums et chapitres de l’OWASP sont gratuits et ouverts à toutes celles et ceux intéressés par l’amélioration de la sécurité des applications."
+
+- id: owaspsamm
+  translation: "OWASP SAMM est publié sous licence CC BY-SA 4.0 et nous partageons la Politique de Confidentialité"
+
+- id: stream
+  translation: "Flux"
