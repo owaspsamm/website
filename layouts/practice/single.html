@@ -24,7 +24,7 @@
                     <div class="col-md-12 samm-page-content">
 
                         <h3>
-                            <a href="../../">Model</a> | <a href="../../{{ .Params.business_function_url }}">{{ .Params.business_function }}</a> | {{ .Params.title }}
+                            <a href="../../">{{ i18n "model" }}</a> | <a href="../../{{ .Params.business_function_url }}">{{ .Params.business_function }}</a> | {{ .Params.title }}
                         </h3>
 
                         <div>
@@ -34,14 +34,14 @@
                         <table class="table">
                           <thead>
                             <tr>
-                              <th><b>Maturity level</b></th>
+                              <th><b>{{ i18n "maturitylevel" }}</b></th>
                               <th></th>
                               <th>
-                                Stream A</br>
+                                {{ i18n "stream" }} A</br>
                                 <a href="../../../{{ .Params.url }}stream-a">{{ .Params.stream_a }}</a>
                               </th>
                               <th>
-                                  Stream B</br>
+                                {{ i18n "stream" }} B</br>
                                   <a href="../../../{{ .Params.url }}stream-b">{{ .Params.stream_b }}</a>
                                 </th>
                               </tr>

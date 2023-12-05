@@ -11,7 +11,7 @@
 {{ $scratch.Add "streamname" .Params.stream }}
 {{ $scratch.Add "foundstream" "false" }}
 <div>
-    <h2>Stream Guidance</h2>
+    <h2>{{ i18n "steamguidance" }}</h2>
     <!-- find yaml files in the folder -->
     {{ if gt (len .Site.Data.streamguidance) 0 }}
         {{ range .Site.Data.streamguidance }} 
@@ -49,23 +49,23 @@
         <!-- if there isn't a file for this stream -->
         {{ if not (eq ($scratch.Get "foundstream") "true") }}
             <p>
-                There's no guidance for this Stream, yet. Be the first to provide Community guidance!
+                {{ i18n "noguidance" }}
                 <br>
                 <br>
             </p>
         {{ end }}
     {{ end }}
 
-    <h4>Want to contribute?</h4>
+    <h4>{{ i18n "contribute" }}</h4>
     <p>
-        Complete this <a href="https://forms.gle/bJUCAUYnK5BNhgWa9" target="_blank">Google Form</a>  
-        <i class="link-icon fas fa-external-link-alt"></i> with guidance for this Stream.  
+        {{ i18n "guidancecompletethis1" }} <a href="https://forms.gle/bJUCAUYnK5BNhgWa9" target="_blank">Google Form</a>  
+        <i class="link-icon fas fa-external-link-alt"></i> {{ i18n "guidancecompletethis2" }}.  
     </p>
     <br>
     <br>
 
     <blockquote>
-        <p>To learn more about Stream guidance for the SAMM model, see the <strong><a href="/stream-guidance">Stream guidance</a></strong> page.</p>
+        <p>{{ i18n "guidancelearnmore1" }} <strong><a href="/stream-guidance">{{ i18n "guidancelearnmore2" }}</a></strong> {{ i18n "guidancelearnmore3" }}.</p>
     </blockquote>
 </div>
 
