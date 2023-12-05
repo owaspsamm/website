@@ -26,7 +26,7 @@ paginate = 10
   path = "github.com/devcows/hugo-universal-theme"
 
 [[module.imports]]
-  # content
+  # core model content
   path = "github.com/owaspsamm/core"
   disabled = false
 
@@ -34,6 +34,16 @@ paginate = 10
   source = "business-function"
   target = "content/business-function"
   lang = "en"
+
+[[module.imports]]
+  # fr model content
+  path = "github.com/itscooper/owaspsamm-i18n-FR"
+  disabled = false
+
+  [[module.imports.mounts]]
+  source = "fr"
+  target = "content/fr/model"
+  lang = "fr"
 
 [menu]
 
@@ -392,10 +402,14 @@ defaultContentLanguage = "en"
     languageName = "English"
     weight = 1
     contentDir = "content/en"
-  [languages.es]
-    languageName = "Español"
+  [languages.fr]
+    languageName = "Français"
     weight = 2
-    contentDir = "content/es"
+    contentDir = "content/fr"
+#  [languages.es]
+#    languageName = "Español"
+#    weight = 3
+#    contentDir = "content/es"
 
 
 
