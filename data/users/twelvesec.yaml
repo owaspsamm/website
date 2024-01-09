@@ -1,0 +1,7 @@
+company: "TwelveSec"
+country: "Europe"
+industry: "Technology"
+image: ""
+description: ""
+testimonial: "AMM is the default framework we use in order to strengthen the Secure SDLC process of our customers in a systematic and measurable fashion. It is the best available option to embed security controls in an existing SDLC process regardless of the followed methodology (RUP, Scrum etc.), the volume of the project, the size and the risk profile of the target organisation. Moreover, it can smoothly integrate with other resources provided by OWASP, like ASVS, Secure Coding Standard, Top 10 proactive controls, SKF, Testing Guide etc. delivering a holistic approach to realize the Secure-by-Default concept."
+enabled: true
