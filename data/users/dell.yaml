@@ -1,0 +1,7 @@
+company: "Dell"
+country: "US"
+industry: "Technology"
+image: ""
+description: ""
+testimonial: "Dell uses OWASP SAMM to help focus our resources and determine which components of our secure application development program to prioritize."
+enabled: true

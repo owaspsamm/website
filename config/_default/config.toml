@@ -109,6 +109,12 @@ paginate = 10
 #     weight = 55
 
 [[menu.main]]
+    name = "Users"
+    parent = "community"
+    url  = "/samm-users/"
+    weight = 55
+
+[[menu.main]]
     name = "Practitioners"
     parent = "community"
     url  = "/practitioners/"
