@@ -1,5 +1,8 @@
+{{ $supportertier := .Get 0 }}
+
 <div class="sponsors-flex-container">
   {{ range .Site.Data.clients }}
+    {{ if eq .tier $supportertier }}
       {{ if .url }}
         <a href="{{ .url }}" target="_blank">
           <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
@@ -7,5 +10,8 @@
       {{ else }}
         <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
       {{ end }}
+    {{ else }}
+        <p>{{ .name }} is {{ .tier }} but I need {{ $supportertier }} </p>
+    {{ end }}
   {{ end }}
 </div>
