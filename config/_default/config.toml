@@ -369,10 +369,10 @@ paginate = 10
     link_url = "https://owaspsamm.us9.list-manage.com/subscribe?u=b83ce65c91239cb5e623ea83e&id=cbd0520923"
     link_text = "Subscribe to our newsletter"
 
-[params.clients]
+[params.sponsors]
     enable = true
-    # All clients are defined in their own files. You can find example items
-    # at 'exampleSite/data/clients'.
+    # All sponsors are defined in their own files. You can find example items
+    # at 'exampleSite/data/sponsors'.
     # For more informtion take a look at the README.
     title = "Our Sponsors"
     subtitle = "Software powers the world, but insecure software threatens safety, trust, and economic growth."

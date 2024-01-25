@@ -15,5 +15,5 @@ For details on how to sponsor SAMM and the benefits of the different levels, see
 
 ## Silver
 
-{{< sponsors "silver" >}}
+{{< sponsors "Silver" >}}
 

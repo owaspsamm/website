@@ -64,11 +64,11 @@ A significant donation in time or money, equivalent to $5,000 or more.
 
 ### Bronze
 
-A significant donation in time or money, equivalent to $5,000 or more.
+A significant donation in time or money, equivalent to $1,000 or more.
 
 #### Benefits
 * Logo and link on the [Supporters](../supporters) page (Bronze section)
-* Mentioned as Silver Sponsor on the [Practitioners](../practitioners) page
+* Mentioned as Bronze Sponsor on the [Practitioners](../practitioners) page
 
 ### Community
 
@@ -76,3 +76,18 @@ Any contributions less than $1,000.
 
 #### Benefits
 * Link on the [Supporters](../supporters) page (Community section)
+
+<br/>
+
+## Caveats 
+
+Any work undertaken as part of sponsorship will need to be compatible with the SAMM Roadmap.  
+All benefits are under continual review and are subject to change without notice.
+
+## Historic Donations
+
+Supporters will move down one level each full calendar year after the last donation. Supporters will not be removed from the Community section.
+
+---
+
+Note that companies whose actions are considered to be damaging to the SAMM project may be demoted or even be removed from the Supporters page, at the discretion of the SAMM Core Team.

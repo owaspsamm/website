@@ -1,17 +1,33 @@
 {{ $supportertier := .Get 0 }}
+<!-- where clause isn't working - fix this later -->
+{{ $supporters := where .Site.Data.sponsors "tier" $supportertier }}
+
 
 <div class="sponsors-flex-container">
-  {{ range .Site.Data.clients }}
+
+  {{ range .Site.Data.sponsors }}
+
     {{ if eq .tier $supportertier }}
-      {{ if .url }}
-        <a href="{{ .url }}" target="_blank">
+       
+      {{ if ne $supportertier "Bronze" }}
+        {{ if .url }}
+          <a href="{{ .url }}" target="_blank">
+            <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
+          </a>
+        {{ else }}
           <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
-        </a>
+        {{ end }}
+
       {{ else }}
-        <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
+
+        {{ if .url }}
+          <h4><a href="{{ .url }}" target="_blank">{{ .name }}</a></h4>
+        {{ else }}
+          <p>{{ .name }}</p>
+        {{ end }}
       {{ end }}
-    {{ else }}
-        <p>{{ .name }} is {{ .tier }} but I need {{ $supportertier }} </p>
+
     {{ end }}
+
   {{ end }}
 </div>
