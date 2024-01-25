@@ -1,0 +1,101 @@
+{{ if isset .Site.Params "sponsors" }}
+{{ if .Site.Params.sponsors.enable }}
+{{ if gt (len .Site.Data.sponsors) 0 }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.sponsors.title }}</h2>
+                </div>
+
+                <p class="lead text-center">
+                  {{ .Site.Params.sponsors.subtitle }}
+                  {{ if .Site.Params.sponsors.subtitle2 }}
+                  </br>
+                    {{ .Site.Params.sponsors.subtitle2 }}
+                  {{ end }}
+                </p>
+
+                {{ $platinum := where .Site.Data.sponsors "tier" "Platinum"}}
+                {{ if $platinum }}
+                {{ if gt (len $platinum) 0 }}
+                  <h3 class="text-center">PLATINUM SPONSORS</h3>
+                  <div class="flex-container">
+                      {{ range $platinum }}
+                          {{ if .url }}
+                            <a href="{{ .url }}" target="_blank">
+                              <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                            </a>
+                          {{ else }}
+                            <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                          {{ end }}
+                      {{ end }}
+                  </div>
+                {{ end }}
+                {{ end }}
+
+                {{ $gold := where .Site.Data.sponsors "tier" "Gold"}}
+                {{ if $gold }}
+                {{ if gt (len $gold) 0 }}
+                <h3 class="text-center">GOLD SPONSORS</h3>
+                <div class="flex-container">
+                    {{ range $gold }}
+                        {{ if .url }}
+                          <a href="{{ .url }}" target="_blank">
+                            <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                          </a>
+                        {{ else }}
+                          <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                        {{ end }}
+                    {{ end }}
+                </div>
+                {{ end }}
+                {{ end }}
+                
+                <!-- where clause isn't working - fix this later -->
+                {{ $silver := where .Site.Data.sponsors "tier" "Silver"}}
+                {{ if $silver }}
+                  {{ if gt (len $silver) 0 }}
+                  <h3 class="text-center">SILVER SPONSORS</h3>
+                  <div class="flex-container">
+                      {{ range $silver }}
+                          {{ if .url }}
+                            <a href="{{ .url }}" target="_blank">
+                              <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                            </a>
+                          {{ else }}
+                            <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                          {{ end }}
+                      {{ end }}
+                  </div>
+                  {{ end }}
+                {{ else }}
+                  <h3 class="text-center">SILVER SPONSORS</h3>
+                  <div class="flex-container">
+                    {{ range .Site.Data.sponsors }}
+                      {{ if eq .tier "Silver" }}
+                          {{ if .url }}
+                            <a href="{{ .url }}" target="_blank">
+                              <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                            </a>
+                          {{ else }}
+                            <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
+                          {{ end }}
+                        {{ end }}
+                      {{ end }}
+                  </div>
+                {{ end }}
+                
+
+                <p class="text-center">
+                  <a href="{{ .Site.Params.sponsors.link_url }}" class="btn btn-template-transparent-main btn-lg">{{ .Site.Params.sponsors.link_text }}</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
