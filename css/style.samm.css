@@ -4228,6 +4228,11 @@ a.list-group-item.active > .badge,
   padding: 20px;
   display: inline-block;
 }
+@media (max-width: 767px) {
+  .practitioners-list-item {
+    width: 80%;
+  }
+}
 
 .event-list {
   padding-top: 30px;
