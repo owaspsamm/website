@@ -18,7 +18,7 @@ SAMM is open source and completely free of charge. It is maintained by a small t
 
 Donating to SAMM will allow us to continue to refine and evolve SAMM, ensuring its ongoing improvement.
 
-Show your support of the SAMM project and gain brand recogni.tion within a global community committed to enhancing software security
+Show your support of the SAMM project and gain brand recognition within a global community committed to enhancing software security
 
 <br/>
 
