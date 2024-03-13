@@ -1,7 +1,7 @@
 ---
 title: User Day
 layout: main-page
-description: User Day Nov 1, 2023
+description: User Day June 24, 2024
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
@@ -28,17 +28,17 @@ We welcome presentation proposals covering a wide range of topics related to OWA
 
 ### Submission Guidelines
 
-To be considered for presentation at the OWASP SAMM Conference, please submit the following information:
+To be considered for presentation at the OWASP SAMM Conference, please Please, fill in <b>{{< external-link "https://docs.google.com/forms/d/e/1FAIpQLSfmegsLZVJ_ez6ewSGDyTlL6rAvcY93TxYSM9LrV1D-L7q1SA/viewform?usp=sharing" "this Google Form">}}</b>, where we'll ask for the following information:
 * Title of the presentation
 * Presenter's name, title, and organization
-* A brief abstract (maximum 300 words) summarizing the presentation
+* A brief abstractsummarizing the presentation
 * Presentation format preference (e.g., talk, panel discussion, demo)
 * Estimated duration of the presentation (typically 30-45 minutes)
 * Presenter's bio, highlighting relevant experience and expertise
 
 <br/>
 
-Please, email your Submissions to <b>[info@owaspsamm.org](mailto:info@owaspsamm.org)</b> with the subject "OWASP SAMM User Day Presentation Submission." Should you have any questions, please <b>[contact us](mailto:info@owaspsamm.org)</b>. And don't forget to share this call for presentations with anyone who might be interested.
+Should you have any questions, please <b>[contact us](mailto:info@owaspsamm.org)</b>. And don't forget to share this call for presentations with anyone who might be interested.
 
 Note: Presenters are responsible for their own travel and accommodation expenses. 
 
