@@ -22,4 +22,4 @@ Después de un período de intensas discusiones y con aportes de los profesional
 
 Para obtener una descripción general de los cambios de la versión 2, lea nuestras [notas de la versión 2 de SAMM](/release-notes-v2).
 
-Generamos una {{< external-link "https://drive.google.com/file/d/1ZWMk4dpS3zpXjE28wi4cf5Lq6TUjeA5x/view?usp=sharing" "versión PDF">}} básica del modelo. Seguiremos trabajando en él para tener una versión final lo antes posible.
+También hemos creado una {{< external-link "https://drive.google.com/file/d/1ZWMk4dpS3zpXjE28wi4cf5Lq6TUjeA5x/view?usp=sharing" "versión PDF">}} básica del modelo.
