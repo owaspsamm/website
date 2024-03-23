@@ -11,7 +11,7 @@ Link icons {{< icon "fas fa-link">}} indicate links to pages on our website wher
 
 {{< responsive-image-medium "/img/pages/undraw_a_day_off_w9ex.png" "contribute">}}
 
-* **<a href="#Testimonials">Testimonials</a>**  
+* **<a href="#UsersPractitioners">Users and practitioners</a>**  
 
 * **[Benchmark](/benchmark)</a>**  {{< icon "fas fa-link">}}  
     How am I doing? What works for similar organizations? Donate SAMM data sets!  
@@ -29,12 +29,13 @@ Link icons {{< icon "fas fa-link">}} indicate links to pages on our website wher
 
 
 
-<a name="Testimonials"></a>
+<a name="UsersPractitioners"></a>
 
-### Testimonials
+### Users and practitioners
 
-We want the website to be an interactive place where the community can share their ideas and experiences.  
-[Contact us](/contact) so we can all get an idea of who is using SAMM and how that’s working for them.
+We have created a [Users](/samm-users) page to share organizations that have adopted SAMM and a [Practitioners](/practitioners) page to list companies providing SAMM services.
+
+[Contact us](/contact) if you want to be listed so we can all get an idea of who is using SAMM and how that’s working for them.
 
 <a name="GitHub"></a>
 
@@ -44,19 +45,19 @@ All of SAMM’s content is on {{< external-link "https://github.com/owaspsamm/" 
 
 
 We use 
-- YAML files for the data that makes up the model
-- Hugo for the website
+- YAML files for the data that makes up the model - {{< external-link "https://github.com/owaspsamm/core" "core repository">}}
+- Hugo for the website - {{< external-link "https://github.com/owaspsamm/website" "website repository">}}
 
 {{< responsive-image-link-medium "/img/pages/Octocat.png" "SAMM on GitHub" "https://github.com/owaspsamm/" >}}
 
 #### Familiar with GitHub?
 To make changes to either, follow these steps:
 
-1. Create a branch from our repository
+1. Create a branch from one of our repositories
 2. Make changes and push the branch to GitHub
 3. Create a pull request and add someone in the SAMM core team as a reviewer
 
-Once the changes are approved, someone from the team will merge that branch to the master branch.
+Once the changes are approved, someone from the team will merge that branch to the main branch of the corresponding repository.
 
 #### Not familiar with GitHub?
 GitHub is a company that provides hosting for software development version control using Git.  
