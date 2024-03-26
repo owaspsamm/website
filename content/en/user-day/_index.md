@@ -1,13 +1,13 @@
 ---
 title: User Day
 layout: main-page
-description: User Day June 24, 2024
+description: User Day June 26, 2024
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
 ## 2024 SAMM User Day!
 
-The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of <b>[Global AppSec Lisbon](https://lisbon.globalappsec.org/)</b>, on June 24.
+The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of <b>[Global AppSec Lisbon](https://lisbon.globalappsec.org/)</b>, on Wednesday, June 26th.
 
 The User Day focuses on advancing software security and promoting the use of OWASP SAMM. We invite industry professionals, researchers, and enthusiasts to submit their presentation proposals for this exciting event.
 
