@@ -1,7 +1,7 @@
 ---
 type: user-day
 title: User day
-name: "Practical Advice for Application Risk Profiles"
+name: "Influencing Boardroom Strategy: OWASP SAMM as a communication tool"
 speaker: Dag Flachet
 image: /img/people/Dag_Flachet.jpg
 affiliation: Codific
