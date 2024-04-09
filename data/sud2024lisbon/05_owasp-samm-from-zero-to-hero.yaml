@@ -1,8 +1,8 @@
-weight: 6
+weight: 5
 url: "owasp-samm-from-zero-to-hero"
 name: "OWASP SAMM: From zero to hero"
 type: "Presentation"
 presenter: "Nariman AGA-TAGIYEV"
-time: "11.45"
+time: "11.00"
 downloadUrl: "/presentations/SUD2023/SAMMBenchmarkingUpdate-Nov2023.pdf"
 
