@@ -287,6 +287,8 @@ paginate = 10
 
     logo = "/img/logo.png"
     logo_small = "/img/logo-small.png"
+    images = ["/img/site-feature-image.png"]
+
     # address = """<p><strong>Universal Ltd.</strong>
     #     <br>13/25 New Avenue
     #     <br>Newtown upon River

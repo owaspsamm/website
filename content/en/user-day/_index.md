@@ -2,6 +2,8 @@
 title: User Day
 layout: main-page
 description: User Day June 26, 2024
+images:
+    - /img/sud/sud-feature-image.png
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
