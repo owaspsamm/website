@@ -10,7 +10,7 @@ weight = 1
 
 ## Links to info and tools
 
-If you want to learn more about SAMM assessments, we have a dedicated [assessment](/assessment) page for that. If you're just looking for the links to our spreadsheets or online assessment, here they are.
+If you want to learn more about SAMM assessments, we have a couple of dedicated pages for that. First, there's the [assessment](/assessment) page. We also have an [assessment guide](/assessment-guide), with lots of practical advice, best practices, and an {{< external-link " https://docs.google.com/document/d/1rUsktgsGna65KJPCT91UiOxFRvKdFs0TJxCWN0aa5u4/edit?usp=sharing" "example set of questions">}} for an interview-style assessment. If you're just looking for the links to our spreadsheets or online assessment, here they are.
 
 ### Spreadsheets
 
@@ -18,6 +18,7 @@ We have 2 versions of the SAMM Toolbox, a {{< external-link "https://github.com/
 
 ### Online assessment
 
-SAMMwise is part of the official SAMM toolset and allows you to self-host an online assessment tool. You can find its GitHub repository and documentation {{< external-link "https://github.com/owaspsamm/sammwise" "here">}}.
+SAMMwise allows you to self-host an online assessment tool. You can find its GitHub repository and documentation {{< external-link "https://github.com/owaspsamm/sammwise" "here">}}.
 
-{{< external-link "https://sammy.codific.com/" "SAMMY">}} is a third-party tool by Codific, one of our sponsors, that allows you to do online SAMM assessments, too! 
+{{< external-link "https://sammy.codific.com/" "SAMMY">}} is a third-party tool by Codific, one of our sponsors, that allows you to do online SAMM assessments, too!
+
