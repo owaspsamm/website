@@ -60,13 +60,28 @@ steps:
                     Based on the outcome of the previous activity, determine for each security practice the maturity level according to the SAMM maturity scoring system. Activities are scored by a multiple choice system and are averaged out for the security practice area, then added together to determine the overall score.
         resources:
             resource1:
-                heading: SAMM toolbox
+                heading: SAMM tools
+                type: link
+                description: https://owaspsamm.org/resources/assessment-tools
+            resource2:
+                heading: SAMM assessment page
                 description: |
                     https://owaspsamm.org/assessment/  
                     This resource will provide you with  
                     - Assessment questions
                     - Maturity level calculation
-            resource2:
+            resource3:
+                heading: SAMM assessment guide
+                description: |
+                    https://owaspsamm.org/assessment-guide/  
+                    This resource will provide you with  
+                    - Guidelines for performing assessments
+                    - Best practices
+            resource4:
+                heading: SAMM interview questions example
+                type: link
+                description: https://docs.google.com/document/d/1rUsktgsGna65KJPCT91UiOxFRvKdFs0TJxCWN0aa5u4/edit?usp=sharing
+            resource5:
                 heading: OWASP Maturity Models
                 type: link
                 description: https://github.com/owasp/Maturity-Models
