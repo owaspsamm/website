@@ -6,7 +6,7 @@ keywords = ["team","project"]
 
 ## Who is behind SAMM?
 
-{{< responsive-image  "/img/team/coreteam.jpg" "SAMM Core Team">}}
+{{< responsive-image  "/img/team/sammteam.jpg" "SAMM Core Team">}}
 
 SAMM is a community-based project and there have been many contributors throughout its history.
 
@@ -30,6 +30,7 @@ SAMM has also been enriched by a diverse group of contributors who have poured t
 * Yan Kravchenko
 * Timo Pagel
 * Hardik Parekh
+* Rob van der Veer
 * Felipe Zipitria
 
 If you think someone is missing, do let us know!
