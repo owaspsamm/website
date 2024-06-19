@@ -6,8 +6,9 @@ images:
     - /img/sud/sud-feature-image.png
 keywords: ["about","what is","questions", "event", "user"]
 ---
+# 2024 - June in Lisbon, September in San Francisco
 
-## June 2024, Lisbon
+## June 26th, Lisbon
 
 The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of {{< external-link "https://lisbon.globalappsec.org/" "Global AppSec Lisbon">}}, on Wednesday, June 26th.
 
@@ -17,6 +18,18 @@ We invite you to explore our agenda, featuring talks and discussions led by indu
 ### Agenda
 
 {{< user_day_agenda_2024_lisbon >}}
+
+## September 25th, San Francisco
+
+We have a second SAMM User Day this year, in the context of {{< external-link "https://sf.globalappsec.org/" "Global AppSec San Francisco">}}, on Wednesday, September 25th.
+
+Please, consider delivering a talk or workshop. The <b>{{< external-link "https://docs.google.com/forms/d/e/1FAIpQLSeFMEjWLyiZXtN80mV-CscON-sW0lelhegBxwjauj_anurj9g/viewform" "call for presentations">}}</b> is open.
+
+<br/>
+{{< external-link "https://www.eventbrite.com/e/owasp-global-appsec-san-francisco-2024-tickets-723699172707?aff=oddtdtcreator" "Register here">}}
+<br/>
+<br/>
+
 
 ## Archive
 
