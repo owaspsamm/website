@@ -51,8 +51,8 @@ jobs:
           message: 'New SAMM release: ${{ github.event.client_payload.release }}'
   deploy:
     runs-on: ubuntu-latest
-      needs: updateHugoMod
-      if: ${{ always() && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
+    needs: updateHugoMod
+    if: ${{ always() && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
       - uses: actions/checkout@v3
         with:
