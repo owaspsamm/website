@@ -17,7 +17,7 @@ jobs:
         uses: booxmedialtd/ws-action-parse-semver@v1
         with:
           input_string: ${{ github.event.client_payload.release }}
-          version_extractor_regex: '\/v(.*)$'
+          version_extractor_regex: 'v(.*)$'
       - name: Check release semver sanity
         env:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
@@ -44,7 +44,6 @@ jobs:
           cat go.mod 
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
-        if: false
         uses: EndBug/add-and-commit@v9
         with:
           add: '["go.mod", "go.sum"]'
@@ -52,6 +51,8 @@ jobs:
           message: 'New SAMM release: ${{ github.event.client_payload.release }}'
   deploy:
     runs-on: ubuntu-latest
+      needs: updateHugoMod
+      if: ${{ always() && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
       - uses: actions/checkout@v3
         with:
