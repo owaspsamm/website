@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "SAMM Benchmark Top Ten: lessons learned"
 speaker: Aram Hovsepyan
-image: /img/people/Daniel_Hood.jpg
+image: /img/team/aram.jpg
 affiliation: Codific
 role: CEO
 abstract: |
