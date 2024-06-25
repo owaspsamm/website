@@ -4,3 +4,5 @@ github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a h1:RNba5qaMQd/o6b+y
 github.com/owaspsamm/core v0.0.0-20210520122448-8de72e41633a/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/core v0.0.0-20221119125116-2fab0af5b0c9 h1:fb4At+QMYFvqABEgWlSKc3RaS4DJWU9AvgMQiqCMr24=
 github.com/owaspsamm/core v0.0.0-20221119125116-2fab0af5b0c9/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
+github.com/owaspsamm/core v0.0.0-20240625105433-476091691f9d h1:1qcRS9Cw3kEz7RHIbhiDB2TZoUM/30C8x2fsFYGYQzQ=
+github.com/owaspsamm/core v0.0.0-20240625105433-476091691f9d/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
