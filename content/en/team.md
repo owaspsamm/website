@@ -37,5 +37,5 @@ If you think someone is missing, do let us know!
 
 ---
 
-Willing to contribute? If you want to learn more, check out our **[contributing]("/contributing")** page.
+Willing to contribute? If you want to learn more, check out our **[contributing](/contributing)** page.
 
