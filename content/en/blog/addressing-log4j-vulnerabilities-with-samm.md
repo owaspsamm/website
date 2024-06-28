@@ -27,9 +27,9 @@ The implementation of [this security practice](/model/governance/strategy-and-me
 
 Similarly to having an appsec strategy, [training and awareness](/model/governance/education-and-guidance/) in your team provide a baseline and brings more people into the fold. This means more eyes on the lookout and more readiness to take action when needed. Have you considered having a specific info campaign on the topic?
 
-### Design | Security Architecture
+### Design | Secure Architecture
 
-In [Maturity Level 2 of Stream A, Architecture Design](/model/design/security-architecture/stream-a/), you identify shared infrastructure or services with security functionality. For this issue, WAFs are particularly relevant. If you don’t have the means to fix the problem in legacy applications, for example, a workaround can involve blocking traffic based on pattern matching for specific Log4Shell attack patterns towards your software.
+In [Maturity Level 2 of Stream A, Architecture Design](/model/design/secure-architecture/stream-a/), you identify shared infrastructure or services with security functionality. For this issue, WAFs are particularly relevant. If you don’t have the means to fix the problem in legacy applications, for example, a workaround can involve blocking traffic based on pattern matching for specific Log4Shell attack patterns towards your software.
 An application firewall rule can help you detect and might even block an attack, providing an extra layer of defense. A practical example is using the OWASP Core Rule Set, see the latest Log4j rules [here](https://coreruleset.org/20211213/crs-and-log4j-log4shell-cve-2021-44228/).
  
 ### Design | Security Requirements
