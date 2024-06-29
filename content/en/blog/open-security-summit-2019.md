@@ -43,5 +43,5 @@ We are planning a SAMM summit for autumn, when we plan to have SAMM v2 ready for
 
 We would also like to thank our outstanding sponsors for their support of OWASP SAMM, and if you want to learn more about OSS2019 you can visit the website.
 
- [Hugo configuration documentation](/overview/configuration/) for details.
+
 
