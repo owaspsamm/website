@@ -235,7 +235,7 @@ div.section {
 }
 @media (min-width: 1300px) {
   body.boxed {
-    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/subtle_zebra_3d.png);
+    background: url('../img/samm-background.jpg');
   }
   body.boxed #all {
     position: relative;
