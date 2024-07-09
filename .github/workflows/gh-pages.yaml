@@ -11,6 +11,9 @@ jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
     if: github.event_name == 'repository_dispatch'
+    outputs:
+      goMod: ${{ steps.modFiles.outputs.goMod }}
+      goSum: ${{ steps.modFiles.outputs.goSum }}
     steps:
       - name: Parse semver string
         id: semver_parser
@@ -42,6 +45,15 @@ jobs:
           echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
           hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
           cat go.mod 
+      - name: Passing hugo mod files
+        id: modFiles
+        run: |
+            {
+              echo 'goMod<<EOF'
+              cat go.mod
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
+            echo "goSum=$(cat go.sum)" >> "$GITHUB_OUTPUT"
       # Do not commit files until we can verify the previous steps are working
       - name: Commit updated files to git
         uses: EndBug/add-and-commit@v9
@@ -58,6 +70,11 @@ jobs:
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+      - name: Get hugo mod files
+        if: ${{ needs.updateHugoMod.result == 'success' }}
+        run: |
+          echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
+          echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
       - uses: actions/cache@v3
         with:
           path: /tmp/hugo_cache
