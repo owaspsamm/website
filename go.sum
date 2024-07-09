@@ -6,3 +6,7 @@ github.com/owaspsamm/core v0.0.0-20221119125116-2fab0af5b0c9 h1:fb4At+QMYFvqABEg
 github.com/owaspsamm/core v0.0.0-20221119125116-2fab0af5b0c9/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/core v0.0.0-20240625105433-476091691f9d h1:1qcRS9Cw3kEz7RHIbhiDB2TZoUM/30C8x2fsFYGYQzQ=
 github.com/owaspsamm/core v0.0.0-20240625105433-476091691f9d/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
+github.com/owaspsamm/core v0.0.0-20240627115909-acbabc0b3f59 h1:3MxGtjUak8lFtqMGrcEyR/XwlT96kjGiEciMarEgIYs=
+github.com/owaspsamm/core v0.0.0-20240627115909-acbabc0b3f59/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
+github.com/owaspsamm/core v0.0.0-20240709120936-edf092cb16df h1:EoETGUaubNdSlBtB7BbTBh/O5g6dLVJghdQXpJYgA0o=
+github.com/owaspsamm/core v0.0.0-20240709120936-edf092cb16df/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
