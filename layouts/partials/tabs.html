@@ -1,12 +1,23 @@
+{{ $maturitylevels := .Params.maturity_levels }}
+
 <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openMaturityLevel(event, '1')" id="maturity1">Maturity level 1</button>
-    <button class="tablinks" onclick="openMaturityLevel(event, '2')" id="maturity2">Maturity level 2</button>
-    <button class="tablinks" onclick="openMaturityLevel(event, '3')" id="maturity3">Maturity level 3</button>
+  {{ $counter := 1 }}
+  {{ $zeroIndex := 0 }}
+  {{ $aliases := .Aliases }}
+  {{ range $maturitylevels }}
+      {{ $alias := index $aliases $zeroIndex }}
+      <button class="tablinks"
+      onclick="openMaturityLevel(event, '{{ $counter }}')"
+      id="maturity{{ $counter }}"
+      maturity-url-alias="{{ lower $alias }}">
+        Maturity level {{ $counter }}
+    </button>
+      {{ $counter = add $counter 1 }}
+      {{ $zeroIndex = add $zeroIndex 1 }}
+  {{ end }}
 </div>
-  
     <!-- Tab content -->
-    {{ $maturitylevels := .Params.maturity_levels }}
   {{ range $maturitylevels }}
     <div id="{{ .level }}" class="tabcontent">
         <h2>{{ .title }}</h2>

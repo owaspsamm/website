@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html{{ with site.LanguageCode | default site.Language.Lang }} lang="{{ . }}"{{ end }}>
+  <head>
+    <title>{{ .Permalink }}</title>
+    <link rel="canonical" href="{{ .Permalink }}">
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <script>
+      let pathSegments = window.location.href.split('/');
+      let lastSegment = pathSegments[pathSegments.length - 1].toLowerCase();
+      let newUrl = "{{ .Permalink }}" + lastSegment;
+      let pageType = "{{ with .Page }}{{ .Type }}{{ end }}";
+      if (pageType === "stream") {
+          window.location.href = newUrl;
+      } else {
+          window.location.href = "{{ .Permalink }}";
+      }
+    </script>
+  </head>
+</html>
