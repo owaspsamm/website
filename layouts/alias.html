@@ -7,8 +7,11 @@
     <meta charset="utf-8">
     <script>
       let pathSegments = window.location.href.split('/');
-      let lastSegment = pathSegments[pathSegments.length - 1].toLowerCase();
-      let newUrl = "{{ .Permalink }}" + lastSegment;
+      let lastSegment = pathSegments[pathSegments.length - 1]?.toLowerCase() ?? "";
+      if (lastSegment === "") {
+        lastSegment = pathSegments[pathSegments.length - 2]?.toLowerCase() ?? "";
+      }
+      let newUrl = "{{ .Permalink }}" + "#" + lastSegment;
       let pageType = "{{ with .Page }}{{ .Type }}{{ end }}";
       if (pageType === "stream") {
           window.location.href = newUrl;
