@@ -33,7 +33,7 @@ split_url = url_string.split('#');
 maturity_param = split_url[1];
 
 // If there's a parameter in the URL, open that maturity level
-let maturityElementByUrlAlias = getMaturityLevelByUrlAlias(url_string);
+let maturityElementByUrlAlias = getMaturityLevelByUrlAlias(maturity_param);
 if (maturityElementByUrlAlias !== null) {
   element = maturityElementByUrlAlias;
 } else if (maturity_param == 'maturity2' || maturity_param == 'maturity3') {
@@ -46,9 +46,6 @@ if(typeof(element) != 'undefined' && element != null){
     element.click();
 }
 
-function getMaturityLevelByUrlAlias(url) {
-  const pathSegments = url.split('/');
-
-  const lastSegment = pathSegments[pathSegments.length - 1];
-  return document.querySelector(`[maturity-url-alias$="${lastSegment}"]`);
+function getMaturityLevelByUrlAlias(maturity_param) {
+  return document.querySelector(`[maturity-url-alias$="${maturity_param}"]`);
 }
