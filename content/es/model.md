@@ -2,7 +2,7 @@
 title: El Modelo
 description: El modelo
 keywords:
-  - "model"
+  - "maqueta"
   - "How do I"
   - "questions"
   - "what if"
