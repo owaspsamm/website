@@ -16,3 +16,5 @@ github.com/owaspsamm/core v0.0.0-20240716090135-1ce0bce2a264 h1:LIn1Po1vukmzBTYR
 github.com/owaspsamm/core v0.0.0-20240716090135-1ce0bce2a264/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/core v0.0.0-20240717064536-dfc925b86f3e h1:xtTCm4Nl4G6foAGHdXRt20t8vdhyCrQrxPS+fwu+gSE=
 github.com/owaspsamm/core v0.0.0-20240717064536-dfc925b86f3e/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
+github.com/owaspsamm/core v0.0.0-20240731113928-6a6ebc86b457 h1:upZvZS4xKu8BiMWg4uFaex7Px3nrVNgii9x0iLlBEEI=
+github.com/owaspsamm/core v0.0.0-20240731113928-6a6ebc86b457/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
