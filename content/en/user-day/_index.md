@@ -6,18 +6,9 @@ images:
     - /img/sud/sud-feature-image.png
 keywords: ["about","what is","questions", "event", "user"]
 ---
-# 2024 - June in Lisbon, September in San Francisco
+# We have 2 SAMM User Days in 2024
+<br/>
 
-## June 26th, Lisbon
-
-The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of {{< external-link "https://lisbon.globalappsec.org/" "Global AppSec Lisbon">}}, on Wednesday, June 26th.
-
-We invite you to explore our agenda, featuring talks and discussions led by industry experts on topics ranging from the practical applications of SAMM to real-world case studies showcasing its impact. Whether you're a seasoned practitioner or new to the field, there's something for everyone to learn and contribute. <b>{{< external-link "https://www.eventbrite.com/e/owasp-global-appsec-lisbon-2024-tickets-750689411237" "Register now">}}</b> to secure your spot and join the conversation!
-
-
-### Agenda
-
-{{< user_day_agenda_2024_lisbon >}}
 
 ## September 25th, San Francisco
 
@@ -27,8 +18,24 @@ Please, consider delivering a talk or workshop. The <b>{{< external-link "https:
 
 <br/>
 {{< external-link "https://www.eventbrite.com/e/owasp-global-appsec-san-francisco-2024-tickets-723699172707?aff=oddtdtcreator" "Register here">}}
+
+
+We'll soon share our agenda, featuring talks and discussions led by industry experts on topics ranging from the practical applications of SAMM to real-world case studies showcasing its impact. Whether you're a seasoned practitioner or new to the field, there will be something for everyone to learn and contribute.
 <br/>
 <br/>
+
+## June 26th, Lisbon
+
+The OWASP SAMM team is excited to share highlights from its most recent User Day, which was part of {{< external-link "https://lisbon.globalappsec.org/" "Global AppSec Lisbon">}}, on Wednesday, June 26th.
+
+
+### Highlights
+
+{{< user_day_agenda_2024_lisbon_archive >}}
+
+#### SAMM Dinner sponsored by Toreon and Codific
+
+{{< responsive-image  "/img/sud/dinner.jpg" "SAMM Dinner - people at a restaurant">}}
 
 
 ## Archive

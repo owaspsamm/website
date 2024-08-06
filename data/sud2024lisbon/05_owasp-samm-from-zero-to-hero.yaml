@@ -4,5 +4,6 @@ name: "OWASP SAMM: From zero to hero"
 type: "Presentation"
 presenter: "Nariman AGA-TAGIYEV"
 time: "11.00"
-downloadUrl: "/presentations/SUD2023/SAMMBenchmarkingUpdate-Nov2023.pdf"
+downloadUrl: "/presentations/SUD2024Lisbon/OWASP-SAMM-from-zero-to-hero.pdf"
+archive: true
 
