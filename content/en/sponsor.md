@@ -4,35 +4,57 @@ description = "Be a SAMM supporter"
 keywords = ["Sponsors","questions"]
 +++
 
-## By sponsoring SAMM, you support a Flagship OWASP project.
+## Enhance Your Brand's Commitment to Security by Sponsoring SAMM
 
-The OWASP Flagship designation is given to projects that have demonstrated strategic value to OWASP and application security as a whole.  
+
+### SAMM: A Globally Acclaimed Framework for Software Security Excellence
+
+By sponsoring SAMM, you not only enhance your organization’s reputation as a leader in secure software development but also invest strategically in the future of cybersecurity. This sponsorship aligns your brand with a premier initiative dedicated to advancing global software security practices, showcasing your commitment to fostering a secure and resilient digital ecosystem.
+
+{{< responsive-image-medium "/img/pages/sponsors_global.svg" "woman holding a globe">}}
+
+### Why sponsor SAMM?
+
+
+**Global Recognition**  
+Associate your brand with a globally recognized framework that is integral to thousands of organizations worldwide.
+
+**Thought Leadership**  
+Position your company as a pioneer in promoting best practices in software security.
+
+**Community Engagement**  
+Gain visibility within a vast, engaged community dedicated to enhancing software security standards.
 
 <br/>
 
-## Why sponsor SAMM?
+## Support the Evolution of SAMM
 
-SAMM is a globally recognized framework for improving software security practices. By sponsoring SAMM, you position your organization as a leader dedicated to fostering a secure software development culture. It  is a strategic commitment to shaping the future of secure software development. 
-
-SAMM is open source and completely free of charge. It is maintained by a small team, most of whom work on SAMM in their own time.
-
-Donating to SAMM will allow us to continue to refine and evolve SAMM, ensuring its ongoing improvement.
-
-Show your support of the SAMM project and gain brand recognition within a global community committed to enhancing software security
-
+Your sponsorship ensures the ongoing refinement and evolution of SAMM, allowing us to continually improve and adapt the framework to meet emerging security challenges. With most of the development carried out by dedicated volunteers, your support is crucial in sustaining this vital project. Supporting the project drives the funding for outreach and promotion activities, research grants, SAMM hosting, tools, templates, documents, core team in-person sprints, and more.
 <br/>
 
-## How to sponsor SAMM
+{{< responsive-image-medium-left "/img/pages/sponsors_security.svg" "developer working on security">}}
 
-The best way to support SAMM is to donate funds or grants for SAMM team members to dedicate work on project deliverables.
+### Brand Benefits
 
-<br/>
+
+
+**Enhanced Brand Visibility**  
+Show your commitment to cybersecurity at global conferences, in SAMM publications, and across our extensive online platforms.
+
+**Positive PR**  
+Highlight your contribution to a critical cause, enhancing your brand’s image and reputation.
+
+**Networking Opportunities**  
+Connect with industry leaders, cybersecurity experts, and like-minded organizations through SAMM's community events and collaborationsmeetups and the SAMM User Days.
+
+
+Join us in making the digital world safer. Your sponsorship of SAMM is not just a donation, it's a pledge to secure the future of software development. Show your support today and become a key player in the global movement for software security.
 
 ## Sponsorship levels
 
 ### Platinum
 
-Direct sponsorship or grant that allows one or more of the SAMM Core Team to spend some of their time working on SAMM.
+Direct sponsorship or grant that allows one or more of the SAMM Core Team members to spend some of their time working on SAMM.
 
 #### Benefits
 * Significant say in the work implemented by the sponsored team members
@@ -41,7 +63,13 @@ Direct sponsorship or grant that allows one or more of the SAMM Core Team to spe
 * Logo and link on the [Supporters](../supporters) page (at the top of the Supporters section)
 * Priority placement on the [Practitioners](../practitioners) page
 * Priority placement on a [Blog](../blog) release page on the delivered work
+* Headline Sponsor at one SAMM User Day 	
+* Opportunity to attend one SAMM User Day (2 representatives)
+* Marketing material to be shared at the headline SAMM User Day event and one other event
+* Logo Included in quarterly SAMM newsletters (1000+ subscribers)
 
+<br/>
+{{< button_dark_centered "/contact/" "Sponsor today">}}
 
 ### Gold
 
@@ -51,6 +79,11 @@ A significant donation in time or money, equivalent to $10,000 or more.
 * Logo and link on the [home](../) page (Gold section)
 * Logo and link on the [Supporters](../supporters) page (Gold section)
 * Mentioned as Gold Sponsor on the [Practitioners](../practitioners) page
+* Opportunity to attend one SAMM User Day (1 representative)
+* Marketing material to be shared at the headline SAMM User Day event
+
+<br/>
+{{< button_dark_centered "/contact/" "Sponsor today">}}
 
 ### Silver
 
@@ -60,7 +93,10 @@ A significant donation in time or money, equivalent to $5,000 or more.
 * Logo and link on the [home](../) page (Silver section)
 * Logo and link on the [Supporters](../supporters) page (Silver section)
 * Mentioned as Silver Sponsor on the [Practitioners](../practitioners) page
+* Opportunity to attend one SAMM User Day (1 representative)
 
+<br/>
+{{< button_dark_centered "/contact/" "Sponsor today">}}
 
 ### Bronze
 
@@ -69,6 +105,9 @@ A significant donation in time or money, equivalent to $1,000 or more.
 #### Benefits
 * Logo and link on the [Supporters](../supporters) page (Bronze section)
 * Mentioned as Bronze Sponsor on the [Practitioners](../practitioners) page
+
+<br/>
+{{< button_dark_centered "/contact/" "Sponsor today">}}
 
 ### Community
 
