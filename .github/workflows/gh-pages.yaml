@@ -49,12 +49,11 @@ jobs:
           RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
         run: |
           echo "We got a new SAMM release: v${{ steps.semver_parser.outputs.fullversion }}${RELEASE}"
-          hugo mod get "github.com/BackNot/core@markdown/${RELEASE}"
+          hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
           cat go.mod 
       - name: Get translations
         run: |
-          hugo mod get "github.com/BackNot/i18n-ES@markdown"
-          hugo mod get "github.com/BackNot/i18n-FR@markdown"
+          hugo mod get "github.com/owaspsamm/i18n-FR@markdown"
       - name: Passing hugo mod files
         id: modFiles
         run: |
