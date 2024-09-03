@@ -27,7 +27,7 @@ There are 2 ways of submitting data
 
 * Sending it by email to benchmark@owaspsamm.org 
 
-The data is collected in an anonymous way. During the submission process we will ask for some metadata. The more information provided, the better the comparative analysis will be.
+The data is collected in an anonymous way and covered by the following [terms and conditions](/benchmark-terms-and-conditions). During the submission process we will ask for some metadata. The more information provided, the better the comparative analysis will be.
 <br/>
 <br/> 
 
