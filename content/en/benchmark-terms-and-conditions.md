@@ -1,7 +1,7 @@
 +++
 title = "Benchmark Terms and Conditions"
 description = "Benchmark Terms and Conditions"
-keywords = ["benchmark","legal","terms" "conditions"]
+keywords = ["benchmark","legal","terms", "conditions"]
 +++
 
 
