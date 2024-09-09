@@ -35,6 +35,16 @@ paginate = 10
   target = "content/business-function"
   lang = "en"
 
+[[module.imports]]
+  # content
+  path = "github.com/owaspsamm/i18n-FR"
+  disabled = false
+
+  [[module.imports.mounts]]
+  source = "business-function"
+  target = "content/business-function"
+  lang = "fr"
+
 [menu]
 
 # Main menu
@@ -400,11 +410,7 @@ defaultContentLanguage = "en"
     languageName = "English"
     weight = 1
     contentDir = "content/en"
-  [languages.es]
-    languageName = "Español"
+  [languages.fr]
+    languageName = "Français"
     weight = 2
-    contentDir = "content/es"
-
-
-
-
+    contentDir = "content/fr"
