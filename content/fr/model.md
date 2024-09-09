@@ -8,6 +8,8 @@ keywords:
   - "Et si"
 ---
 
+{{< language-dropdown >}}
+
 ## Aperçu du modèle SAMM
 
 {{< model-table >}}
