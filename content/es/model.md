@@ -8,6 +8,8 @@ keywords:
   - "what if"
 ---
 
+{{< language-dropdown >}}
+
 ## Visión general del modelo SAMM
 
 {{< model-table >}}
