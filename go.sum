@@ -20,6 +20,8 @@ github.com/owaspsamm/core v0.0.0-20240731113928-6a6ebc86b457 h1:upZvZS4xKu8BiMWg
 github.com/owaspsamm/core v0.0.0-20240731113928-6a6ebc86b457/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/core v0.0.0-20240911145828-271985bc7514 h1:GJ4UCJFv2dgKpq/Hx3PMe0MeHzBOqFNlmGMJJ9bD+Co=
 github.com/owaspsamm/core v0.0.0-20240911145828-271985bc7514/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
+github.com/owaspsamm/core v0.0.0-20240911145956-8ee9b42fad78 h1:cNmj2nI0+Ou15Si+93LYqCUb0xsMI49O2Wo8O0l+8HY=
+github.com/owaspsamm/core v0.0.0-20240911145956-8ee9b42fad78/go.mod h1:ECnrbqPPh1OnAru4vRFzMou6Bx2xBemoVDZRTcgYYJw=
 github.com/owaspsamm/i18n-FR v0.0.0-20240825162856-2f392c02fbb9 h1:5pnuEgo5NnEYXK1ssSoGvB8lTnjRww5kOJyRW50QICE=
 github.com/owaspsamm/i18n-FR v0.0.0-20240825162856-2f392c02fbb9/go.mod h1:BS56o80RX4/5AtYMZz+PSYDM8Dos4t2WRl3sCc4MMUA=
 github.com/owaspsamm/i18n-FR v0.0.0-20240909084539-01e3790037d1 h1:TdSx8bSW4fSA/ZcM9lWevG3MTlRfKGQW6spSltNXKB0=
