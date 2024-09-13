@@ -30,3 +30,5 @@ github.com/owaspsamm/i18n-FR v0.0.0-20240909151709-6f978b318c84 h1:46+Jb7CM3osn9
 github.com/owaspsamm/i18n-FR v0.0.0-20240909151709-6f978b318c84/go.mod h1:BS56o80RX4/5AtYMZz+PSYDM8Dos4t2WRl3sCc4MMUA=
 github.com/owaspsamm/i18n-FR v0.0.0-20240910090735-5e464d40b4c7 h1:fCGbiRjmpAqHeo0h1tBWZNH2Lau663Pte/nnbffQsns=
 github.com/owaspsamm/i18n-FR v0.0.0-20240910090735-5e464d40b4c7/go.mod h1:BS56o80RX4/5AtYMZz+PSYDM8Dos4t2WRl3sCc4MMUA=
+github.com/owaspsamm/i18n-FR v0.0.0-20240913113401-4a38cedf2efe h1:nbsY+O2JNxu8AjKovvqOVVEksHGbDpRRd1aNFArsYVY=
+github.com/owaspsamm/i18n-FR v0.0.0-20240913113401-4a38cedf2efe/go.mod h1:BS56o80RX4/5AtYMZz+PSYDM8Dos4t2WRl3sCc4MMUA=
