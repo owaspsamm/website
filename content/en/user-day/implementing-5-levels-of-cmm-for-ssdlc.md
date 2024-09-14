@@ -4,8 +4,8 @@ title: User day
 name: "Implementing 5 levels of Capability Maturity Model (CMM) for Secure Software Development Life Cycle (SSDLC)"
 speaker: Jamil Ahmed
 image: /img/people/Jamil_Ahmed.jpeg
-affiliation: Codific
-role: Co-founder
+affiliation: Fortis Games
+role: Senior Application Security Engineer
 abstract: |
     Capability Maturity Model (CMM)  
     The Capability Maturity Model (CMM) has advanced to effectively evaluate the maturity of software and the Software Development Life Cycle (SDLC). While the importance of CMM for SDLC is clear, a functional CMM specifically designed for the Secure Software Development Lifecycle (SSDLC) across all five levels is not widely recognized or adopted within the application security community and software engineering teams.  
