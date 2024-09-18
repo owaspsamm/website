@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "Maturing SDLC at a Fortune 500 company based on OWASP SAMM: successes and pitfalls"
 speaker: Sunny Sharma
-image: 
+image: /img/people/Sunny_Sharma.png
 affiliation: Zebra Technologies
 role:  Principal Information Security Engineer for Products and Solutions
 abstract: |
