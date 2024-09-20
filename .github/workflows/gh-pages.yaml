@@ -62,7 +62,11 @@ jobs:
               cat go.mod
               echo EOF
             } >> "$GITHUB_OUTPUT"
-            echo "goSum=$(cat go.sum)" >> "$GITHUB_OUTPUT"
+            {
+              echo 'goSum<<EOF'
+              cat go.sum
+              echo EOF
+            } >> "$GITHUB_OUTPUT"
       - name: Set commit message
         run: |
           if [ -z "${{ github.event.client_payload.release }}" ]; then
