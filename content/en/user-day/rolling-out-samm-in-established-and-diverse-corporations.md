@@ -2,7 +2,7 @@
 type: user-day
 title: User day
 name: "Rolling out SAMM in established and diverse corporations"
-speaker: Nariman Aga-Tagiev
+speaker: Nariman Aga-Tagiyev
 image: /img/people/Nariman.jpg
 affiliation: Dassault Systems
 role: Cybersecurity Engineering Manager
