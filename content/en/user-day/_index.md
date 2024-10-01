@@ -6,21 +6,17 @@ images:
     - /img/sud/sud-feature-image.png
 keywords: ["about","what is","questions", "event", "user"]
 ---
-# September 25th, San Francisco
+# San Francisco
 
-We have a second SAMM User Day this year, in the context of {{< external-link "https://sf.globalappsec.org/" "Global AppSec San Francisco">}}, on Wednesday, September 25th.
-
-<br/>
-{{< external-link "https://www.eventbrite.com/e/owasp-global-appsec-san-francisco-2024-tickets-723699172707?aff=oddtdtcreator" "Register here">}}
+The SAMM team wants to thank everyone who attended our latest User Day. Your active participation, insightful contributions, and enthusiasm helped make it an incredibly enriching and successful event.
 
 <br/>
-<br/>
 
-## Agenda
+## Highlights
 
-Our agenda features talks and discussions led by industry experts on topics ranging from the practical applications of SAMM to real-world case studies showcasing its impact. Whether you're a seasoned practitioner or new to the field, there will be something for everyone to learn and contribute.
+During the San Francisco User Day, we had talks on topics ranging from the practical applications of SAMM to real-world case studies showcasing its impact. Now, we'd like to share some information and resources with you.
 
-{{< user_day_agenda_2024_sanfran >}}
+{{< user_day_agenda_2024_sanfran_archive >}}
 
 
 ## Archive
