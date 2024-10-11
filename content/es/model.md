@@ -3,9 +3,9 @@ title: El Modelo
 description: El modelo
 keywords:
   - "maqueta"
-  - "How do I"
-  - "questions"
-  - "what if"
+  - "¿Cómo?"
+  - "preguntas"
+  - "¿Qué pasaría si?"
 ---
 
 {{< language-dropdown >}}
