@@ -7,3 +7,4 @@ social :
     link : "https://www.linkedin.com/in/itscooper/"
   - icon : fab fa-github
     link : "https://github.com/itscooper"
+active : false

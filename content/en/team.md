@@ -25,11 +25,13 @@ These are the people who are currently part of the Core Team, participating acti
 SAMM has also been enriched by a diverse group of contributors who have poured their expertise and passion into shaping the project. To all our contributors, we extend our heartfelt thanks for your dedication and invaluable contributions. Your tireless efforts are truly appreciated and, together, we are making the digital world a safer place.
 
 * Sebastian Arriada
+* Chris Cooper
 * Brett Crawley
 * Bruce Jenkins
 * Yan Kravchenko
 * Timo Pagel
 * Hardik Parekh
+* Romuald Szkudlarek
 * Rob van der Veer
 * Felipe Zipitria
 
