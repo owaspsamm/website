@@ -1,12 +1,12 @@
 name : Nariman Aga-Tagiyev
 image : img/team/Nariman.jpg
 designation : Core Team member
-content : Application Security Architect, Cybersecurity Engineering Manager at Dassault Systems, dedicated to advancing SSDLC maturity
+content : R&D Cybersecurity Architecture Manager at Dassault Systèmes SE, Co-founder of WiseFrog Security  <br/><br/>
 social :
   - icon : fab fa-linkedin-in
-    link : "https://www.linkedin.com/in/brianglas/"
+    link : "https://www.linkedin.com/in/aganariman/"
   - icon : fa-brands fa-x-twitter
-    link : "https://twitter.com/infosecdad"
+    link : "https://twitter.com/aganariman"
   - icon : fab fa-github
-    link : "https://github.com/infosecdad"
+    link : "https://github.com/aganariman"
 active : true
