@@ -23,7 +23,12 @@ The 3 maturity levels remain as they were. Level 1 is initial implementation; le
 The version 2.0 model now supports frequent updates through small incremental changes on specific parts of the model with regular updates to explanations, tooling, and guidance by the community.
 
 This is the updated SAMM version 2 model:
+
 {{< responsive-image  "/img/pages/SAMM_v2_overview.svg" "SAMM v2 model overview">}}
+---
+> Note: The previous image was created in 2024 and is an updated version of the overview from the 2.0 release. We've decided to replace it for clarity.
+---
+
 
 List of major changes:
 
