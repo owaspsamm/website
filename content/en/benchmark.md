@@ -1,8 +1,22 @@
 +++
 title = "Benchmark"
-description = "Benchmark"
+description = "OWASP SAMM Benchmark"
 keywords = ["benchmark","what is","questions"]
 +++
+
+## Benchmark data
+### v24.1.1
+In September 2024, we have released an updated OWASP SAMM Benchmark. The number of data sets remains quite limited (30). The benchmark dataset remains skewed towards large organizations. The SAMM Core team was able to slice the data and provide more granular information. The benchmark data and its interpretations were presented during [SAMM User Day in San Francisco](https://owaspsamm.org/user-day/).
+
+{{< external-link "https://docs.google.com/presentation/d/1ImyrDDOYPV716m-xg6WAxEH2iaGRqjX75FKeXLZEDwo/edit#slide=id.g2f00b646c39_0_0" "Click here to view the SAMM Benchmark dataset v24.1.1">}}.
+
+For further insights and interpretations of the v24.1.1 data we refer to [this blog article](/blog/2024/09/01/).
+
+### v24.1.0
+In June 2024, we have released the very first OWASP SAMM Benchmark data. Despite the huge interest from the community to have a common benchmark, the dataset has been so far very limited (namely 25 data points). The benchmark is heavily based on data provided by large organizations.
+The benchmark data and some of its interpretations were presented during [SAMM User Days in Lisbon](https://owaspsamm.org/user-day/2024lisbon/).
+
+{{< external-link "https://docs.google.com/presentation/d/1rj_TVaOKVKjI9GDdU__aJrKrYqqiXxnXOD3oEUjtdwY/edit#slide=id.g2f00b646c39_0_0" "Click here to view the SAMM Benchmark dataset v24.1.0">}}.
 
 ## Goals
 
