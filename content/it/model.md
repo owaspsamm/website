@@ -10,18 +10,18 @@ keywords:
 
 {{< language-dropdown >}}
 
-## SAMM model overview
+## Panoramica del modello SAMM
 
 {{< model-table >}}
 
-## Introduction
+## Introduzione
 
-The mission of OWASP Software Assurance Maturity Model (SAMM) is to be the prime maturity model for software assurance that provides an effective and measurable way for all types of organizations to analyze and improve their software security posture. OWASP SAMM supports the complete software lifecycle, including development and acquisition, and is technology and process agnostic. It is intentionally built to be evolutive and risk-driven in nature.
+La missione di OWASP Software Assurance Maturity Model (SAMM) è di essere il modello di maturità di riferimento per la garanzia del software che fornisce un modo efficace e misurabile per tutti i tipi di organizzazioni per analizzare e migliorare la loro postura di sicurezza del software. OWASP SAMM supporta il ciclo di vita completo del software, compreso lo sviluppo e l'acquisizione, ed è agnostico rispetto alla tecnologia e i processi. È stato realizzato appositamente per essere per natura evolutivo e orientato al rischio.
 
-The original model (v1.0) was written by Pravir Chandra and dates back from 2009. Over the last 10 years, it has proven a widely distributed and effective model for improving secure software practices in different types of organizations throughout the world. Translations and supporting tools have been contributed by the community to facilitate adoption and alignment. With version 2.0, we further improve the model to deal with some of its current limitations.
+Il modello originale (v1.0) è stato scritto da Pravir Chandra e risale al 2009. Negli ultimi 10 anni, si è dimostrato un modello ampiamente utilizzato ed efficace per migliorare le pratiche di sviluppo software sicuro in diversi tipi di organizzazioni in tutto il mondo. Le traduzioni e gli strumenti di supporto sono stati forniti dalla comunità per facilitarne l'adozione e l'allineamento. Con la versione 2.0, abbiamo migliorato ulteriormente il modello per affrontare alcuni dei suoi attuali limiti.
 
-After a period of intensive discussions and with input from practitioners and the OWASP community during summits in Europe and the US on the best way forward, we take a new approach for version 2.0 based on the input we gathered.
+Dopo un periodo di intense discussioni e con il contributo degli operatori del settore e della comunità OWASP durante gli incontri in Europa e negli Stati Uniti sul modo migliore di procedere, abbiamo adottato un nuovo approccio per la versione 2. grazie ai suggerimenti che abbiamo raccolto.
 
-For an overview of the version 2 changes, read our [SAMM version 2 release notes](/release-notes-v2).
+Per una panoramica delle modifiche alla versione due, [leggi le nostre note di rilascio per la versione due di SAMM](/release-notes-v2).
 
-We've also created a {{< external-link "https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" "PDF version">}} of the model.
+Abbiamo anche creato una {{< external-link "https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" "versione PDF">}} del modello.
