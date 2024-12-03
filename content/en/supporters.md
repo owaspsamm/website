@@ -12,6 +12,9 @@ These are companies and organizations who support and have supported SAMM in a v
 For details on how to sponsor SAMM and the benefits of the different levels, see the <b>[Sponsor](/sponsor)</b> page.
 
 ---
+## Gold
+
+{{< sponsors "Gold" >}}
 
 ## Silver
 
