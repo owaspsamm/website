@@ -17,7 +17,15 @@
                   {{ end }}
                 </p>
 
-                {{ $platinum := where .Site.Data.sponsors "tier" "Platinum"}}
+                
+
+                {{ $sponsors := slice }}
+                {{ range site.Data.sponsors }}
+                  {{ $sponsors = $sponsors | append . }}
+                {{ end }}
+                
+                
+                {{ $platinum := where $sponsors "tier" "Platinum"}}
                 {{ if $platinum }}
                 {{ if gt (len $platinum) 0 }}
                   <h3 class="text-center">PLATINUM SPONSORS</h3>
@@ -35,7 +43,7 @@
                 {{ end }}
                 {{ end }}
 
-                {{ $gold := where .Site.Data.sponsors "tier" "Gold"}}
+                {{ $gold := where $sponsors "tier" "Gold"}}
                 {{ if $gold }}
                 {{ if gt (len $gold) 0 }}
                 <h3 class="text-center">GOLD SPONSORS</h3>
@@ -54,8 +62,7 @@
                 {{ end }}
                 
                 <!-- where clause isn't working - fix this later -->
-                {{ $silver := where .Site.Data.sponsors "tier" "Silver"}}
-                {{ if $silver }}
+                {{ $silver := where $sponsors "tier" "Silver"}}
                   {{ if gt (len $silver) 0 }}
                   <h3 class="text-center">SILVER SPONSORS</h3>
                   <div class="flex-container">
@@ -70,22 +77,6 @@
                       {{ end }}
                   </div>
                   {{ end }}
-                {{ else }}
-                  <h3 class="text-center">SILVER SPONSORS</h3>
-                  <div class="flex-container">
-                    {{ range .Site.Data.sponsors }}
-                      {{ if eq .tier "Silver" }}
-                          {{ if .url }}
-                            <a href="{{ .url }}" target="_blank">
-                              <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
-                            </a>
-                          {{ else }}
-                            <img src="{{ $.Site.BaseURL}}{{ .image180 }}" alt="{{ .name }}" class="img-responsive" />
-                          {{ end }}
-                        {{ end }}
-                      {{ end }}
-                  </div>
-                {{ end }}
                 
 
                 <p class="text-center">
