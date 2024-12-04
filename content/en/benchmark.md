@@ -5,6 +5,7 @@ keywords = ["benchmark","what is","questions"]
 +++
 
 ## Benchmark data
+
 ### v24.1.1
 In September 2024, we released an updated OWASP SAMM Benchmark. The number of data sets remains quite limited (30). The benchmark dataset remains skewed towards large organizations. The SAMM Core team was able to slice the data and provide more granular information. The benchmark data and its interpretations were presented during [SAMM User Day in San Francisco](https://owaspsamm.org/user-day/).
 
