@@ -8,8 +8,7 @@ author = ""
 weight = 3
 +++
 
-## Direct Mappings 
-
+## Direct Mappings
 ### Mapping between NIST SSDF and SAMM
 
 In collaboration with NIST, we created mappings based on the {{< external-link "https://csrc.nist.gov/projects/olir" "National Online Informative Reference (OLIR) Program">}}. An Informative Reference shows the relationships between the Reference Document elements (NIST SSDF Tasks) and a Focal Document element (OWASP SAMM Streams). This effectively helps users understand the characterization of the nature of each relationship.
