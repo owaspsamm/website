@@ -19,10 +19,10 @@ You can find the mapping in <b>{{< external-link "https://docs.google.com/spread
 More on this in the <b>[Tackling App Security with SAMM-NIST SSDF Mapping](/blog/2023/02/06/samm-ssdf-mapping/)</b> blog post.
 
 ### Mapping between BSIMM 14 and SAMM
-The SAMM core team has created mappings between OWASP SAMM and BSIMM 14 standards. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
+The SAMM core team has created mappings between BSIMM 14 and OWASP SAMM standards. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
 
 ### Mapping between IEC-62443-4-1 and SAMM
-The SAMM core team has created mappings between OWASP SAMM and BSIMM 14 standards. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
+The SAMM core team has created mappings between IEC-62443-4-1 and OWASP SAMM. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
 
 
 ## Mappings with OpenCRE
