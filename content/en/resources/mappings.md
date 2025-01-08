@@ -24,8 +24,6 @@ The SAMM core team has created mappings between BSIMM 14 and OWASP SAMM standard
 ### Mapping between IEC-62443-4-1 and SAMM
 The SAMM core team has created mappings between IEC-62443-4-1 and OWASP SAMM. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
 
-### Mapping between Microsoft SDL and SAMM
-The SAMM core team has created mappings between Microsoft SDL and OWASP SAMM standards. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
 
 ## Mappings with OpenCRE
 
