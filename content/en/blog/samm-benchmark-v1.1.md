@@ -148,7 +148,7 @@ SAMM Secure Build practice at maturity level 3 requires failing the build if any
 Note that SAMM allows an explicit risk acceptance as a strategy, though as it seems that strategy is rarely used.
 
 #### Secrets management is scoring great thanks to best-practice solutions
-In its simplest form, best practices in secrets management require moving production secrets from repositories and configuration files into adequately managed digital vaults. A positive news from the OWASP SAMM Benchmark data is that organizations are doing a great job when it comes to handling secrets. We are convinced that best practices supported by modern cloud providers has substantially helped with getting there. Secret scanning is also becoming a commodity in the modern security tools. Hence, it is common to have organizations to disallow secrets in the committed code that is enforced by these tools.
+In its simplest form, best practices in secrets management require moving production secrets from repositories and configuration files into adequately managed digital vaults. A positive news from the OWASP SAMM Benchmark data is that organizations are doing a great job when it comes to handling secrets. We are convinced that best practices supported by modern cloud providers has substantially helped with getting there. Secret scanning is also becoming a commodity in the modern security tools. Hence, it is common to have organizations to disallow secrets in the committed code th2at is enforced by these tools.
 
 #### Configuration hardening is rarely monitored by tooling
 Many technologies in an application stack are not inherently secure by default. This is often intentional to improve backward compatibility or simplify the setup process. Configuration hardening is about consistent application of secure baseline configurations to all components. Although companies often score relatively good for configuration hardening there is rarely any monitoring and enforcement by tooling. Here are some further insights based on my own experiences:
@@ -158,3 +158,10 @@ Many technologies in an application stack are not inherently secure by default. 
 
 #### Data catalog is still a rarity despite increase in compliance regulations
 There is actually not much to add to this headline. We’ve seen teams that are very strict about having a data catalog in place despite the fact that they do not process any sensitive nor personal data. Many teams seem to be not very strict about keeping a data catalog.
+
+### Conclusions
+The SAMM Benchmarking Project offers invaluable insights into the current state of application security practices across organizations. In this blog, we have presented how the data highlights strengths in areas like operations and guidance. We have also discussed the critical gaps, such as the lack of meaningful metrics, the underutilization of security tools, and struggles with systematic verification and threat modeling. These findings emphasize the importance of sharing experiences, improving practices, and fostering a collaborative SAMM community.
+
+Your support can make a difference! The SAMM Benchmarking Project relies on contributions from its community to expand its dataset and provide even deeper insights. Please consider donating your SAMM assessment data to the project. Your participation will not only enhance the dataset’s richness but also help drive impactful improvements across the application security landscape. Together, we can make SAMM even more valuable for all.
+
+Visit the {{< external-link "https://owaspsamm.org/benchmark/" "OWASP SAMM Benchmarking Project">}} page to learn how you can contribute. Thank you for supporting this important initiative!
