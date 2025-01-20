@@ -13,7 +13,7 @@ weight = 3
 ### Mapping between Microsoft SDL and SAMM
 The SAMM core team has created mappings between Microsoft SDL and OWASP SAMM. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
 
-You can also find more information about this mapping in the <b>[Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis](/blog/comparing-microsoft-sdl-and-samm/)</b> blog post.
+You can also find more information about this mapping in the <b>[Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis](/blog/2025/01/20/comparing-microsoft-sdl-and-samm/)</b> blog post.
 
 ### Mapping between BSIMM 14 and SAMM
 The SAMM core team has created mappings between BSIMM 14 and OWASP SAMM standards. You can find the mapping in <b>{{< external-link "https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" "this spreadsheet">}}</b>.
