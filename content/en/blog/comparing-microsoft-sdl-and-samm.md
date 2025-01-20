@@ -1,10 +1,10 @@
 # Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis
 
 ## Introduction
-
 The Microsoft Security Development Lifecycle (SDL) was introduced in 2004 as Microsoft’s response to the security challenges that plagued its Windows operating system. As the first formal secure SDLC framework, it laid the foundation for many secure software development practices.
 
 Today in its latest version, Microsoft SDL comprises 10 security practices, each containing a set of requirements designed to reduce security risks across the software development lifecycle. While Microsoft does not specify terminology, we refer to these as "requirements." In total, there are 49 requirements across SDL's 10 practices.
+
 
 ## Mapping granularity and semantics
 
@@ -14,11 +14,11 @@ To address this challenge, we have added semantics to the mapping. Most of the m
 
 Here is a list of all mapping types:
 - Whole-part: Microsoft SDL Requirement is one part of SAMM.
+- Whole-part: SAMM stream is one part of Microsoft SDL requirement.
 - Synonyms: Microsoft SDL requirement and SAMM stream are identical.
 - Equivalence: Microsoft SDL requirement and SAMM stream are equivalent, but use different wording.
 - General-specific: Microsoft SDL requirement is one way to achieve this SAMM Stream.
 - Prerequisite-dependency: Microsoft SDL requirement is required first to perform SAMM stream.
-- Whole-part: SAMM stream is one part of Microsoft SDL requirement.
 
 
 ## How similar are Microsoft SDL and SAMM?
