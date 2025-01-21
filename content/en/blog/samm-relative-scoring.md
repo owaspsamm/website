@@ -1,6 +1,6 @@
 +++
 title = "SAMM Scoring: Percentage to Target and Percent to Date Metrics"
-date = ""
+date = "2025-01-21T00:00:00+02:00"
 tags = ["model", "scoring"]
 categories = ["assessment"]
 banner = "img/banners/discussion.png"
@@ -69,6 +69,8 @@ PercentageToTarget = 1 - AbsoluteGap/AbsoluteTargetScore
 
 This metric expresses SAMM scores as a percentage, making it easier to track improvements and compare performance across different teams, business units or even organizations. Note that the Percentage to target metric allows us to compare teams with completely different risk appetite and different target postures.
 By focusing on the percentage to target, organizations can shift attention away from achieving perfect scores and instead focus on incremental, risk-aligned progress toward their security goals.
+
+Note that the `PercentageToTarget` can be calculated per activity and then averaged out across streams, practices, business functions. You could also recalculate `PercentageToTarget` for each entity from scratch by falling back to the original formula.  
 
 ## Progress to date
 In addition to understanding how far an organization is from its target posture, it’s equally important to measure the speed of progress. The progress to date metric helps organizations track their improvement over time, providing insights into how effectively security initiatives are being implemented.
