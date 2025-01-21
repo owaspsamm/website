@@ -1,4 +1,13 @@
-# SAMM Scoring and Percentage to Target Metric
++++
+title = "SAMM Scoring: Percentage to Target and Percent to Date Metrics"
+date = ""
+tags = ["model", "scoring"]
+categories = ["assessment"]
+banner = "img/banners/discussion.png"
+author = "Aram Hovsepyan"
++++
+
+# SAMM Scoring: Percentage to Target and Percent to Date Metrics
 ## Introduction: the “not applicable” answer
 A common question among SAMM users is whether specific activities, streams, or entire practices can be marked as **not applicable**. This seems reasonable—some security activities might not fit an organization’s current reality. For example, the Supplier Security stream focuses on supply-chain risks in outsourced development. If your organization doesn’t outsource, it might seem irrelevant.
 The SAMM core team acknowledges this, but emphasizes future readiness. While an activity may not apply today, it could become relevant later. This leaves organizations with two unsatisfactory choices:
@@ -40,8 +49,10 @@ A key way to assess how well an organization, business unit, or team is advancin
 To do that we simply calculate the gap for each activity:
 
 ```
-GapPerActivity = Target Score - Current Score
+GapPerActivity = TargetScore - CurrentScore 
+                 or 0 CurrentScore >= TargetScore
 ```
+Note that the gap should be zeroed if current score is higher than the target score to avoid giving credit for overcompensating.
 
 The total gap across all activities is determined as the sum of all the gaps:
 
