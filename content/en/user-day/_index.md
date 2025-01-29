@@ -49,5 +49,5 @@ Note: Presenters are responsible for their own travel and accommodation expenses
 Here you can find the previous SAMM User Day pages with the full list of talks, downloadable material, and YouTube links.
 <br/><br/>
 
-{{< button "user-day/2024lisbon" "2024 Lisbon User Day page">}}
+{{< buttons "user-day/2024sf" "2024 San Francisco User Day page" "user-day/2024lisbon" "2024 Lisbon User Day page">}}
 {{< buttons3 "user-day/2023" "2023 User Day page" "user-day/2021" "2021 User Day page" "user-day/2020" "2020 User Day page">}}
