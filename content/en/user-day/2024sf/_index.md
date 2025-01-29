@@ -5,7 +5,7 @@ description: User Day September 25, 2024
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
-## SUD 2024 Lisbon Highlights
+## SUD 2024 San Francisco Highlights
 
 The OWASP SAMM team is excited to share highlights from its 2024 San Francisco User Day. We hope you find these resources helpful as you keep exploring software security and SAMM.
 
