@@ -5,7 +5,6 @@ tags = ["Microsoft SDL", "mapping", "SAMM"]
 categories = ["mapping"]
 banner = "img/resources/mappings.png"
 author = "Aram Hovsepyan"
-weight = 3
 +++
 
 # Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis
