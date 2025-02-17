@@ -3,7 +3,7 @@ title = "Enabling teams with the OWASP SAMM Skills Framework"
 date = "2025-02-09T00:00:00+02:00"
 tags = ["model", "NIST", "SSDF"]
 categories = ["mapping"]
-banner = "img/banners/samm-skills-framework.png"
+banner = "img/banners/samm_skills_framework.svg"
 author = "The SAMM Project Team"
 +++
 
@@ -11,7 +11,7 @@ author = "The SAMM Project Team"
 
 Picture this: your team is tasked with building secure, compliant software, but you’re not sure where to begin and who to involve. In today’s cloud-driven world, even solid security plans can stall if teams don’t know what tasks they own or believe they do not have the right skills to get started. Across teams, many organizations lack a clear view on ownership and shared responsibilities, whether they work with company internal service providers or external public service providers. This leads to confusion and delays the rollout of security practices.
 
-The new OWASP SAMM Skills Framework, generously donated by Siemens, **assigns SAMM streams to specific responsibilities**, helping organizations determine which roles are involved in maturing SAMM streams, providing **guidance on the necessary skills and training** for each role. By aligning SAMM related activities, roles, and skill requirements, this framework helps you identify the right stakeholders and the training they need. In addition, it helps organizations visualize shared responsibilities.
+The new OWASP SAMM Skills Framework, generously donated by Siemens, **{{< external-link "https://docs.google.com/spreadsheets/d/1MssqSBYu4mu-AnUiOZPquEN8iezX40bD/edit?usp=sharing&ouid=105482451254013896164&rtpof=true&sd=true" "assigns SAMM streams to specific responsibilities">}}**, helping organizations determine which roles are involved in maturing SAMM streams, providing **{{< external-link "https://docs.google.com/document/d/1ZKPIUUPZkn5GbHgJTqS6tCur3aSIG7BI/edit?usp=sharing&ouid=105482451254013896164&rtpof=true&sd=true" "guidance on the necessary skills and training">}}** for each role. By aligning SAMM related activities, roles, and skill requirements, this framework helps you identify the right stakeholders and the training they need. In addition, it helps organizations visualize shared responsibilities.
 
 
 ### Understanding the Complexities of Secure Product Development
