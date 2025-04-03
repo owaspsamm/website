@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "AppSec as a Habit"
 speaker: Nariman AGA-TAGIYEV
-image: 
+image: /img/people/NarimanAT.jpg
 affiliation: Dassault Systemes
 role: Application Security Architect
 abstract: |

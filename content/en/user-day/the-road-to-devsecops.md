@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "The road to DevSecOps. Chapter 1: Governace"
 speaker: Mateo Martinez
-image: 
+image: /img/people/mateomartinez.jpg
 affiliation: Lugapel
 role: CEO
 abstract: |

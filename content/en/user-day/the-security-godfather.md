@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "The Security Godfather: Empowering Champions to Guard the Family"
 speaker: Mike van der Bijl
-image: 
+image: /img/people/mikevanderbijl.webp
 affiliation: Scyon
 role: DevSecOps Expert
 abstract: |
