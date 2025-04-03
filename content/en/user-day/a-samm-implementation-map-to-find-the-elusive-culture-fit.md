@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "A SAMM Implementation Map To Find The Elusive Culture Fit"
 speaker: Marisa Fagan
-image: 
+image: /img/people/Marisa_Fagan.webp
 affiliation: Contributor to OWASP Security Champion Guide Project
 role: Head of Product at Katilyst
 abstract: |

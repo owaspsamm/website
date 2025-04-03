@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "From none to done: how to design, deploy and lead an AppSec program using SAMM in the middle of a Digital Transformation"
 speaker: Max Alejandro Gómez Sánchez Vergaray
-image: 
+image: /img/people/max_gomez.jpg
 affiliation: Banco de Credito Peru
 role: Cybersecurity Manager
 abstract: |

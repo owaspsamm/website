@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "Between helpful guidance and overwhelming information: 5 lessons learned when kickstarting security with SAMM"
 speaker: Clemens Hübner
-image: 
+image: /img/people/ClemensHubner.webp
 affiliation: inovex GmbH
 role: Software Security Engineer
 abstract: |
