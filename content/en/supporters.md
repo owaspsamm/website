@@ -20,3 +20,8 @@ For details on how to sponsor SAMM and the benefits of the different levels, see
 
 {{< sponsors "Silver" >}}
 
+## Bronze
+
+{{< sponsors "Bronze" >}}
+
+

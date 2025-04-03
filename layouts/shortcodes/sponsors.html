@@ -9,7 +9,7 @@
 
     {{ if eq .tier $supportertier }}
        
-      {{ if ne $supportertier "Bronze" }}
+      {{ if ne $supportertier "None" }}
         {{ if .url }}
           <a href="{{ .url }}" target="_blank">
             <img src="{{ $.Site.BaseURL }}{{ .image200 }}" alt="{{ .name }}" />
