@@ -3,7 +3,7 @@ title = "Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis"
 date = "2025-01-20T00:00:00+02:00"
 tags = ["Microsoft SDL", "mapping", "SAMM"]
 categories = ["mapping"]
-banner = "img/resources/mappings.png"
+banner = "img/banners/mapping_ms.svg"
 author = "Aram Hovsepyan"
 +++
 
