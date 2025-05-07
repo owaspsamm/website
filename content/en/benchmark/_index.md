@@ -22,7 +22,7 @@ As an added benefit, we’ll use the data to prioritize the publication of guida
 
 ### Benchmark data
 #### v24.1.1
-In September 2024, we released an updated OWASP SAMM Benchmark. The number of data sets remains quite limited (30). The benchmark dataset remains skewed towards large organizations. The SAMM Core team was able to slice the data and provide more granular information. The benchmark data and its interpretations were presented during [SAMM User Day in San Francisco](https://owaspsamm.org/user-day/).
+In September 2024, we released an updated OWASP SAMM Benchmark. The number of data sets remains quite limited (30). The benchmark dataset remains skewed towards large organizations. The SAMM Core team was able to slice the data and provide more granular information. The benchmark data and its interpretations were presented during [SAMM User Day in San Francisco](/user-day/).
 
 {{< external-link "https://docs.google.com/presentation/d/1ImyrDDOYPV716m-xg6WAxEH2iaGRqjX75FKeXLZEDwo/edit#slide=id.g2f00b646c39_0_0" "Click here to view the SAMM Benchmark dataset v24.1.1">}}.
 
@@ -53,7 +53,7 @@ There are 2 ways of submitting data
 
 * Sending it by email to benchmark@owaspsamm.org
 
-The data is collected in an anonymous way and covered by the following [terms and conditions](/benchmark-terms-and-conditions). During the submission process we will ask for some metadata. The more information provided, the better the comparative analysis will be.
+The data is collected in an anonymous way and covered by the following [terms and conditions](benchmark-terms-and-conditions). During the submission process we will ask for some metadata. The more information provided, the better the comparative analysis will be.
 
 To help practitioners get permission from their clients or companies to submit datasets, we have created the following {{< external-link "https://docs.google.com/document/d/12Ryo0vwDsCpqJYtOA1FdhKnMl89yPpiJaAaAgopiUbg/edit?usp=sharing" "email template">}}.
 <br/>

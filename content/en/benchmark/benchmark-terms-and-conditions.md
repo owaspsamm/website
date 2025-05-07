@@ -1,8 +1,9 @@
-+++
-title = "Benchmark Terms and Conditions"
-description = "Benchmark Terms and Conditions"
-keywords = ["benchmark","legal","terms", "conditions"]
-+++
+---
+title: Benchmark Terms and Conditions
+description: "Benchmark Terms and Conditions"
+keywords: ["benchmark","legal", "terms","conditions"]
+layout: main-page
+---
 
 
 ## Terms and Conditions
