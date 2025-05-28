@@ -4,4 +4,5 @@ country: "Italy"
 url: "https://mindedsecurity.com/services/consulting/software-security-advisory/"
 image: ""
 sponsor: true
+tier: "Silver"
 enabled: true

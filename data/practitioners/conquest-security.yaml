@@ -1,6 +1,7 @@
 company: "Conquest Security"
-country: "US"
+country: "USA"
 url: "https://www.conquestsecurity.com/cyber-security-assessment/"
 image: ""
-sponsor: false
+sponsor: true
+tier: "Bronze"
 enabled: true
