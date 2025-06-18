@@ -1,8 +1,9 @@
-weight: 5
+weight: 10
 url: "cra-are-we-ready"
 name: "CRA, are we ready? A structured analysis of industry readiness"
 type: "Presentation"
 presenter: "Dag Flachet"
 time: "11:00 am"
-downloadUrl: ""
-archive: false
+videoUrl: ""
+downloadUrl: "https://drive.google.com/file/d/1L_ZlZ7o4Ww6XQol_I6-23N6SHm_xA93R/view?usp=drive_link"
+archive: true

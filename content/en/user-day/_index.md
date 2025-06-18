@@ -5,14 +5,23 @@ description: User Day May 28, 2025
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
-## 2025 SAMM User Day!
+## Washington DC Upcoming SAMM User Day
 
-The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of <b>[Global AppSec Barcelona](https://owasp.glueup.com/event/owasp-global-appsec-eu-2025-123983/)</b>, on Wednesday, May 28th.
+The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of {{< external-link "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/" "Global AppSec USA (Washington, DC)">}} on November 5th, 2025.
+
+
 
 The User Day focuses on advancing software security and promoting the use of OWASP SAMM. We invite industry professionals, researchers, and enthusiasts to submit their presentation proposals for this exciting event.
 
+<b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "Call for presentations">}}</b> is open! 
+<br/><br/>
+
+## Barcelona SAMM User Day Highlights
+
+Don't miss the <b>{{< external-link "https://www.youtube.com/playlist?list=PLL2wt4pQkkuIozLAeKenPCSVm0_tEQj_O" "YouTube playlist">}}</b> on our channel with all the talks from that day.
+
 ### Agenda
-{{< user_day_agenda_2025_bcn >}}
+{{< user_day_agenda_2025_barcelona_archive >}}
 
 ## Archive
 
