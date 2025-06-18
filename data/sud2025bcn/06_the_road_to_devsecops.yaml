@@ -4,5 +4,5 @@ name: "The road to DevSecOps. Chapter 1: Governance"
 type: "Presentation"
 presenter: "Mateo Martinez"
 time: "11:45 am"
-downloadUrl: ""
-archive: false
+videoUrl: ""
+archive: true

@@ -1,8 +1,9 @@
-weight: 10
+weight: 3
 url: "between-helpful-guidance-and-overwhelming-information"
 name: "Between helpful guidance and overwhelming information: 5 lessons learned when kickstarting security with SAMM"
 type: "Presentation"
 presenter: "Clemens Hübner"
 time: "2:40 pm"
-downloadUrl: ""
-archive: false
+videoUrl: "https://youtu.be/iCJ0HHpdP2o"
+downloadUrl: "https://drive.google.com/file/d/1OlFE9nFJels5jTzPTysfHdK13h3fPRnV/view?usp=drive_link"
+archive: true
