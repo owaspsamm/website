@@ -5,15 +5,15 @@ description: User Day May 28, 2025
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
-## Washington DC Upcoming SAMM User Day
+## Washington DC Upcoming SAMM & DSOMM User Day
 
-The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of {{< external-link "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/" "Global AppSec USA (Washington, DC)">}} on November 5th, 2025.
+The OWASP SAMM team is excited to announce our upcoming User Day, this time teaming up with {{< external-link "https://owasp.org/www-project-devsecops-maturity-model/" "DSOMM">}}, as part of {{< external-link "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/" "Global AppSec USA (Washington, DC)">}}, on November 5th, 2025.
+
+We’ll be spending the day sharing experiences, exploring real-world use of SAMM and DSOMM, and learning from each other about how to advance software security maturity. Whether you're deep into assessments or just getting started, we’d love to hear your perspective.
+
+The <b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "call for presentations">}}</b> is now open. Come share your story!
 
 
-
-The User Day focuses on advancing software security and promoting the use of OWASP SAMM. We invite industry professionals, researchers, and enthusiasts to submit their presentation proposals for this exciting event.
-
-<b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "Call for presentations">}}</b> is open! 
 <br/><br/>
 
 ## Barcelona SAMM User Day Highlights
