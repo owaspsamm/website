@@ -4159,9 +4159,9 @@ a.list-group-item.active > .badge,
   padding-left: 40px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 820px) {
   .img-left {
-    padding: 20px;
+    display: none;
   }
   .img-right {
     display: none;
