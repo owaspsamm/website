@@ -1,7 +1,7 @@
 ---
 title: User Day
 layout: main-page
-description: User Day May 28, 2025
+description: User Day 2025
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
@@ -11,7 +11,7 @@ The OWASP SAMM team is excited to announce our upcoming User Day, this time team
 
 We’ll be spending the day sharing experiences, exploring real-world use of SAMM and DSOMM, and learning from each other about how to advance software security maturity. Whether you're deep into assessments or just getting started, we’d love to hear your perspective.
 
-The <b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "call for presentations">}}</b> is now open. Come share your story!
+The <b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "call for presentations">}}</b> is open until Septermber 15th. Come share your story!
 
 
 <br/><br/>
