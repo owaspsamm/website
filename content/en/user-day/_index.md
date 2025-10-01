@@ -11,22 +11,22 @@ The OWASP SAMM team is excited to announce our upcoming User Day, this time team
 
 We’ll be spending the day sharing experiences, exploring real-world use of SAMM and DSOMM, and learning from each other about how to advance software security maturity. Whether you're deep into assessments or just getting started, we’d love to hear your perspective.
 
-The <b>{{< external-link "https://forms.gle/SzUKzVPQUTPJtwCw7" "call for presentations">}}</b> is open until Septermber 15th. Come share your story!
+Get your place! <b>{{< external-link "https://owasp.glueup.com/event/131624/register/" "Register here.">}}</b>
 
 
 <br/><br/>
 
-## Barcelona SAMM User Day Highlights
-
-Don't miss the <b>{{< external-link "https://www.youtube.com/playlist?list=PLL2wt4pQkkuIozLAeKenPCSVm0_tEQj_O" "YouTube playlist">}}</b> on our channel with all the talks from that day.
-
 ### Agenda
-{{< user_day_agenda_2025_barcelona_archive >}}
+
+Below you’ll find the main sessions and activities we have planned. Please note that while the core program is set, there may still be a few adjustments as we finalize details with speakers and contributors.
+
+{{< user_day_agenda_2025_dc >}}
 
 ## Archive
 
 Here you can find the previous SAMM User Day pages with the full list of talks, downloadable material, and YouTube links.
 <br/><br/>
 
+{{< button "user-day/2025barcelona" "2025 Barcelona User Day page" "user-day/2025barcelona" "2025 Barcelona User Day page">}}
 {{< buttons "user-day/2024sf" "2024 San Francisco User Day page" "user-day/2024lisbon" "2024 Lisbon User Day page">}}
 {{< buttons3 "user-day/2023" "2023 User Day page" "user-day/2021" "2021 User Day page" "user-day/2020" "2020 User Day page">}}
