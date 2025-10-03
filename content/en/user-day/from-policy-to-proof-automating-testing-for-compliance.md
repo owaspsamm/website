@@ -3,7 +3,7 @@ type: user-day
 title: User day
 name: "From Policy to Proof: Automating Testing for Compliance"
 speaker: Spyros Gasteratos
-image: 
+image: /img/people/Spyros_Gasteratos.png
 affiliation: OWASP, Smithy
 role: Open Source Developer
 abstract: |
