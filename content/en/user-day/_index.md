@@ -22,6 +22,11 @@ Below you’ll find the main sessions and activities we have planned. Please not
 
 {{< user_day_agenda_2025_dc >}}
 
+As in previous editions of the User Day, we'll have a <strong>sponsored dinner</strong> for all participants thanks to Codific, SecureHabits, and Toreon.
+
+
+{{< responsive-image-link-3  "../../img/sponsors/codific_180.png" "Codific" "https://www.codific.com" "../../img/sponsors/securehabits_180.png" "SecureHabits" "https://www.securehabits.nl" "../../img/sponsors/toreon_180.png" "Toreon" "https://www.toreon.com">}}
+
 ## Archive
 
 Here you can find the previous SAMM User Day pages with the full list of talks, downloadable material, and YouTube links.
