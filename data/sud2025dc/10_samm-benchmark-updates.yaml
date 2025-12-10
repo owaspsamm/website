@@ -5,5 +5,4 @@ type: "Presentation"
 presenter: "Brian Glas"
 time: "2:30 pm"
 videoUrl: ""
-downloadUrl: ""
-archive: false
+archive: true
