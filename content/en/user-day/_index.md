@@ -5,24 +5,20 @@ description: User Day 2025
 keywords: ["about","what is","questions", "event", "user"]
 ---
 
-## Washington DC Upcoming SAMM & DSOMM User Day
+## Washington DC SAMM & DSOMM User Day 
 
-The OWASP SAMM team is excited to announce our upcoming User Day, this time teaming up with {{< external-link "https://owasp.org/www-project-devsecops-maturity-model/" "DSOMM">}}, as part of {{< external-link "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/" "Global AppSec USA (Washington, DC)">}}, on November 5th, 2025.
+The OWASP SAMM team teamed up with {{< external-link "https://owasp.org/www-project-devsecops-maturity-model/" "DSOMM">}} for a special User Day, as part of {{< external-link "https://owasp.glueup.com/event/owasp-2025-global-appsec-usa-washington-dc-131624/" "Global AppSec USA (Washington, DC)">}}, on November 5th, 2025.
 
-We’ll be spending the day sharing experiences, exploring real-world use of SAMM and DSOMM, and learning from each other about how to advance software security maturity. Whether you're deep into assessments or just getting started, we’d love to hear your perspective.
-
-Get your place! <b>{{< external-link "https://owasp.glueup.com/event/131624/register/" "Register here.">}}</b>
+We spent the day sharing experiences, exploring real-world use of SAMM and DSOMM, and learning from each other about how to advance software security maturity.
 
 
-<br/><br/>
+### Highlights
 
-### Agenda
+Below you’ll find the main sessions and activities that took place during the User Day. Check the <b>{{< external-link "https://www.youtube.com/playlist?list=PLL2wt4pQkkuKIs8K-xxX7XW3TjLCRRpGW" "YouTube playlist">}}</b> with the recordings of the talks.
 
-Below you’ll find the main sessions and activities we have planned. Please note that while the core program is set, there may still be a few adjustments as we finalize details with speakers and contributors.
+{{< user_day_agenda_2025_dc_archive >}}
 
-{{< user_day_agenda_2025_dc >}}
-
-As in previous editions of the User Day, we'll have a <strong>sponsored dinner</strong> for all participants thanks to Codific, SecureHabits, and Toreon.
+As in previous editions of the User Day, we had a <strong>sponsored dinner</strong> for all participants thanks to Codific, SecureHabits, and Toreon.
 
 
 {{< responsive-image-link-3  "../../img/sponsors/codific_180.png" "Codific" "https://www.codific.com" "../../img/sponsors/securehabits_180.png" "SecureHabits" "https://www.securehabits.nl" "../../img/sponsors/toreon_180.png" "Toreon" "https://www.toreon.com">}}

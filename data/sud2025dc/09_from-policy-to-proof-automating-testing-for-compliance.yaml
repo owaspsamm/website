@@ -5,5 +5,4 @@ type: "Presentation"
 presenter: "Spyros Gasteratos"
 time: "2:00 pm"
 videoUrl: ""
-downloadUrl: ""
-archive: false
+archive: true
