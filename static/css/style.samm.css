@@ -3893,9 +3893,14 @@ a.list-group-item.active > .badge,
   margin-bottom: 30px;
 }
 
+.samm-content-with-space .buttons-div {
+  margin-bottom: 10px;
+}
+
 .samm-page-content div {
   padding-bottom: 30px;
 }
+
 
 .samm-page-content th {
     text-align: left;
