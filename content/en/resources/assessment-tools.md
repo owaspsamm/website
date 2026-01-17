@@ -10,7 +10,7 @@ weight = 1
 
 ## Links to info and tools
 
-If you want to learn more about SAMM assessments, we have a couple of dedicated pages for that. First, there's the [assessment](/assessment) page. We also have an [assessment guide](/assessment-guide), with lots of practical advice, best practices, and an {{< external-link " https://docs.google.com/document/d/1rUsktgsGna65KJPCT91UiOxFRvKdFs0TJxCWN0aa5u4/edit?usp=sharing" "example set of questions">}} for an interview-style assessment. If you're just looking for the links to our spreadsheets or online assessment, here they are.
+If you want to learn more about SAMM assessments, we have a couple of dedicated pages for that. First, there's the [assessment](/assessment) page. We also have an [assessment guide](/assessment-guide), with lots of practical advice, best practices, and an {{< external-link "https://docs.google.com/document/d/1rUsktgsGna65KJPCT91UiOxFRvKdFs0TJxCWN0aa5u4/edit?usp=sharing" "example set of questions">}} for an interview-style assessment. If you're just looking for the links to our spreadsheets or online assessment, here they are.
 
 ### Spreadsheets
 
