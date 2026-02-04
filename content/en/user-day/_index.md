@@ -15,6 +15,14 @@ Registration is now open. <b> {{< external-link "https://owasp.glueup.com/event/
 
 We’re inviting the community to <b> {{< external-link "https://forms.gle/33Zmd3dKAkt4JMvS9" "submit presentation proposals">}} </b>.
 
+<br/>
+
+## Vienna SAMM Training
+
+We also have a 1-day training during the OWASP Global AppSec EU event, on June, Tuesday 23. You can learn more about it {{< external-link "https://owaspglobalappseceuvienna20.sched.com/event/2Ft16/1-day-training-build-your-appsec-program-with-owasp-samm-tuesday-only" "here">}}. Don't forget to {{< external-link "https://owasp.glueup.com/event/162243/register/" "register">}}!
+
+<br/><br/>
+
 ## Archive
 
 Here you can find the previous SAMM User Day pages with the full list of talks, downloadable material, and YouTube links.
