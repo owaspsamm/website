@@ -38,7 +38,7 @@ steps:
                 heading: SAMM downloads
                 type: link
                 description: https://owaspsamm.org/about/
-                resource3:
+            resource4:
                 heading: Blog post on determining scope
                 type: link
                 description: https://owaspsamm.org/blog/2023/05/24/determining-scope-when-implementing-samm/
