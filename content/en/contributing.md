@@ -1,5 +1,6 @@
 ---
 title: Contributing to SAMM
+type: page
 description: Contributing to SAMM
 keywords: ["Contribute","How do I","questions"]
 ---

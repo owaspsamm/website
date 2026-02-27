@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "Acronyms and Abbreviations"
 description = "Acronyms and Abbreviations"
 keywords = ["acronyms","abbreviations","questions"]

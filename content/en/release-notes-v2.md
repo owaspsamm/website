@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "Release notes OWASP SAMM version 2"
 description = "Release notes OWASP SAMM version 2"
 keywords = ["about","what is","questions"]

@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "SAMM Practitioners"
 description = "SAMM Practitioners list"
 keywords = ["assessors","assessment","practitioners"]

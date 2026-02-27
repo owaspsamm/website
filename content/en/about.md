@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "About us"
 description = "About us"
 keywords = ["about","what is","questions"]

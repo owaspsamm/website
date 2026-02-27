@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "Become a sponsor"
 description = "Be a SAMM supporter"
 keywords = ["Sponsors","questions"]

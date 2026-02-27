@@ -1,5 +1,6 @@
 ---
 title: Mapping SAMM 1.5 to 2.0
+type: page
 ---
 ## Overview
 

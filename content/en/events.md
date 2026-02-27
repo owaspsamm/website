@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "Events and trainings"
 description = "Events and trainings"
 keywords = ["Events","questions"]
