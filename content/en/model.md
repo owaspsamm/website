@@ -21,3 +21,5 @@ After a period of intensive discussions and with input from practitioners and th
 For an overview of the version 2 changes, read our [SAMM version 2 release notes](/release-notes-v2).
 
 We've also created a {{< external-link "https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" "PDF version">}} of the model.
+
+<img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=6e76dfd3-e2e4-4864-a63b-0b361639db63" />
