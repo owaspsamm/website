@@ -1,5 +1,6 @@
 ---
 title: The Model
+type: page
 description: The model
 keywords:
   - "model"
@@ -7,8 +8,6 @@ keywords:
   - "questions"
   - "what if"
 ---
-
-{{< language-dropdown >}}
 
 ## SAMM model overview
 
