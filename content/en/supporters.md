@@ -1,4 +1,5 @@
 +++
+type = "page"
 aliases = ['/sponsors']
 title = "Supporters"
 description = "Sponsors"

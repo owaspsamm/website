@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "SAMM Users"
 description = "SAMM Users list"
 keywords = ["users","adopters","assessment"]

@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "The team"
 description = "The OWASP SAMM team"
 keywords = ["team","project"]

@@ -10,7 +10,7 @@ on:
     types: [samm-core-released]
   workflow_dispatch:
 env:
-  hugo_version: '0.81.0'
+  hugo_version: '0.157.0'
 jobs:
   updateHugoMod:
     runs-on: ubuntu-latest

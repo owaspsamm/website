@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "References"
 description = "References"
 keywords = ["Events","questions"] 

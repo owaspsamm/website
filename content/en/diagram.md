@@ -1,5 +1,6 @@
 ---
 title: Model diagram
+type: page
 ---
 
 {{< mermaid >}}

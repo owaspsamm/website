@@ -1,10 +1,9 @@
 ---
 title: Le modèle
+type: page
 description: Le modèle
 keywords: ["modèle", "Comment faire", "questions", "Et si"]
 ---
-
-{{< language-dropdown >}}
 
 ## Aperçu du modèle SAMM
 

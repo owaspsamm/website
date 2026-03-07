@@ -1,10 +1,9 @@
 ---
 title: El Modelo
+type: page
 description: El modelo
 keywords: ["model","How do I","questions","what if"]
 ---
-
-{{< language-dropdown >}}
 
 ## Visión general del modelo SAMM
 

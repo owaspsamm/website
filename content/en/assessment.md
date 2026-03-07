@@ -1,4 +1,5 @@
 +++
+type = "page"
 title = "SAMM Assessment"
 description = "SAMM Assessment"
 keywords = ["assessment","measurement","questions"]

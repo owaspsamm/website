@@ -6,8 +6,7 @@ title = "OWASP SAMM"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = "UA-127457120-1"
-# Google Analytics 4 in params
+googleAnalytics = "G-44N5RHDT94"
 
 # Define the number of posts per page
 paginate = 10
@@ -33,7 +32,8 @@ paginate = 10
   [[module.imports.mounts]]
   source = "business-function"
   target = "content/business-function"
-  lang = "en"
+  [module.imports.mounts.sites.matrix]
+    languages = ["en"]
 
 [[module.imports]]
   # content
@@ -43,7 +43,8 @@ paginate = 10
   [[module.imports.mounts]]
   source = "business-function"
   target = "content/business-function"
-  lang = "fr"
+  [module.imports.mounts.sites.matrix]
+    languages = ["fr"]
 
 [menu]
 
@@ -312,7 +313,7 @@ paginate = 10
     # longitude = "-77.028333"
 
 [Permalinks]
-    blog = "/blog/:year/:month/:day/:filename/"
+    blog = "/blog/:year/:month/:day/:contentbasename/"
 
 # Enable or disable top bar with social icons
 [params.topbar]
@@ -409,8 +410,24 @@ defaultContentLanguage = "en"
   [languages.en]
     languageName = "English"
     weight = 1
-    contentDir = "content/en"
   [languages.fr]
     languageName = "Français"
     weight = 2
-    contentDir = "content/fr"
+
+[[module.mounts]]
+  source = "content/en"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["en"]
+
+[[module.mounts]]
+  source = "content/fr"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["fr"]
+
+[[module.mounts]]
+  source = "content/es"
+  target = "content"
+  [module.mounts.sites.matrix]
+    languages = ["es"]
