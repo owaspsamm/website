@@ -1,3 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>pdf on OWASP SAMM</title><link>https://owaspsamm.org/resource_categories/pdf/</link><description>Recent content in pdf on OWASP SAMM</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://owaspsamm.org/resource_categories/pdf/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM PDF</title><link>https://owaspsamm.org/resources/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/pdf/</guid><description>This is a long awaited moment since the release of SAMM version 2. The community asked for it so we&amp;rsquo;ve created a PDF version of the model.
-View the SAMM PDF here .
-If you have any feedback on this, please use our Slack channel , the Discussions on GitHub or our contact form.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pdf on OWASP SAMM</title><link>https://owaspsamm.org/resource_categories/pdf/</link><description>Recent content in Pdf on OWASP SAMM</description><generator>Hugo</generator><language>en</language><atom:link href="https://owaspsamm.org/resource_categories/pdf/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM PDF</title><link>https://owaspsamm.org/resources/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/pdf/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/PDF_file_icon.svg.png" alt="PDF icon"&gt;
+
+&lt;p&gt;This is a long awaited moment since the release of SAMM version 2. The community asked for it so we&amp;rsquo;ve created a PDF version of the model.&lt;/p&gt;
+&lt;p&gt;View the SAMM PDF &lt;a href="https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" target="_blank"&gt;here&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+.&lt;/p&gt;
+&lt;p&gt;If you have any feedback on this, please use our &lt;a href="https://owasp.slack.com/archives/C0VF1EJGH" target="_blank"&gt;Slack channel&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+, the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank"&gt;Discussions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ on GitHub or our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>

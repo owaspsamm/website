@@ -1,3 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>website on OWASP SAMM</title><link>https://owaspsamm.org/resource_tags/website/</link><description>Recent content in website on OWASP SAMM</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://owaspsamm.org/resource_tags/website/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM GitHub repositories</title><link>https://owaspsamm.org/resources/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/github/</guid><description>One project, many repos After the release of SAMM v2, we moved all of our GitHub content to the OWASP SAMM GitHub organization . Here, you can find all the repositories related to the SAMM project.
-Some of the repos you can find there are:
-Core Model Website SAMMwise (assessment tool) Also, don&amp;rsquo;t miss the Discussions section, where you can pitch your ideas, ask questions, and provide feedback.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Website on OWASP SAMM</title><link>https://owaspsamm.org/resource_tags/website/</link><description>Recent content in Website on OWASP SAMM</description><generator>Hugo</generator><language>en</language><atom:link href="https://owaspsamm.org/resource_tags/website/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM GitHub repositories</title><link>https://owaspsamm.org/resources/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/github/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/Octocat.png" alt="GitHub logo"&gt;
+
+&lt;h2 id="one-project-many-repos"&gt;One project, many repos&lt;/h2&gt;
+&lt;p&gt;After the release of SAMM v2, we moved all of our GitHub content to the &lt;a href="https://github.com/owaspsamm" target="_blank"&gt;OWASP SAMM GitHub organization&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+. Here, you can find all the repositories related to the SAMM project.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Some of the repos you can find there are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core" target="_blank"&gt;Core Model&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/website" target="_blank"&gt;Website&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank"&gt;SAMMwise (assessment tool)&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;Also, don&amp;rsquo;t miss the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank"&gt;Discussions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ section, where you can pitch your ideas, ask questions, and provide feedback.&lt;/p&gt;</description></item></channel></rss>

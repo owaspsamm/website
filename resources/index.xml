@@ -1,14 +1,94 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Resources on OWASP SAMM</title><link>https://owaspsamm.org/resources/</link><description>Recent content in Resources on OWASP SAMM</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://owaspsamm.org/resources/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM assessment tools</title><link>https://owaspsamm.org/resources/assessment-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/assessment-tools/</guid><description>Links to info and tools If you want to learn more about SAMM assessments, we have a couple of dedicated pages for that. First, there&amp;rsquo;s the assessment page. We also have an assessment guide, with lots of practical advice, best practices, and an example set of questions for an interview-style assessment. If you&amp;rsquo;re just looking for the links to our spreadsheets or online assessment, here they are.
-Spreadsheets We have 2 versions of the SAMM Toolbox, a Microsoft Excel Toolbox and a Google Spreadsheet Toolbox .</description></item><item><title>Training</title><link>https://owaspsamm.org/resources/training/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/training/</guid><description>A fully free, self-paced course with over 5 hours of video content.
-Visit the SAMM Fundamentals Course page on Thinkific.
-We&amp;rsquo;d really appreciate feedback on this first version of the course. Please use our Slack channel , the Discussions on GitHub or our contact form.</description></item><item><title>SAMM Mappings</title><link>https://owaspsamm.org/resources/mappings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/mappings/</guid><description>Direct Mappings Mapping between Microsoft SDL and SAMM The SAMM core team has created mappings between Microsoft SDL and OWASP SAMM. You can find the mapping in this spreadsheet .
-You can also find more information about this mapping in the Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis blog post.
-Mapping between BSIMM 14 and SAMM The SAMM core team has created mappings between BSIMM 14 and OWASP SAMM standards.</description></item><item><title>SAMM YouTube channel</title><link>https://owaspsamm.org/resources/youtube-channel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/youtube-channel/</guid><description>Watch SAMM videos Watch SAMM videos From model deep-dive sessions to presentations and project updates, our YouTube channel is a source of information on the project you don&amp;rsquo;t want to miss.
-Featured video During the first weekend of November 2022, the SAMM Core Team got together in Boston for an extremely productive few days of discussions and work iterations on the items from our roadmap. Take a look at some of the outcomes.</description></item><item><title>SAMM Community</title><link>https://owaspsamm.org/resources/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/community/</guid><description>External and internal SAMM community resources Here you&amp;rsquo;ll find links to places outside this website where you can interact with the SAMM team and with other SAMM users. Also, a reminder of the community-related content here on this website.
-Community calls We host community calls on the second Wednesday of every month. Here, we provide project updates, do model deep-dive sessions and interact with the community of SAMM users. This goes from helping out people who are getting started with SAMM to discussing tools and ways to go about the different SAMM activities.</description></item><item><title>SAMM PDF</title><link>https://owaspsamm.org/resources/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/pdf/</guid><description>This is a long awaited moment since the release of SAMM version 2. The community asked for it so we&amp;rsquo;ve created a PDF version of the model.
-View the SAMM PDF here .
-If you have any feedback on this, please use our Slack channel , the Discussions on GitHub or our contact form.</description></item><item><title>SAMM GitHub repositories</title><link>https://owaspsamm.org/resources/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/github/</guid><description>One project, many repos After the release of SAMM v2, we moved all of our GitHub content to the OWASP SAMM GitHub organization . Here, you can find all the repositories related to the SAMM project.
-Some of the repos you can find there are:
-Core Model Website SAMMwise (assessment tool) Also, don&amp;rsquo;t miss the Discussions section, where you can pitch your ideas, ask questions, and provide feedback.</description></item><item><title>SAMM Newsletter</title><link>https://owaspsamm.org/resources/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/news/</guid><description>SAMM Newsletter If you haven&amp;rsquo;t already, subscribe to our newsletter to have the latest SAMM news delivered to you.
-Issues This year&amp;rsquo;s issues
-February 2023 May 2023 For the full list, including issues since 2015, check out this spreadsheet .</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Resources on OWASP SAMM</title><link>https://owaspsamm.org/resources/</link><description>Recent content in Resources on OWASP SAMM</description><generator>Hugo</generator><language>en</language><atom:link href="https://owaspsamm.org/resources/index.xml" rel="self" type="application/rss+xml"/><item><title>SAMM assessment tools</title><link>https://owaspsamm.org/resources/assessment-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/assessment-tools/</guid><description>&lt;h2 id="links-to-info-and-tools"&gt;Links to info and tools&lt;/h2&gt;
+&lt;p&gt;If you want to learn more about SAMM assessments, we have a couple of dedicated pages for that. First, there&amp;rsquo;s the &lt;a href="https://owaspsamm.org/assessment/"&gt;assessment&lt;/a&gt; page. We also have an &lt;a href="https://owaspsamm.org/assessment-guide/"&gt;assessment guide&lt;/a&gt;, with lots of practical advice, best practices, and an &lt;a href="https://docs.google.com/document/d/1rUsktgsGna65KJPCT91UiOxFRvKdFs0TJxCWN0aa5u4/edit?usp=sharing" target="_blank"&gt;example set of questions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ for an interview-style assessment. If you&amp;rsquo;re just looking for the links to our spreadsheets or online assessment, here they are.&lt;/p&gt;
+&lt;h3 id="spreadsheets"&gt;Spreadsheets&lt;/h3&gt;
+&lt;p&gt;We have 2 versions of the SAMM Toolbox, a &lt;a href="https://github.com/owaspsamm/core/releases/latest" target="_blank"&gt;Microsoft Excel Toolbox&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ and a &lt;a href="https://docs.google.com/spreadsheets/d/1jmLVltRhuG19AX5cLUcWH1Qox2Uic17rD29gMVG5zDE/view#gid=1716553355" target="_blank"&gt;Google Spreadsheet Toolbox&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+.&lt;/p&gt;</description></item><item><title>Training</title><link>https://owaspsamm.org/resources/training/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/training/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/Fundamentals_Course.png" alt="SAMM Fundamentals Course"&gt;
+
+&lt;p&gt;A fully free, self-paced course with over 5 hours of video content.&lt;/p&gt;
+&lt;p&gt;Visit the &lt;a href="https://owaspsamm.thinkific.com/courses/samm" target="_blank"&gt;SAMM Fundamentals Course page&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ on Thinkific.&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;d really appreciate feedback on this first version of the course. Please use our &lt;a href="https://owasp.slack.com/archives/C0VF1EJGH" target="_blank"&gt;Slack channel&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+, the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank"&gt;Discussions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ on GitHub or our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>SAMM Mappings</title><link>https://owaspsamm.org/resources/mappings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/mappings/</guid><description>&lt;h2 id="direct-mappings"&gt;Direct Mappings&lt;/h2&gt;
+&lt;h3 id="mapping-between-microsoft-sdl-and-samm"&gt;Mapping between Microsoft SDL and SAMM&lt;/h3&gt;
+&lt;p&gt;The SAMM core team has created mappings between Microsoft SDL and OWASP SAMM. You can find the mapping in &lt;b&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank"&gt;this spreadsheet&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;You can also find more information about this mapping in the &lt;b&gt;&lt;a href="https://owaspsamm.org/blog/2025/01/20/comparing-microsoft-sdl-and-samm/"&gt;Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis&lt;/a&gt;&lt;/b&gt; blog post.&lt;/p&gt;
+&lt;h3 id="mapping-between-bsimm-14-and-samm"&gt;Mapping between BSIMM 14 and SAMM&lt;/h3&gt;
+&lt;p&gt;The SAMM core team has created mappings between BSIMM 14 and OWASP SAMM standards. You can find the mapping in &lt;b&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank"&gt;this spreadsheet&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/b&gt;.&lt;/p&gt;</description></item><item><title>SAMM YouTube channel</title><link>https://owaspsamm.org/resources/youtube-channel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/youtube-channel/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/youtube_icon.png" alt="YouTube icon"&gt;
+
+&lt;h2 id="watch-samm-videos"&gt;Watch SAMM videos&lt;/h2&gt;
+&lt;h2 id="watch-samm-videos-1"&gt;Watch SAMM videos&lt;/h2&gt;
+&lt;p&gt;From model deep-dive sessions to presentations and project updates, our &lt;a href="https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" target="_blank"&gt;YouTube channel&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ is a source of information on the project you don&amp;rsquo;t want to miss.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="featured-video"&gt;Featured video&lt;/h2&gt;
+&lt;p&gt;During the first weekend of November 2022, the SAMM Core Team got together in Boston for an extremely productive few days of discussions and work iterations on the items from our roadmap. Take a look at some of the outcomes.&lt;/p&gt;</description></item><item><title>SAMM Community</title><link>https://owaspsamm.org/resources/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/community/</guid><description>&lt;h2 id="external-and-internal-samm-community-resources"&gt;External and internal SAMM community resources&lt;/h2&gt;
+&lt;p&gt;Here you&amp;rsquo;ll find links to places outside this website where you can interact with the SAMM team and with other SAMM users. Also, a reminder of the community-related content here on this website.&lt;/p&gt;
+&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/meetup.png" alt="Meetup icon"&gt;
+
+&lt;h2 id="community-calls"&gt;Community calls&lt;/h2&gt;
+&lt;p&gt;We host community calls on the second Wednesday of every month. Here, we provide project updates, do model deep-dive sessions and interact with the community of SAMM users. This goes from helping out people who are getting started with SAMM to discussing tools and ways to go about the different SAMM activities.&lt;/p&gt;</description></item><item><title>SAMM PDF</title><link>https://owaspsamm.org/resources/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/pdf/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/PDF_file_icon.svg.png" alt="PDF icon"&gt;
+
+&lt;p&gt;This is a long awaited moment since the release of SAMM version 2. The community asked for it so we&amp;rsquo;ve created a PDF version of the model.&lt;/p&gt;
+&lt;p&gt;View the SAMM PDF &lt;a href="https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" target="_blank"&gt;here&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+.&lt;/p&gt;
+&lt;p&gt;If you have any feedback on this, please use our &lt;a href="https://owasp.slack.com/archives/C0VF1EJGH" target="_blank"&gt;Slack channel&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+, the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank"&gt;Discussions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ on GitHub or our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>SAMM GitHub repositories</title><link>https://owaspsamm.org/resources/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/github/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/Octocat.png" alt="GitHub logo"&gt;
+
+&lt;h2 id="one-project-many-repos"&gt;One project, many repos&lt;/h2&gt;
+&lt;p&gt;After the release of SAMM v2, we moved all of our GitHub content to the &lt;a href="https://github.com/owaspsamm" target="_blank"&gt;OWASP SAMM GitHub organization&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+. Here, you can find all the repositories related to the SAMM project.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Some of the repos you can find there are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core" target="_blank"&gt;Core Model&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/website" target="_blank"&gt;Website&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank"&gt;SAMMwise (assessment tool)&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br/&gt;
+&lt;p&gt;Also, don&amp;rsquo;t miss the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank"&gt;Discussions&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ section, where you can pitch your ideas, ask questions, and provide feedback.&lt;/p&gt;</description></item><item><title>SAMM Newsletter</title><link>https://owaspsamm.org/resources/news/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/resources/news/</guid><description>&lt;img class="text-wrap-img-left" src="https://owaspsamm.org/img/resources/mailchimp.png" alt="Mailchimp icon"&gt;
+
+&lt;h2 id="samm-newsletter"&gt;SAMM Newsletter&lt;/h2&gt;
+&lt;p&gt;If you haven&amp;rsquo;t already, &lt;a href="https://owaspsamm.us9.list-manage.com/subscribe?u=b83ce65c91239cb5e623ea83e&amp;amp;id=cbd0520923" target="_blank"&gt;subscribe to our newsletter&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+ to have the latest SAMM news delivered to you.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h2 id="issues"&gt;Issues&lt;/h2&gt;
+&lt;p&gt;This year&amp;rsquo;s issues&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://mailchi.mp/cafc17315aff/owasp-samm-newsletter-1-6120125?e=%5BUNIQID%5D" target="_blank"&gt;February 2023&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://mailchi.mp/690efa553197/owasp-samm-newsletter-1-6135326" target="_blank"&gt;May 2023&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the full list, including issues since 2015, check out &lt;a href="https://docs.google.com/spreadsheets/d/1OLogWjvteoilaMbWAVeaa6BaKypEMyfyXCEoM6gPiHE/edit?usp=sharing" target="_blank"&gt;this spreadsheet&lt;/a&gt; &lt;i class="link-icon fas fa-external-link-alt"&gt;&lt;/i&gt;
+
+.&lt;/p&gt;</description></item></channel></rss>
