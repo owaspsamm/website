@@ -667,15 +667,6 @@ As a bonus, there&amp;rsquo;s a link to a set of interview questions at the end.
  
  
  
- &lt;div class="practitioners-list-item"&gt;
- 
- 
- &lt;h4&gt;&lt;a href="https://www.caict.ac.cn/" target="_blank"&gt;China Academy of Information and Communications Technology (CAICT)&lt;/a&gt;&lt;/h4&gt;
- 
- &lt;p&gt;Country: China&lt;/p&gt;
- &lt;p&gt;Industry: Technology&lt;/p&gt;
- &lt;/div&gt;
- 
  
  
  
@@ -691,13 +682,25 @@ As a bonus, there&amp;rsquo;s a link to a set of interview questions at the end.
  
  
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  &lt;div class="practitioners-list-item"&gt;
  
  
- &lt;h4&gt;Dell&lt;/h4&gt;
+ &lt;h4&gt;ING Insurance International&lt;/h4&gt;
  
- &lt;p&gt;Country: US&lt;/p&gt;
- &lt;p&gt;Industry: Technology&lt;/p&gt;
+ &lt;p&gt;Country: Europe&lt;/p&gt;
+ &lt;p&gt;Industry: &lt;/p&gt;
  &lt;/div&gt;
  
  
@@ -706,7 +709,31 @@ As a bonus, there&amp;rsquo;s a link to a set of interview questions at the end.
  &lt;div class="practitioners-list-item"&gt;
  
  
- &lt;h4&gt;Fortify Software&lt;/h4&gt;
+ &lt;h4&gt;ISG&lt;/h4&gt;
+ 
+ &lt;p&gt;Country: Australia&lt;/p&gt;
+ &lt;p&gt;Industry: Healthcare&lt;/p&gt;
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+ &lt;div class="practitioners-list-item"&gt;
+ 
+ 
+ &lt;h4&gt;KBC&lt;/h4&gt;
+ 
+ &lt;p&gt;Country: Europe&lt;/p&gt;
+ &lt;p&gt;Industry: Banking&lt;/p&gt;
+ &lt;/div&gt;
+ 
+ 
+ 
+ 
+ &lt;div class="practitioners-list-item"&gt;
+ 
+ 
+ &lt;h4&gt;RES Software&lt;/h4&gt;
  
  &lt;p&gt;Country: Global&lt;/p&gt;
  &lt;p&gt;Industry: Software&lt;/p&gt;
@@ -718,10 +745,10 @@ As a bonus, there&amp;rsquo;s a link to a set of interview questions at the end.
  &lt;div class="practitioners-list-item"&gt;
  
  
- &lt;h4&gt;Gotham Digital Science&lt;/h4&gt;
+ &lt;h4&gt;&lt;a href="https://www.gdssecurity.com/" target="_blank"&gt;Siemens Healthineers&lt;/a&gt;&lt;/h4&gt;
  
- &lt;p&gt;Country: Global&lt;/p&gt;
- &lt;p&gt;Industry: Software&lt;/p&gt;
+ &lt;p&gt;Country: Worldwide&lt;/p&gt;
+ &lt;p&gt;Industry: Healthcare&lt;/p&gt;
  &lt;/div&gt;
  
  
@@ -730,7 +757,7 @@ As a bonus, there&amp;rsquo;s a link to a set of interview questions at the end.
  &lt;div class="practitioners-list-item"&gt;
  
  
- &lt;h4&gt;HP&lt;/h4&gt;
+ &lt;h4&gt;SITA&lt;/h4&gt;
  
  &lt;p&gt;Country: Global&lt;/p&gt;</description></item><item><title>Scalable Baseline</title><link>https://owaspsamm.org/./model/verification/security-testing/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/security-testing/stream-a/</guid><description/></item><item><title>Secret Management</title><link>https://owaspsamm.org/./model/implementation/secure-deployment/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-deployment/stream-b/</guid><description/></item><item><title>Secure Architecture</title><link>https://owaspsamm.org/./model/design/secure-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/secure-architecture/</guid><description>&lt;p&gt;The Secure Architecture (SA) practice focuses on the security linked to components and technology you deal with during the architectural design of your software. Secure Architecture Design looks at the selection and composition of components that form the foundation of your solution, focusing on its security properties. Technology Management looks at the security of supporting technologies used during development, deployment and operations, such as development stacks and tooling, deployment tooling, and operating systems and tooling.&lt;/p&gt;</description></item><item><title>Secure Build</title><link>https://owaspsamm.org/./model/implementation/secure-build/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/</guid><description>&lt;p&gt;The Secure Build (SB) practice emphasises the importance of building software in a standardised, repeatable manner, and of doing so using secure components, including 3rd party software dependencies.&lt;/p&gt;
 &lt;p&gt;The first stream focuses on removing any subjectivity from the build process by striving for full automation. An automated build pipeline can include additional automated security checks such as SAST and DAST to gain further assurance and flag security regressions early by failing the build, for example.&lt;/p&gt;</description></item><item><title>Secure Deployment</title><link>https://owaspsamm.org/./model/implementation/secure-deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-deployment/</guid><description>&lt;p&gt;One of the final stages in delivering secure software is ensuring the security and integrity of developed applications are not compromised during deployment. The Secure Deployment (SD) practice focuses on this. To this end, the practice’s first stream focuses on removing manual error by automating the deployment process as much as possible, and making its success contingent upon the outcomes of integrated security verification checks. It also fosters Separation of Duties by making adequately trained, non-developers responsible for deployment.&lt;/p&gt;</description></item><item><title>Security Requirements</title><link>https://owaspsamm.org/./model/design/security-requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/</guid><description>&lt;p&gt;The Security Requirements (SR) practice focuses on security requirements that are important in the context of secure software. A first type deals with typical software-related requirements, to specify objectives and expectations to protect the service and data at the core of the application. A second type deals with requirements relative to supplier organizations that are part of the development context of the application, in particular for outsourced development. It is important to streamline the expectations in terms of secure development because outsourced development can have significant impact on the security of the application. The security of 3rd party (technical) libraries is part of the software supply chains stream (see Secure Build), and it is not included in this practice.&lt;/p&gt;</description></item><item><title>Security Testing</title><link>https://owaspsamm.org/./model/verification/security-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/security-testing/</guid><description>&lt;p&gt;The Security Testing (ST) practice leverages the fact that, while automated security testing is fast and scales well to numerous applications, in-depth testing based on good knowledge of an application and its business logic is often only possible via slower, manual expert security testing. Each stream therefore has one approach at its core.&lt;/p&gt;
