@@ -3,6 +3,7 @@ type: user-day
 title: User day
 name: "Bridging Security Maturity and Regulatory Compliance: How SAMM Enables CRA Essential Requirements for FOSS Projects"
 speaker: Nessim Kisserli
+image: /img/people/Nessim.jpg
 affiliation: PwC
 role: Technical Expert, Cyber & Privacy
 abstract: |
