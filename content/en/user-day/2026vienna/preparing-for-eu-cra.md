@@ -3,6 +3,7 @@ type: user-day
 title: User day
 name: "Preparing for EU CRA: An overview of the concurrences and discrepancies between the prEN 40000 series and OWASP SAMM"
 speaker: Lara Brito
+image: /img/people/Lara_Brito.jpg
 abstract: |
   A review of the Cyber Resilience Act, as well as of the more recent Commission Guidelines on the CRA, confirms that all companies involved in the supply chain for "products with digital elements" will need to dedicate time and expertise to ensure compliance with the Act. Organizations are not, however, starting from scratch, as established frameworks like OWASP SAMM are valuable tools for achieving CRA-readiness. This talk will examine the concurrences and discrepancies between the horizontal standards developed in connection with the CRA (notably the prEN 40000 series) and OWASP SAMM from a Cybersecurity Law perspective.
 

@@ -3,6 +3,7 @@ type: user-day
 title: User day
 name: "The SME Maturity Trap"
 speaker: Koen Gilissen
+image: /img/people/Koen_Gilissen.jpg
 affiliation: PXL Smart ICT
 role: Cybersecurity Research Coordinator
 abstract: |
