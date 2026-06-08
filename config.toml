@@ -1,0 +1,188 @@
+baseURL = 'https://owaspsamm.org/'
+title = 'OWASP SAMM'
+languageCode = 'en-us'
+defaultContentLanguage = 'en'
+
+[pagination]
+  pagerSize = 9
+
+[taxonomies]
+  category = 'categories'
+
+[menu]
+
+# Main menu
+
+[[menu.main]]
+  name = "About SAMM"
+  identifier = "aboutsamm"
+  url = "/about-samm/"
+  weight = 1
+
+[[menu.main]]
+  name = "What is SAMM"
+  parent = "aboutsamm"
+  url = "/about/"
+  weight = 11
+
+[[menu.main]]
+  name = "The team"
+  parent = "aboutsamm"
+  url = "/team/"
+  weight = 12
+
+[[menu.main]]
+  name = "The Model"
+  url = "/model/"
+  weight = 2
+
+[[menu.main]]
+  name = "Docs"
+  url = "/docs/"
+  weight = 3
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
+
+[[menu.main]]
+  name = "Community"
+  identifier = "community"
+  url = "/community/"
+  weight = 5
+
+[[menu.main]]
+  name = "User Day"
+  parent = "community"
+  url = "/user-day/"
+  weight = 51
+
+[[menu.main]]
+  name = "SAMM Users"
+  parent = "community"
+  url = "/samm-users/"
+  weight = 52
+
+[[menu.main]]
+  name = "Practitioners"
+  parent = "community"
+  url = "/practitioners/"
+  weight = 53
+
+[[menu.main]]
+  name = "Sponsors"
+  parent = "community"
+  url = "/supporters/"
+  weight = 54
+
+[[menu.main]]
+  name = "Benchmark"
+  parent = "community"
+  url = "/benchmark/"
+  weight = 55
+
+[[menu.footernav]]
+  name = "About SAMM"
+  url = "/about/"
+  weight = 1
+
+[[menu.footernav]]
+  name = "The Model"
+  url = "/model/"
+  weight = 2
+
+[[menu.footernav]]
+  name = "Docs"
+  url = "/docs/"
+  weight = 3
+
+[[menu.footernav]]
+  name = "Assessment"
+  url = "/assessment/"
+  weight = 4
+
+[[menu.footer]]
+  name = "FAQ"
+  url = "/docs/reference/faq/"
+  weight = 1
+
+[[menu.footer]]
+  name = "Contributing"
+  url = "/docs/contributing/how-to-contribute/"
+  weight = 2
+
+[[menu.footer]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
+
+[[menu.social]]
+  name = "GitHub"
+  url = "https://github.com/owaspsamm"
+  weight = 1
+  [menu.social.params]
+    icon = "github"
+
+[[menu.social]]
+  name = "Slack"
+  url = "https://owasp.slack.com/messages/C0VF1EJGH"
+  weight = 2
+  [menu.social.params]
+    icon = "slack"
+
+[[menu.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/company/owasp-samm/"
+  weight = 3
+  [menu.social.params]
+    icon = "linkedin"
+
+[[menu.social]]
+  name = "YouTube"
+  url = "https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g"
+  weight = 4
+  [menu.social.params]
+    icon = "youtube"
+
+[[menu.social]]
+  name = "Meetup"
+  url = "https://www.meetup.com/owasp-samm/"
+  weight = 5
+  [menu.social.params]
+    icon = "meetup"
+
+[params]
+  description = "Measure and improve your organization's software security posture"
+  author = "OWASP SAMM"
+  images = ["/img/site-feature-image.png"]
+  googleAnalyticsID = "G-44N5RHDT94"
+
+[privacy]
+  [privacy.youtube]
+    privacyEnhanced = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 3
+  ordered = false
+
+[module]
+
+[[module.imports]]
+  path = "github.com/owaspsamm/core"
+  disabled = false
+
+  [[module.imports.mounts]]
+  source = "business-function"
+  target = "content/business-function"
+  sites = { matrix = { languages = ["en"] } }
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"

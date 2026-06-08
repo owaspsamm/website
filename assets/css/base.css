@@ -1,0 +1,39 @@
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-dark);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ .Permalink | replaceRE `/\./` `/` }}</title>
+  <link rel="canonical" href="{{ .Permalink | replaceRE `/\./` `/` }}"/>
+  <meta name="robots" content="noindex">
+  <meta charset="utf-8"/>
+</head>
+<body>
+<script>
+(function () {
+  var target = {{ .Permalink | replaceRE `/\./` `/` | jsonify }};
+  var last = window.location.pathname.replace(/\/$/, '').split('/').pop();
+  // If the alias ends in an activity ID with a level number (e.g. G-EG-A-2), add it as a hash
+  if (/^[A-Z]+-[A-Z]+-[AB]-\d+$/.test(last)) {
+    window.location.replace(target + '#' + last);
+  } else {
+    window.location.replace(target);
+  }
+})();
+</script>
+<noscript><meta http-equiv="refresh" content="0; url={{ .Permalink | replaceRE `/\./` `/` }}"/></noscript>
+</body>
+</html>

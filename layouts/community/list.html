@@ -1,0 +1,204 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="section__subtitle">{{ . }}</div>{{ end }}
+
+    {{/* --- Connect --- */}}
+    <div class="resource-group">
+      <div class="resource-group__header">
+        <h2 class="resource-group__title">Connect</h2>
+        <p class="resource-group__desc">Talk to us and the wider SAMM community</p>
+      </div>
+      <div class="resource-grid">
+
+        <a href="/community/slack/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Chat bubbles */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              <path d="M8 10h8M8 13h5"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Slack</h3>
+            <p>Exchange ideas with practitioners and core team members. Join our channel or get an invitation.</p>
+          </div>
+        </a>
+
+        <a href="/community/community-calls/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Calendar */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2"/>
+              <path d="M16 2v4M8 2v4M3 10h18"/>
+              <path d="M8 14h.01M12 14h.01M16 14h.01"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Community Calls</h3>
+            <p>Monthly calls on the second Wednesday of every month: project updates, model deep-dives, and Q&A.</p>
+          </div>
+        </a>
+
+        <a href="/community/github-discussions/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Code brackets */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 18l6-6-6-6"/>
+              <path d="M8 6l-6 6 6 6"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>GitHub Discussions</h3>
+            <p>Pitch ideas, ask questions, and provide feedback on the SAMM project.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    {{/* --- Stay Updated --- */}}
+    <div class="resource-group">
+      <div class="resource-group__header">
+        <h2 class="resource-group__title">Stay Updated</h2>
+        <p class="resource-group__desc">Follow SAMM's progress and community activity</p>
+      </div>
+      <div class="resource-grid">
+
+        <a href="/community/newsletter/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Envelope */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 7l-10 7L2 7"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Newsletter</h3>
+            <p>SAMM news delivered to your inbox. Browse the archive of past issues since 2015.</p>
+          </div>
+        </a>
+
+        <a href="/community/youtube/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Play circle */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M10 8l6 4-6 4z"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>YouTube</h3>
+            <p>Deep-dive sessions, podcast episodes, and User Day recordings from our channel.</p>
+          </div>
+        </a>
+
+        <a href="/blog/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Pen / edit */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 20h9"/>
+              <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4 12.5-12.5z"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Blog</h3>
+            <p>Project updates, framework mappings, and deep-dives from the core team.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    {{/* --- Get Involved --- */}}
+    <div class="resource-group">
+      <div class="resource-group__header">
+        <h2 class="resource-group__title">Get Involved</h2>
+        <p class="resource-group__desc">Events, recognition, and ways to support the project</p>
+      </div>
+      <div class="resource-grid">
+
+        <a href="/user-day/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Map pin */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>User Day</h3>
+            <p>Our annual gathering for practitioners, contributors, and anyone interested in software security.</p>
+          </div>
+        </a>
+
+        <a href="/samm-users/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* People / group */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>SAMM Users</h3>
+            <p>Organizations that have adopted SAMM. Get listed by contacting us.</p>
+          </div>
+        </a>
+
+        <a href="/practitioners/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Briefcase */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              <path d="M12 12v2"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Practitioners</h3>
+            <p>Companies and consultants providing SAMM services. Contact us to be listed.</p>
+          </div>
+        </a>
+
+        <a href="/supporters/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Star */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l2.09 6.26H22l-6.18 4.5 2.35 7.24L12 16.1l-6.17 3.9 2.35-7.24L2 8.26h7.91z"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Sponsors</h3>
+            <p>Organizations that support SAMM's development. Learn about sponsorship benefits.</p>
+          </div>
+        </a>
+
+        <a href="/benchmark/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Bar chart */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 3v18h18"/>
+              <rect x="7" y="12" width="3" height="6"/>
+              <rect x="12" y="8" width="3" height="10"/>
+              <rect x="17" y="4" width="3" height="14"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Benchmark</h3>
+            <p>Compare your software security maturity against peers — and contribute anonymized data to help the industry.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

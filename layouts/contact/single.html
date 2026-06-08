@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="contact-bg">
+<article class="content">
+  {{ .Content }}
+  <div class="contact-card">
+    <form class="contact-form" method="post" action="https://formspree.io/moqpnkgj">
+      <div class="contact-form__row">
+        <div class="contact-form__field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="contact-form__field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+      </div>
+      <div class="contact-form__field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <input type="text" name="_gotcha" style="display:none">
+      <button type="submit" class="btn btn--primary">Send message</button>
+    </form>
+  </div>
+  <p class="contact-form__alt">You can also reach us via email at <a href="mailto:info@owaspsamm.org">info@owaspsamm.org</a> or on our <a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener noreferrer">Slack channel<svg class="external-link-icon" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 2H2a1 1 0 00-1 1v7a1 1 0 001 1h7a1 1 0 001-1V7"/><path d="M8 1h3v3"/><path d="M11 1L6 6"/></svg></a>.</p>
+</article>
+</div>
+{{ end }}

@@ -1,0 +1,14 @@
+{{/* Docs breadcrumb — uses .Ancestors (Hugo 0.109+) */}}
+<nav class="docs-breadcrumb" aria-label="Breadcrumb">
+  <a href="/docs/">Docs</a>
+  {{ range .Ancestors.Reverse }}
+    {{ if and (ne .RelPermalink "/") (ne .RelPermalink "/docs/") }}
+    <svg viewBox="0 0 8 12" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" aria-hidden="true">
+      <path d="M0.5 0.5 L4.5 4 Q7.5 6 4.5 8 L0.5 11.5"/>
+    </svg>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{ end }}
+  {{ end }}
+  {{/* Current page title omitted — the h1 below serves that role */}}
+</nav>

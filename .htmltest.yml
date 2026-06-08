@@ -1,0 +1,12 @@
+DirectoryPath: public
+CheckExternal: false
+CheckInternal: true
+CheckInternalHash: true
+CheckMailto: false
+CheckImages: true
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreAltMissing: true
+IgnoreEmptyHref: true
+IgnoreDirs:
+  - internal
+LogLevel: 2

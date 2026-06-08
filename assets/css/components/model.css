@@ -1,0 +1,128 @@
+/* --- Model table ---
+   5-column grid with display:contents on columns so that
+   practice rows align across all business functions. */
+.model-table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto repeat(3, 1fr);
+  gap: var(--space-xs);
+  margin-top: var(--space-lg);
+}
+
+/* display:contents removes the wrapper from layout while
+   keeping children in the DOM for selector matching */
+.model-col {
+  display: contents;
+}
+
+/* BF color tokens — single definition per BF, shared by model table, page containers, and sidebar nav.
+   --bf-color:       saturated brand color (headers, page backgrounds)
+   --bf-color-light: muted variant (cell accents, nav text, card titles) */
+.model-col--governance,
+.model-bf--governance,
+.model-nav__bf--governance     { --bf-color: var(--color-governance);     --bf-color-light: var(--color-governance-light); }
+.model-col--design,
+.model-bf--design,
+.model-nav__bf--design         { --bf-color: var(--color-design);         --bf-color-light: var(--color-design-light); }
+.model-col--implementation,
+.model-bf--implementation,
+.model-nav__bf--implementation { --bf-color: var(--color-implementation); --bf-color-light: var(--color-implementation-light); }
+.model-col--verification,
+.model-bf--verification,
+.model-nav__bf--verification   { --bf-color: var(--color-verification);   --bf-color-light: var(--color-verification-light); }
+.model-col--operations,
+.model-bf--operations,
+.model-nav__bf--operations     { --bf-color: var(--color-operations);     --bf-color-light: var(--color-operations-light); }
+
+/* Explicit row placement keeps headers and practices aligned */
+.model-col__header          { grid-row: 1; }
+.model-col > :nth-child(2)  { grid-row: 2; }
+.model-col > :nth-child(3)  { grid-row: 3; }
+.model-col > :nth-child(4)  { grid-row: 4; }
+
+.model-col__header {
+  background: var(--bf-color, var(--color-dark));
+  color: var(--color-offwhite);
+  padding: var(--space-md) var(--space-sm);
+  text-align: center;
+  border-radius: 0.375rem 0.375rem 0 0;
+  text-decoration: none;
+  transition:
+    background var(--duration) var(--ease),
+    color var(--duration) var(--ease);
+}
+
+.model-col__header:hover {
+  color: var(--color-dark);
+  text-decoration: none;
+  background: var(--bf-color-light, var(--bf-color));
+}
+
+.model-col__header h2 {
+  font-family: var(--font-brand);
+  font-size: var(--text-base);
+  font-weight: 400;
+  margin: 0;
+}
+
+.model-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-md) var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-dark);
+  background: color-mix(in srgb, var(--bf-color-light) 6%, var(--color-offwhite));
+  border: 2px solid var(--color-border);
+  border-bottom: 2px solid var(--bf-color-light, var(--color-border));
+  border-radius: 0.375rem;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent, var(--bf-color-light, var(--color-primary)), transparent);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition:
+    background-size var(--duration) var(--ease),
+    border-color var(--duration) var(--ease),
+    color var(--duration) var(--ease);
+}
+
+.model-cell:hover {
+  text-decoration: none;
+  color: var(--color-dark);
+  border-color: var(--bf-color-light, var(--color-primary));
+  background-size: 100% 2px;
+}
+
+/* --- Model intro --- */
+.model-intro {
+  margin-top: var(--space-xl);
+  max-width: 36rem;
+  margin-inline: auto;
+  color: var(--color-text-light);
+  line-height: var(--line-height);
+}
+
+.model-intro h2 {
+  font-family: var(--font-brand);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+}
+
+.model-intro p {
+  margin-bottom: var(--space-md);
+}
+
+.model-intro a {
+  color: var(--color-mid);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.model-intro a:hover {
+  color: var(--color-primary);
+}

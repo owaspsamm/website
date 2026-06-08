@@ -1,0 +1,74 @@
+:root {
+  /* Brand palette */
+  --color-primary: #71b8b8;       /* brand teal */
+  --color-primary-rgb: 113, 184, 184;
+  --color-dark: #2c3030;           /* near-black */
+  --color-dark-rgb: 44, 48, 48;
+  --color-mid: #366867;            /* dark teal — reserved for subtle accents */
+  --color-offwhite: #f9f6f6;       /* off-white background */
+  --color-offwhite-rgb: 249, 246, 246;
+
+  /* Business-function colors (dark variants — headers, strong accents) */
+  --color-governance:     #435b70;
+  --color-design:         #ad4b00;
+  --color-implementation: #3a5f26;
+  --color-verification:   #754858;
+  --color-operations:     #5b5b62;
+
+  /* Business-function colors (light variants — cell accents) */
+  --color-governance-light:     #587792;
+  --color-design-light:         #e08742;
+  --color-implementation-light: #6a9254;
+  --color-verification-light:   #824f62;
+  --color-operations-light:     #757680;
+
+  /* No plain white anywhere — off-white is the lightest surface */
+  --color-bg: var(--color-offwhite);
+  --color-border: #e8e3e3;         /* derived from off-white */
+
+  /* Text */
+  --color-text: var(--color-dark);
+  --color-text-light: #464646;
+  --color-text-muted: #6b6b6b;
+
+  /* Typography — golden-ratio scale (φ = 1.618)
+     base = 1rem (16px)
+     ÷φ   = 0.618rem  (~10px) — caption
+     ×1   = 1rem      (16px)  — body
+     ×φ   = 1.618rem  (~26px) — h3 / section titles
+     ×φ²  = 2.618rem  (~42px) — h2
+     ×φ³  = 4.236rem  (~68px) — h1 / hero
+  */
+  --text-xs: 0.618rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.236rem;
+  --text-xl: 1.618rem;
+  --text-2xl: 2.618rem;
+  --text-3xl: 4.236rem;
+
+  --font-brand: "Days One", system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, monospace;
+  --line-height: 1.618;            /* φ — golden ratio for body text */
+
+  /* Spacing — golden-ratio scale (base = 1rem) */
+  --space-xs: 0.382rem;   /* 1 − 0.618 */
+  --space-sm: 0.618rem;   /* 1/φ */
+  --space-md: 1rem;
+  --space-lg: 1.618rem;   /* φ */
+  --space-xl: 2.618rem;   /* φ² */
+  --space-2xl: 4.236rem;  /* φ³ */
+  --space-3xl: 6.854rem;  /* φ⁴ */
+
+  /* Layout */
+  --max-width: 72rem;
+  --header-height: 4rem;
+  --tap-target-min: 2.75rem;  /* 44px — Apple HIG / WCAG 2.5.5 AAA minimum */
+  --hero-height-min: 24rem;   /* floor — drives layout at normal viewports */
+  --hero-height-max: 40rem;   /* ceiling — prevents runaway growth on 4K+ */
+
+  /* Animation */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1); /* Material-style deceleration */
+  --duration: 0.3s;
+}

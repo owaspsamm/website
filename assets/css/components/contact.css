@@ -1,0 +1,68 @@
+/* --- Contact Form --- */
+
+.contact-form {
+  margin-top: var(--space-lg);
+}
+
+.contact-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-md);
+}
+
+.contact-form__field label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-dark);
+  margin-bottom: var(--space-xs);
+}
+
+.contact-form__field input,
+.contact-form__field textarea {
+  font-family: inherit;
+  font-size: var(--text-base);
+  color: var(--color-dark);
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 0.375rem;
+  padding: var(--space-sm) var(--space-md);
+  transition:
+    border-color var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease);
+}
+
+.contact-form__field input:focus,
+.contact-form__field textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-rgb), 0.15);
+}
+
+.contact-form__field textarea {
+  resize: vertical;
+}
+
+.contact-form__alt {
+  margin-top: var(--space-lg);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.contact-bg {
+  background: url('/img/brand-pattern.svg') no-repeat center / cover;
+  flex: 1;
+}
+
+.contact-card {
+  background: var(--color-offwhite);
+  border-radius: var(--space-sm);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: var(--space-lg) var(--space-lg);
+  margin-bottom: var(--space-lg);
+}

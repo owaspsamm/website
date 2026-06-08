@@ -1,0 +1,1617 @@
+/* ==========================================================================
+   Documentation Section
+   Three-column layout: sidebar | content | on-this-page TOC.
+   Sidebar is fixed-width, content is fluid, TOC is fixed-width.
+   On tablet, TOC hides. On mobile, sidebar becomes a drawer.
+   ========================================================================== */
+
+/* --- Docs shell (three-column grid) --- */
+.docs {
+  display: grid;
+  grid-template-columns: 16rem 1fr 14rem;
+  gap: 0;
+  max-width: 88rem;
+  margin-inline: auto;
+  min-height: calc(100vh - var(--header-height));
+}
+
+
+/* --- Sidebar --- */
+.docs__sidebar {
+  position: sticky;
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+  padding: var(--space-lg) var(--space-md);
+  border-right: 1px solid var(--color-border);
+  scrollbar-width: thin;
+}
+
+.docs__sidebar-close {
+  display: none;
+}
+
+/* --- Sidebar nav --- */
+.docs-nav {
+  font-size: var(--text-sm);
+}
+
+.docs-nav__group {
+  margin-bottom: var(--space-xs);
+}
+
+.docs-nav__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--space-xs) var(--space-sm);
+  background: none;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--color-dark);
+  text-align: left;
+  transition: background var(--duration) var(--ease);
+}
+
+.docs-nav__toggle:hover {
+  background: rgba(var(--color-primary-rgb), 0.07);
+  color: var(--color-primary);
+}
+
+.docs-nav__caret {
+  width: 0.6em;
+  height: 0.5em;
+  flex-shrink: 0;
+  margin-left: var(--space-sm);
+  transition: transform var(--duration) var(--ease);
+}
+
+.docs-nav__toggle.is-open .docs-nav__caret {
+  transform: rotate(180deg);
+}
+
+.docs-nav__children {
+  display: none;
+  padding-left: var(--space-md);
+}
+
+.docs-nav__children.is-open {
+  display: block;
+}
+
+.docs-nav__link {
+  display: block;
+  padding: var(--space-xs) var(--space-sm);
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition:
+    color var(--duration) var(--ease),
+    background var(--duration) var(--ease);
+}
+
+/* Link inside a toggle: no extra padding (button provides it), fills available width so backgrounds span the full row */
+.docs-nav__toggle > .docs-nav__link {
+  padding: 0;
+  flex: 1;
+}
+
+.docs-nav__link:hover {
+  color: var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.07);
+  text-decoration: none;
+}
+
+.docs-nav__toggle .docs-nav__link:hover,
+[class*="model-nav__bf--"] .docs-nav__children .docs-nav__toggle .docs-nav__link:hover {
+  background: transparent;
+  color: inherit;
+}
+
+.docs-nav__link.is-active {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.docs-nav__toggle:has([aria-current="page"]) {
+  border-left: 2px solid var(--color-primary);
+  padding-left: calc(var(--space-sm) - 2px);
+}
+
+.docs-nav__toggle [aria-current="page"] {
+  font-weight: 600;
+}
+
+/* --- Content area --- */
+.docs__content {
+  padding: var(--space-lg);
+  min-width: 0;
+}
+
+.docs__body {
+  max-width: 50rem;
+}
+
+.docs__intro {
+  margin-bottom: var(--space-lg);
+}
+
+.docs__note {
+  border-left: 3px solid var(--color-primary);
+  background: rgba(var(--color-primary-rgb), 0.06);
+  padding: var(--space-sm) var(--space-md);
+  margin-block: var(--space-lg);
+}
+
+.docs__intro img,
+.docs__body img {
+  display: block;
+  max-width: 440px;
+  margin: var(--space-lg) auto var(--space-md);
+}
+
+.docs__meta {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+/* Card grid for section index pages */
+.docs__card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.docs__card {
+  display: block;
+  padding: var(--space-lg);
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition:
+    border-color var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.docs__card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(44, 48, 48, 0.1);
+  text-decoration: none;
+}
+
+.docs__card-title {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.docs__card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+/* --- On-this-page TOC (right column) --- */
+.docs__toc {
+  position: sticky;
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+  padding: var(--space-lg) var(--space-md);
+  border-left: 1px solid var(--color-border);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+
+.docs__toc-inner {
+  font-size: var(--text-sm);
+}
+
+.docs__toc--empty {
+  border-left: none;
+}
+
+.docs__toc-heading {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.docs__toc #TableOfContents ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.docs__toc #TableOfContents ul ul {
+  padding-left: var(--space-md);
+}
+
+.docs__toc #TableOfContents li {
+  margin-bottom: var(--space-xs);
+}
+
+.docs__toc #TableOfContents a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.docs__toc #TableOfContents a:hover {
+  color: var(--color-primary);
+}
+
+.docs__toc #TableOfContents a.is-active {
+  color: var(--color-mid);
+  font-weight: 600;
+}
+
+/* BF heading items injected into TOC */
+.docs__toc-bf {
+  margin-top: var(--space-sm);
+}
+.docs__toc-bf a {
+  font-weight: 600;
+}
+
+/* BF-colored TOC links (skills framework page) */
+.docs__toc #TableOfContents a[data-bf="governance"]:hover,
+.docs__toc #TableOfContents a[data-bf="governance"].is-active  { color: var(--color-governance); }
+.docs__toc #TableOfContents a[data-bf="design"]:hover,
+.docs__toc #TableOfContents a[data-bf="design"].is-active      { color: var(--color-design); }
+.docs__toc #TableOfContents a[data-bf="implementation"]:hover,
+.docs__toc #TableOfContents a[data-bf="implementation"].is-active { color: var(--color-implementation); }
+.docs__toc #TableOfContents a[data-bf="verification"]:hover,
+.docs__toc #TableOfContents a[data-bf="verification"].is-active { color: var(--color-verification); }
+.docs__toc #TableOfContents a[data-bf="operations"]:hover,
+.docs__toc #TableOfContents a[data-bf="operations"].is-active  { color: var(--color-operations); }
+
+/* --- Docs breadcrumb --- */
+.docs-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-lg);
+  color: var(--color-text-muted);
+}
+
+.docs-breadcrumb a {
+  color: var(--color-text-muted);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.docs-breadcrumb a:hover {
+  color: var(--color-primary);
+}
+
+.docs-breadcrumb svg {
+  width: 0.5em;
+  height: 0.75em;
+  flex-shrink: 0;
+}
+
+.docs-breadcrumb span {
+  color: var(--color-dark);
+}
+
+/* --- Prev/Next pager --- */
+.docs-pager {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(var(--color-dark-rgb), 0.15);
+}
+
+/* Specificity 0-7-1 beats .content a:not(…)×6 (0-7-1) and wins by source order.
+   NOTE: if a 7th :not() is ever added to the content link rule, bump this too. */
+.docs .docs__content .docs__body.content .docs-pager a.docs-pager__link.docs-pager__link {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-border);
+  border-radius: 0.375rem;
+  color: var(--color-dark);
+  text-decoration: none;
+  transition:
+    border-color var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.docs-pager__link:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(44, 48, 48, 0.1);
+  text-decoration: none;
+}
+
+.docs-pager__link svg {
+  width: 0.5em;
+  height: 0.65em;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  margin-bottom: 0.35em;
+}
+
+.docs-pager__link small {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.docs-pager__link--next {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* --- Mobile sidebar toggle (docs-specific) --- */
+.docs__sidebar-toggle {
+  display: none;
+  position: fixed;
+  bottom: var(--space-lg);
+  left: var(--space-lg);
+  z-index: 90;
+  width: 3rem;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-dark);
+  color: var(--color-offwhite);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(44, 48, 48, 0.25);
+  transition:
+    background var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.docs__sidebar-toggle:hover {
+  background: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.docs__sidebar-toggle svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* --- Docs overlay (mobile sidebar backdrop) --- */
+.docs__overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(44, 48, 48, 0.4);
+  z-index: 140;
+}
+
+.docs__overlay.is-open {
+  display: block;
+}
+
+/* --- Model docs integration ---
+   Adds docs-shell layout to model pages (Phase 5).
+   Reuses all .docs__* and .docs-nav__* rules; only model-specific additions here. */
+
+/* model-docs: sidebar spans all rows; header + content stack in column 2 */
+.model-docs {
+  grid-template-columns: 16rem 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar content";
+}
+
+.model-docs > .docs__sidebar {
+  grid-area: sidebar;
+  align-self: start;
+}
+
+.model-docs__header {
+  grid-area: header;
+}
+
+.model-docs > .docs__content {
+  grid-area: content;
+}
+
+/* Model Reference link at bottom of docs sidebar */
+.docs-nav__divider {
+  border: none;
+  border-top: 1px solid var(--color-border, rgba(44,48,48,.12));
+  margin: var(--space-md) 0 var(--space-sm);
+}
+
+.docs-nav__section-label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-mid);
+  padding: var(--space-sm) var(--space-sm) var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.docs-nav__model-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color var(--duration) var(--ease), background var(--duration) var(--ease);
+}
+
+.docs-nav__model-link:hover {
+  color: var(--color-primary);
+  background: rgba(113,184,184,.07);
+}
+
+.docs-nav__model-link svg {
+  flex-shrink: 0;
+  width: 14px;
+  height: 14px;
+  opacity: .6;
+}
+
+/* model-nav: the sidebar used on model pages — inherits all .docs-nav styles */
+.model-nav .docs-nav__home {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.model-nav .docs-nav__home:hover {
+  color: var(--color-primary);
+}
+
+/* Model nav colors — tokens are set per-group via model-nav__bf--* (defined in unified block above).
+   Both BF names and practices use the dark variant for consistent contrast. */
+/* BF name link color */
+[class*="model-nav__bf--"] > .docs-nav__toggle > .docs-nav__link {
+  color: var(--bf-color);
+  font-weight: 600;
+}
+
+/* Practice link — neutral when closed */
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group > .docs-nav__toggle:not(.is-open) > .docs-nav__link {
+  color: var(--color-dark);
+  font-weight: 400;
+}
+
+/* Practice toggle — left border only when current page is within this practice (is-active or is-ancestor on the group) */
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group.is-active > .docs-nav__toggle,
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group.is-ancestor > .docs-nav__toggle {
+  border-left: 2px solid var(--bf-color);
+  padding-left: calc(var(--space-sm) - 2px);
+}
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group.is-active > .docs-nav__toggle > .docs-nav__link,
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group.is-ancestor > .docs-nav__toggle > .docs-nav__link {
+  color: var(--bf-color);
+  font-weight: 600;
+}
+
+/* Stream link color — neutral at rest */
+[class*="model-nav__bf--"] .docs-nav__children .docs-nav__children > .docs-nav__link {
+  color: var(--color-dark);
+}
+
+/* BF + practice toggle hover — bf-color tint */
+[class*="model-nav__bf--"] > .docs-nav__toggle:hover,
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group > .docs-nav__toggle:hover {
+  background: color-mix(in srgb, var(--bf-color) 8%, transparent);
+}
+
+/* BF toggle — left border only when the current page is within this BF (is-active or is-ancestor on the group, set by Hugo at render time) */
+[class*="model-nav__bf--"].is-active > .docs-nav__toggle,
+[class*="model-nav__bf--"].is-ancestor > .docs-nav__toggle {
+  border-left: 2px solid var(--bf-color);
+  padding-left: calc(var(--space-sm) - 2px);
+}
+
+/* Practice link hover — bf-color */
+[class*="model-nav__bf--"] .docs-nav__children .docs-nav__link:hover {
+  color: var(--bf-color);
+  background: color-mix(in srgb, var(--bf-color) 8%, transparent);
+}
+
+/* Active stream link — bf-color text + tint + left border (stream links only, not practice toggle links) */
+[class*="model-nav__bf--"] .docs-nav__children .docs-nav__children > .docs-nav__link.is-active,
+[class*="model-nav__bf--"] .docs-nav__children .docs-nav__children > .docs-nav__link[aria-current="page"] {
+  color: var(--bf-color);
+  font-weight: 600;
+  background: color-mix(in srgb, var(--bf-color) 10%, transparent);
+  border-left: 2px solid var(--bf-color);
+  padding-left: calc(var(--space-sm) - 2px);
+}
+
+/* Business-function page: description + practice cards */
+.bf-description {
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+  line-height: 1.7;
+  margin-bottom: var(--space-xl);
+}
+
+.bf-practices {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.bf-practice {
+  display: block;
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-offwhite);
+  border: 1px solid var(--color-border, rgba(var(--color-dark-rgb), .12));
+  border-radius: var(--space-sm);
+  text-decoration: none;
+  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+}
+
+.bf-practice:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(var(--color-dark-rgb), .1);
+  text-decoration: none;
+}
+
+.bf-practice h3 {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--bf-color, var(--color-primary));
+  margin: 0;
+}
+
+/* High specificity (0-5-0) to beat .content a:not(...) (0-4-1) and its hover (0-4-2) */
+.model-docs .docs__content .content .bf-practices .bf-practice,
+.model-docs .docs__content .content .bf-practices .bf-practice:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* --- Page header (title band above content) --- */
+.page-header {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: var(--space-2xl) var(--space-lg) var(--space-lg);
+}
+
+.page-header h1 {
+  font-family: var(--font-brand);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--color-dark);
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.page-header h1::after {
+  content: "";
+  display: block;
+  width: max(150%, calc(100% + 2 * var(--space-xl)));
+  margin-left: min(-25%, calc(-1 * var(--space-xl)));
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  margin-top: var(--space-sm);
+}
+
+/* Child page variant — tinted background, no gradient */
+.page-header--child {
+  background: rgba(var(--color-primary-rgb), 0.08);
+  max-width: none;
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-lg);
+}
+
+.page-header--child h1 {
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.page-header--child h1::after {
+  display: none;
+}
+
+.page-header__date {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
+  margin-top: var(--space-xs);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  text-align: center;
+}
+
+/* --- Business Function / Practice / Stream pages --- */
+
+.page-header--bf {
+  padding: var(--space-md) var(--space-lg) var(--space-sm);
+  max-width: none;
+  margin-inline: 0;
+  position: relative;
+}
+
+.page-header--bf::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: var(--space-lg);
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--bf-color, var(--color-primary)), transparent);
+}
+
+.bf-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-light);
+}
+
+.bf-breadcrumb > :not(:last-child)::after {
+  content: "|";
+  margin-left: var(--space-xs);
+  opacity: 0.5;
+}
+
+.bf-breadcrumb a {
+  color: var(--color-text-light);
+  text-decoration: none;
+}
+
+.bf-breadcrumb a:hover {
+  color: var(--bf-color, var(--color-primary));
+  text-decoration: underline;
+  text-decoration-color: var(--bf-color, var(--color-primary));
+  text-underline-offset: 0.15em;
+}
+
+.page-header--bf h1 {
+  font-family: var(--font-brand);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--bf-color, var(--color-dark));
+  width: auto;
+  margin-bottom: 0;
+}
+
+.page-header--bf h1::after {
+  display: none;
+}
+
+.page-header__subtitle {
+  font-size: var(--text-lg);
+  opacity: 0.85;
+  margin-top: var(--space-xs);
+}
+
+/* Practice: maturity overview table */
+.practice-maturity {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  overflow: hidden;
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.practice-maturity th,
+.practice-maturity td {
+  padding: var(--space-sm) var(--space-md);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  vertical-align: top;
+}
+
+.practice-maturity th:last-child,
+.practice-maturity td:last-child {
+  border-right: 0;
+}
+
+.practice-maturity tr:last-child td {
+  border-bottom: 0;
+}
+
+.practice-maturity th {
+  background: var(--color-dark);
+  color: var(--color-offwhite);
+  font-weight: 600;
+  text-align: left;
+}
+
+.practice-maturity__label {
+  font-weight: 600;
+  background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
+}
+
+/* Practice: streams */
+.practice-streams {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.practice-stream h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+/* Specificity 0-7-2 beats .content a:not(…)×6 (0-7-1).
+   agenda-program__link was added to the :not() list, bumping it from 0-6-1 to 0-7-1
+   and breaking the previous 0-6-2 rule. Added .practice-content to recover the win. */
+.docs.model-docs .docs__content .content.practice-content .practice-streams .practice-stream h3 a {
+  color: var(--bf-color, var(--color-dark));
+  text-decoration: none;
+}
+
+.docs.model-docs .docs__content .content.practice-content .practice-streams .practice-stream h3 a:hover {
+  color: var(--bf-color-light, var(--color-primary));
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.15em;
+}
+
+/* Links inside maturity cells — inherit body text color, keep underline for accessibility */
+.docs.model-docs .docs__content .content.practice-content .practice-streams .practice-stream .practice-stream__table td a {
+  color: inherit;
+}
+
+.practice-stream__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  overflow: hidden;
+}
+
+.practice-stream__table th,
+.practice-stream__table td {
+  padding: var(--space-sm) var(--space-md);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+  vertical-align: top;
+}
+
+.practice-stream__table th:last-child,
+.practice-stream__table td:last-child {
+  border-right: 0;
+}
+
+.practice-stream__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.practice-stream__table th {
+  background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
+  font-weight: 600;
+  text-align: left;
+}
+
+.practice-stream__table td a {
+  color: inherit;
+}
+
+/* --- Content (single pages) --- */
+.content {
+  max-width: 50rem;
+  margin-inline: auto;
+  padding: var(--space-lg) var(--space-lg) var(--space-2xl);
+}
+
+.content h1,
+.docs__body h1 {
+  font-family: var(--font-brand);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  margin-bottom: var(--space-lg);
+  color: var(--color-dark);
+}
+
+.docs__body h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(90deg, var(--color-primary), transparent);
+  margin-top: var(--space-sm);
+}
+
+.content h2 {
+  font-family: var(--font-brand);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+  color: var(--color-dark);
+}
+
+.content h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.content .resource-card__body h3 {
+  margin-top: 0;
+}
+
+
+.content p,
+.content ul,
+.content ol,
+.docs__intro p,
+.docs__intro ul,
+.docs__intro ol {
+  margin-bottom: var(--space-md);
+}
+
+.content ul,
+.content ol {
+  padding-left: var(--space-lg);
+}
+
+.content ol ol { list-style-type: lower-alpha; }
+.content ol ol ol { list-style-type: lower-roman; }
+
+.link-list ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.link-list ul li:not(:last-child)::after {
+  content: "\00b7";
+  margin-left: var(--space-sm);
+  color: var(--color-text-muted);
+}
+
+/* --- Callout — thematic break followed by a closing note.
+   Used for policy notes, community invitations, etc.
+   Semantic pattern: <hr> + <p> in markdown via  ---  + paragraph.
+   Gradient line reuses the section-title motif; tinted card below. */
+.content hr {
+  border: none;
+  margin-top: var(--space-2xl);
+  margin-bottom: 0;
+}
+
+.content hr + p {
+  padding: var(--space-lg) var(--space-xl);
+  background: rgba(var(--color-primary-rgb), 0.1);
+  border-radius: 0.5rem;
+  border-bottom: 2px solid var(--color-mid);
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--line-height);
+  text-wrap: pretty;
+}
+
+.content a:not(.btn):not(.resource-card):not(.blog-card):not(.docs__card):not(.card):not(.agenda-program__link) {
+  color: var(--color-mid);
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1.5px;
+  transition:
+    color var(--duration) var(--ease),
+    text-decoration-color var(--duration) var(--ease);
+}
+
+.content a:not(.btn):not(.resource-card):not(.blog-card):not(.docs__card):not(.card):not(.agenda-program__link):hover {
+  color: var(--color-primary);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+}
+
+.external-link-icon {
+  display: inline-block;
+  width: 0.75em;
+  height: 0.75em;
+  margin-left: 0.2em;
+  vertical-align: baseline;
+  stroke: currentColor;
+  opacity: 0.5;
+  transition: opacity var(--duration) var(--ease);
+}
+
+a:hover .external-link-icon {
+  opacity: 1;
+}
+
+.text-wrap-img {
+  float: right;
+  margin: 0 0 var(--space-md) var(--space-md);
+  width: 200px;
+}
+
+.content code {
+  font-family: var(--font-mono);
+  background: var(--color-offwhite);
+  padding: 0.125em 0.375em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.content pre {
+  background: var(--color-dark);
+  color: #e2e8f0;
+  padding: var(--space-lg);
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin-bottom: var(--space-lg);
+}
+
+.content pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.content-figure {
+  max-width: 44rem;
+  margin: 0 auto var(--space-xl);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.content-figure--diagram {
+  border-radius: 0;
+  max-width: none;
+}
+
+.content-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-figure figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+/* Small inline figure — floats left alongside text */
+.content .content-figure--small {
+  float: left;
+  margin: 0 var(--space-lg) var(--space-md) 0;
+  max-width: 8rem;
+}
+
+.content-figure--small + * {
+  overflow: hidden; /* clearfix for float context */
+}
+
+.content .content-figure--small img {
+  width: 100%;
+  margin: 0;
+}
+
+.content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: var(--space-xl) auto;
+}
+
+/* --- Video embeds --- */
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.video-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-lg);
+}
+
+.video-grid__title {
+  margin-top: var(--space-sm);
+  font-weight: 600;
+  font-size: var(--text-sm);
+}
+
+/* --- Card grid (generic, for list pages) --- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--space-lg);
+}
+
+.card {
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: var(--space-lg);
+  transition:
+    box-shadow var(--duration) var(--ease),
+    transform var(--duration) var(--ease),
+    border-color var(--duration) var(--ease);
+}
+
+.card:hover {
+  box-shadow: 0 8px 28px rgba(44, 48, 48, 0.1);
+  transform: translateY(-2px);
+  border-color: var(--color-primary);
+}
+
+.card h3 {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
+  color: var(--color-dark);
+}
+
+.card p {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+}
+
+.card--sm {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.card--sm h3 {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-xs);
+}
+
+.card--sm p {
+  font-size: var(--text-sm);
+}
+
+/* --- Skills Framework --- */
+
+/* Practice separator */
+.content hr.skills-sep {
+  border: none;
+  border-top: 1px solid var(--color-mid);
+  opacity: 0.25;
+  margin: var(--space-xl) 0;
+}
+
+/* BF-colored headings and their links */
+.content h2.skills-bf--governance     { color: var(--color-governance); }
+.content h2.skills-bf--design         { color: var(--color-design); }
+.content h2.skills-bf--implementation { color: var(--color-implementation); }
+.content h2.skills-bf--verification   { color: var(--color-verification); }
+.content h2.skills-bf--operations     { color: var(--color-operations); }
+
+/* Anchor offset so headings aren't hidden behind sticky header */
+.content h2[class*="skills-bf--"],
+.content .skills-bf-group h3 {
+  scroll-margin-top: 5rem;
+}
+
+.docs .docs__content .docs__body.content .skills-mapping h2[class*="skills-bf--"] a {
+  color: inherit;
+  text-decoration: none;
+}
+.docs .docs__content .docs__body.content .skills-mapping h2[class*="skills-bf--"] a:hover,
+.docs .docs__content .docs__body.content .skills-mapping h2[class*="skills-bf--"] a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.15em;
+}
+
+/* BF color context on group wrappers — same pattern as model pages */
+.skills-bf-group--governance     { --bf-color: var(--color-governance);     --bf-color-light: var(--color-governance-light); }
+.skills-bf-group--design         { --bf-color: var(--color-design);         --bf-color-light: var(--color-design-light); }
+.skills-bf-group--implementation { --bf-color: var(--color-implementation); --bf-color-light: var(--color-implementation-light); }
+.skills-bf-group--verification   { --bf-color: var(--color-verification);   --bf-color-light: var(--color-verification-light); }
+.skills-bf-group--operations     { --bf-color: var(--color-operations);     --bf-color-light: var(--color-operations-light); }
+
+/* Practice + stream links: bf-colored, no underline on desktop.
+   Specificity 0-7-2 beats .content a:not(…)×5 (0-6-1).
+   Same pattern as model page stream links. */
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group h3 a,
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group strong a {
+  color: var(--bf-color, var(--color-dark));
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group h3 a:hover,
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group h3 a:focus,
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group strong a:hover,
+.docs .docs__content .docs__body.content .skills-mapping .skills-bf-group strong a:focus {
+  color: var(--bf-color-light, var(--color-primary));
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-underline-offset: 0.15em;
+}
+
+/* Details/rationale styling — custom caret matching DS */
+.skills-bf-group details {
+  margin: var(--space-sm) 0 var(--space-lg);
+}
+
+.skills-bf-group details summary {
+  cursor: pointer;
+  color: var(--color-text-light, #888);
+  font-size: var(--text-base);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  transition: color var(--duration) var(--ease);
+}
+
+.skills-bf-group details summary:hover {
+  color: var(--bf-color, var(--color-mid));
+}
+
+.skills-bf-group details summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Rounded caret matching DS icon system */
+.skills-bf-group details summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.5625em;
+  background: currentColor;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: transform var(--duration) var(--ease);
+}
+
+.skills-bf-group details[open] summary::before {
+  transform: rotate(0deg);
+}
+
+.skills-bf-group details p {
+  margin-top: var(--space-xs);
+  color: var(--color-text-light, #888);
+}
+
+/* --- Archive-mode agenda (used by generic user-day-agenda shortcode) --- */
+/* Note: agenda classes also appear in stream.css for the stream-level blocks,
+   but .agenda/.agenda__* as a component belong here with docs/content. */
+.agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin: var(--space-lg) 0;
+  border: 2px solid var(--color-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.agenda__talk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-bg);
+  position: relative;
+  transition: background var(--duration) var(--ease);
+}
+
+.agenda__talk:hover {
+  background: rgba(var(--color-primary-rgb), 0.07);
+}
+
+.agenda__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  flex: 1;
+  min-width: 0;
+}
+
+.agenda__title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.3;
+}
+
+.agenda__title a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--duration) var(--ease);
+}
+
+.agenda__talk:hover .agenda__title a {
+  color: var(--color-primary);
+}
+
+.agenda__speaker {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.agenda__time {
+  flex: 0 0 5rem;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-mid);
+  white-space: nowrap;
+}
+
+.agenda__actions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.agenda__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  color: var(--color-mid);
+  background: var(--color-offwhite);
+  transition:
+    color var(--duration) var(--ease),
+    background var(--duration) var(--ease);
+}
+
+.agenda__icon:hover {
+  color: var(--color-bg);
+  background: var(--color-primary);
+  text-decoration: none;
+}
+
+.agenda__break {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-offwhite);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* Override .content a link styling inside archive agenda */
+.content .agenda .agenda__info .agenda__title a,
+.content .agenda .agenda__actions a.agenda__icon {
+  text-decoration: none;
+  text-shadow: none;
+}
+.content .agenda .agenda__info .agenda__title a:hover {
+  color: var(--color-primary);
+}
+
+/* --- Live-mode program table (used by Vienna 2026) --- */
+.agenda-program {
+  display: grid;
+  margin: var(--space-lg) 0 var(--space-xl);
+  font-size: var(--text-sm);
+}
+
+.agenda-program__head,
+.agenda-program__row {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr) minmax(0, 14rem);
+  gap: var(--space-md);
+  align-items: baseline;
+  padding: var(--space-sm);
+  border-bottom: 1px solid rgba(var(--color-dark-rgb), 0.08);
+}
+
+.agenda-program__head {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  border-bottom-width: 2px;
+}
+
+.agenda-program__row {
+  transition: background-color 0.15s ease;
+}
+
+.agenda-program__row:hover {
+  background: rgba(var(--color-primary-rgb), 0.04);
+}
+
+.agenda-program__time {
+  font-family: var(--font-brand);
+  font-weight: 500;
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.agenda-program__title {
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1.35;
+}
+
+.agenda-program__presenter {
+  color: var(--color-text-muted);
+}
+
+.agenda-program__title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.agenda-program__title a:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.agenda-program__row--break .agenda-program__time,
+.agenda-program__row--break .agenda-program__title {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.agenda-program__row--break:hover {
+  background: transparent;
+}
+
+.talk-header h1 {
+  font-size: var(--text-xl);
+  line-height: 1.2;
+}
+
+.talk-speaker {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(var(--color-dark-rgb), 0.1);
+}
+
+.talk-speaker__photo {
+  flex: 0 0 auto;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.talk-speaker__meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.talk-speaker__name {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-dark);
+  line-height: 1;
+  margin: 0 0 var(--space-xs);
+}
+
+.talk-speaker__role,
+.talk-speaker__affiliation {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.talk-speaker__links {
+  margin-top: var(--space-sm);
+  display: flex;
+  gap: var(--space-md);
+}
+
+.talk-back {
+  margin-top: var(--space-xl);
+}
+
+/* --- 404 error page --- */
+/* Note: placed here as it relies on .docs/.content context on many variant classes */
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.error-page__inner {
+  max-width: 36rem;
+}
+
+.error-page__code {
+  font-size: clamp(4rem, 12vw, 8rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+  margin: 0 0 var(--space-sm);
+}
+
+.error-page__heading {
+  font-size: var(--text-xl);
+  color: var(--color-dark);
+  margin: 0 0 var(--space-lg);
+}
+
+.error-page__message {
+  font-size: var(--text-base);
+  color: var(--color-mid);
+  margin: 0 0 var(--space-xl);
+}
+
+.error-page__actions {
+  display: flex;
+  gap: var(--space-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Dark variant — preserves the original dark-themed 404 */
+.error-page--dark {
+  background: var(--color-dark);
+}
+
+.error-page--dark .error-page__heading {
+  color: var(--color-offwhite);
+}
+
+.error-page--dark .error-page__message {
+  color: var(--color-primary);
+}
+
+.error-page--dark .error-card__practice {
+  color: var(--color-offwhite);
+}
+
+.error-page--dark .error-card__label,
+.error-page--dark .error-card__stream-name,
+.error-page--dark .error-card__footer {
+  color: var(--color-primary);
+}
+
+.error-page--dark .btn--primary {
+  background: var(--color-primary);
+  color: var(--color-dark);
+  border-color: var(--color-primary);
+}
+
+.error-page--dark .btn--outline {
+  color: var(--color-offwhite);
+  border-color: rgba(var(--color-offwhite-rgb), 0.6);
+}
+
+.error-page--dark .btn--outline:hover {
+  background: rgba(var(--color-offwhite-rgb), 0.15);
+  border-color: var(--color-offwhite);
+  color: var(--color-offwhite);
+}
+
+.error-card {
+  background: rgba(var(--color-primary-rgb), 0.07);
+  border: 1px solid rgba(var(--color-primary-rgb), 0.35);
+  border-radius: var(--space-sm);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  padding: var(--space-md) var(--space-lg);
+  margin-bottom: var(--space-lg);
+  text-align: left;
+}
+
+.error-card__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  padding-bottom: var(--space-sm);
+  margin: 0 0 var(--space-sm);
+  border-bottom: 1px solid rgba(var(--color-primary-rgb), 0.25);
+}
+
+.error-card__practice {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--color-dark);
+  margin: 0 0 var(--space-md);
+}
+
+.error-card__streams {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.error-card__stream {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.error-card__stream-name {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  width: 4.5rem;
+  flex-shrink: 0;
+}
+
+.error-card__levels {
+  display: flex;
+  gap: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.error-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(var(--color-primary-rgb), 0.15);
+  padding-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.error-card__status {
+  background: var(--color-primary);
+  color: var(--color-dark);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px var(--space-xs);
+  border-radius: 3px;
+}

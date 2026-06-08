@@ -1,0 +1,81 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      {{ with .Content }}<div class="section__subtitle">{{ . }}</div>{{ end }}
+    </div>
+
+    {{/* Team group photo */}}
+    <div class="team-photo">
+      <img src="/img/team/sammteam.jpg" alt="SAMM Core Team" loading="lazy">
+    </div>
+
+    {{/* --- Project Leaders --- */}}
+    <h2 class="team-section-heading">Project Leaders</h2>
+
+    <div class="team-leaders">
+      {{ range .Site.Data.teamcore }}
+        {{ if and .active (eq .designation "Project leader") }}
+        <div class="team-card">
+          <div class="team-card__photo">
+            <img src="/{{ .image }}" alt="{{ .name }}" loading="lazy">
+            {{ with .social }}
+            <div class="team-card__overlay">
+              {{ partial "social-icons.html" . }}
+            </div>
+            {{ end }}
+          </div>
+          <h3 class="team-card__name">{{ .name }}</h3>
+          {{ with .content }}<p class="team-card__bio">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    {{/* --- Core Team Members --- */}}
+    <h2 class="team-section-heading">Core Team</h2>
+    <p class="team-section-desc">Actively participating in regular meetings, summits, and contributing to the project.</p>
+
+    <div class="team-grid">
+      {{ range .Site.Data.teamcore }}
+        {{ if and .active (ne .designation "Project leader") }}
+        <div class="team-card">
+          <div class="team-card__photo">
+            <img src="/{{ .image }}" alt="{{ .name }}" loading="lazy">
+            {{ with .social }}
+            <div class="team-card__overlay">
+              {{ partial "social-icons.html" . }}
+            </div>
+            {{ end }}
+          </div>
+          <h3 class="team-card__name">{{ .name }}</h3>
+          {{ with .content }}<p class="team-card__bio">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="content team-contributors">
+      <h2>Contributors</h2>
+      <p>SAMM has also been enriched by a diverse group of contributors who have poured their expertise and passion into shaping the project. To all our contributors, we extend our heartfelt thanks.</p>
+      <ul>
+        <li>Sebastian Arriada</li>
+        <li>Chris Cooper</li>
+        <li>Brett Crawley</li>
+        <li>Bruce Jenkins</li>
+        <li>Yan Kravchenko</li>
+        <li>Timo Pagel</li>
+        <li>Hardik Parekh</li>
+        <li>Romuald Szkudlarek</li>
+        <li>Rob van der Veer</li>
+        <li>Felipe Zipitria</li>
+      </ul>
+      <p>If you think someone is missing, do let us know!</p>
+      <p>Willing to contribute? Check out our <a href="/docs/contributing/how-to-contribute/">contributing</a> page.</p>
+    </div>
+  </div>
+</section>
+{{ end }}

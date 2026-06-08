@@ -1,0 +1,50 @@
+{{ define "main" }}
+<div class="docs{{ if not .Params.toc }} docs--no-toc{{ end }}">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "docs/sidebar.html" . }}
+  </aside>
+
+  <div class="docs__content">
+    {{ partial "docs/breadcrumb.html" . }}
+
+    <article class="docs__body content">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.author }}
+        <p class="docs__meta">{{ . }}</p>
+      {{ end }}
+      {{ .Content }}
+      {{ partial "docs/prev-next.html" . }}
+    </article>
+  </div>
+
+  {{ if .Params.toc }}
+  <aside class="docs__toc" aria-label="On this page">
+    <div class="docs__toc-inner">
+      <h4 class="docs__toc-heading">On this page</h4>
+      {{ .TableOfContents }}
+    </div>
+  </aside>
+  {{ else }}
+  <aside class="docs__toc docs__toc--empty"></aside>
+  {{ end }}
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+{{ $toc := resources.Get "js/docs-toc.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+<script src="{{ $toc.RelPermalink }}" integrity="{{ $toc.Data.Integrity }}" defer></script>
+{{ end }}

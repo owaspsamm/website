@@ -1,0 +1,12 @@
+{{/* Renders an image with optional caption.
+     Usage:
+       Full-width:  {{< figure src="/img/example.svg" alt="Description" >}}
+       Inline left:  {{< figure src="/img/icon.png" alt="Logo" size="small" >}}
+       Diagram:     {{< figure src="/img/diagram.svg" alt="Diagram" type="diagram" >}}
+       With caption: {{< figure src="/img/example.svg" alt="Description" caption="Caption text" >}} */}}
+{{ $size := .Get "size" | default "full" }}
+{{ $type := .Get "type" }}
+<figure class="content-figure{{ if eq $size "small" }} content-figure--small{{ end }}{{ if eq $type "diagram" }} content-figure--diagram{{ end }}">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">
+  {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>

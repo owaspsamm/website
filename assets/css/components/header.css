@@ -1,0 +1,232 @@
+/* --- Header --- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-dark);
+  height: var(--header-height);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 88rem;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-offwhite);
+  text-decoration: none;
+}
+
+.site-logo:hover {
+  color: var(--color-offwhite);
+  text-decoration: none;
+}
+
+.site-logo img {
+  height: 1.6rem;
+  width: auto;
+}
+
+/* --- Navigation --- */
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+/* Gradient teal underline grows from center on hover — same
+   visual language as section titles and feature cards */
+.site-nav a {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-offwhite);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-xs) var(--space-md);
+  background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: background-size var(--duration) var(--ease);
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background-size: 100% 2px;
+  text-shadow: 0.04em 0 0 currentColor;
+  text-decoration: none;
+}
+
+/* --- Dropdown navigation --- */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-offwhite);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-xs) var(--space-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: background-size var(--duration) var(--ease);
+}
+
+.nav-dropdown__toggle:not(.nav-dropdown__toggle--caret-only):hover,
+.nav-dropdown.is-open .nav-dropdown__toggle:not(.nav-dropdown__toggle--caret-only),
+.nav-dropdown.has-active-child .nav-dropdown__toggle:not(.nav-dropdown__toggle--caret-only) {
+  background-size: 100% 2px;
+  text-shadow: 0.04em 0 0 currentColor;
+}
+
+.nav-dropdown__caret {
+  width: 0.6em;
+  height: 0.6em;
+  transition: transform var(--duration) var(--ease);
+}
+
+.nav-dropdown.is-open .nav-dropdown__caret {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + var(--space-xs));
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 13rem;
+  background: var(--color-dark);
+  border: 1px solid rgba(var(--color-offwhite-rgb), 0.08);
+  border-radius: 0.375rem;
+  padding: var(--space-md) 0;
+  list-style: none;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  z-index: 200;
+  opacity: 0;
+  transform: translateX(-50%) translateY(4px);
+  transition:
+    opacity var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.nav-dropdown.is-open .nav-dropdown__menu {
+  display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.nav-dropdown__menu li a {
+  position: relative;
+  display: block;
+  padding: var(--space-sm) var(--space-lg);
+  padding-left: calc(var(--space-lg) + var(--space-md));
+  font-size: var(--text-sm);
+  color: rgba(var(--color-offwhite-rgb), 0.55);
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  background-image: none;
+  transition: color var(--duration) var(--ease);
+}
+
+/* Rounded chevron bullet — same curve as the caret, rotated to point right */
+.nav-dropdown__menu li a::before {
+  content: "";
+  position: absolute;
+  left: var(--space-md);
+  top: 50%;
+  width: 0.55em;
+  height: 0.7em;
+  transform: translateY(-50%);
+  opacity: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12' fill='none' stroke='%2371b8b8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M0.5 0.5 L4.5 4 Q7.5 6 4.5 8 L0.5 11.5'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition:
+    opacity var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.nav-dropdown__menu li a:hover::before,
+.nav-dropdown__menu li a[aria-current="page"]::before {
+  opacity: 1;
+  transform: translateY(-50%) translateX(2px);
+}
+
+.nav-dropdown__menu li a:hover,
+.nav-dropdown__menu li a[aria-current="page"] {
+  color: var(--color-offwhite);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-dropdown__menu li + li {
+  border-top: 1px solid rgba(var(--color-offwhite-rgb), 0.05);
+}
+
+/* Linked dropdown: parent label is a link, caret is a separate button */
+.nav-dropdown--linked {
+  display: flex;
+  align-items: center;
+}
+
+.nav-dropdown__label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-offwhite);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: var(--space-xs) 0 var(--space-xs) var(--space-md);
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition:
+    background-size var(--duration) var(--ease),
+    text-shadow var(--duration) var(--ease);
+}
+
+.nav-dropdown__label:hover,
+.nav-dropdown.is-open .nav-dropdown__label,
+.nav-dropdown.has-active-child .nav-dropdown__label {
+  background-size: 100% 2px;
+  text-shadow: 0.04em 0 0 currentColor;
+  text-decoration: none;
+}
+
+.nav-dropdown__toggle--caret-only {
+  padding: var(--space-xs) var(--space-md) var(--space-xs) var(--space-xs);
+  background-image: none;
+}
+
+/* Mobile nav toggle */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+  color: var(--color-offwhite);
+}
+
+.nav-toggle svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}

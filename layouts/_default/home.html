@@ -1,0 +1,221 @@
+{{ define "main" }}
+
+{{/* ---- Hero (split layout) ---- */}}
+<section class="hero" aria-label="Introduction">
+  <div class="hero__split">
+    <div class="hero__left">
+      <h1>Software<br>Assurance<br>Maturity<br>Model</h1>
+    </div>
+    <div class="hero__right">
+      <p class="hero__subtitle">An effective and measurable way for any organization to analyze and improve their security posture</p>
+      <a href="/model/" class="btn btn--white">Explore the Model</a>
+    </div>
+  </div>
+</section>
+
+{{/* ---- Announcement banner (data-driven, optional) ---- */}}
+{{ with .Site.Data.announcement }}
+  {{ if .active }}
+  <section class="announcement" aria-label="Announcement">
+    <div class="container">
+      <h2 class="announcement__title">{{ .title }}</h2>
+      {{ with .date }}<p class="announcement__date">{{ . }}</p>{{ end }}
+      {{ with .message }}<p class="announcement__message">{{ . }}</p>{{ end }}
+      {{ with .buttons }}
+      <div class="announcement__actions">
+        {{ range . }}
+          <a href="{{ .url }}" class="btn btn--{{ .style | default "outline" }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+{{ end }}
+
+{{/* ---- Feature cards (icons below title) ---- */}}
+<section class="section" aria-label="Key features">
+  <div class="container">
+    <div class="feature-grid">
+
+      <a href="/docs/getting-started/" class="feature-card">
+        <h3>Getting Started</h3>
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 2C16 12 12 22 12 34h24c0-12-4-22-12-32z"/>
+            <circle cx="24" cy="20" r="5"/>
+            <path d="M18 34l-4 12M30 34l4 12M24 34v12"/>
+          </svg>
+        </div>
+        <p>New to SAMM? We'll walk you through the first steps to get you going.</p>
+      </a>
+
+      <a href="/assessment/" class="feature-card">
+        <h3>Assessment</h3>
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="20"/>
+            <path d="M16 24l5 5 11-14"/>
+          </svg>
+        </div>
+        <p>Measure your organization's current software security posture across all business functions.</p>
+      </a>
+
+      <a href="/benchmark/" class="feature-card">
+        <h3>Benchmark</h3>
+        <div class="feature-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 44S8 28 8 18a16 16 0 1132 0c0 10-16 26-16 26z"/>
+            <circle cx="24" cy="18" r="6"/>
+          </svg>
+        </div>
+        <p>Compare your results against industry peers and track your progress over time.</p>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+{{/* ---- Fundamentals course banner ---- */}}
+<section class="banner" aria-label="SAMM Fundamentals Course">
+  <div class="container">
+    <div class="banner__icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="24,8 4,20 24,32 44,20"/>
+        <path d="M10 23v12c0 0 6 7 14 7s14-7 14-7V23"/>
+        <path d="M44 20v14"/>
+      </svg>
+    </div>
+    <h2>SAMM Fundamentals Course</h2>
+    <p>A free, self-paced course to get you started with SAMM.</p>
+    <a href="/docs/fundamentals-course/" class="btn btn--outline">Start Learning</a>
+  </div>
+</section>
+
+{{/* ---- Blog ---- */}}
+<section class="section" aria-label="Blog">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">From Our Blog</h2>
+      <p class="section__subtitle">Stay up to date with the latest SAMM news, insights, and stories.</p>
+    </div>
+    <div class="blog-grid">
+      {{ $posts := where .Site.RegularPages "Section" "blog" | first 3 }}
+      {{ if $posts }}
+        {{ range $posts }}
+        <a href="{{ .RelPermalink }}" class="blog-card">
+          <div class="blog-card__meta">
+            {{ with .Params.categories }}
+              {{ range first 1 . }}
+              <span class="blog-card__tag">{{ . }}</span>
+              {{ end }}
+            {{ end }}
+            <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+              {{ .Date.Format "January 2, 2006" }}
+            </time>
+          </div>
+          <div class="blog-card__body">
+            <h3>{{ .Title }}</h3>
+            {{ $excerpt := .Description }}
+            {{ if not $excerpt }}
+              {{ $parts := split .Content "<p>" }}
+              {{ if gt (len $parts) 1 }}
+                {{ $excerpt = index $parts 1 | replaceRE "</p>.*" "" | plainify | truncate 160 }}
+              {{ else }}
+                {{ $excerpt = .Plain | truncate 160 }}
+              {{ end }}
+            {{ end }}
+            <p>{{ $excerpt }}</p>
+            <span class="blog-card__reading">{{ .ReadingTime }} minute read</span>
+          </div>
+        </a>
+        {{ end }}
+      {{ else }}
+        {{ range (seq 3) }}
+        <article class="blog-card">
+          <div class="blog-card__body">
+            <time class="blog-card__date">Coming soon</time>
+            <h3>Blog posts will appear here</h3>
+            <p>Once blog content is available, the latest posts will show up in this section.</p>
+          </div>
+        </article>
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* ---- Newsletter banner ---- */}}
+<section class="banner" aria-label="Newsletter">
+  <div class="container">
+    <div class="banner__icon" aria-hidden="true">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="10" width="40" height="28" rx="3"/>
+        <path d="M4 14l20 14 20-14"/>
+      </svg>
+    </div>
+    <h2>Get SAMM News</h2>
+    <p>Subscribe to our newsletter and get SAMM news delivered to you.</p>
+    <a href="https://owaspsamm.us9.list-manage.com/subscribe?u=b83ce65c91239cb5e623ea83e&id=cbd0520923"
+       class="btn btn--outline" target="_blank" rel="noopener">Subscribe</a>
+  </div>
+</section>
+
+{{/* ---- Sponsors ---- */}}
+<section class="section" aria-label="Sponsors">
+  <div class="container">
+    <div class="section__header">
+      <h2 class="section__title">Our Sponsors</h2>
+      <p class="section__subtitle">Software powers the world, but insecure software threatens safety, trust, and economic growth. Your support powers SAMM.</p>
+    </div>
+    {{/* Group sponsors by tier — collect into a slice first,
+         then filter with `where` for each tier level */}}
+    {{ $sponsors := slice }}
+    {{ range .Site.Data.sponsors }}
+      {{ $sponsors = $sponsors | append . }}
+    {{ end }}
+
+    {{ $platinum := where $sponsors "tier" "Platinum" }}
+    {{ with $platinum }}
+    <h3 class="sponsor-tier">Platinum Sponsors</h3>
+    <div class="sponsor-grid sponsor-grid--platinum">
+      {{ range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+        <img src="{{ .image200 | relURL }}" alt="{{ .name }}" loading="lazy">
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ $gold := where $sponsors "tier" "Gold" }}
+    {{ with $gold }}
+    <h3 class="sponsor-tier">Gold Sponsors</h3>
+    <div class="sponsor-grid sponsor-grid--gold">
+      {{ range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+        <img src="{{ .image200 | relURL }}" alt="{{ .name }}" loading="lazy">
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{ $silver := where $sponsors "tier" "Silver" }}
+    {{ with $silver }}
+    <h3 class="sponsor-tier">Silver Sponsors</h3>
+    <div class="sponsor-grid sponsor-grid--silver">
+      {{ range . }}
+      <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+        <img src="{{ .image200 | relURL }}" alt="{{ .name }}" loading="lazy">
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Bronze sponsors are listed on the dedicated /sponsors/ page only */}}
+    <div class="section__footer">
+      <a href="/sponsorship/" class="btn btn--outline">Find Out About Sponsorship</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

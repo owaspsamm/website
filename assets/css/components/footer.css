@@ -1,0 +1,82 @@
+/* --- Footer --- */
+.site-footer {
+  background: var(--color-dark);
+  color: rgba(var(--color-offwhite-rgb), 0.85);
+  padding: var(--space-2xl) 0;
+  border-top: 3px solid var(--color-primary);
+}
+
+.site-footer a {
+  color: var(--color-primary);
+}
+
+.site-footer a:hover {
+  color: var(--color-offwhite);
+}
+
+.footer-owasp__logo {
+  display: block;
+  margin-top: calc(var(--space-sm) * -1);
+  margin-bottom: var(--space-md);
+}
+
+.footer-owasp__logo img {
+  display: block;
+  width: 9rem;
+  height: auto;
+}
+
+.footer-owasp {
+  font-size: var(--text-sm);
+  opacity: 0.7;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr repeat(3, 1fr);
+  gap: var(--space-xl) var(--space-2xl);
+}
+
+.footer-grid > :first-child {
+  padding-right: var(--space-2xl);
+}
+
+.footer-grid h4 {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-md);
+  color: var(--color-offwhite);
+}
+
+.footer-grid ul {
+  list-style: none;
+}
+
+.footer-grid li + li {
+  margin-top: var(--space-xs);
+}
+
+.footer-grid li a {
+  font-size: var(--text-sm);
+}
+
+.footer-social__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.footer-social__link svg {
+  width: 1.2em;
+  height: 1.2em;
+  flex-shrink: 0;
+}
+
+.footer-bottom {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid rgba(var(--color-offwhite-rgb), 0.2);
+  text-align: center;
+  font-size: var(--text-sm);
+}

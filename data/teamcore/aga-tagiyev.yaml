@@ -1,0 +1,12 @@
+name : Nariman Aga-Tagiyev
+image : img/team/Nariman.jpg
+designation : Core Team member
+content : Cybersecurity Architect, Threat modeling and secure coding trainer, Founder of SecureHabits  <br/>
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/aganariman/"
+  - icon : fa-brands fa-x-twitter
+    link : "https://twitter.com/aganariman"
+  - icon : fab fa-github
+    link : "https://github.com/aganariman"
+active : true

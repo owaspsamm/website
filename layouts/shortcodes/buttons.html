@@ -1,0 +1,12 @@
+{{/* Renders 1-3 navigation buttons as a row.
+     Usage:
+       {{< buttons "/user-day/2025dc" "2025 DC User Day" "/user-day/2024sf" "2024 SF User Day" >}}
+       {{< buttons "/user-day/2023" "2023 User Day" >}} */}}
+{{- $href0 := .Get 0 -}}{{- if and $href0 (not (hasPrefix $href0 "http")) (not (hasSuffix $href0 "/")) }}{{- $href0 = printf "%s/" $href0 -}}{{- end -}}
+{{- $href2 := .Get 2 -}}{{- if and $href2 (not (hasPrefix $href2 "http")) (not (hasSuffix $href2 "/")) }}{{- $href2 = printf "%s/" $href2 -}}{{- end -}}
+{{- $href4 := .Get 4 -}}{{- if and $href4 (not (hasPrefix $href4 "http")) (not (hasSuffix $href4 "/")) }}{{- $href4 = printf "%s/" $href4 -}}{{- end -}}
+<div style="display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md);">
+  {{ if $href0 }}<a href="{{ $href0 | relURL }}" class="btn btn--outline">{{ .Get 1 }}</a>{{ end }}
+  {{ if $href2 }}<a href="{{ $href2 | relURL }}" class="btn btn--outline">{{ .Get 3 }}</a>{{ end }}
+  {{ if $href4 }}<a href="{{ $href4 | relURL }}" class="btn btn--outline">{{ .Get 5 }}</a>{{ end }}
+</div>

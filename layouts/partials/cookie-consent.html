@@ -1,0 +1,60 @@
+{{ if hugo.IsProduction }}
+{{ with .Site.Params.googleAnalyticsID }}
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ window.dataLayer.push(arguments); }
+  gtag('consent', 'default', { analytics_storage: 'denied' });
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+{{ end }}
+{{ end }}
+
+<div class="cookie-consent" id="cookie-consent" role="dialog" aria-label="Cookie consent" aria-live="polite" data-ga-id="{{ .Site.Params.googleAnalyticsID }}">
+  <div class="cookie-consent__bar">
+    <p class="cookie-consent__message">
+      We use analytics cookies to understand how visitors use this site. See our <a href="https://owasp.org/www-policy/operational/privacy" target="_blank" rel="noopener noreferrer">privacy policy</a>.
+    </p>
+    <div class="cookie-consent__actions">
+      <button class="cookie-consent__btn cookie-consent__btn--ghost" data-cookie-reject>Reject all</button>
+      <button class="cookie-consent__btn cookie-consent__btn--ghost" data-cookie-manage>Manage</button>
+      <button class="cookie-consent__btn cookie-consent__btn--primary" data-cookie-accept>Accept all</button>
+    </div>
+  </div>
+</div>
+
+<div class="cookie-consent__overlay" id="cookie-modal" role="dialog" aria-modal="true" aria-label="Cookie preferences">
+  <div class="cookie-consent__modal">
+    <div class="cookie-consent__modal-header">
+      <h2 class="cookie-consent__modal-title">Cookie preferences</h2>
+      <button class="cookie-consent__modal-close" data-cookie-modal-close aria-label="Close">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1L11 11M11 1L1 11"/></svg>
+      </button>
+    </div>
+    <div class="cookie-consent__modal-body">
+      <div class="cookie-consent__category">
+        <div class="cookie-consent__category-info">
+          <strong>Necessary</strong>
+          <p>Required for the site to work. Cannot be disabled.</p>
+        </div>
+        <span class="cookie-consent__always-on">Always on</span>
+      </div>
+      <div class="cookie-consent__category">
+        <div class="cookie-consent__category-info">
+          <strong>Analytics</strong>
+          <p>Helps us understand how visitors use the site (Google Analytics and Scarf page-view pixels on SAMM model pages). No personally identifiable information is collected.</p>
+        </div>
+        <label class="cookie-consent__toggle" aria-label="Analytics cookies">
+          <input type="checkbox" id="cookie-analytics-toggle">
+          <span class="cookie-consent__toggle-track"></span>
+        </label>
+      </div>
+    </div>
+    <div class="cookie-consent__modal-footer">
+      <button class="cookie-consent__btn cookie-consent__btn--ghost" data-cookie-reject>Reject all</button>
+      <button class="cookie-consent__btn cookie-consent__btn--primary" data-cookie-save>Save preferences</button>
+      <button class="cookie-consent__btn cookie-consent__btn--primary" data-cookie-accept>Accept all</button>
+    </div>
+  </div>
+</div>
+
+<script src="{{ "js/cookie-consent.js" | relURL }}"></script>

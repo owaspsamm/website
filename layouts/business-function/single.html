@@ -1,0 +1,61 @@
+{{ define "main" }}
+{{ $bf := .Params.title | lower }}
+<div class="docs model-docs model-bf--{{ $bf }}">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "docs/model-nav.html" . }}
+  </aside>
+
+  <div class="page-header page-header--bf model-docs__header">
+    <nav class="bf-breadcrumb">
+      <a href="/model/">The Model</a>
+    </nav>
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="docs__content">
+    <article class="content bf-content">
+      {{ with .Content }}
+        <div class="bf-description">{{ . }}</div>
+      {{ end }}
+
+      <h2>Security Practices</h2>
+      <div class="bf-practices">
+        {{ with .Params.practice_1 }}
+        <a href="{{ $.RelPermalink | replaceRE `^/?\./` `/` }}{{ $.Params.practice_1_url }}/" class="bf-practice">
+          <h3>{{ . }}</h3>
+        </a>
+        {{ end }}
+        {{ with .Params.practice_2 }}
+        <a href="{{ $.RelPermalink | replaceRE `^/?\./` `/` }}{{ $.Params.practice_2_url }}/" class="bf-practice">
+          <h3>{{ . }}</h3>
+        </a>
+        {{ end }}
+        {{ with .Params.practice_3 }}
+        <a href="{{ $.RelPermalink | replaceRE `^/?\./` `/` }}{{ $.Params.practice_3_url }}/" class="bf-practice">
+          <h3>{{ . }}</h3>
+        </a>
+        {{ end }}
+      </div>
+    </article>
+    {{ partial "scarf.html" . }}
+  </div>
+
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+{{ end }}

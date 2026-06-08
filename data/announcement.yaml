@@ -1,0 +1,11 @@
+active: true
+title: "SAMM & DSOMM User Day 2026"
+date: "June 24, 2026 — Vienna, Austria"
+message: "Join practitioners, contributors, and security leaders for a full day of talks and networking alongside OWASP Global AppSec EU."
+buttons:
+  - label: "Register Now"
+    url: "https://owasp.glueup.com/event/162243/register/"
+    style: "primary"
+  - label: "More Information"
+    url: "/user-day/2026vienna/"
+    style: "outline"

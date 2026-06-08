@@ -1,0 +1,35 @@
+{{ define "main" }}
+<div class="page-header page-header--child talk-header">
+  <h1>{{ .Params.name | default .Title | markdownify }}</h1>
+</div>
+<article class="content">
+  <div class="talk-speaker">
+    <img class="talk-speaker__photo"
+         src="{{ (.Params.image | default "/img/people/placeholder-speaker.svg") | relURL }}"
+         alt="{{ if .Params.speaker }}{{ .Params.speaker }}{{ else }}Speaker photo placeholder{{ end }}" loading="lazy">
+    <div class="talk-speaker__meta">
+      <p class="talk-speaker__name">{{ .Params.speaker }}</p>
+      {{ with .Params.role }}<p class="talk-speaker__role">{{ . }}</p>{{ end }}
+      {{ with .Params.affiliation }}<p class="talk-speaker__affiliation">{{ . }}</p>{{ end }}
+      <div class="talk-speaker__links">
+        {{ with .Params.twitter }}<a href="https://twitter.com/{{ . }}" target="_blank" rel="noopener">Twitter</a>{{ end }}
+        {{ with .Params.linkedin }}<a href="https://linkedin.com/in/{{ . }}" target="_blank" rel="noopener">LinkedIn</a>{{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ with .Params.abstract }}
+  <h2>Abstract</h2>
+  {{ . | markdownify }}
+  {{ end }}
+
+  {{ with .Params.bio }}
+  <h2>Speaker Bio</h2>
+  {{ . | markdownify }}
+  {{ end }}
+
+  {{ .Content }}
+
+  <p class="talk-back"><a href="/user-day/">&larr; Back to User Day</a></p>
+</article>
+{{ end }}

@@ -1,0 +1,65 @@
+{{/* Renders a user-day agenda from data files.
+     Usage:
+       Archive mode:  {{< user-day-agenda data="sud2025dc" mode="archive" >}}
+       Live mode:     {{< user-day-agenda data="sud2025bcn" mode="live" >}}
+       With video:    {{< user-day-agenda data="sud" mode="archive" video=true >}} */}}
+{{ $dataKey := .Get "data" }}
+{{ $mode := .Get "mode" | default "archive" }}
+{{ $showVideo := eq (.Get "video") "true" }}
+{{ $data := index .Site.Data $dataKey }}
+{{ if $data }}
+
+  {{/* Pre-scan: only show download/video columns if any item has data */}}
+  {{ $hasDownloads := false }}
+  {{ $hasVideos := false }}
+  {{ range $data }}
+    {{ if and (isset . "downloadUrl") (ne .downloadUrl "") }}{{ $hasDownloads = true }}{{ end }}
+    {{ if and (isset . "videoUrl") (ne .videoUrl "") }}{{ $hasVideos = true }}{{ end }}
+  {{ end }}
+  {{ $showVideo = and $showVideo $hasVideos }}
+  {{ $showDownload := $hasDownloads }}
+
+  <div class="agenda">
+    {{ range sort $data "weight" }}
+      {{ if eq $mode "live" }}
+        {{ if eq .type "Break" }}
+    <div class="agenda__break">
+      <span class="agenda__time">{{ .time }}</span>
+      <span>{{ .name }}</span>
+    </div>
+        {{ else }}
+    <div class="agenda__talk">
+      <span class="agenda__time">{{ .time }}</span>
+      <div class="agenda__info">
+        <span class="agenda__title">{{ if .url }}<a href="{{ .url }}/">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
+        {{ with .presenter }}<span class="agenda__speaker">{{ . }}</span>{{ end }}
+      </div>
+    </div>
+        {{ end }}
+      {{ else }}
+        {{ if ne .type "Break" }}
+          {{ if or (not (isset . "archive")) .archive }}
+    <div class="agenda__talk">
+      <div class="agenda__info">
+        <span class="agenda__title">{{ if .url }}<a href="{{ .url }}/">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
+        {{ with .presenter }}<span class="agenda__speaker">{{ . }}</span>{{ end }}
+      </div>
+      <div class="agenda__actions">
+        {{ if and $showVideo (isset . "videoUrl") (ne .videoUrl "") }}
+          <a href="{{ .videoUrl }}" class="agenda__icon" target="_blank" rel="noopener" title="Watch recording">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        {{ end }}
+        {{ if and $showDownload (isset . "downloadUrl") (ne .downloadUrl "") }}
+          <a href="{{ .downloadUrl }}" class="agenda__icon" target="_blank" rel="noopener" title="Download slides">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+{{ end }}

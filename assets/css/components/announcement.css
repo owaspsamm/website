@@ -1,0 +1,62 @@
+/* --- Announcement banner ---
+   Data-driven via data/announcement.yaml — set active:false to hide.
+   Sits between hero and feature cards on brand-teal background. */
+.announcement {
+  background: var(--color-primary) url('/img/announcement-pattern.svg') no-repeat center / cover;
+  color: var(--color-dark);
+  padding: var(--space-xl) 0;
+  text-align: center;
+  box-shadow:
+    inset 0 12px 24px rgba(var(--color-dark-rgb), 0.18),
+    inset 0 -12px 24px rgba(var(--color-dark-rgb), 0.12);
+}
+
+.announcement__title {
+  font-family: var(--font-brand);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  margin-bottom: var(--space-xs);
+}
+
+.announcement__date {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.announcement__message {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  max-width: 36rem;
+  margin: 0 auto var(--space-lg);
+  line-height: var(--line-height);
+}
+
+.announcement__actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.announcement .btn--primary {
+  background: var(--color-dark);
+  color: var(--color-offwhite);
+  border-color: var(--color-dark);
+}
+
+.announcement .btn--primary:hover {
+  background: var(--color-mid);
+  color: var(--color-offwhite);
+  border-color: var(--color-mid);
+}
+
+.announcement .btn--outline {
+  background: transparent;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+
+.announcement .btn--outline:hover {
+  background: rgba(var(--color-dark-rgb), 0.12);
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}

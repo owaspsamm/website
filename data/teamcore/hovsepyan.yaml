@@ -1,0 +1,10 @@
+name : Aram Hovsepyan
+image : img/team/aram.jpg
+designation : Core Team member
+content : CEO of Codific, security and privacy expert <br/><br/><br/>
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/aramhovsep/"
+  - icon : fab fa-github
+    link : "https://github.com/aramhovsepyan"
+active : true

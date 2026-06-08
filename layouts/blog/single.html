@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  {{ with .Params.categories }}
+    {{ range first 1 . }}
+    <span class="blog-post__category">{{ . }}</span>
+    {{ end }}
+  {{ end }}
+  <h1>{{ .Title }}</h1>
+</div>
+<article class="content">
+  <div class="blog-post__meta">
+    <span class="blog-post__byline">
+      {{ with .Params.date }}<time datetime="{{ . }}">{{ . | time.Format "January 2, 2006" }}</time>{{ end }}
+      {{ with .Params.author }}<span class="blog-post__byline-sep">·</span><span>{{ . }}</span>{{ end }}
+    </span>
+    <span class="blog-post__reading">{{ .ReadingTime }} min read</span>
+  </div>
+  {{ .Content }}
+</article>
+{{ end }}

@@ -1,0 +1,112 @@
+{{ define "main" }}
+{{ $bf := .Params.business_function | lower }}
+<div class="docs model-docs model-bf--{{ $bf }}">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "docs/model-nav.html" . }}
+  </aside>
+
+  <div class="page-header page-header--bf model-docs__header">
+    <nav class="bf-breadcrumb">
+      <a href="/model/">The Model</a>
+      <a href="/model/{{ .Params.business_function_url }}/">{{ .Params.business_function }}</a>
+    </nav>
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="docs__content">
+    <article class="content practice-content">
+      {{ with .Content }}
+        <div class="practice-description">{{ . }}</div>
+      {{ end }}
+
+      <h2>Overview</h2>
+      <table class="practice-maturity">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Maturity 1</th>
+            <th>Maturity 2</th>
+            <th>Maturity 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="practice-maturity__label">Objective</td>
+            <td>{{ .Params.practice_maturity_1_description }}</td>
+            <td>{{ .Params.practice_maturity_2_description }}</td>
+            <td>{{ .Params.practice_maturity_3_description }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Streams</h2>
+      <div class="practice-streams">
+        <div class="practice-stream">
+          <h3>
+            <a href="stream-a/">A: {{ .Params.stream_a }}</a>
+          </h3>
+          <table class="practice-stream__table">
+            <thead>
+              <tr>
+                <th>Maturity 1</th>
+                <th>Maturity 2</th>
+                <th>Maturity 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ .Params.stream_a_maturity_1_activity }}</td>
+                <td>{{ .Params.stream_a_maturity_2_activity }}</td>
+                <td>{{ .Params.stream_a_maturity_3_activity }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="practice-stream">
+          <h3>
+            <a href="stream-b/">B: {{ .Params.stream_b }}</a>
+          </h3>
+          <table class="practice-stream__table">
+            <thead>
+              <tr>
+                <th>Maturity 1</th>
+                <th>Maturity 2</th>
+                <th>Maturity 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>{{ .Params.stream_b_maturity_1_activity }}</td>
+                <td>{{ .Params.stream_b_maturity_2_activity }}</td>
+                <td>{{ .Params.stream_b_maturity_3_activity }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+      {{ partial "scarf.html" . }}
+  </div>
+
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+{{ $toc := resources.Get "js/docs-toc.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+<script src="{{ $toc.RelPermalink }}" integrity="{{ $toc.Data.Integrity }}" defer></script>
+{{ end }}

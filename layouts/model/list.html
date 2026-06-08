@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+{{/* ---- Model hero ---- */}}
+<section class="section" aria-label="Model overview">
+  <div class="container">
+    <div class="section__header">
+      <h1 class="section__title section__title--neutral">{{ .Title }}</h1>
+      <p class="section__subtitle">{{ .Description }}</p>
+    </div>
+
+    {{/* ---- Model table: 5 business functions × 3 practices ---- */}}
+    <div class="model-table" role="table" aria-label="SAMM Model overview">
+
+      <div class="model-col model-col--governance" role="rowgroup">
+        <a href="/model/governance/" class="model-col__header model-col__header--governance" role="columnheader">
+          <h2>Governance</h2>
+        </a>
+        <a href="/model/governance/strategy-and-metrics/" class="model-cell" role="cell">Strategy &amp; Metrics</a>
+        <a href="/model/governance/policy-and-compliance/" class="model-cell" role="cell">Policy &amp; Compliance</a>
+        <a href="/model/governance/education-and-guidance/" class="model-cell" role="cell">Education &amp; Guidance</a>
+      </div>
+
+      <div class="model-col model-col--design" role="rowgroup">
+        <a href="/model/design/" class="model-col__header model-col__header--design" role="columnheader">
+          <h2>Design</h2>
+        </a>
+        <a href="/model/design/threat-assessment/" class="model-cell" role="cell">Threat Assessment</a>
+        <a href="/model/design/security-requirements/" class="model-cell" role="cell">Security Requirements</a>
+        <a href="/model/design/secure-architecture/" class="model-cell" role="cell">Secure Architecture</a>
+      </div>
+
+      <div class="model-col model-col--implementation" role="rowgroup">
+        <a href="/model/implementation/" class="model-col__header model-col__header--implementation" role="columnheader">
+          <h2>Implementation</h2>
+        </a>
+        <a href="/model/implementation/secure-build/" class="model-cell" role="cell">Secure Build</a>
+        <a href="/model/implementation/secure-deployment/" class="model-cell" role="cell">Secure Deployment</a>
+        <a href="/model/implementation/defect-management/" class="model-cell" role="cell">Defect Management</a>
+      </div>
+
+      <div class="model-col model-col--verification" role="rowgroup">
+        <a href="/model/verification/" class="model-col__header model-col__header--verification" role="columnheader">
+          <h2>Verification</h2>
+        </a>
+        <a href="/model/verification/architecture-assessment/" class="model-cell" role="cell">Architecture Assessment</a>
+        <a href="/model/verification/requirements-driven-testing/" class="model-cell" role="cell">Requirements-driven Testing</a>
+        <a href="/model/verification/security-testing/" class="model-cell" role="cell">Security Testing</a>
+      </div>
+
+      <div class="model-col model-col--operations" role="rowgroup">
+        <a href="/model/operations/" class="model-col__header model-col__header--operations" role="columnheader">
+          <h2>Operations</h2>
+        </a>
+        <a href="/model/operations/incident-management/" class="model-cell" role="cell">Incident Management</a>
+        <a href="/model/operations/environment-management/" class="model-cell" role="cell">Environment Management</a>
+        <a href="/model/operations/operational-management/" class="model-cell" role="cell">Operational Management</a>
+      </div>
+
+    </div>
+
+    {{/* ---- Introduction content from _index.md ---- */}}
+    {{ with .Content }}
+      <div class="model-intro">
+        {{ . }}
+      </div>
+    {{ end }}
+
+  </div>
+</section>
+
+{{ partial "scarf.html" . }}
+{{ end }}

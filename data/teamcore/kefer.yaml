@@ -1,0 +1,10 @@
+name : Daniel Kefer
+image : img/team/daniel.jpg
+designation : Core Team member
+content : InfoSec leader at Germany's largest mail and cloud provider. OWASP SecurityRAT co-lead.
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/kefer/"
+  - icon : fab fa-github
+    link : "https://github.com/dkefer"
+active : true

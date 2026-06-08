@@ -1,0 +1,85 @@
+{{ define "main" }}
+<div class="docs docs--no-toc">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "docs/sidebar.html" . }}
+  </aside>
+
+  <div class="docs__content">
+    {{ partial "docs/breadcrumb.html" . }}
+
+    <div class="docs__body content">
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="docs__intro">{{ . }}</div>
+      {{ end }}
+
+      {{ $children := .Sections.ByWeight }}
+      {{ if not $children }}
+        {{ $children = .Pages.ByWeight }}
+      {{ end }}
+      {{ if $children }}
+      <div class="docs__card-grid">
+        {{ range $children }}
+        <a href="{{ .RelPermalink }}" class="docs__card">
+          <h3 class="docs__card-title">{{ .Title }}</h3>
+          {{ with .Description }}<p class="docs__card-desc">{{ . }}</p>{{ end }}
+        </a>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ with .Params.learn_more }}
+      <div style="margin-top: var(--space-xl);">
+        <h2>Learn more</h2>
+        <div class="resource-grid">
+        {{ range . }}
+        {{ $ext := not (hasPrefix .url "/") }}
+        <a href="{{ .url }}" class="resource-card"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>
+          {{ if eq .icon "graduation" }}
+          <div class="resource-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+              <path d="M22 10v6"/>
+            </svg>
+          </div>
+          {{ else if ne .icon "none" }}
+          <div class="resource-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M10 8l6 4-6 4z"/>
+            </svg>
+          </div>
+          {{ end }}
+          <div class="resource-card__body">
+            <h3>{{ .title }}</h3>
+            {{ with .description }}<p>{{ . }}</p>{{ end }}
+          </div>
+        </a>
+        {{ end }}
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
+  <aside class="docs__toc docs__toc--empty"></aside>
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+{{ end }}

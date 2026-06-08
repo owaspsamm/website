@@ -1,0 +1,42 @@
+{{ define "title" }}Page Not Found | {{ .Site.Title }}{{ end }}
+
+{{ define "main" }}
+<section class="error-page">
+  <div class="error-page__inner">
+    <p class="error-page__code">404</p>
+    <h1 class="error-page__heading">Page not found</h1>
+    <div class="error-card" aria-hidden="true">
+      <p class="error-card__label">Assessment Result</p>
+      <p class="error-card__practice">Page Existence</p>
+      <div class="error-card__streams">
+        <div class="error-card__stream">
+          <span class="error-card__stream-name">Stream A</span>
+          <div class="error-card__levels">
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+          </div>
+        </div>
+        <div class="error-card__stream">
+          <span class="error-card__stream-name">Stream B</span>
+          <div class="error-card__levels">
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+            <svg viewBox="0 0 18 18" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="9" cy="9" r="7"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="error-card__footer">
+        <span class="error-card__score">Score: 0 / 3</span>
+        <span class="error-card__status">Not Implemented</span>
+      </div>
+    </div>
+    <p class="error-page__message">This page is at Maturity Level 0. No activity has been implemented yet.</p>
+    <div class="error-page__actions">
+      <a href="/" class="btn btn--primary">Home</a>
+      <a href="/model/" class="btn btn--outline">The Model</a>
+      <a href="/docs/" class="btn btn--outline">Docs</a>
+    </div>
+  </div>
+</section>
+{{ end }}

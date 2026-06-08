@@ -1,0 +1,79 @@
+{{/* Sticky header with logo, nav, and mobile toggle.
+     JS in baseof.html handles the toggle — no inline onclick. */}}
+<header class="site-header">
+  <div class="container">
+    <a href="{{ "/" | relURL }}" class="site-logo">
+      <img src="/img/logo.svg" alt="OWASP SAMM">
+    </a>
+
+    {{/* Hidden on desktop; visible below 48rem breakpoint */}}
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      {{ $currentURL := $.RelPermalink | replaceRE `^/?\./` `/` }}
+      {{ $isModelPage := in (slice "business-function" "practice" "stream") $.Type }}
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          {{ $childActive := false }}
+          {{ range .Children }}
+            {{ if hasPrefix $currentURL .URL }}{{ $childActive = true }}{{ end }}
+          {{ end }}
+          {{ if .URL }}
+            {{/* Linked dropdown: label navigates to landing page, caret toggles children */}}
+            <div class="nav-dropdown nav-dropdown--linked{{ if $childActive }} has-active-child{{ end }}">
+              <a href="{{ .URL }}" class="nav-dropdown__label"
+                 {{ if eq $currentURL .URL }}aria-current="page"{{ end }}>
+                {{ .Name }}
+              </a>
+              <button class="nav-dropdown__toggle nav-dropdown__toggle--caret-only" aria-expanded="false" aria-label="Open {{ .Name }} menu">
+                <svg class="nav-dropdown__caret" viewBox="0 0 12 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5"/>
+                </svg>
+              </button>
+              <ul class="nav-dropdown__menu">
+                {{ range .Children }}
+                  <li>
+                    <a href="{{ .URL }}"
+                       {{ if hasPrefix $currentURL .URL }}aria-current="page"{{ end }}>
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ else }}
+            <div class="nav-dropdown{{ if $childActive }} has-active-child{{ end }}">
+              <button class="nav-dropdown__toggle" aria-expanded="false">
+                {{ .Name }}
+                <svg class="nav-dropdown__caret" viewBox="0 0 12 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5"/>
+                </svg>
+              </button>
+              <ul class="nav-dropdown__menu">
+                {{ range .Children }}
+                  <li>
+                    <a href="{{ .URL }}"
+                       {{ if hasPrefix $currentURL .URL }}aria-current="page"{{ end }}>
+                      {{ .Name }}
+                    </a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        {{ else }}
+          {{ $active := hasPrefix $currentURL .URL }}
+          {{ if and (not $active) (eq .URL "/model/") $isModelPage }}{{ $active = true }}{{ end }}
+          <a href="{{ .URL }}"
+             {{ if $active }}aria-current="page"{{ end }}>
+            {{ .Name }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+</header>

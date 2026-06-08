@@ -1,0 +1,33 @@
+{{/* Recursive tree node for sidebar.
+     Receives dict: "page", "current", "depth". */}}
+{{ $page := .page }}
+{{ $current := .current }}
+{{ $depth := .depth }}
+{{ $isActive := eq $current.RelPermalink $page.RelPermalink }}
+{{ $isAncestor := $current.IsDescendant $page }}
+{{ $hasChildren := gt (len $page.Pages) 0 }}
+
+<div class="docs-nav__group{{ if $isActive }} is-active{{ end }}{{ if $isAncestor }} is-ancestor{{ end }}">
+  {{ if $hasChildren }}
+  <button class="docs-nav__toggle{{ if or $isActive $isAncestor }} is-open{{ end }}"
+          aria-expanded="{{ if or $isActive $isAncestor }}true{{ else }}false{{ end }}">
+    <a href="{{ $page.RelPermalink }}"
+       {{ if $isActive }}aria-current="page"{{ end }}
+       class="docs-nav__link"
+       onclick="event.stopPropagation()">{{ $page.Title }}</a>
+    <svg class="docs-nav__caret" viewBox="0 0 12 9" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <path d="M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5"/>
+    </svg>
+  </button>
+  <div class="docs-nav__children{{ if or $isActive $isAncestor }} is-open{{ end }}">
+    {{ range $page.Pages.ByWeight }}
+      {{ partial "docs/sidebar-tree.html" (dict "page" . "current" $current "depth" (add $depth 1)) }}
+    {{ end }}
+  </div>
+  {{ else }}
+  <a href="{{ $page.RelPermalink }}"
+     class="docs-nav__link{{ if $isActive }} is-active{{ end }}"
+     {{ if $isActive }}aria-current="page"{{ end }}>{{ $page.Title }}</a>
+  {{ end }}
+</div>

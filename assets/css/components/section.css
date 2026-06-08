@@ -1,0 +1,179 @@
+/* --- Section --- */
+.section {
+  padding: var(--space-2xl) 0;
+}
+
+.section__header {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+/* Gradient teal line below section titles — fades to transparent at edges
+   for a softer, wider accent that adds warmth without hard edges */
+.section__title {
+  font-family: var(--font-brand);
+  font-size: var(--text-2xl);
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  width: 150%;
+  margin-left: -25%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  margin-top: var(--space-sm);
+}
+
+/* Neutral variant for pages with enough color already (e.g. model table) */
+.section__title--neutral::after {
+  background: linear-gradient(90deg, transparent, var(--color-text-light), transparent);
+}
+
+.section__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+  max-width: 40rem;
+  margin-inline: auto;
+  margin-bottom: var(--space-xl);
+  text-wrap: pretty;
+}
+
+.section__footer {
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.section__footnote {
+  margin-top: var(--space-lg);
+  color: var(--color-text);
+  line-height: var(--line-height);
+}
+
+.section__footnote > p {
+  margin-bottom: var(--space-sm);
+}
+
+.section__footnote a {
+  color: var(--color-mid);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1.5px;
+  transition: color var(--duration) var(--ease), text-decoration-color var(--duration) var(--ease);
+}
+
+.section__footnote a:hover {
+  color: var(--color-primary);
+  text-shadow: 0.04em 0 0 currentColor;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+}
+
+.section__footnote details {
+  margin-top: var(--space-sm);
+}
+
+.section__footnote details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-dark);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.section__footnote details summary::-webkit-details-marker {
+  display: none;
+}
+
+.section__footnote details summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.55em;
+  height: 0.7em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12' fill='none' stroke='%2371b8b8' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M0.5 0.5 L4.5 4 Q7.5 6 4.5 8 L0.5 11.5'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition: transform var(--duration) var(--ease);
+}
+
+.section__footnote details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.section__footnote details ul {
+  margin-top: var(--space-sm);
+  padding-left: 1.25em;
+  list-style: disc;
+}
+
+.section__footnote details li {
+  margin-bottom: var(--space-xs);
+  line-height: var(--line-height);
+}
+
+.section__footnote details p {
+  margin-top: var(--space-sm);
+}
+
+/* Left-align subtitle on listing pages (users, practitioners) */
+.section__subtitle--left {
+  text-align: left;
+  max-width: 50rem;
+}
+
+.section__subtitle details {
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+.section__subtitle details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-text-light);
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  transition: color var(--duration) var(--ease);
+}
+
+.section__subtitle details summary:hover {
+  color: var(--color-mid);
+  text-shadow: 0.04em 0 0 currentColor;
+}
+
+.section__subtitle details summary::-webkit-details-marker {
+  display: none;
+}
+
+.section__subtitle details summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.75em;
+  height: 0.95em;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12' fill='none' stroke='%23366867' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M0.5 0.5 L4.5 4 Q7.5 6 4.5 8 L0.5 11.5'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition: transform var(--duration) var(--ease);
+}
+
+.section__subtitle details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.section__subtitle details ul {
+  text-align: left;
+  margin-top: var(--space-sm);
+  padding-left: 1.25em;
+  list-style: disc;
+}
+
+.section__subtitle details li {
+  margin-bottom: var(--space-xs);
+  line-height: var(--line-height);
+}

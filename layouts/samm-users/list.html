@@ -1,0 +1,52 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      {{ with .Content }}<div class="section__subtitle">{{ . }}</div>{{ end }}
+    </div>
+
+    <div class="org-grid">
+      {{ range sort .Site.Data.users "company" }}
+        {{ if .enabled }}
+        <div class="org-card">
+          <div class="org-card__icon" aria-hidden="true">
+            {{/* Building icon */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M5 21V7l7-4 7 4v14"/>
+              <path d="M9 21v-4h6v4"/>
+              <path d="M9 10h1M14 10h1M9 14h1M14 14h1"/>
+            </svg>
+          </div>
+          <div class="org-card__body">
+            <h3>
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>
+              {{ else }}
+                {{ .company }}
+              {{ end }}
+            </h3>
+            <div class="org-card__meta">
+              {{ with .industry }}<span>{{ . }}</span>{{ end }}
+              {{ with .country }}<span>{{ . }}</span>{{ end }}
+            </div>
+            {{ with .testimonial }}
+              <blockquote class="org-card__quote">{{ . }}</blockquote>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="content section__footer">
+      <h3>Join the SAMM Community</h3>
+      <p>If your organization is not yet part of our SAMM Users community, we invite you to explore the benefits of adopting SAMM. Enhance your software security practices, mitigate risks, and contribute to the overall improvement of software assurance. Join the growing list of organizations that prioritize secure software development with SAMM.</p>
+      <p>For inquiries or to share your SAMM success story, please <a href="mailto:info@owaspsamm.org">contact us</a>.</p>
+    </div>
+  </div>
+</section>
+{{ end }}

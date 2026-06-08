@@ -1,0 +1,27 @@
+{{/* Sidebar navigation — recursively walks /docs/ sections.
+     Expects context: the current page (.) */}}
+<nav class="docs-nav" aria-label="Documentation navigation">
+  {{ $current := . }}
+  {{ $docsRoot := site.GetPage "/docs" }}
+  {{ with $docsRoot }}
+    {{ range .Sections.ByWeight }}
+      {{ if .Params.sidebar_divider }}
+        <div class="docs-nav__divider"></div>
+      {{ end }}
+      {{ with .Params.sidebar_label }}
+        <div class="docs-nav__section-label">{{ . }}</div>
+      {{ end }}
+      {{ partial "docs/sidebar-tree.html" (dict "page" . "current" $current "depth" 0) }}
+    {{ end }}
+  {{ end }}
+  <div class="docs-nav__divider"></div>
+  <a href="/model/" class="docs-nav__model-link">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+      <rect x="1" y="1" width="6" height="6" rx="1"/>
+      <rect x="9" y="1" width="6" height="6" rx="1"/>
+      <rect x="1" y="9" width="6" height="6" rx="1"/>
+      <rect x="9" y="9" width="6" height="6" rx="1"/>
+    </svg>
+    The Model
+  </a>
+</nav>

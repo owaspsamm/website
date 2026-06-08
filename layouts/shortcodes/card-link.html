@@ -1,0 +1,44 @@
+{{/* Linked card. With img: shows only the image. Without: shows icon + title + description.
+     Usage:
+       {{< card-link title="Name" url="https://..." >}}Description{{< /card-link >}}
+       {{< card-link title="Name" url="https://..." icon="graduation" >}}Description{{< /card-link >}}
+       {{< card-link title="Name" url="https://..." icon="none" >}}Description{{< /card-link >}}
+       {{< card-link title="Name" url="https://..." img="/img/thumb.jpg" >}}{{< /card-link >}}
+     Icons: play (default), graduation, none (resource-card without icon)
+*/}}
+{{ $img := .Get "img" }}
+{{ $icon := .Get "icon" | default "play" }}
+{{ $external := not (hasPrefix (.Get "url") "/") }}
+{{ if $img }}
+<a href="{{ .Get "url" }}" class="resource-card resource-card--img"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <img src="{{ $img }}" alt="{{ .Get "title" }}" loading="lazy">
+</a>
+{{ else if eq $icon "none" }}
+<a href="{{ .Get "url" }}" class="resource-card"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <div class="resource-card__body">
+    <h3>{{ .Get "title" }}</h3>
+    {{ with .Inner }}<p>{{ . }}</p>{{ end }}
+  </div>
+</a>
+{{ else }}
+<a href="{{ .Get "url" }}" class="resource-card"{{ if $external }} target="_blank" rel="noopener"{{ end }}>
+  <div class="resource-card__icon" aria-hidden="true">
+    {{ if eq $icon "graduation" }}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 10l10-5 10 5-10 5z"/>
+      <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/>
+      <path d="M22 10v6"/>
+    </svg>
+    {{ else }}
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <path d="M10 8l6 4-6 4z"/>
+    </svg>
+    {{ end }}
+  </div>
+  <div class="resource-card__body">
+    <h3>{{ .Get "title" }}</h3>
+    <p>{{ .Inner }}</p>
+  </div>
+</a>
+{{ end }}

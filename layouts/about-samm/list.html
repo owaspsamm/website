@@ -1,0 +1,122 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="section__subtitle">{{ . }}</div>{{ end }}
+
+    {{/* --- Start here --- */}}
+    <div class="resource-group">
+      <div class="resource-group__header">
+        <h2 class="resource-group__title">Start here</h2>
+        <p class="resource-group__desc">Get oriented with the model and the people behind it</p>
+      </div>
+      <div class="resource-grid">
+
+        <a href="/about/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Info circle */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4M12 8h.01"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>What is SAMM</h3>
+            <p>An overview of the Software Assurance Maturity Model: mission, structure, and how organizations use it.</p>
+          </div>
+        </a>
+
+        <a href="/team/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* People / group */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>The team</h3>
+            <p>The volunteers and contributors who maintain SAMM, shape the roadmap, and run the community.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+    {{/* --- References --- */}}
+    <div class="resource-group">
+      <div class="resource-group__header">
+        <h2 class="resource-group__title">References</h2>
+        <p class="resource-group__desc">Background, terminology, and version history</p>
+      </div>
+      <div class="resource-grid">
+
+        <a href="/docs/reference/faq/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Question mark */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+              <path d="M12 17h.01"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>FAQ</h3>
+            <p>Answers to the questions we hear most often about adopting and interpreting SAMM.</p>
+          </div>
+        </a>
+
+        <a href="/mapping-versions/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Arrows / diff */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17l-5-5 5-5"/>
+              <path d="M17 7l5 5-5 5"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Mapping versions 1.5 to 2.0</h3>
+            <p>How practices and activities map between the 1.5 and 2.0 editions of the model.</p>
+          </div>
+        </a>
+
+        <a href="/v1-5/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Archive box */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="4" rx="1"/>
+              <path d="M5 8v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"/>
+              <path d="M10 12h4"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Version 1.5</h3>
+            <p>Archived materials for the previous major version of the model.</p>
+          </div>
+        </a>
+
+        <a href="/acronyms-and-abbreviations/" class="resource-card">
+          <div class="resource-card__icon" aria-hidden="true">
+            {{/* Book */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <div class="resource-card__body">
+            <h3>Acronyms and abbreviations</h3>
+            <p>A glossary of the terms and abbreviations used across the SAMM model and documentation.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+{{ end }}

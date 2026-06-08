@@ -1,0 +1,35 @@
+/* --- Prose table (inside .content) --- */
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-lg);
+}
+
+.content th,
+.content td {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* First column stays left-aligned (row labels) */
+.content th:first-child,
+.content td:first-child {
+  text-align: left;
+}
+
+.content th {
+  background: rgba(var(--color-primary-rgb), 0.1);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Teal check — replaces ✓ character in table cells */
+.content td .check {
+  display: inline-block;
+  width: 1.1em;
+  height: 1.1em;
+  vertical-align: middle;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23366867' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") no-repeat center / contain;
+}

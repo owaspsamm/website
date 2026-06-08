@@ -1,0 +1,57 @@
+/* --- Hero (split layout) --- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: clamp(var(--hero-height-min), 20vw, var(--hero-height-max));
+  border-bottom: 3px solid var(--color-dark);
+}
+
+/* display:contents lets children participate in the parent grid
+   without adding an extra wrapper layer */
+.hero__split {
+  display: contents;
+}
+
+.hero__left {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--space-2xl);
+  padding-left: var(--space-lg);
+  /* Pattern anchored bottom-left so shapes stay visible as the panel scales */
+  background: var(--color-offwhite) url('/img/hero-pattern.svg') no-repeat bottom left / cover;
+}
+
+.hero__right {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: var(--space-2xl);
+  background: var(--color-dark) url('/img/hero-pattern-dark.svg') no-repeat top center / cover;
+  color: var(--color-offwhite);
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: var(--font-brand);
+  font-size: clamp(var(--text-2xl), 4.5vw, var(--text-3xl));
+  font-weight: normal;             /* Days One only ships regular weight */
+  line-height: 1;
+  color: var(--color-text);
+  letter-spacing: -0.01em;
+}
+
+.hero__subtitle {
+  font-size: clamp(var(--text-base), 1.5vw, var(--text-xl));
+  line-height: 1.5;
+  margin-bottom: var(--space-xl);
+  max-width: 22rem;
+  opacity: 0.92;
+}

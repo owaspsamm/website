@@ -1,0 +1,124 @@
+{{ define "main" }}
+{{ $bf := .Params.business_function | lower }}
+
+{{/* Derive base activity ID (e.g. "D-SA-A") from the alias without a trailing level number */}}
+{{ $baseId := "" }}
+{{ range .Params.aliases }}
+  {{ if not (findRE `\-\d+$` .) }}
+    {{ $baseId = replaceRE "^/model/" "" . }}
+  {{ end }}
+{{ end }}
+
+<div class="docs model-docs model-bf--{{ $bf }}">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "docs/model-nav.html" . }}
+  </aside>
+
+  <div class="page-header page-header--bf model-docs__header">
+    <nav class="bf-breadcrumb">
+      <a href="/model/">The Model</a>
+      <a href="/model/{{ .Params.business_function_url }}/">{{ .Params.business_function }}</a>
+      <a href="/model/{{ .Params.business_function_url }}/{{ .Params.practice | urlize }}/">{{ .Params.practice }}</a>
+    </nav>
+    <h1>{{ .Title }}</h1>
+  </div>
+
+  <div class="docs__content">
+    <article class="content stream-content">
+      <div class="stream-tabs">
+        <div class="stream-tabs__nav" role="tablist" aria-label="Maturity levels">
+          {{ range $key, $level := .Params.maturity_levels }}
+          {{ $activityId := printf "%s-%d" $baseId $level.level }}
+          <button class="stream-tabs__tab"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="{{ $activityId }}"
+                  id="tab-{{ $activityId }}"
+                  data-id="{{ $activityId }}">
+            Maturity Level {{ $level.level }}<span class="stream-tabs__badge">{{ $activityId }}</span>
+          </button>
+          {{ end }}
+        </div>
+
+        {{ range $key, $level := .Params.maturity_levels }}
+        {{ $activityId := printf "%s-%d" $baseId $level.level }}
+        <section class="stream-level"
+                 id="{{ $activityId }}"
+                 role="tabpanel"
+                 aria-labelledby="tab-{{ $activityId }}"
+                 hidden>
+
+          {{ with $level.benefit }}
+          <div class="stream-level__benefit">
+            <h3>Benefit</h3>
+            <p>{{ . | markdownify }}</p>
+          </div>
+          {{ end }}
+
+          {{ with $level.activity }}
+          <div class="stream-level__activity">
+            <h3>Activity</h3>
+            {{ . | markdownify }}
+          </div>
+          {{ end }}
+
+          {{ with $level.question }}
+          <div class="stream-level__question">
+            <h3>Question</h3>
+            <p>{{ . }}</p>
+          </div>
+          {{ end }}
+
+          <div class="stream-level__bottom">
+            {{ with $level.quality_criteria }}
+            <div class="stream-level__criteria">
+              <h3>Quality Criteria</h3>
+              <ul>
+                {{ range . }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+            {{ end }}
+
+            {{ with $level.answers }}
+            <div class="stream-level__answers">
+              <h3>Answers</h3>
+              <ol>
+                {{ range . }}
+                <li>{{ . }}</li>
+                {{ end }}
+              </ol>
+            </div>
+            {{ end }}
+          </div>
+        </section>
+        {{ end }}
+      </div>
+
+      {{ partial "stream_guidance.html" (dict "page" . "baseId" $baseId) }}
+    </article>
+      {{ partial "scarf.html" . }}
+  </div>
+
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+{{ $tabs := resources.Get "js/stream-tabs.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+<script src="{{ $tabs.RelPermalink }}" integrity="{{ $tabs.Data.Integrity }}" defer></script>
+{{ end }}

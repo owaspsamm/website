@@ -1,0 +1,12 @@
+name : Seba Deleersnyder
+image : img/team/seba.jpg
+designation : Project leader
+content : Co-founder & CTO at Toreon, COO & trainer at DPI, Cybersecurity Personality of the Year 2022 in Belgium
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/sebadele/"
+  - icon : fa-brands fa-x-twitter
+    link : "https://twitter.com/sebadele"
+  - icon : fab fa-github
+    link : "https://github.com/SebaDele"
+active : true

@@ -1,0 +1,73 @@
+/* --- Feature cards ---
+   Icons sit below the title — intentional unconventional placement.
+   Icon size: 2×φ rem (3.236rem) */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Gradient teal underline grows from center on hover — same visual
+   language as the section title accent, tying the page together */
+.feature-card {
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  text-decoration: none;
+  background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: background-size var(--duration) var(--ease);
+}
+
+.feature-card:hover {
+  text-decoration: none;
+  background-size: 100% 2px;
+}
+
+.feature-card h3 {
+  font-family: var(--font-brand);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  color: var(--color-dark);
+  margin-bottom: var(--space-md);
+  transition: color var(--duration) var(--ease);
+}
+
+.feature-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.236rem;
+  height: 3.236rem;
+  margin: 0 auto var(--space-md);
+  color: var(--color-primary);
+  transition:
+    color var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.feature-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-card p {
+  font-size: var(--text-base);
+  color: var(--color-text-light);
+  line-height: var(--line-height);
+  transition: color var(--duration) var(--ease);
+}
+
+.feature-card:hover h3 {
+  color: var(--color-primary);
+}
+
+.feature-card:hover .feature-card__icon {
+  color: var(--color-mid);
+  transform: scale(1.15);
+}
+
+.feature-card:hover p {
+  color: var(--color-text);
+}

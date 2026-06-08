@@ -1,0 +1,18 @@
+# Hugo model content comes from the module, ignore any local files
+content/*/business-function/**
+
+# Hugo generated
+public/
+resources/
+.hugo_build.lock
+
+# Editor / OS
+.DS_Store
+.vscode/
+.project
+
+# Local Netlify folder
+.netlify
+
+# Claude Code project folder
+.claude/

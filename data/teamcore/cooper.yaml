@@ -1,0 +1,10 @@
+name : Chris Cooper
+image : img/team/chris.jpg
+designation : Core Team member
+content : Product Security Director at News Corp. Formerly Sage appsec and pentesting. Passionate STEM ambassador.
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/itscooper/"
+  - icon : fab fa-github
+    link : "https://github.com/itscooper"
+active : false

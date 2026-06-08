@@ -1,0 +1,17 @@
+{{/* Renders a grid of sponsor logos for a given tier.
+     Usage: {{< sponsors "Gold" >}}
+     Reads from data/sponsors/*.yaml, filters by tier field. */}}
+{{ $tier := .Get 0 }}
+<div class="sponsor-grid sponsor-grid--{{ $tier | urlize }}">
+  {{ range site.Data.sponsors }}
+    {{ if eq .tier $tier }}
+      {{ if .url }}
+        <a href="{{ .url }}" target="_blank" rel="noopener">
+          <img src="{{ .image200 | relURL }}" alt="{{ .name }}" loading="lazy">
+        </a>
+      {{ else }}
+        <img src="{{ .image200 | relURL }}" alt="{{ .name }}" loading="lazy">
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</div>

@@ -1,0 +1,26 @@
+{{ with .Site.Data.sud2026vienna }}
+<div class="agenda-program" role="table" aria-label="User Day agenda">
+  <div class="agenda-program__head" role="row">
+    <span role="columnheader">Time</span>
+    <span role="columnheader">Session</span>
+    <span role="columnheader">Speaker</span>
+  </div>
+  {{ range sort . "weight" }}
+    {{ if eq .type "Break" }}
+      <div class="agenda-program__row agenda-program__row--break" role="row">
+        <span class="agenda-program__time" role="cell">{{ .time }}</span>
+        <span class="agenda-program__title" role="cell">{{ .name }}</span>
+        <span role="cell"></span>
+      </div>
+    {{ else }}
+      <div class="agenda-program__row" role="row">
+        <span class="agenda-program__time" role="cell">{{ .time }}</span>
+        <span class="agenda-program__title" role="cell">
+          {{ if .url }}<a class="agenda-program__link" href="/user-day/{{ .url }}/">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}
+        </span>
+        <span class="agenda-program__presenter" role="cell">{{ .presenter }}</span>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+{{ end }}

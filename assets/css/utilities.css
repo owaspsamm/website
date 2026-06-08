@@ -1,0 +1,37 @@
+/* --- Utilities --- */
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* --- Hover vocabulary ---
+   Two tiers, chosen by whether the element leads somewhere:
+
+   "Lift" — for clickable destinations (links, buttons, cards-as-links):
+     transform: translateY(-2px)
+     box-shadow: 0 8px 28px rgba(44, 48, 48, 0.1)
+     border-color: var(--color-primary)      (if bordered)
+   The element rises off the surface, signalling "this takes you somewhere."
+   Used by: btn, blog-card, resource-card, card (generic), team-card__photo.
+
+   "Settle" — for informational containers (no primary destination):
+     border-color: var(--color-primary)      (if bordered)
+     box-shadow: 0 4px 16px rgba(44, 48, 48, 0.08)   (lighter)
+   The element warms in place without suggesting navigation.
+   Used by: org-card, sponsor logos, model cells.
+
+   Feature cards are a special case: the gradient-underline sweep
+   replaces the lift as the primary hover signal.
+   ========================================================================== */

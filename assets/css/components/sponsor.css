@@ -1,0 +1,74 @@
+/* --- Sponsors ---
+   Grouped by tier with tier headings.
+   Logos start greyscale at reduced opacity; colour and scale on hover.
+   Tier modifiers control logo size: higher tiers get larger logos. */
+.sponsor-tier {
+  font-family: var(--font-brand);
+  font-size: var(--text-base);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+.sponsor-tier:first-of-type {
+  margin-top: 0;
+}
+
+.sponsor-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.sponsor-grid a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Tier sizes — higher tiers get larger logos (homepage context) */
+.sponsor-grid--platinum img { max-width: 14rem; }
+.sponsor-grid--gold img     { max-width: 12rem; }
+.sponsor-grid--silver img   { max-width: 10rem; }
+.sponsor-grid--bronze img   { max-width: 8rem; }
+
+.sponsor-grid img {
+  width: auto;
+  height: auto;
+  max-height: 6rem;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition:
+    opacity var(--duration) var(--ease),
+    filter var(--duration) var(--ease),
+    transform var(--duration) var(--ease);
+}
+
+.sponsor-grid img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.18);
+}
+
+/* Supporters page — full color, larger logos */
+.content .sponsor-grid img {
+  opacity: 1;
+  filter: none;
+  max-height: 8rem;
+}
+
+.content .sponsor-grid--platinum img { max-width: 18rem; }
+.content .sponsor-grid--gold img     { max-width: 16rem; }
+.content .sponsor-grid--silver img   { max-width: 14rem; }
+.content .sponsor-grid--bronze img   { max-width: 10rem; }
+
+.content .sponsor-grid img:hover {
+  filter: none;
+}

@@ -1,0 +1,93 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      {{ with .Content }}<div class="section__subtitle section__subtitle--left">{{ . }}</div>{{ end }}
+    </div>
+
+    <div class="org-grid">
+      {{/* Sponsors: Platinum → Gold → Silver → Bronze → no tier, A–Z within each */}}
+      {{ $sponsors := where .Site.Data.practitioners "sponsor" true }}
+      {{ $knownTiers := slice "Platinum" "Gold" "Silver" "Bronze" }}
+      {{ $orderedSponsors := slice }}
+      {{ range $knownTiers }}
+        {{ range sort (where $sponsors "tier" .) "company" }}
+          {{ $orderedSponsors = $orderedSponsors | append . }}
+        {{ end }}
+      {{ end }}
+      {{ range sort (where $sponsors "tier" "not in" $knownTiers) "company" }}
+        {{ $orderedSponsors = $orderedSponsors | append . }}
+      {{ end }}
+      {{ range $orderedSponsors }}
+        {{ if .enabled }}
+        <div class="org-card org-card--sponsor">
+          <div class="org-card__icon" aria-hidden="true">
+            {{/* Shield with star — sponsor */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="M12 8l1.12 2.27 2.5.36-1.81 1.77.43 2.5L12 13.77l-2.24 1.18.43-2.5-1.81-1.77 2.5-.36z"/>
+            </svg>
+          </div>
+          <div class="org-card__body">
+            <h3>
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>
+              {{ else }}
+                {{ .company }}
+              {{ end }}
+              <span class="org-card__badge">{{ with .tier }}{{ . }} {{ end }}Sponsor</span>
+            </h3>
+            <div class="org-card__meta">
+              {{ with .country }}<span>{{ . }}</span>{{ end }}
+              {{ with .contributors }}<span>SAMM contributor: {{ . }}</span>{{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+      {{ range sort (where .Site.Data.practitioners "sponsor" "!=" true) "company" }}
+        {{ if .enabled }}
+        <div class="org-card">
+          <div class="org-card__icon" aria-hidden="true">
+            {{/* Briefcase — regular practitioner */}}
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
+              <path d="M2 12h20"/>
+            </svg>
+          </div>
+          <div class="org-card__body">
+            <h3>
+              {{ if .url }}
+                <a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>
+              {{ else }}
+                {{ .company }}
+              {{ end }}
+            </h3>
+            <div class="org-card__meta">
+              {{ with .country }}<span>{{ . }}</span>{{ end }}
+              {{ with .contributors }}<span>SAMM contributor: {{ . }}</span>{{ end }}
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="content section__footer">
+      <h3>Who makes the list</h3>
+      <p>To add SAMM practitioners to the list:</p>
+      <ul>
+        <li>The SAMM practitioner has to request to be on the list.</li>
+        <li>The SAMM practitioner has to provide a link to its SAMM related service offering (SAMM assessment, roadmap, or tools).</li>
+        <li>The SAMM service offering of the practitioner has to contain a reference and link to <a href="https://owaspsamm.org/">owaspsamm.org</a>.</li>
+      </ul>
+      <p>The OWASP SAMM project team reserves the right to reject or remove SAMM practitioners from this list at any time.</p>
+      <p><strong>Interested in contributing to this list?</strong> Don't hesitate to <a href="mailto:info@owaspsamm.org">contact us</a>.</p>
+    </div>
+  </div>
+</section>
+{{ end }}

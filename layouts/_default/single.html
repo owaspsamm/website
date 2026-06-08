@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ $isChild := true }}
+{{ $currentURL := .RelPermalink }}
+{{ range .Site.Menus.main }}
+  {{ if not .HasChildren }}
+    {{ if eq $currentURL .URL }}{{ $isChild = false }}{{ end }}
+  {{ end }}
+{{ end }}
+<div class="page-header{{ if $isChild }} page-header--child{{ end }}">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.date }}
+    <time class="page-header__date" datetime="{{ . }}">{{ . | time.Format "January 2, 2006" }}</time>
+  {{ end }}
+</div>
+<article class="content">
+  {{ .Content }}
+</article>
+{{ end }}

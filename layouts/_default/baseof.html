@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ block "title" . }}{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}">
+  {{/* Open Graph / Twitter Card */}}
+  <meta property="og:site_name"   content="{{ .Site.Title }}">
+  <meta property="og:type"        content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:title"       content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}">
+  <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta property="og:url"         content="{{ .Permalink }}">
+  <meta property="og:image"       content="{{ "img/og.png" | absURL }}">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="{{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}">
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="twitter:image"       content="{{ "img/og.png" | absURL }}">
+  {{/* Hugo Pipes: minify + fingerprint for cache-busting */}}
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ block "head" . }}{{ end }}
+</head>
+<body>
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{ partial "cookie-consent.html" . }}
+  {{ block "scripts" . }}{{ end }}
+
+  {{/* Global interactions — kept minimal, no dependencies */}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+      // Mobile navigation toggle — syncs aria-expanded with .is-open class
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('.site-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          var expanded = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('is-open');
+        });
+      }
+
+      // Dropdown navigation — toggle on click, close on outside click
+      document.querySelectorAll('.nav-dropdown__toggle').forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          e.preventDefault();
+          var dropdown = btn.closest('.nav-dropdown');
+          var wasOpen = dropdown.classList.contains('is-open');
+
+          // Close all dropdowns first
+          document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+            d.classList.remove('is-open');
+            d.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'false');
+          });
+
+          // Toggle the clicked one
+          if (!wasOpen) {
+            dropdown.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.nav-dropdown')) {
+          document.querySelectorAll('.nav-dropdown.is-open').forEach(function (d) {
+            d.classList.remove('is-open');
+            d.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'false');
+          });
+        }
+      });
+
+      // Banner icon bump — lifts the icon when hovering over any CTA
+      // within a .banner section (CSS class .is-bumped handles the animation)
+      document.querySelectorAll('.banner .btn').forEach(function (btn) {
+        var icon = btn.closest('.banner').querySelector('.banner__icon');
+        if (!icon) return;
+        btn.addEventListener('mouseenter', function () { icon.classList.add('is-bumped'); });
+        btn.addEventListener('mouseleave', function () { icon.classList.remove('is-bumped'); });
+      });
+
+      // Model nav: persist manually-opened sections across page navigations.
+      // The border/highlight is controlled by Hugo's is-ancestor/is-active classes,
+      // so having extra sections open is visually unambiguous.
+      var NAV_KEY = 'samm-nav-open';
+
+      function getOpenHrefs() {
+        try { return JSON.parse(sessionStorage.getItem(NAV_KEY) || '[]'); } catch (e) { return []; }
+      }
+
+      function saveOpenHrefs() {
+        var open = [];
+        document.querySelectorAll('.model-nav .docs-nav__toggle.is-open .docs-nav__link').forEach(function (link) {
+          if (link.getAttribute('href')) open.push(link.getAttribute('href'));
+        });
+        try { sessionStorage.setItem(NAV_KEY, JSON.stringify(open)); } catch (e) {}
+      }
+
+      // Restore sections that were open on a previous model page
+      getOpenHrefs().forEach(function (href) {
+        document.querySelectorAll('.model-nav .docs-nav__toggle').forEach(function (btn) {
+          var link = btn.querySelector('.docs-nav__link');
+          if (link && link.getAttribute('href') === href && !btn.classList.contains('is-open')) {
+            btn.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+            var children = btn.nextElementSibling;
+            if (children) children.classList.add('is-open');
+          }
+        });
+      });
+
+      // Save whenever a model nav toggle is clicked
+      document.querySelectorAll('.model-nav .docs-nav__toggle').forEach(function (btn) {
+        btn.addEventListener('click', saveOpenHrefs);
+      });
+
+    });
+  </script>
+</body>
+</html>

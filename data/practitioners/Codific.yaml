@@ -1,0 +1,9 @@
+weight: 3
+company: "Codific"
+country: "Belgium"
+url: "https://codific.com/owasp-samm-assessment/"
+image: ""
+contributors: "Aram Hovsepyan"
+sponsor: true
+tier: "Gold"
+enabled: true

@@ -1,0 +1,43 @@
+{{ $page := .page }}
+{{ $baseId := .baseId }}
+{{ $letter := substr $baseId -1 }}
+
+{{ $scratch := newScratch }}
+{{ $scratch.Add "streamname" ($page.Params.business_function_url | urlize) }}
+{{ $scratch.Add "streamname" "-" }}
+{{ $scratch.Add "streamname" ((replace $page.Params.practice "&" "and") | urlize) }}
+{{ $scratch.Add "streamname" "-" }}
+{{ $scratch.Add "streamname" $letter }}
+{{ $scratch.Add "foundstream" "false" }}
+
+<section class="stream-guidance">
+  <h2>Stream Guidance</h2>
+
+  {{ if gt (len $page.Site.Data.streamguidance) 0 }}
+    {{ range $page.Site.Data.streamguidance }}
+      {{ if eq (lower .stream) (lower ($scratch.Get "streamname")) }}
+        {{ $scratch.Set "foundstream" "true" }}
+        <ul>
+          {{ if .team_guidance }}
+          <li><strong>SAMM team</strong> guidance <a href="{{ .team_guidance }}" target="_blank" rel="noopener">Google Doc</a></li>
+          {{ else }}
+          <li>Team guidance for this stream is coming soon.</li>
+          {{ end }}
+          {{ if .community_guidance }}
+          <li><strong>Community</strong> guidance <a href="{{ .community_guidance }}" target="_blank" rel="noopener">Google Doc</a></li>
+          {{ else }}
+          <li>Be the first to add to the community guidance for this stream!</li>
+          {{ end }}
+        </ul>
+      {{ end }}
+    {{ end }}
+    {{ if not (eq ($scratch.Get "foundstream") "true") }}
+      <p>There's no guidance for this stream, yet. Be the first to provide community guidance!</p>
+    {{ end }}
+  {{ end }}
+
+  <h3>Want to contribute?</h3>
+  <p>Complete this <a href="https://forms.gle/bJUCAUYnK5BNhgWa9" target="_blank" rel="noopener">Google Form</a> with guidance for this stream.</p>
+
+  <p>To learn more about stream guidance for the SAMM model, see the <a href="/docs/guides/stream-guidance/">Stream guidance</a> page.</p>
+</section>

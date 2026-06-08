@@ -1,0 +1,12 @@
+name : Bart De Win
+image : img/team/bart.jpg
+designation : Project leader
+content : Director Cyber&Privacy unit PwC Belgium, AppSec enthusiast
+social :
+  - icon : fab fa-linkedin-in
+    link : "#"
+  - icon : fa-brands fa-x-twitter
+    link : "#"
+  - icon : fab fa-github
+    link : "#"
+active : true

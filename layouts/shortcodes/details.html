@@ -1,0 +1,6 @@
+{{/* Renders a collapsible <details> disclosure element.
+     Usage: {{% details summary="Label text" %}} markdown content {{% /details %}} */}}
+<details>
+  <summary>{{ .Get "summary" }}</summary>
+  {{ .Inner }}
+</details>

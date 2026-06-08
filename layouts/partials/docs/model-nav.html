@@ -1,0 +1,69 @@
+{{/* Model navigation sidebar — groups pages by Type since content lives in a flat section.
+     BF (type=business-function) → Practice (type=practice) → Stream (type=stream).
+     Reuses .docs-nav__* CSS from the docs sidebar.
+     Expects context: the current page (.) */}}
+{{ $current := . }}
+{{ $bfPages      := where site.RegularPages "Type" "business-function" }}
+{{ $allPractices := where site.RegularPages "Type" "practice" }}
+{{ $allStreams    := where site.RegularPages "Type" "stream" }}
+
+{{/* SAMM canonical BF order */}}
+{{ $bfOrder := slice "Governance" "Design" "Implementation" "Verification" "Operations" }}
+
+<nav class="docs-nav model-nav" aria-label="Model navigation">
+  <a href="/model/" class="docs-nav__home">The Model</a>
+  {{ range $bfOrder }}
+    {{ $title := . }}
+    {{ range where $bfPages "Title" $title }}
+    {{ $bf := . }}
+    {{ $bfActive   := eq $current.RelPermalink $bf.RelPermalink }}
+    {{ $bfAncestor := and (ne $current.RelPermalink $bf.RelPermalink) (strings.HasPrefix $current.RelPermalink $bf.RelPermalink) }}
+    {{ $bfOpen     := or $bfActive $bfAncestor }}
+    <div class="docs-nav__group model-nav__bf--{{ $bf.Title | lower }}{{ if $bfActive }} is-active{{ end }}{{ if $bfAncestor }} is-ancestor{{ end }}">
+      <button class="docs-nav__toggle{{ if $bfOpen }} is-open{{ end }}"
+              aria-expanded="{{ if $bfOpen }}true{{ else }}false{{ end }}">
+        <a href="{{ $bf.RelPermalink | replaceRE `^/?\./` `/` }}"
+           class="docs-nav__link"
+           {{ if $bfActive }}aria-current="page"{{ end }}
+           onclick="event.stopPropagation()">{{ $bf.Title }}</a>
+        <svg class="docs-nav__caret" viewBox="0 0 12 9" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5"/>
+        </svg>
+      </button>
+      <div class="docs-nav__children{{ if $bfOpen }} is-open{{ end }}">
+        {{ $practices := where $allPractices ".Params.business_function" $bf.Title }}
+        {{ range $practices.ByTitle }}
+          {{ $practice := . }}
+          {{ $pActive   := eq $current.RelPermalink $practice.RelPermalink }}
+          {{ $pAncestor := and (ne $current.RelPermalink $practice.RelPermalink) (strings.HasPrefix $current.RelPermalink $practice.RelPermalink) }}
+          {{ $pOpen     := or $pActive $pAncestor }}
+          <div class="docs-nav__group{{ if $pActive }} is-active{{ end }}{{ if $pAncestor }} is-ancestor{{ end }}">
+            <button class="docs-nav__toggle{{ if $pOpen }} is-open{{ end }}"
+                    aria-expanded="{{ if $pOpen }}true{{ else }}false{{ end }}">
+              <a href="{{ $practice.RelPermalink | replaceRE `^/?\./` `/` }}"
+                 class="docs-nav__link"
+                 {{ if $pActive }}aria-current="page"{{ end }}
+                 onclick="event.stopPropagation()">{{ $practice.Title }}</a>
+              <svg class="docs-nav__caret" viewBox="0 0 12 9" fill="none" stroke="currentColor"
+                   stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <path d="M0.5 0.5 L4 4.5 Q6 8 8 4.5 L11.5 0.5"/>
+              </svg>
+            </button>
+            <div class="docs-nav__children{{ if $pOpen }} is-open{{ end }}">
+              {{ $streams := where $allStreams ".Params.practice" $practice.Title }}
+              {{ range $streams.ByTitle }}
+                {{ $stream  := . }}
+                {{ $sActive := eq $current.RelPermalink $stream.RelPermalink }}
+                <a href="{{ $stream.RelPermalink | replaceRE `^/?\./` `/` }}"
+                   class="docs-nav__link{{ if $sActive }} is-active{{ end }}"
+                   {{ if $sActive }}aria-current="page"{{ end }}>{{ $stream.Title }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}{{/* end range where $bfPages */}}
+  {{ end }}{{/* end range $bfOrder */}}
+</nav>

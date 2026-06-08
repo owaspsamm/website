@@ -1,0 +1,62 @@
+{{ define "main" }}
+<div class="page-header">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="content">
+  {{ .Content }}
+
+  {{/* Collect all categories */}}
+  {{ $allCats := slice }}
+  {{ range .RegularPages }}
+    {{ with .Params.categories }}
+      {{ range . }}
+        {{ $allCats = $allCats | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $uniqueCats := $allCats | uniq | sort }}
+
+  <div class="blog-filters" aria-label="Filter by category">
+    <button class="blog-filter is-active" data-category="all">All</button>
+    {{ range $uniqueCats }}
+    <button class="blog-filter" data-category="{{ . | urlize }}">{{ . }}</button>
+    {{ end }}
+  </div>
+
+  <div class="blog-grid">
+    {{ range .RegularPages.ByDate.Reverse }}
+    {{ $cat := "" }}
+    {{ with .Params.categories }}{{ $cat = index . 0 }}{{ end }}
+    <a href="{{ .RelPermalink }}" class="blog-card" data-category="{{ $cat | urlize }}">
+      <div class="blog-card__meta">
+        {{ with $cat }}
+        <span class="blog-card__tag">{{ . }}</span>
+        {{ end }}
+        <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "January 2, 2006" }}
+        </time>
+      </div>
+      <div class="blog-card__body">
+        <h3>{{ .Title }}</h3>
+        {{ $excerpt := .Description }}
+        {{ if not $excerpt }}
+          {{ $parts := split .Content "<p>" }}
+          {{ if gt (len $parts) 1 }}
+            {{ $excerpt = index $parts 1 | replaceRE "</p>.*" "" | plainify | truncate 160 }}
+          {{ else }}
+            {{ $excerpt = .Plain | truncate 160 }}
+          {{ end }}
+        {{ end }}
+        <p>{{ $excerpt }}</p>
+        <span class="blog-card__reading">{{ .ReadingTime }} minute read</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $js := resources.Get "js/blog-filter.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
+{{ end }}

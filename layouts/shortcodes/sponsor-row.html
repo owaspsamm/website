@@ -1,0 +1,17 @@
+{{/* Renders a row of sponsor images with links.
+     Usage:
+       {{< sponsor-row
+          img1="/img/sponsors/codific_180.png" alt1="Codific" url1="https://www.codific.com"
+          img2="/img/sponsors/toreon_180.png" alt2="Toreon" url2="https://www.toreon.com" >}} */}}
+<div style="display: flex; flex-wrap: wrap; gap: var(--space-lg); align-items: center; justify-content: center; margin: var(--space-lg) 0;">
+  {{ range $i := (seq 1 3) }}
+    {{ $img := $.Get (printf "img%d" $i) }}
+    {{ $alt := $.Get (printf "alt%d" $i) }}
+    {{ $url := $.Get (printf "url%d" $i) }}
+    {{ if $img }}
+    <a href="{{ $url }}" target="_blank" rel="noopener">
+      <img src="{{ $img }}" alt="{{ $alt }}" loading="lazy" style="max-width: 180px;">
+    </a>
+    {{ end }}
+  {{ end }}
+</div>

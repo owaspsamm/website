@@ -1,0 +1,12 @@
+name : John Ellingsworth
+image : img/team/johnE.jpg
+designation : Core Team member
+content : Cybersecurity & web technology expert, leader of the OWASP Maine Chapter
+social :
+  - icon : fab fa-linkedin-in
+    link : "https://www.linkedin.com/in/johnellingsworth/"
+  - icon : fa-brands fa-x-twitter
+    link : "https://twitter.com/jellingsworth"
+  - icon : fab fa-github
+    link : "https://github.com/johnellingsworth"
+active : true

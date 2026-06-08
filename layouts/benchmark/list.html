@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ $isChild := true }}
+{{ $currentURL := .RelPermalink }}
+{{ range .Site.Menus.main }}
+  {{ if not .HasChildren }}
+    {{ if eq $currentURL .URL }}{{ $isChild = false }}{{ end }}
+  {{ end }}
+{{ end }}
+<div class="page-header{{ if $isChild }} page-header--child{{ end }}">
+  <h1>{{ .Title }}</h1>
+</div>
+<div class="content">
+  {{ .Content }}
+
+  {{ $pages := .Pages }}
+  {{ if $pages }}
+  <div class="card-grid" style="margin-top: var(--space-lg);">
+    {{ range $pages }}
+    <a href="{{ .RelPermalink }}" class="card card--sm" style="text-decoration: none; color: inherit;">
+      <h3>{{ .Title }}</h3>
+      {{ with .Description }}<p>{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
