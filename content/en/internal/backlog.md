@@ -16,7 +16,7 @@ Rough sequencing once v2 is stable:
 2. **Core module generator fixes** — two upstream cleanups (`url:` `/./` band-aid, `stream-a/` → `a/`). Both live in the same generator, so batch them.
 3. **Stream guidance redesign** — full rebuild per summit decision; replaces the v1 Google Doc port.
 4. **Monthly external link check (CI layer 2)** — scheduled job that reports dead external links in old blog posts.
-5. **Git LFS for static/presentations/** — repo-size optimisation; not user-visible.
+5. **Remove presentations from the repo** — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.
 6. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
 
 ## Multilingual model pages
@@ -106,17 +106,23 @@ Per the 2026 Barcelona summit decision, this section will be **fully redesigned*
 - On failure, open or update a tracking issue with the broken-link list — don't fail the job in a way that pages anyone.
 - Triage cadence: a maintainer skims the report each month and decides update / replace / remove.
 
-## Git LFS for static/presentations/
+## Presentations: remove large files from the repo
 
-**What:** 186 MB of .pptx and .pdf files in [static/presentations/](../../../static/presentations/) — user-day slides and guidance PDFs. Actively served (linked from user-day pages), but they change rarely and bloat every clone of the repo.
+**What:** 186 MB of .pptx and .pdf files in [static/presentations/](../../../static/presentations/) — user-day slides and guidance PDFs. Actively served (linked from user-day pages), but they change rarely and bloat every clone and every GitHub Actions deploy run.
 
-**Why defer:** works fine today; committing them as-is matches v1's long-standing approach. LFS migration is a day of work plus quota planning, not something to do during a cutover.
+**Why defer:** works fine today; committing them as-is matches v1's long-standing approach. Not something to do during a cutover.
 
-**When to revisit:** once v2 is stable (maybe 2–4 weeks post-launch), or sooner if the repo size causes a concrete problem (slow clones, GitHub warnings).
+**When to revisit:** once v2 is stable (maybe 2–4 weeks post-launch), or sooner if the repo size causes a concrete problem (slow Actions runs, GitHub warnings).
 
-**Rough plan:**
-- Enable Git LFS on `owaspsamm/website`.
-- `git lfs track "*.pptx" "*.pdf"` scoped to `static/presentations/**`.
-- Rewrite history on a feature branch: `git lfs migrate import --include="static/presentations/**" --everything`.
-- Test clone size, confirm download links still resolve.
-- GitHub's free LFS tier is 1 GB storage + 1 GB/month bandwidth — 186 MB fits in storage but bandwidth may require a data pack (~$5/month) depending on download volume.
+**Options — decide before acting:**
+
+1. **GitHub Releases** (recommended): attach presentation files to a release per user-day event (e.g. `user-day-2024-san-francisco`). URLs are stable, public, tied to the repo, free. No dependency on external services. Links in content pages update to `github.com/owaspsamm/website/releases/download/...`. Manual upload per event — same effort as Drive.
+
+2. **Google Drive**: move files to the SAMM public Drive folder and link from content pages. Simpler to set up if the team already uses Drive. Risk: links break silently if someone reorganises the folder, changes permissions, or the org Google Workspace account changes.
+
+3. **Git LFS**: keep files in the repo but store them in LFS. Reduces clone size; deploy runs still download them but via LFS bandwidth. GitHub's free LFS tier is 1 GB storage + 1 GB/month bandwidth — 186 MB fits in storage but bandwidth may need a data pack (~$5/month) depending on download volume. Migration rewrites history: `git lfs migrate import --include="static/presentations/**" --everything`.
+
+**Regardless of option chosen:**
+- Update all links in content pages to point to the new location.
+- Add `static/presentations/` to `.gitignore` once files are removed from the repo.
+- Delete the files from git history (or accept they remain in old commits — only matters for clone size of full history).
