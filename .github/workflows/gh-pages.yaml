@@ -35,7 +35,7 @@ jobs:
             echo "::error title={Bad Semver}::{Release version is not semver compatible}"
             exit 1
           fi
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -85,7 +85,7 @@ jobs:
     needs: updateHugoMod
     if: ${{ always() && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
@@ -94,7 +94,7 @@ jobs:
         run: |
           echo "${{needs.updateHugoMod.outputs.goMod}}" > go.mod
           echo "${{needs.updateHugoMod.outputs.goSum}}" > go.sum
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: /tmp/hugo_cache
           key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
