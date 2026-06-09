@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contributing on OWASP SAMM</title><link>https://owaspsamm.org/docs/contributing/</link><description>Recent content in Contributing on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/docs/contributing/index.xml" rel="self" type="application/rss+xml"/><item><title>How to Contribute</title><link>https://owaspsamm.org/docs/contributing/how-to-contribute/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/how-to-contribute/</guid><description>&lt;h2 id="interested-in-contributing-to-samm"&gt;Interested in contributing to SAMM?&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how you can do it!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#users-and-practitioners"&gt;Users and practitioners&lt;/a&gt;
+&lt;/strong&gt;: Get listed as a SAMM user or practitioner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/benchmark/"&gt;Benchmark&lt;/a&gt;
+&lt;/strong&gt;: How am I doing? What works for similar organizations? Donate SAMM data sets! Visit our benchmark page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#github-issues"&gt;GitHub issues&lt;/a&gt;
+&lt;/strong&gt;: Read more about how we use GitHub for our content and how you can contribute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#translations"&gt;Translations&lt;/a&gt;
+&lt;/strong&gt;: Help us make SAMM available in more languages.&lt;/p&gt;</description></item><item><title>GitHub Repositories</title><link>https://owaspsamm.org/docs/contributing/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/github/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/Octocat.png" alt="GitHub Octocat" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;All SAMM repositories live under the &lt;a href="https://github.com/owaspsamm" target="_blank" rel="noopener"&gt;OWASP SAMM GitHub organization&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core" target="_blank" rel="noopener"&gt;Core Model&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/website" target="_blank" rel="noopener"&gt;Website&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank" rel="noopener"&gt;SAMMwise (assessment tool)&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&amp;rsquo;t miss the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ section for ideas, questions, and feedback.&lt;/p&gt;</description></item></channel></rss>
