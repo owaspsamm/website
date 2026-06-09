@@ -13,8 +13,8 @@
 <section class="stream-guidance">
   <h2>Stream Guidance</h2>
 
-  {{ if gt (len $page.Site.Data.streamguidance) 0 }}
-    {{ range $page.Site.Data.streamguidance }}
+  {{ if gt (len hugo.Data.streamguidance) 0 }}
+    {{ range hugo.Data.streamguidance }}
       {{ if eq (lower .stream) (lower ($scratch.Get "streamname")) }}
         {{ $scratch.Set "foundstream" "true" }}
         <ul>

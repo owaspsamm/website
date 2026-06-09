@@ -3,5 +3,5 @@ country: "Global"
 industry: "Technology"
 image: ""
 description: ""
-testimonial: "	We regularly use OWASP SAMM to create software security roadmaps for our customers"
+testimonial: "We regularly use OWASP SAMM to create software security roadmaps for our customers"
 enabled: true
