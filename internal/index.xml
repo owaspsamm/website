@@ -6,6 +6,7 @@
 &lt;li&gt;&lt;strong&gt;Stream guidance redesign&lt;/strong&gt; — full rebuild per summit decision; replaces the v1 Google Doc port.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Monthly external link check (CI layer 2)&lt;/strong&gt; — scheduled job that reports dead external links in old blog posts.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Remove presentations from the repo&lt;/strong&gt; — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Netlify staging reconfiguration&lt;/strong&gt; — switch from serving pre-built &lt;code&gt;gh-pages-v2&lt;/code&gt; to building from &lt;code&gt;main&lt;/code&gt;; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;OG preview validation&lt;/strong&gt; — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (&lt;code&gt;linkedin.com/post-inspector&lt;/code&gt;), Twitter/X Card Validator (&lt;code&gt;cards-dev.twitter.com/validator&lt;/code&gt;), and opengraph.xyz.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="multilingual-model-pages"&gt;Multilingual model pages&lt;/h2&gt;
