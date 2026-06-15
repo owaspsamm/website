@@ -31,5 +31,4 @@ Plans carry a date stamp; check it against the current codebase before trusting 
 
 ## Design and identity
 
-- [Design system](/design-system/) — tokens, components, and patterns.
-- [SAMM identity & voice](/samm-identity/) — content standards, tone, and voice guide.
+- [SAMM identity & voice](/samm-identity/) — brand voice, content standards, writing guidelines, and design system. Shareable with contributors and designers.

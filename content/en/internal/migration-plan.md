@@ -38,12 +38,9 @@ When ready to execute this plan in a new session: open this page, point me at it
 
 Each prerequisite is something that needs to be true *before* cut-over day, so the cut-over itself is a 5-minute branch swap rather than several hours of unexpected debugging. In rough order.
 
-- [ ] **0. Get v2 under git and pushed as a branch.** `git init` done and all files staged (2026-05-12). Remaining: commit + add remote + push. `go.mod` confirmed no `i18n-FR` module — drop that step when copying the v1 workflow. Steps still to run:
-  - `git commit -m "Initial v2 codebase"`
-  - `git remote add origin https://github.com/owaspsamm/website.git`
-  - `git push -u origin v2-preview`
+- [x] **0. v2 under git and pushed as a branch (2026-06-08).** Committed and pushed to `v2-preview` on `owaspsamm/website`.
 - [x] **v2 workflow actions-upgraded (2026-06-08).** `.github/workflows/gh-pages.yaml` in the v2 codebase has all five actions bumped to Node 24-compatible versions and the `add-and-commit` v10 input format corrected. See [/internal/actions-upgrade/](/internal/actions-upgrade/) for the version table. v1's in-flight upgrade is independent and does not block v2 launch.
-- [ ] **v2 pipeline smoke-tested on `v2-preview`.** The workflow must run to green at least once on the `v2-preview` branch before cut-over day. See the "v2 staging pipeline" section below.
+- [x] **v2 pipeline smoke-tested on `v2-preview` (2026-06-08).** Workflow ran green; `gh-pages-v2` branch populated successfully.
 - [x] **Content parity audit.** Done 2026-05-12. All major sections covered. Two aliases added: `/resources/news/` → `community/newsletter.md`, `/resources/youtube-channel/` → `community/youtube.md`. `referencespoc/poc.md` confirmed ignorable.
 - [x] **URL parity audit.** Done 2026-05-12. 21 aliases already in place from the `/resources/` dissolution. Two gaps closed (see above). No redirect map needed — all cases handled via page-level `aliases:`.
 - [x] **Hugo version pinned.** Both v1 and v2 workflows pin `0.157.0`. No action needed (verified 2026-05-12).

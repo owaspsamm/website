@@ -2,7 +2,8 @@
 title: "Design System"
 description: "Internal design system reference for the OWASP SAMM website."
 layout: "single"
-type: "page"
+type: "samm-identity"
+weight: 20
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -22,27 +23,48 @@ Internal reference for design decisions, tokens, and patterns. Not linked from n
 | `--space-lg` | 1.618rem |
 | `--space-xl` | 2.618rem |
 | `--space-2xl` | 4.236rem |
+| `--space-3xl` | 6.854rem |
 
 ### Typography
 
+| Token | Value | Usage |
+|---|---|---|
+| `--text-xs` | 0.618rem | Captions, fine print |
+| `--text-sm` | 0.875rem | Small labels, metadata |
+| `--text-base` | 1rem | Body text |
+| `--text-lg` | 1.236rem | Section subheadings |
+| `--text-xl` | 1.618rem | Page subheadings (h2) |
+| `--text-2xl` | 2.618rem | Page titles |
+| `--text-3xl` | 4.236rem | Hero headings |
+
+### Font stacks
+
 | Token | Usage |
 |---|---|
-| `--text-sm` | Small labels, metadata |
-| `--text-base` | Body text |
-| `--text-lg` | Section subheadings |
-| `--text-xl` | Page subheadings (h2) |
-| `--text-2xl` | Page titles |
-| `--text-3xl` | Hero headings |
+| `--font-brand` | "Days One": headings, logo, hero text |
+| `--font-sans` | system-ui stack: all body text |
+| `--font-mono` | ui-monospace stack: code blocks |
+| `--line-height` | 1.618 (φ): body line height |
 
 ### Colors
 
-| Token | Value | Usage |
-|---|---|---|
-| `--color-primary` | #71b8b8 | Brand teal, links on hover, accents |
-| `--color-primary-rgb` | 113, 184, 184 | For rgba() usage |
-| `--color-dark` | #2c3030 | Text, dark backgrounds |
-| `--color-mid` | — | Body text, link default |
-| `--color-offwhite` | #f9f6f6 | Page background, card fills |
+| Token | Value | Contrast on offwhite | Usage |
+|---|---|---|---|
+| `--color-primary` | #71b8b8 | 2.11:1 (decoration only) | Brand teal: backgrounds, accents, hover tints. **Never use for text or links** (fails WCAG AA). |
+| `--color-primary-rgb` | 113, 184, 184 | — | For `rgba()` usage |
+| `--color-mid` | #366867 | 5.86:1 PASS AA | Accessible teal: the only teal safe for text or links. Added because `--color-primary` fails contrast. Used for link default and hover states on dark buttons. |
+| `--color-dark` | #2c3030 | 12.43:1 PASS | Primary text, dark surfaces, near-black |
+| `--color-offwhite` | #f9f6f6 | — | Page background, card fills. No plain white anywhere, this is the lightest surface. |
+| `--color-bg` | → offwhite | — | Semantic alias for page background |
+| `--color-border` | #e8e3e3 | — | Borders, dividers (derived from offwhite) |
+
+### Text colors
+
+| Token | Value | Contrast on offwhite | Usage |
+|---|---|---|---|
+| `--color-text` | → dark | 12.43:1 PASS | Primary text (alias for `--color-dark`) |
+| `--color-text-light` | #464646 | 8.78:1 PASS | Secondary text |
+| `--color-text-muted` | #6b6b6b | 4.96:1 PASS | Metadata, captions, de-emphasised labels |
 
 ### Business Function Colors
 
@@ -63,6 +85,8 @@ Each has a `-light` variant for hover states and cell accents.
 | `--max-width` | 72rem | Container max-width |
 | `--header-height` | 4rem | Site header height |
 | `--tap-target-min` | 2.75rem | Minimum touch-target size (44px, Apple HIG / WCAG 2.5.5 AAA) |
+| `--hero-height-min` | 24rem | Hero floor, prevents collapse at normal viewports |
+| `--hero-height-max` | 40rem | Hero ceiling, prevents runaway growth on 4K+ |
 
 ### Timing
 
@@ -83,7 +107,7 @@ Each component uses at most **2 font sizes** and **2 font weights**. Differentia
 Before creating a new pattern, search the codebase for how the same problem was already solved. If a chevron, icon, button, or layout exists, reuse it exactly.
 
 ### Tap targets
-Any interactive element that can be tapped on touch devices must have a tap target of at least `var(--tap-target-min)` in both dimensions. Apply to the `<a>` / `<button>` itself, not the inner icon — the inner SVG can be smaller. Existing patterns: `.team-card__overlay a` (touch only), `.docs__sidebar-close` (touch only).
+Any interactive element that can be tapped on touch devices must have a tap target of at least `var(--tap-target-min)` in both dimensions. Apply to the `<a>` / `<button>` itself, not the inner icon; the inner SVG can be smaller. Existing patterns: `.team-card__overlay a` (touch only), `.docs__sidebar-close` (touch only).
 
 ## Button System
 
@@ -143,7 +167,7 @@ All use quadratic bezier (`Q`) for rounded tips.
 
 - **BEM naming**: `.block__element--modifier`
 - **No Bootstrap**: fully custom
-- **Hugo Pipes**: CSS minification + fingerprinting
+- **Hugo Pipes**: all CSS files are bundled via `resources.Concat` (in layer order, defined in `baseof.html`), then minified and fingerprinted. Adding a new CSS file requires adding it to the concat list in `baseof.html`; it will not be picked up automatically.
 - **Specificity**: match existing selector depth. Use deep descendant chains when needed. Never pad specificity with fake `:not(.x)` selectors.
 - **Breakpoints**: `48rem` (primary mobile), `600px` (contact form)
 - **Source order**: mobile overrides go in `@media (max-width: 48rem)`. Desktop-only rules use `@media (min-width: 48rem)`.
@@ -151,19 +175,13 @@ All use quadratic bezier (`Q`) for rounded tips.
 ## JS Conventions
 
 - **Page-specific behaviour** lives in `assets/js/<name>.js`. Loaded by the template's `{{ define "scripts" }}` block via Hugo Pipes: `resources.Get | minify | fingerprint`, with `defer` and `integrity`. Mirror the CSS pattern in `baseof.html`.
-- **Shared behaviour** loaded by multiple templates lives in its own file (e.g. `docs-sidebar.js` is loaded by every docs/model template). Don't duplicate logic across page-specific files — extract to a shared file and include it.
-- **Global interactions** stay inline at the bottom of `baseof.html` — site nav, dropdowns, banner icons, model nav persistence.
+- **Shared behaviour** loaded by multiple templates lives in its own file (e.g. `docs-sidebar.js` is loaded by every docs/model template). Don't duplicate logic across page-specific files: extract to a shared file and include it.
+- **Global interactions** live in `assets/js/global.js`, loaded by `baseof.html` via Hugo Pipes with `defer`: site nav, dropdowns, banner icons, model nav persistence.
 - **Cookie-consent** is a hand-managed `static/js/cookie-consent.js` because of its specific load timing; not part of the Hugo Pipes flow.
 - Each external script wraps its body in `document.addEventListener('DOMContentLoaded', function () { ... })` for safety, even though `defer` makes it nearly redundant.
-- No bundler, no transpiler, no framework. Plain ES5-compatible JS. Each file is self-contained — no `import`/`export`.
+- No bundler, no transpiler, no framework. Plain ES5-compatible JS. Each file is self-contained: no `import`/`export`.
 
 ## External Links
 
 Links to external sites use `target="_blank" rel="noopener noreferrer"` with an inline SVG icon (`.external-link-icon`).
 
-## Content Guidelines
-
-- No passive voice
-- No em-dashes: use colons or commas instead
-- Direct, confident tone
-- No hedging language

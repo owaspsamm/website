@@ -17,7 +17,8 @@ Rough sequencing once v2 is stable:
 3. **Stream guidance redesign** — full rebuild per summit decision; replaces the v1 Google Doc port.
 4. **Monthly external link check (CI layer 2)** — scheduled job that reports dead external links in old blog posts.
 5. **Remove presentations from the repo** — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.
-6. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
+6. **Netlify staging reconfiguration** — switch from serving pre-built `gh-pages-v2` to building from `main`; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.
+7. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
 
 ## Multilingual model pages
 

@@ -1,0 +1,20 @@
+{{/* Sidebar for the samm-identity section.
+     Lists the section root + sub-pages in weight order.
+     Reuses .docs-nav CSS from the docs sidebar. */}}
+{{ $current := . }}
+{{ $root := site.GetPage "/samm-identity" }}
+
+<nav class="docs-nav" aria-label="Brand guide navigation">
+  {{ with $root }}
+    <a href="{{ .RelPermalink }}"
+       class="docs-nav__home{{ if eq $current.RelPermalink .RelPermalink }} docs-nav__link--active{{ end }}">
+      SAMM Identity
+    </a>
+    {{ range .Pages.ByWeight }}
+      <a href="{{ .RelPermalink }}"
+         class="docs-nav__link{{ if eq $current.RelPermalink .RelPermalink }} docs-nav__link--active{{ end }}">
+        {{ .Title }}
+      </a>
+    {{ end }}
+  {{ end }}
+</nav>

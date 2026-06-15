@@ -1,0 +1,39 @@
+{{/* Layout for all pages in the /samm-identity/ section (identity, writing guidelines, design system).
+     Reuses the docs CSS classes (docs__sidebar, docs__content, docs-nav) — they are already in the
+     CSS bundle and provide the exact sidebar+content structure we need.
+     Breadcrumb is suppressed on the section root: linking back to the page you are already on
+     adds no navigation value. Sub-pages show "SAMM Identity > [title]". */}}
+{{ define "main" }}
+<div class="docs docs--no-toc">
+  <aside class="docs__sidebar" id="docs-sidebar">
+    <button class="docs__sidebar-close" aria-label="Close navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+           stroke-linecap="round" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    {{ partial "samm-identity/sidebar.html" . }}
+  </aside>
+
+  <div class="docs__content">
+    {{ if ne .RelPermalink "/samm-identity/" }}{{ partial "samm-identity/breadcrumb.html" . }}{{ end }}
+    <article class="docs__body content">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </article>
+  </div>
+
+  <aside class="docs__toc docs__toc--empty"></aside>{{/* placeholder keeps the 3-column grid intact */}}
+</div>
+
+<button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <path d="M4 6h16M4 12h16M4 18h16"/>
+  </svg>
+</button>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $sidebar := resources.Get "js/docs-sidebar.js" | minify | fingerprint }}
+<script src="{{ $sidebar.RelPermalink }}" integrity="{{ $sidebar.Data.Integrity }}" defer></script>
+{{ end }}

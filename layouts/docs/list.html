@@ -11,7 +11,8 @@
   </aside>
 
   <div class="docs__content">
-    {{ partial "docs/breadcrumb.html" . }}
+    {{/* Suppress breadcrumb on the docs root — "Docs" linking back to itself adds no value */}}
+    {{ if ne .RelPermalink "/docs/" }}{{ partial "docs/breadcrumb.html" . }}{{ end }}
 
     <div class="docs__body content">
       <h1>{{ .Title }}</h1>

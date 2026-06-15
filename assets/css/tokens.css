@@ -4,7 +4,7 @@
   --color-primary-rgb: 113, 184, 184;
   --color-dark: #2c3030;           /* near-black */
   --color-dark-rgb: 44, 48, 48;
-  --color-mid: #366867;            /* dark teal — reserved for subtle accents */
+  --color-mid: #366867;            /* accessible teal — 5.86:1 on offwhite. Use for text/links. --color-primary fails contrast (2.11:1) and must never be used for text. */
   --color-offwhite: #f9f6f6;       /* off-white background */
   --color-offwhite-rgb: 249, 246, 246;
 
