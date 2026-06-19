@@ -2,7 +2,7 @@
 title: "Backlog"
 description: "Post-launch optimizations and improvements that aren't blockers."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -19,6 +19,8 @@ Rough sequencing once v2 is stable:
 5. **Remove presentations from the repo** — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.
 6. **Netlify staging reconfiguration** — switch from serving pre-built `gh-pages-v2` to building from `main`; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.
 7. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
+8. **Playwright visual regression tests** — screenshot-based regression suite to catch CSS regressions silently introduced across sessions. High-value pages: docs single, model overview, business-function, practice, stream, blog post, user-day talk, homepage. Run on PR via GitHub Actions; baseline screenshots committed to repo. Prevents the class of bug where link underlines, nav tints, or pager styles break without any failing test.
+9. **Review `booxmedialtd/ws-action-parse-semver@v1` in the CI pipeline** — unmaintained third-party action used in the `updateHugoMod` job to parse the SAMM core release tag on `repository_dispatch` events. Not on the critical path for normal pushes. Assess whether it still works reliably; if not, replace with a maintained alternative or an inline `bash` semver parse. Low urgency; only bites when a new core release fires.
 
 ## Multilingual model pages
 
@@ -113,7 +115,7 @@ Per the 2026 Barcelona summit decision, this section will be **fully redesigned*
 
 **Why defer:** works fine today; committing them as-is matches v1's long-standing approach. Not something to do during a cutover.
 
-**When to revisit:** once v2 is stable (maybe 2–4 weeks post-launch), or sooner if the repo size causes a concrete problem (slow Actions runs, GitHub warnings).
+**When to revisit:** once v2 is stable (maybe 2â€“4 weeks post-launch), or sooner if the repo size causes a concrete problem (slow Actions runs, GitHub warnings).
 
 **Options — decide before acting:**
 

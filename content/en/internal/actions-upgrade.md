@@ -2,7 +2,7 @@
 title: "Workflow actions upgrade plan"
 description: "Node-24 readiness and reliability bumps for the deploy pipeline."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"

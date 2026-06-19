@@ -1,0 +1,38 @@
+{{/* Sidebar for the /internal/ section.
+     Flat pages are listed by weight. Sub-sections (e.g. design-system) appear
+     at the bottom under a section label with their child pages indented. */}}
+{{ $current := . }}
+{{ $root := site.GetPage "/internal" }}
+
+<nav class="docs-nav" aria-label="Internal navigation">
+  {{ with $root }}
+    <a href="{{ .RelPermalink }}"
+       class="docs-nav__link{{ if eq $current.RelPermalink .RelPermalink }} is-active{{ end }}"
+       {{ if eq $current.RelPermalink .RelPermalink }}aria-current="page"{{ end }}>
+      Internal
+    </a>
+    {{ range .Pages.ByWeight }}
+      <a href="{{ .RelPermalink }}"
+         class="docs-nav__link{{ if eq $current.RelPermalink .RelPermalink }} is-active{{ end }}"
+         {{ if eq $current.RelPermalink .RelPermalink }}aria-current="page"{{ end }}>
+        {{ .Title }}
+      </a>
+    {{ end }}
+    {{ range .Sections.ByWeight }}
+      <div class="docs-nav__divider"></div>
+      <div class="docs-nav__section-label">{{ .Title }}</div>
+      <a href="{{ .RelPermalink }}"
+         class="docs-nav__link{{ if eq $current.RelPermalink .RelPermalink }} is-active{{ end }}"
+         {{ if eq $current.RelPermalink .RelPermalink }}aria-current="page"{{ end }}>
+        Overview
+      </a>
+      {{ range .Pages.ByWeight }}
+        <a href="{{ .RelPermalink }}"
+           class="docs-nav__link{{ if eq $current.RelPermalink .RelPermalink }} is-active{{ end }}"
+           {{ if eq $current.RelPermalink .RelPermalink }}aria-current="page"{{ end }}>
+          {{ .Title }}
+        </a>
+      {{ end }}
+    {{ end }}
+  {{ end }}
+</nav>

@@ -1,8 +1,5 @@
-{{/* Layout for all pages in the /samm-identity/ section (identity, writing guidelines, design system).
-     Reuses the docs CSS classes (docs__sidebar, docs__content, docs-nav) — they are already in the
-     CSS bundle and provide the exact sidebar+content structure we need.
-     Breadcrumb is suppressed on the section root: linking back to the page you are already on
-     adds no navigation value. Sub-pages show "SAMM Identity > [title]". */}}
+{{/* Layout for all pages in the /internal/ section, including sub-sections.
+     Reuses the docs CSS classes — sidebar + content structure matches /docs/ and /samm-identity/. */}}
 {{ define "main" }}
 <div class="docs docs--no-toc">
   <aside class="docs__sidebar" id="docs-sidebar">
@@ -12,18 +9,17 @@
         <path d="M18 6L6 18M6 6l12 12"/>
       </svg>
     </button>
-    {{ partial "samm-identity/sidebar.html" . }}
+    {{ partial "internal/sidebar.html" . }}
   </aside>
 
   <div class="docs__content">
-    {{ if ne .RelPermalink "/samm-identity/" }}{{ partial "samm-identity/breadcrumb.html" . }}{{ end }}
     <article class="docs__body content prose">
       <h1>{{ .Title }}</h1>
       {{ .Content }}
     </article>
   </div>
 
-  <aside class="docs__toc docs__toc--empty"></aside>{{/* placeholder keeps the 3-column grid intact */}}
+  <aside class="docs__toc docs__toc--empty"></aside>
 </div>
 
 <button class="docs__sidebar-toggle" aria-label="Open navigation" aria-expanded="false">

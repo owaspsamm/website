@@ -2,7 +2,7 @@
 title: "Release steps"
 description: "Precise, hands-on instructions for completing the remaining v1→v2 prerequisites and executing cut-over."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"

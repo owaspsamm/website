@@ -2,7 +2,7 @@
 title: "Internal"
 description: "Index of internal, non-discoverable pages on the SAMM site."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -28,7 +28,9 @@ Plans carry a date stamp; check it against the current codebase before trusting 
 - [Staging site & PR previews](/internal/staging-previews/) — giving reviewers a clickable preview of every PR without running Hugo locally.
 - [Time log](/internal/time-log/) — ongoing time tracking for the v2 project.
 - [Backlog](/internal/backlog/) — post-launch optimizations and improvements.
+- [QA checklist](/internal/qa/) — pre-commit and pre-launch quality checks: code, CSS, content, and visual.
 
 ## Design and identity
 
-- [SAMM identity & voice](/samm-identity/) — brand voice, content standards, writing guidelines, and design system. Shareable with contributors and designers.
+- [SAMM identity & voice](/samm-identity/) — brand voice, content standards, and writing guidelines. Shareable with contributors and speakers.
+- [Design system](/internal/design-system/) — colour tokens, typography, spacing, components, CSS and JS conventions, and accessibility checklist.

@@ -11,6 +11,22 @@ robots: "noindex, nofollow"
 
 Reference for anyone writing or reviewing website content. Applies to all pages, blog posts, and docs.
 
+## Language
+
+**US English.** Use American spellings throughout.
+
+| Use | Not |
+|---|---|
+| color | colour |
+| organization | organisation |
+| behavior | behaviour |
+| center | centre |
+| recognize | recognise |
+| analyze | analyse |
+| tokenize | tokenise |
+
+Spell-check tools should be set to `en-US`. Copy from external sources often carries British spellings; fix them on import.
+
 ## Tone
 
 **Direct and confident.** State things. Don't qualify them.

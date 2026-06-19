@@ -2,7 +2,7 @@
 title: "Docs section implementation plan"
 description: "Phased plan for the docs section: shell, content migration, stream import, search, model integration."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"

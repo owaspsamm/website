@@ -16,8 +16,6 @@ This section defines that shared language. It is the reference for contributors,
 
 **[Writing guidelines](/samm-identity/writing-guidelines/):** tone, punctuation, terminology, and mechanics. Start here if you are writing or editing content.
 
-**[Design system](/samm-identity/design-system/):** color tokens, typography, spacing, components, and CSS conventions. Start here if you are building or styling a page.
-
 ---
 
 ## Who SAMM is

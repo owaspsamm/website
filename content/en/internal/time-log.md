@@ -2,7 +2,7 @@
 title: "Time log"
 description: "Ongoing time tracking for the v2 website project."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -36,10 +36,13 @@ Single source of truth for hours spent on v2. Keep entries short — date, work 
 | 2026-04-14 | 3 | User day pages: Vienna content & talks ported, agenda shortcode/data, announcement banner, blog post styling, placeholder avatar, Scarf commented out in v2 layouts. |
 | 2026-04-16 | 2 | Internal docs (migration plan, actions upgrade plan, staging previews, time log), Netlify/deploy discussion, small iterations. |
 | 2026-04-21 | 6 | v1→v2 migration plan drafting and parity audit. Dissolved `/resources/` section: added meta-refresh aliases on 11 destination pages (docs + community), deleted content dir and custom layout, updated migration plan smoke-test list and IA doc. Moved IA and docs plan into `/internal/` with proper frontmatter. |
-| 2026-06-04 | ? | Hero section refinements: tightened line-height to `1`, equalised padding, responsive `min-height` with `clamp()` for wide viewports, fixed right-panel SVG background position (`top center`) for high-resolution monitors, asymmetric flex alignment (title `flex-start` / subtitle `flex-end`). CSS tokens and property-ordering cleanup. |
-| 2026-06-04 | ? | CSS architecture: split 4352-line `main.css` into 27 layered files (`tokens.css`, `base.css`, `utilities.css`, `components/*`, `responsive.css`) with CSS `@layer`. BEM block = one file. All media queries consolidated into `responsive.css`. |
+| 2026-06-04 | 1 | Hero section refinements: tightened line-height to `1`, equalised padding, responsive `min-height` with `clamp()` for wide viewports, fixed right-panel SVG background position (`top center`) for high-resolution monitors, asymmetric flex alignment (title `flex-start` / subtitle `flex-end`). CSS tokens and property-ordering cleanup. |
+| 2026-06-04 | 1.5 | CSS architecture: split 4352-line `main.css` into 27 layered files (`tokens.css`, `base.css`, `utilities.css`, `components/*`, `responsive.css`) with CSS `@layer`. BEM block = one file. All media queries consolidated into `responsive.css`. |
 | 2026-06-08 | 1 | OG image (`static/img/og.png`, 1200×630) and full Open Graph / Twitter Card meta tags in `baseof.html`. |
-| **Total** | **~67 + ?** | |
+| 2026-06-08 | 1 | CI: bump checkout to v6 and cache to v5 for Node.js 24. Fix toreon.yaml tab character and stream_guidance `hugo.Data` deprecation. Expand presentations backlog with hosting options. |
+| 2026-06-15 | 4 | SAMM Identity section (new section, sidebar, breadcrumb partials, writing guidelines, design system content). Global JS extraction to `global.js`. New practitioners (aph10, code-guardian). User-day talk updates, baseof cleanup. |
+| 2026-06-14 → 2026-06-15 | 5 | Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, `.prose` class refactor (replaces `.content a:not(â€¦)` exclusion list), docs and memory updates. |
+| **Total** | **~79.5** | |
 
 ## How to use
 

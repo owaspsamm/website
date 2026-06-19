@@ -2,7 +2,7 @@
 title: "Performance check plan"
 description: "Baseline, audit, and improve page-load performance on the v2 site. Includes a mobile visualization pass."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -12,7 +12,7 @@ Goal: measure current page-load performance on the v2 site, fix what's cheap, an
 
 ## Context for execution
 
-- **Plan status**: drafted 2026-05-21. Pre-launch phases (1–4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.
+- **Plan status**: drafted 2026-05-21. Pre-launch phases (1â€“4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.
 - **Hosting**: GitHub Pages, custom domain `owaspsamm.org`. Limited control over headers, no edge Brotli, no per-route cache rules. Performance wins must come from what is *delivered* — image weight, JS payload, font strategy — not from infrastructure.
 - **Third-party scripts**: Google Analytics (`G-44N5RHDT94`) and Scarf pixel are consent-gated and default-denied. They don't fire until a user accepts cookies. The consent banner itself runs on every page and is in the critical path — measure with consent both accepted and declined.
 - **Build command for measurements**: `hugo --minify --environment production`. Same command CI uses. Don't measure against `hugo server` — its livereload script and unminified output will skew everything.
@@ -67,7 +67,7 @@ Per tier-1 page:
 - **Fonts**: count, format (woff2 ideally), loading strategy (`font-display`), whether any are preloaded, whether any are loaded but unused.
 - **Build-time view**: run `hugo --templateMetrics --templateMetricsHints` to surface slow templates. Not a runtime concern but useful if Hugo build time is climbing.
 
-Output of phase 2: a short list of fixes ranked by expected impact ÷ effort.
+Output of phase 2: a short list of fixes ranked by expected impact Ã· effort.
 
 ### Phase 3 — Quick-win fixes (variable)
 
@@ -90,8 +90,8 @@ Hard / out of scope without strong justification:
 Re-run Lighthouse on the same pages, same conditions, same time of day if possible. Document deltas. If a target is missed, decide: fix more, or accept and document why.
 
 **Targets:**
-- Lighthouse Performance ≥ 90 on all tier-1 and tier-2 pages (desktop preset).
-- Lighthouse Performance ≥ 75 on the same pages with mobile preset (Slow 4G + 4× CPU).
+- Lighthouse Performance â‰¥ 90 on all tier-1 and tier-2 pages (desktop preset).
+- Lighthouse Performance â‰¥ 75 on the same pages with mobile preset (Slow 4G + 4× CPU).
 - LCP < 2.5s on tier-1.
 - INP < 200ms on tier-1.
 - CLS < 0.1 on all tested pages.
@@ -110,7 +110,7 @@ Audience is mostly desktop, so this is **not** the primary perf optimization. It
 Run alongside phase 2, separate from perf:
 
 - Open the tier-1 + tier-2 pages on a real phone (or DevTools device emulation at iPhone 14 / Pixel 7 sizes).
-- Check: nothing overflows horizontally, tap targets are ≥ 44 px, line lengths are readable, images don't squash to unrecognisable sizes, the model navigation sidebar is usable, the assessment table doesn't break.
+- Check: nothing overflows horizontally, tap targets are â‰¥ 44 px, line lengths are readable, images don't squash to unrecognisable sizes, the model navigation sidebar is usable, the assessment table doesn't break.
 - Cross-reference with the [Mobile link audit](/roadmap/#mobile-link-audit) roadmap item — that work is about hover-only link affordances, which is part of this same pass.
 - Output: a short list of mobile-specific fixes folded into phase 3 alongside the perf work.
 

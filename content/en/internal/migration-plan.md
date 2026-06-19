@@ -2,7 +2,7 @@
 title: "Migration plan: v1 → v2"
 description: "How we replace the current production website with the v2 codebase."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -45,7 +45,6 @@ Each prerequisite is something that needs to be true *before* cut-over day, so t
 - [x] **URL parity audit.** Done 2026-05-12. 21 aliases already in place from the `/resources/` dissolution. Two gaps closed (see above). No redirect map needed — all cases handled via page-level `aliases:`.
 - [x] **Hugo version pinned.** Both v1 and v2 workflows pin `0.157.0`. No action needed (verified 2026-05-12).
 - [x] **Scarf, analytics, cookie consent** all wired up on v2 (2026-04-22). Still verify on cut-over day that the pixel fires in the production build and GA is reporting.
-- [x] **Scarf, analytics, cookie consent** all wired up on v2 (2026-04-22). Still verify on cut-over day that the pixel fires in the production build and GA is reporting.
 - [ ] **Branch protection** on `main` of `owaspsamm/website` requiring passing CI before merge. (Lesson from the 2026-04-14 incident.) Put this in place before cut-over so the swap itself is gated.
 - [ ] **Final v2 build reviewed.** Share the Netlify staging URL (served from `gh-pages-v2`, updated automatically on every push to `v2-preview`). Two team members click through end-to-end. No manual builds needed.
 
@@ -75,7 +74,7 @@ Point Netlify at the `gh-pages-v2` branch of `owaspsamm/website` with:
 - Build command: *(empty — no build)*
 - Publish directory: `.`
 
-See [/internal/staging-previews/](/internal/staging-previews/) for Netlify ownership and `netlify.toml` guidance. That page needs updating to reflect this build-less configuration (previously described a drag-and-drop approach).
+See [/internal/staging-previews/](/internal/staging-previews/) for Netlify ownership guidance.
 
 **What happens at cut-over:**
 

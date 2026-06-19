@@ -1,8 +1,8 @@
----
+﻿---
 title: "Information architecture"
 description: "Site-wide IA: nav structure, Docs IA, and notes on dissolved sections."
 layout: "single"
-type: "page"
+type: "internal"
 sitemap:
   disable: true
 robots: "noindex, nofollow"
@@ -30,28 +30,28 @@ Surfaces everything community-related: Slack, newsletter, YouTube, GitHub, contr
 
 ```
 Getting Started
-└── Steps 1–6
+â””â”€â”€ Steps 1â€“6
 
 Getting Ready
-├── Defining Scope
-└── Roles & Skills
+â”œâ”€â”€ Defining Scope
+â””â”€â”€ Roles & Skills
 
 Assessment
-├── Assessment Guide
-├── Interview-Based Assessment
-└── Example Interview Questions
+â”œâ”€â”€ Assessment Guide
+â”œâ”€â”€ Interview-Based Assessment
+â””â”€â”€ Example Interview Questions
 
 Reference
-├── FAQ
-└── Mappings
+â”œâ”€â”€ FAQ
+â””â”€â”€ Mappings
 
 Tools & Downloads
-├── Assessment Tools (includes SAMM Toolbox)
-└── PDF
+â”œâ”€â”€ Assessment Tools (includes SAMM Toolbox)
+â””â”€â”€ PDF
 
 Contributing
-├── How to Contribute
-└── GitHub Repositories
+â”œâ”€â”€ How to Contribute
+â””â”€â”€ GitHub Repositories
 ```
 
 ## Resources section
