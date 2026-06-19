@@ -29,7 +29,57 @@
 &lt;li&gt;The third maturity level aims to maximize effectiveness through continuous improvement, based on effective and timely feedback.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;This content is part of our &lt;a href="https://github.com/owaspsamm/core/tree/develop/model" target="_blank" rel="noopener"&gt;data files on GitHub&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
-. We&amp;rsquo;ll work on having it available on the website soon.&lt;/p&gt;</description></item><item><title>How to Contribute</title><link>https://owaspsamm.org/docs/contributing/how-to-contribute/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/how-to-contribute/</guid><description>&lt;h2 id="interested-in-contributing-to-samm"&gt;Interested in contributing to SAMM?&lt;/h2&gt;
+. We&amp;rsquo;ll work on having it available on the website soon.&lt;/p&gt;</description></item><item><title>Foundations</title><link>https://owaspsamm.org/internal/design-system/foundations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/foundations/</guid><description>&lt;style&gt;
+/* Design system examples — scoped to this page only */
+.ds-swatch-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-swatch {
+ width: 5rem; height: 5rem; border-radius: 0.375rem;
+ display: flex; flex-direction: column; align-items: center; justify-content: center;
+ font-size: 0.7rem; font-family: var(--font-mono); line-height: 1.4; text-align: center;
+ border: 1px solid rgba(0,0,0,0.08);
+}
+.ds-bf-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-bf-swatch {
+ padding: 0.5rem 1rem; border-radius: 0.375rem;
+ font-size: var(--text-sm); font-weight: 600; color: #fff;
+}
+.ds-surface-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0; }
+.ds-surface {
+ flex: 1 1 10rem; min-height: 4rem; border-radius: 0.375rem;
+ border: 1px solid var(--color-border);
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding: 0.5rem; font-size: var(--text-sm); font-family: var(--font-mono);
+}
+.ds-type-scale { border: 1px solid var(--color-border); border-radius: 0.375rem; overflow: hidden; margin: 1rem 0; }
+.ds-type-row {
+ display: grid; grid-template-columns: 7rem 5rem 1fr 6rem;
+ align-items: center; gap: 1rem; padding: 0.625rem 1rem;
+ border-bottom: 1px solid var(--color-border);
+}
+.ds-type-row:last-child { border-bottom: none; }
+.ds-type-row:nth-child(4) { background: rgba(var(--color-primary-rgb), 0.05); }
+.ds-token { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-px { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-use { font-size: var(--text-xs); color: var(--color-text-muted); text-align: right; }
+.ds-spacing-demo { display: flex; align-items: flex-end; gap: 0.75rem; margin: 1rem 0; flex-wrap: wrap; }
+.ds-space-bar {
+ background: var(--color-primary); opacity: 0.5; border-radius: 2px; width: 2rem;
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding-bottom: 0.25rem; align-items: center;
+}
+.ds-space-label { font-size: 0.6rem; font-family: var(--font-mono); color: var(--color-offwhite); line-height: 1; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+&lt;/style&gt;
+&lt;h2 id="colour-system"&gt;Colour system&lt;/h2&gt;
+&lt;h3 id="core-palette"&gt;Core palette&lt;/h3&gt;
+&lt;p&gt;Five named tokens. Light to dark:&lt;/p&gt;</description></item><item><title>How to Contribute</title><link>https://owaspsamm.org/docs/contributing/how-to-contribute/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/how-to-contribute/</guid><description>&lt;h2 id="interested-in-contributing-to-samm"&gt;Interested in contributing to SAMM?&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s how you can do it!&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -81,264 +131,123 @@ Ensure that important stakeholders are identified and well aligned to support th
  can help you map SAMM activities to the right roles in your organization.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Spread the word&lt;/strong&gt;&lt;br&gt;
 Communicate the initiative within the organization to build awareness and secure the support needed for the effort.&lt;/p&gt;</description></item><item><title>Writing guidelines</title><link>https://owaspsamm.org/samm-identity/writing-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/samm-identity/writing-guidelines/</guid><description>&lt;p&gt;Reference for anyone writing or reviewing website content. Applies to all pages, blog posts, and docs.&lt;/p&gt;
+&lt;h2 id="language"&gt;Language&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;US English.&lt;/strong&gt; Use American spellings throughout.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Use&lt;/th&gt;
+ &lt;th&gt;Not&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;color&lt;/td&gt;
+ &lt;td&gt;colour&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;organization&lt;/td&gt;
+ &lt;td&gt;organisation&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;behavior&lt;/td&gt;
+ &lt;td&gt;behaviour&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;center&lt;/td&gt;
+ &lt;td&gt;centre&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;recognize&lt;/td&gt;
+ &lt;td&gt;recognise&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;analyze&lt;/td&gt;
+ &lt;td&gt;analyse&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;tokenize&lt;/td&gt;
+ &lt;td&gt;tokenise&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Spell-check tools should be set to &lt;code&gt;en-US&lt;/code&gt;. Copy from external sources often carries British spellings; fix them on import.&lt;/p&gt;
 &lt;h2 id="tone"&gt;Tone&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Direct and confident.&lt;/strong&gt; State things. Don&amp;rsquo;t qualify them.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;No: &amp;ldquo;SAMM can help organizations potentially improve their security posture.&amp;rdquo;&lt;/li&gt;
 &lt;li&gt;Yes: &amp;ldquo;SAMM helps organizations improve their security posture.&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;No hedging language.&lt;/strong&gt; Remove: might, could, perhaps, potentially, in some cases, it is worth noting, it should be mentioned.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Active voice.&lt;/strong&gt; The subject does the thing.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;No: &amp;ldquo;Security practices are organized into five business functions.&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Yes: &amp;ldquo;SAMM organizes security practices into five business functions.&amp;rdquo;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;No passive voice&lt;/strong&gt; unless the actor is genuinely unknown or irrelevant.&lt;/p&gt;</description></item><item><title>Conducting Interviews</title><link>https://owaspsamm.org/docs/assessment/interview-based-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/interview-based-assessment/</guid><description>&lt;h2 id="planning-the-interview"&gt;Planning the interview&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;No hedging language.&lt;/strong&gt; Remove: might, could, perhaps, potentially, in some cases, it is worth noting, it should be mentioned.&lt;/p&gt;</description></item><item><title>Components</title><link>https://owaspsamm.org/internal/design-system/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/components/</guid><description>&lt;style&gt;
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.5rem;
+ margin: 1rem 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ align-items: center;
+}
+.ds-demo--dark { background: var(--color-dark); }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-card-preview {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+ gap: 1rem;
+ margin: 1rem 0;
+}
+.ds-card-bordered {
+ padding: 1.25rem;
+ border: 2px solid var(--color-border);
+ border-radius: 0.5rem;
+ text-decoration: none;
+ color: inherit;
+ display: block;
+ transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+ cursor: pointer;
+}
+.ds-card-bordered:hover {
+ border-color: var(--color-primary);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 28px rgba(44,48,48,0.1);
+ text-decoration: none;
+}
+.ds-card-feature {
+ padding: 1.5rem 1.25rem;
+ text-align: center;
+ background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+ background-size: 0% 2px;
+ background-repeat: no-repeat;
+ background-position: center bottom;
+ transition: background-size var(--duration) var(--ease);
+ cursor: pointer;
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+}
+.ds-card-feature:hover { background-size: 100% 2px; }
+.ds-card-title { font-size: var(--text-lg); font-weight: 600; color: var(--color-dark); margin-bottom: 0.5rem; }
+.ds-card-body { font-size: var(--text-sm); color: var(--color-text-light); line-height: var(--line-height); margin: 0; }
+.ds-icon-row { display: flex; flex-wrap: wrap; gap: 2rem; margin: 1rem 0; align-items: center; }
+.ds-icon-item { display: flex; align-items: center; gap: 0.5rem; font-size: var(--text-sm); color: var(--color-text-light); }
+&lt;/style&gt;
+&lt;h2 id="buttons"&gt;Buttons&lt;/h2&gt;
+&lt;p&gt;Three variants share a single base class (&lt;code&gt;.btn&lt;/code&gt;) and the same hover transformation: teal background fill. The text color on hover differs, not arbitrarily, but because each variant inverts its default text color.&lt;/p&gt;</description></item><item><title>Conducting Interviews</title><link>https://owaspsamm.org/docs/assessment/interview-based-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/interview-based-assessment/</guid><description>&lt;h2 id="planning-the-interview"&gt;Planning the interview&lt;/h2&gt;
 &lt;p&gt;An assessment interview requires careful planning.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Setting up the meetings&lt;/strong&gt;&lt;br&gt;
 Be selective about who sets up the meetings. In some cultures, cooperation improves if a senior leader does this.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Interview format&lt;/strong&gt;&lt;br&gt;
 Plan 3 to 5 interviews of 1.5–2 hours each, scoped per topic. SAMM&amp;rsquo;s business functions are typically a good starting point for your interview topics.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;List of stakeholders&lt;/strong&gt;&lt;br&gt;
-Select relevant stakeholders for each interview. For the Governance business function interview you might need people involved in governance and security champions. For the Verification business function interview you might need business analysts, application architects, developers, QA, and/or project managers. Keep the interview group size small and minimize spectators. People open up more in smaller groups.&lt;/p&gt;</description></item><item><title>Design System</title><link>https://owaspsamm.org/samm-identity/design-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/samm-identity/design-system/</guid><description>&lt;p&gt;Internal reference for design decisions, tokens, and patterns. Not linked from navigation or sitemap.&lt;/p&gt;
-&lt;h2 id="design-tokens"&gt;Design Tokens&lt;/h2&gt;
-&lt;h3 id="spacing-golden-ratio"&gt;Spacing (Golden Ratio)&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Value&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-xs&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;0.382rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-sm&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;0.618rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-md&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-lg&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1.618rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;2.618rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-2xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;4.236rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--space-3xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;6.854rem&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="typography"&gt;Typography&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Value&lt;/th&gt;
- &lt;th&gt;Usage&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-xs&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;0.618rem&lt;/td&gt;
- &lt;td&gt;Captions, fine print&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-sm&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;0.875rem&lt;/td&gt;
- &lt;td&gt;Small labels, metadata&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-base&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1rem&lt;/td&gt;
- &lt;td&gt;Body text&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-lg&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1.236rem&lt;/td&gt;
- &lt;td&gt;Section subheadings&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1.618rem&lt;/td&gt;
- &lt;td&gt;Page subheadings (h2)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-2xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;2.618rem&lt;/td&gt;
- &lt;td&gt;Page titles&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--text-3xl&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;4.236rem&lt;/td&gt;
- &lt;td&gt;Hero headings&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="font-stacks"&gt;Font stacks&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Usage&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--font-brand&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&amp;ldquo;Days One&amp;rdquo;: headings, logo, hero text&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--font-sans&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;system-ui stack: all body text&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--font-mono&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;ui-monospace stack: code blocks&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--line-height&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;1.618 (φ): body line height&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="colors"&gt;Colors&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Value&lt;/th&gt;
- &lt;th&gt;Contrast on offwhite&lt;/th&gt;
- &lt;th&gt;Usage&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-primary&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#71b8b8&lt;/td&gt;
- &lt;td&gt;2.11:1 (decoration only)&lt;/td&gt;
- &lt;td&gt;Brand teal: backgrounds, accents, hover tints. &lt;strong&gt;Never use for text or links&lt;/strong&gt; (fails WCAG AA).&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-primary-rgb&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;113, 184, 184&lt;/td&gt;
- &lt;td&gt;—&lt;/td&gt;
- &lt;td&gt;For &lt;code&gt;rgba()&lt;/code&gt; usage&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-mid&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#366867&lt;/td&gt;
- &lt;td&gt;5.86:1 PASS AA&lt;/td&gt;
- &lt;td&gt;Accessible teal: the only teal safe for text or links. Added because &lt;code&gt;--color-primary&lt;/code&gt; fails contrast. Used for link default and hover states on dark buttons.&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-dark&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#2c3030&lt;/td&gt;
- &lt;td&gt;12.43:1 PASS&lt;/td&gt;
- &lt;td&gt;Primary text, dark surfaces, near-black&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-offwhite&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#f9f6f6&lt;/td&gt;
- &lt;td&gt;—&lt;/td&gt;
- &lt;td&gt;Page background, card fills. No plain white anywhere, this is the lightest surface.&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-bg&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;→ offwhite&lt;/td&gt;
- &lt;td&gt;—&lt;/td&gt;
- &lt;td&gt;Semantic alias for page background&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-border&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#e8e3e3&lt;/td&gt;
- &lt;td&gt;—&lt;/td&gt;
- &lt;td&gt;Borders, dividers (derived from offwhite)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="text-colors"&gt;Text colors&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Value&lt;/th&gt;
- &lt;th&gt;Contrast on offwhite&lt;/th&gt;
- &lt;th&gt;Usage&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-text&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;→ dark&lt;/td&gt;
- &lt;td&gt;12.43:1 PASS&lt;/td&gt;
- &lt;td&gt;Primary text (alias for &lt;code&gt;--color-dark&lt;/code&gt;)&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-text-light&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#464646&lt;/td&gt;
- &lt;td&gt;8.78:1 PASS&lt;/td&gt;
- &lt;td&gt;Secondary text&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-text-muted&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#6b6b6b&lt;/td&gt;
- &lt;td&gt;4.96:1 PASS&lt;/td&gt;
- &lt;td&gt;Metadata, captions, de-emphasised labels&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h3 id="business-function-colors"&gt;Business Function Colors&lt;/h3&gt;
-&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;Token&lt;/th&gt;
- &lt;th&gt;Value&lt;/th&gt;
- &lt;th&gt;BF&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-governance&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#435b70&lt;/td&gt;
- &lt;td&gt;Governance&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-design&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#ad4b00&lt;/td&gt;
- &lt;td&gt;Design&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-implementation&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#3a5f26&lt;/td&gt;
- &lt;td&gt;Implementation&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-verification&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#754858&lt;/td&gt;
- &lt;td&gt;Verification&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;&lt;code&gt;--color-operations&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;#5b5b62&lt;/td&gt;
- &lt;td&gt;Operations&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;Each has a &lt;code&gt;-light&lt;/code&gt; variant for hover states and cell accents.&lt;/p&gt;</description></item><item><title>GitHub Repositories</title><link>https://owaspsamm.org/docs/contributing/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/github/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+Select relevant stakeholders for each interview. For the Governance business function interview you might need people involved in governance and security champions. For the Verification business function interview you might need business analysts, application architects, developers, QA, and/or project managers. Keep the interview group size small and minimize spectators. People open up more in smaller groups.&lt;/p&gt;</description></item><item><title>GitHub Repositories</title><link>https://owaspsamm.org/docs/contributing/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/github/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
  &lt;img src="https://owaspsamm.org/img/resources/Octocat.png" alt="GitHub Octocat" loading="lazy"&gt;
  
 &lt;/figure&gt;
@@ -402,19 +311,116 @@ Organize interviews with relevant stakeholders to understand the current state o
 &lt;p&gt;SAMM is a prescriptive security maturity model that is technology, process, and organization agnostic. The model fits any software development process, industry or environment. However, thanks to that, the prescriptive advice is high level by design. That&amp;rsquo;s where we bring the guidance documents into play. Their purpose is to provide concrete examples and recommendations to help organizations kickstart their security assurance programme based on SAMM.&lt;/p&gt;</description></item><item><title>Assignment Profiles</title><link>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</guid><description>&lt;p&gt;Each assignment profile describes the security skills, training resources, books, and certifications relevant to a specific responsibility in the SAMM Skills Framework. Use these profiles to assess current capabilities and plan training.&lt;/p&gt;
 &lt;p&gt;Where available, profiles include a mapping to the &lt;a href="https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles" target="_blank" rel="noopener"&gt;EU Cybersecurity Skills Framework&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
  role profiles.&lt;/p&gt;</description></item><item><title>Example Interview Questions</title><link>https://owaspsamm.org/docs/assessment/example-interview-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/example-interview-questions/</guid><description>&lt;p&gt;These open-ended questions are designed to trigger conversations that cover the range of SAMM questions as much as possible. Keep the SAMM assessment sheet at the side as a checklist to see if you need to ask additional questions.&lt;/p&gt;
-&lt;p&gt;The scenario is an interview with a development team. The questions follow the order of the SAMM assessment sheet 2.0, with a slight change for more natural flow: Education &amp;amp; Guidance comes after Secure Architecture.&lt;/p&gt;</description></item><item><title>Step 3: Set the Target</title><link>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</guid><description>&lt;p&gt;Decide where you want to be: set a target maturity level for each security practice.&lt;/p&gt;
+&lt;p&gt;The scenario is an interview with a development team. The questions follow the order of the SAMM assessment sheet 2.0, with a slight change for more natural flow: Education &amp;amp; Guidance comes after Secure Architecture.&lt;/p&gt;</description></item><item><title>Patterns</title><link>https://owaspsamm.org/internal/design-system/patterns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/patterns/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.25rem 1.5rem;
+ margin: 1rem 0;
+ font-size: var(--text-base);
+ line-height: var(--line-height);
+}
+.ds-link-example {
+ color: var(--color-mid);
+ text-decoration: underline;
+ text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+ text-underline-offset: 0.15em;
+ text-decoration-thickness: 1.5px;
+ transition: color var(--duration) var(--ease), text-decoration-color var(--duration) var(--ease);
+}
+.ds-link-example:hover {
+ color: var(--color-primary);
+ text-decoration-color: currentColor;
+ text-decoration-thickness: 2px;
+}
+.ds-bf-demo {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ margin: 1rem 0;
+}
+.ds-bf-link {
+ padding: 0.375rem 0.75rem;
+ border-radius: 0.25rem;
+ font-size: var(--text-sm);
+ font-weight: 500;
+ transition: background var(--duration) var(--ease);
+}
+/* .prose a (0-3-1) overrides text-decoration: none at 0-1-0.
+ Match its specificity here — page &lt;style&gt; comes later in cascade and wins the tie. */
+.content.prose a.ds-bf-link {
+ text-decoration: none;
+}
+.ds-bf-link:hover { opacity: 0.8; }
+&lt;/style&gt;
+&lt;h2 id="prose-links"&gt;Prose links&lt;/h2&gt;
+&lt;p&gt;Inline links inside flowing text are styled through the &lt;code&gt;.prose&lt;/code&gt; class on the container element. This approach scopes the link style to reading contexts only; card layouts, nav elements, and list templates are deliberately excluded.&lt;/p&gt;</description></item><item><title>Step 3: Set the Target</title><link>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</guid><description>&lt;p&gt;Decide where you want to be: set a target maturity level for each security practice.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-set-the-target.svg" alt="Step 3: Set the Target"&gt;&lt;/p&gt;
 &lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Define the target&lt;/strong&gt;&lt;br&gt;
 Set or update the target by identifying which activities your organization should implement. Typically, this will include more lower-level than higher-level activities. Ensure that the total set of selected activities makes sense and take into account dependencies between activities.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Estimate overall impact&lt;/strong&gt;&lt;br&gt;
-Estimate the impact of the chosen target on the organization. Try to express this in budgetary terms.&lt;/p&gt;</description></item><item><title>Step 4: Define the Plan</title><link>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</guid><description>&lt;p&gt;Turn your target into a phased roadmap with timelines and priorities.&lt;/p&gt;
+Estimate the impact of the chosen target on the organization. Try to express this in budgetary terms.&lt;/p&gt;</description></item><item><title>Conventions</title><link>https://owaspsamm.org/internal/design-system/conventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/conventions/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-file-tree {
+ background: var(--color-dark);
+ color: var(--color-offwhite);
+ border-radius: 0.375rem;
+ padding: 1rem 1.25rem;
+ font-family: var(--font-mono);
+ font-size: var(--text-sm);
+ line-height: 2;
+ margin: 1rem 0;
+ overflow-x: auto;
+}
+.ds-file-tree .comment { color: rgba(249,246,246,0.4); }
+&lt;/style&gt;
+&lt;h2 id="css-architecture"&gt;CSS architecture&lt;/h2&gt;
+&lt;h3 id="file-structure"&gt;File structure&lt;/h3&gt;
+&lt;p&gt;All CSS lives in &lt;code&gt;assets/css/&lt;/code&gt;. The entry point is &lt;code&gt;main.css&lt;/code&gt;: it contains no rules, only a list of &lt;code&gt;@import&lt;/code&gt; statements in load order. Adding a new file requires adding it to &lt;code&gt;main.css&lt;/code&gt; and to the &lt;code&gt;resources.Concat&lt;/code&gt; call in &lt;code&gt;layouts/_default/baseof.html&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Step 4: Define the Plan</title><link>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</guid><description>&lt;p&gt;Turn your target into a phased roadmap with timelines and priorities.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-define-the-plan.svg" alt="Step 4: Define the Plan"&gt;&lt;/p&gt;
 &lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Determine change schedule&lt;/strong&gt;&lt;br&gt;
 Choose a realistic change strategy in terms of number and duration of phases. A typical roadmap consists of 4 to 6 phases lasting 3 to 12 months each.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Develop or update the roadmap plan&lt;/strong&gt;&lt;br&gt;
-Distribute the implementation of additional activities over the different roadmap phases, taking into account the effort required to implement them. Try to balance the implementation effort across periods and respect dependencies between activities.&lt;/p&gt;</description></item><item><title>Step 5: Implement</title><link>https://owaspsamm.org/docs/getting-started/step-5-implement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-5-implement/</guid><description>&lt;p&gt;Execute the roadmap, addressing people, processes, and tools phase by phase.&lt;/p&gt;
+Distribute the implementation of additional activities over the different roadmap phases, taking into account the effort required to implement them. Try to balance the implementation effort across periods and respect dependencies between activities.&lt;/p&gt;</description></item><item><title>Accessibility</title><link>https://owaspsamm.org/internal/design-system/accessibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/accessibility/</guid><description>&lt;style&gt;
+.ds-pass { color: #3a5f26; font-weight: 600; }
+.ds-warn { color: #ad4b00; font-weight: 600; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-swatch-inline {
+ display: inline-block;
+ width: 0.85rem; height: 0.85rem;
+ border-radius: 2px;
+ vertical-align: middle;
+ margin-right: 0.25rem;
+ border: 1px solid rgba(0,0,0,0.12);
+}
+&lt;/style&gt;
+&lt;h2 id="wcag-compliance-overview"&gt;WCAG compliance overview&lt;/h2&gt;
+&lt;p&gt;The site targets &lt;strong&gt;WCAG 2.1 Level AA&lt;/strong&gt; throughout. The table below records the status of each criterion as of the last audit.&lt;/p&gt;</description></item><item><title>Step 5: Implement</title><link>https://owaspsamm.org/docs/getting-started/step-5-implement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-5-implement/</guid><description>&lt;p&gt;Execute the roadmap, addressing people, processes, and tools phase by phase.&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-implement.svg" alt="Step 5: Implement"&gt;&lt;/p&gt;
 &lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Implement activities&lt;/strong&gt;&lt;br&gt;
@@ -771,6 +777,8 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
 &lt;li&gt;&lt;strong&gt;Remove presentations from the repo&lt;/strong&gt; — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Netlify staging reconfiguration&lt;/strong&gt; — switch from serving pre-built &lt;code&gt;gh-pages-v2&lt;/code&gt; to building from &lt;code&gt;main&lt;/code&gt;; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;OG preview validation&lt;/strong&gt; — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (&lt;code&gt;linkedin.com/post-inspector&lt;/code&gt;), Twitter/X Card Validator (&lt;code&gt;cards-dev.twitter.com/validator&lt;/code&gt;), and opengraph.xyz.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Playwright visual regression tests&lt;/strong&gt; — screenshot-based regression suite to catch CSS regressions silently introduced across sessions. High-value pages: docs single, model overview, business-function, practice, stream, blog post, user-day talk, homepage. Run on PR via GitHub Actions; baseline screenshots committed to repo. Prevents the class of bug where link underlines, nav tints, or pager styles break without any failing test.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Review &lt;code&gt;booxmedialtd/ws-action-parse-semver@v1&lt;/code&gt; in the CI pipeline&lt;/strong&gt; — unmaintained third-party action used in the &lt;code&gt;updateHugoMod&lt;/code&gt; job to parse the SAMM core release tag on &lt;code&gt;repository_dispatch&lt;/code&gt; events. Not on the critical path for normal pushes. Assess whether it still works reliably; if not, replace with a maintained alternative or an inline &lt;code&gt;bash&lt;/code&gt; semver parse. Low urgency; only bites when a new core release fires.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id="multilingual-model-pages"&gt;Multilingual model pages&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;What:&lt;/strong&gt; Surface the already-translated SAMM model pages on v2. &lt;code&gt;owaspsamm/core&lt;/code&gt; already publishes translated content (French, Spanish) — v1 generated those pages and simply hid the language selector. The rest of the site stays English only; scope is &lt;code&gt;/model/**&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Benchmark Terms and Conditions</title><link>https://owaspsamm.org/benchmark/benchmark-terms-and-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/benchmark/benchmark-terms-and-conditions/</guid><description>&lt;h2 id="terms-and-conditions"&gt;Terms and Conditions&lt;/h2&gt;
@@ -886,7 +894,7 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
 &lt;p&gt;The functions covered by this practice include, but are not limited to: system provisioning, administration, and decommissioning; database provisioning and administration; and data backup, restore, and archival.&lt;/p&gt;</description></item><item><title>Operations</title><link>https://owaspsamm.org/./model/operations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/</guid><description>&lt;p&gt;The Operations Business Function encompasses those activities necessary to ensure confidentiality, integrity, and availability are maintained throughout the operational lifetime of an application and its associated data. Increased maturity with regard to this Business Function provides greater assurance that the organization is resilient in the face of operational disruptions, and responsive to changes in the operational landscape.&lt;/p&gt;</description></item><item><title>Organization and Culture</title><link>https://owaspsamm.org/./model/governance/education-and-guidance/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/education-and-guidance/stream-b/</guid><description/></item><item><title>Patching and Updating</title><link>https://owaspsamm.org/./model/operations/environment-management/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/environment-management/stream-b/</guid><description/></item><item><title>Performance check plan</title><link>https://owaspsamm.org/internal/performance-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/performance-plan/</guid><description>&lt;p&gt;Goal: measure current page-load performance on the v2 site, fix what&amp;rsquo;s cheap, and confirm we&amp;rsquo;re shipping a fast, professional-feeling site. Includes a separate mobile visualization pass for polish (audience is primarily desktop, but mobile presentation matters for credibility).&lt;/p&gt;
 &lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: drafted 2026-05-21. Pre-launch phases (1–4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: drafted 2026-05-21. Pre-launch phases (1â€“4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: GitHub Pages, custom domain &lt;code&gt;owaspsamm.org&lt;/code&gt;. Limited control over headers, no edge Brotli, no per-route cache rules. Performance wins must come from what is &lt;em&gt;delivered&lt;/em&gt; — image weight, JS payload, font strategy — not from infrastructure.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Third-party scripts&lt;/strong&gt;: Google Analytics (&lt;code&gt;G-44N5RHDT94&lt;/code&gt;) and Scarf pixel are consent-gated and default-denied. They don&amp;rsquo;t fire until a user accepts cookies. The consent banner itself runs on every page and is in the critical path — measure with consent both accepted and declined.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Build command for measurements&lt;/strong&gt;: &lt;code&gt;hugo --minify --environment production&lt;/code&gt;. Same command CI uses. Don&amp;rsquo;t measure against &lt;code&gt;hugo server&lt;/code&gt; — its livereload script and unminified output will skew everything.&lt;/li&gt;
@@ -894,7 +902,15 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
 &lt;/ul&gt;
 &lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
 &lt;p&gt;When ready to run this plan, open this page and say &amp;ldquo;run the performance plan&amp;rdquo;. I&amp;rsquo;ll start with phase 1 (baseline measurements) and stop for confirmation before applying any fixes.&lt;/p&gt;</description></item><item><title>Policy and Compliance</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/</guid><description>&lt;p&gt;The Policy and Compliance (PC) practice focuses on understanding and meeting external legal and regulatory requirements while driving internal security standards to ensure compliance in a way that’s aligned with the business purpose of the organization.&lt;/p&gt;
-&lt;p&gt;A driving theme for improvement within this practice is describing organization’s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are met.&lt;/p&gt;</description></item><item><title>Policy and Standards</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</guid><description/></item><item><title>Release notes OWASP SAMM version 2</title><link>https://owaspsamm.org/release-notes-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/release-notes-v2/</guid><description>&lt;h2 id="key-changes-in-owasp-samm-v2"&gt;Key changes in OWASP SAMM v2&lt;/h2&gt;
+&lt;p&gt;A driving theme for improvement within this practice is describing organization’s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are met.&lt;/p&gt;</description></item><item><title>Policy and Standards</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</guid><description/></item><item><title>QA checklist</title><link>https://owaspsamm.org/internal/qa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/qa/</guid><description>&lt;p&gt;Run these checks before any significant commit and before every release. They catch the classes of problem most likely to slip through review.&lt;/p&gt;
+&lt;h2 id="code-checks"&gt;Code checks&lt;/h2&gt;
+&lt;p&gt;Run from the repo root (&lt;code&gt;website-v2/&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id="inline-styles-in-templates"&gt;Inline styles in templates&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;grep -rn &amp;#39;style=&amp;#34;&amp;#39; layouts/ --include=&amp;#34;*.html&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Acceptable exceptions: &lt;code&gt;contact/single.html&lt;/code&gt; honeypot field (&lt;code&gt;display:none&lt;/code&gt; must be inline to evade bot detection). Everything else is a violation of the no-hardcode rule and must be moved to a CSS class.&lt;/p&gt;
+&lt;h3 id="hardcoded-values-in-templates"&gt;Hardcoded values in templates&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;grep -rn -E &amp;#39;[0-9]+(px|rem|em)|#[0-9a-fA-F]{3,6}&amp;#39; layouts/ --include=&amp;#34;*.html&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No raw units or hex values in templates. All sizing and colour must come from tokens via CSS classes.&lt;/p&gt;</description></item><item><title>Release notes OWASP SAMM version 2</title><link>https://owaspsamm.org/release-notes-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/release-notes-v2/</guid><description>&lt;h2 id="key-changes-in-owasp-samm-v2"&gt;Key changes in OWASP SAMM v2&lt;/h2&gt;
 &lt;p&gt;The new SAMM version 2 consists of the following components:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;the &lt;a href="https://owaspsamm.org/model/"&gt;SAMM Model&lt;/a&gt;
@@ -949,17 +965,16 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
 &lt;h2 id="other-ways-to-connect"&gt;Other ways to connect&lt;/h2&gt;
 &lt;p&gt;For proposals and threaded conversations, use &lt;a href="https://owaspsamm.org/community/github-discussions/"&gt;GitHub Discussions&lt;/a&gt;
 . To join live conversations with the core team and practitioners, check out our &lt;a href="https://owaspsamm.org/community/community-calls/"&gt;Community Calls&lt;/a&gt;
-.&lt;/p&gt;</description></item><item><title>Software Dependencies</title><link>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</guid><description/></item><item><title>Software Requirements</title><link>https://owaspsamm.org/./model/design/security-requirements/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/stream-a/</guid><description/></item><item><title>Staging site &amp; PR previews</title><link>https://owaspsamm.org/internal/staging-previews/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/staging-previews/</guid><description>&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: draft as of 2026-04-15.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Host&lt;/strong&gt;: Netlify, connected to &lt;code&gt;owaspsamm/website-v2&lt;/code&gt; via Pat&amp;rsquo;s personal Netlify account (manually set up; there is no &lt;code&gt;netlify.toml&lt;/code&gt; in the repo).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Affected files&lt;/strong&gt; if we later gate Scarf / add &lt;code&gt;netlify.toml&lt;/code&gt; / add redirects: repo root &lt;code&gt;netlify.toml&lt;/code&gt;, &lt;a href="../../../layouts/partials/scarf.html"&gt;layouts/partials/scarf.html&lt;/a&gt;
-, the four model-page layouts listed in &lt;a href="https://owaspsamm.org/internal/migration-plan/#pending-re-enables-at-cut-over"&gt;/internal/migration-plan/&lt;/a&gt;
-.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Alternative considered&lt;/strong&gt;: Cloudflare Pages. Notes preserved in the &amp;ldquo;Out of scope&amp;rdquo; section in case we ever migrate.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
-&lt;p&gt;When ready to tidy this up: open this page and say &amp;ldquo;run the staging tidy-up&amp;rdquo;. I&amp;rsquo;ll create the &lt;code&gt;netlify.toml&lt;/code&gt;, add the Scarf production gate (if not already done as part of migration), and draft the ownership doc.&lt;/p&gt;</description></item><item><title>Strategy and Metrics</title><link>https://owaspsamm.org/./model/governance/strategy-and-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/strategy-and-metrics/</guid><description>&lt;p&gt;Software assurance entails many different activities and concerns. Without an overall plan, you might be spending a lot of effort to build in security, while in fact your efforts may be unaligned, disproportional or even counterproductive. The goal of the Strategy and Metrics (SM) practice is to build an efficient and effective plan for realizing your software security objectives within your organization.&lt;/p&gt;
+.&lt;/p&gt;</description></item><item><title>Software Dependencies</title><link>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</guid><description/></item><item><title>Software Requirements</title><link>https://owaspsamm.org/./model/design/security-requirements/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/stream-a/</guid><description/></item><item><title>Staging site &amp; previews</title><link>https://owaspsamm.org/internal/staging-previews/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/staging-previews/</guid><description>&lt;h2 id="current-state-pre-cutover"&gt;Current state (pre-cutover)&lt;/h2&gt;
+&lt;p&gt;v2 staging uses a &lt;strong&gt;build-less Netlify setup&lt;/strong&gt;: GitHub Actions builds the site and deploys the output to a branch; Netlify serves that branch with no build step of its own. There is no &lt;code&gt;netlify.toml&lt;/code&gt; in the repo.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;How it works:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Push to &lt;code&gt;v2-preview&lt;/code&gt; on &lt;code&gt;owaspsamm/website&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;GitHub Actions runs &lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt; — Hugo builds the site, output deployed to the &lt;code&gt;gh-pages-v2&lt;/code&gt; branch.&lt;/li&gt;
+&lt;li&gt;Netlify is configured to serve &lt;code&gt;gh-pages-v2&lt;/code&gt; directly.&lt;/li&gt;
+&lt;li&gt;The staging URL updates automatically. No Netlify build step; no Go toolchain on Netlify.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Netlify dashboard settings:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Strategy and Metrics</title><link>https://owaspsamm.org/./model/governance/strategy-and-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/strategy-and-metrics/</guid><description>&lt;p&gt;Software assurance entails many different activities and concerns. Without an overall plan, you might be spending a lot of effort to build in security, while in fact your efforts may be unaligned, disproportional or even counterproductive. The goal of the Strategy and Metrics (SM) practice is to build an efficient and effective plan for realizing your software security objectives within your organization.&lt;/p&gt;
 &lt;p&gt;A software security program, that selects and prioritizes activities of the rest of the model, serves as the foundation for your efforts. The practice works on building the plan, maintaining and disseminating it.&lt;/p&gt;</description></item><item><title>Stream Guidance — 2026 Core Team Summit</title><link>https://owaspsamm.org/summits/2026/stream-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/summits/2026/stream-guidance/</guid><description>&lt;p&gt;&lt;strong&gt;Barcelona · April 2026&lt;/strong&gt;
 &lt;em&gt;Consolidated from the session&amp;rsquo;s Notion AI summary, the recorded transcript, and the in-room scratch notes.&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
@@ -1080,12 +1095,12 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;2026-06-04&lt;/td&gt;
- &lt;td&gt;?&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
  &lt;td&gt;Hero section refinements: tightened line-height to &lt;code&gt;1&lt;/code&gt;, equalised padding, responsive &lt;code&gt;min-height&lt;/code&gt; with &lt;code&gt;clamp()&lt;/code&gt; for wide viewports, fixed right-panel SVG background position (&lt;code&gt;top center&lt;/code&gt;) for high-resolution monitors, asymmetric flex alignment (title &lt;code&gt;flex-start&lt;/code&gt; / subtitle &lt;code&gt;flex-end&lt;/code&gt;). CSS tokens and property-ordering cleanup.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;2026-06-04&lt;/td&gt;
- &lt;td&gt;?&lt;/td&gt;
+ &lt;td&gt;1.5&lt;/td&gt;
  &lt;td&gt;CSS architecture: split 4352-line &lt;code&gt;main.css&lt;/code&gt; into 27 layered files (&lt;code&gt;tokens.css&lt;/code&gt;, &lt;code&gt;base.css&lt;/code&gt;, &lt;code&gt;utilities.css&lt;/code&gt;, &lt;code&gt;components/*&lt;/code&gt;, &lt;code&gt;responsive.css&lt;/code&gt;) with CSS &lt;code&gt;@layer&lt;/code&gt;. BEM block = one file. All media queries consolidated into &lt;code&gt;responsive.css&lt;/code&gt;.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
@@ -1094,8 +1109,23 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
  &lt;td&gt;OG image (&lt;code&gt;static/img/og.png&lt;/code&gt;, 1200×630) and full Open Graph / Twitter Card meta tags in &lt;code&gt;baseof.html&lt;/code&gt;.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
+ &lt;td&gt;2026-06-08&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;CI: bump checkout to v6 and cache to v5 for Node.js 24. Fix toreon.yaml tab character and stream_guidance &lt;code&gt;hugo.Data&lt;/code&gt; deprecation. Expand presentations backlog with hosting options.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-15&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;SAMM Identity section (new section, sidebar, breadcrumb partials, writing guidelines, design system content). Global JS extraction to &lt;code&gt;global.js&lt;/code&gt;. New practitioners (aph10, code-guardian). User-day talk updates, baseof cleanup.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-14 → 2026-06-15&lt;/td&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, &lt;code&gt;.prose&lt;/code&gt; class refactor (replaces &lt;code&gt;.content a:not(â€¦)&lt;/code&gt; exclusion list), docs and memory updates.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;strong&gt;~67 + ?&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;strong&gt;~79.5&lt;/strong&gt;&lt;/td&gt;
  &lt;td&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
