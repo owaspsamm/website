@@ -7,5 +7,5 @@ buttons:
     url: "https://owasp.glueup.com/event/162243/register/"
     style: "primary"
   - label: "More Information"
-    url: "/user-day/2026vienna/"
+    url: "/user-day/"
     style: "outline"
