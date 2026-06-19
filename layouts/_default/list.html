@@ -14,9 +14,9 @@
 
   {{ $pages := .Pages }}
   {{ if $pages }}
-  <div class="card-grid" style="margin-top: var(--space-lg);">
+  <div class="card-grid">
     {{ range $pages }}
-    <a href="{{ .RelPermalink | replaceRE `^/?\./` `/` }}" class="card" style="text-decoration: none; color: inherit;">
+    <a href="{{ .RelPermalink | replaceRE `^/?\./` `/` }}" class="card">
       <h3>{{ .Title }}</h3>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
       {{ with .Summary }}<p>{{ . | truncate 150 }}</p>{{ end }}

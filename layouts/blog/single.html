@@ -7,7 +7,7 @@
   {{ end }}
   <h1>{{ .Title }}</h1>
 </div>
-<article class="content">
+<article class="content prose">
   <div class="blog-post__meta">
     <span class="blog-post__byline">
       {{ with .Params.date }}<time datetime="{{ . }}">{{ . | time.Format "January 2, 2006" }}</time>{{ end }}

@@ -14,9 +14,9 @@
 
   {{ $pages := .Pages }}
   {{ if $pages }}
-  <div class="card-grid" style="margin-top: var(--space-lg);">
+  <div class="card-grid">
     {{ range $pages }}
-    <a href="{{ .RelPermalink }}" class="card card--sm" style="text-decoration: none; color: inherit;">
+    <a href="{{ .RelPermalink }}" class="card card--sm">
       <h3>{{ .Title }}</h3>
       {{ with .Description }}<p>{{ . }}</p>{{ end }}
     </a>

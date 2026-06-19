@@ -2,7 +2,7 @@
 <div class="page-header page-header--child talk-header">
   <h1>{{ .Params.name | default .Title | markdownify }}</h1>
 </div>
-<article class="content">
+<article class="content prose">
   <div class="talk-speaker">
     <img class="talk-speaker__photo"
          src="{{ (.Params.image | default "/img/people/placeholder-speaker.svg") | relURL }}"

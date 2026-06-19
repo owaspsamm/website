@@ -60,6 +60,14 @@
   border-color: var(--color-offwhite);
 }
 
+/* Row of buttons — used by the {{< buttons >}} shortcode */
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
 .btn--white:hover {
   background: var(--color-primary);
   color: var(--color-offwhite);

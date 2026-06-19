@@ -318,9 +318,10 @@
   border-top: 1px solid rgba(var(--color-dark-rgb), 0.15);
 }
 
-/* Specificity 0-7-1 beats .content a:not(…)×6 (0-7-1) and wins by source order.
-   NOTE: if a 7th :not() is ever added to the content link rule, bump this too. */
-.docs .docs__content .docs__body.content .docs-pager a.docs-pager__link.docs-pager__link {
+/* Pager lives outside .prose — simple selectors suffice.
+   .docs-pager__link:hover (0-2-0) beats a:hover (0-1-1) in base.css.
+   Explicitly set color and text-decoration on hover to block the global rule. */
+.docs-pager__link {
   display: inline-flex;
   align-items: flex-end;
   gap: var(--space-sm);
@@ -330,16 +331,29 @@
   color: var(--color-dark);
   text-decoration: none;
   transition:
-    border-color var(--duration) var(--ease),
+    color var(--duration) var(--ease),
     box-shadow var(--duration) var(--ease),
     transform var(--duration) var(--ease);
 }
 
 .docs-pager__link:hover {
-  border-color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(44, 48, 48, 0.1);
+  color: var(--color-primary);
   text-decoration: none;
+}
+
+/* text-shadow fakes weight without reflowing the card width. */
+.docs-pager__link span {
+  transition: text-shadow var(--duration) var(--ease);
+}
+
+.docs-pager__link:hover span {
+  text-shadow: 0.04em 0 0 currentColor;
+}
+
+.docs-pager__link:hover svg {
+  stroke-width: 2.5;
 }
 
 .docs-pager__link svg {
@@ -521,10 +535,11 @@
   color: var(--color-dark);
 }
 
-/* BF + practice toggle hover — bf-color tint */
+/* BF + practice toggle hover — bf-color tint + bf-color text (overrides generic teal hover on .docs-nav__toggle) */
 [class*="model-nav__bf--"] > .docs-nav__toggle:hover,
 [class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group > .docs-nav__toggle:hover {
   background: color-mix(in srgb, var(--bf-color) 8%, transparent);
+  color: var(--bf-color);
 }
 
 /* BF toggle — left border only when the current page is within this BF (is-active or is-ancestor on the group, set by Hugo at render time) */
@@ -532,6 +547,16 @@
 [class*="model-nav__bf--"].is-ancestor > .docs-nav__toggle {
   border-left: 2px solid var(--bf-color);
   padding-left: calc(var(--space-sm) - 2px);
+}
+
+/* BF page — tint background when this IS the current page, not just an ancestor */
+[class*="model-nav__bf--"].is-active > .docs-nav__toggle {
+  background: color-mix(in srgb, var(--bf-color) 10%, transparent);
+}
+
+/* Practice page — tint background when this IS the current page, not just an ancestor */
+[class*="model-nav__bf--"] .docs-nav__children > .docs-nav__group.is-active > .docs-nav__toggle {
+  background: color-mix(in srgb, var(--bf-color) 10%, transparent);
 }
 
 /* Practice link hover — bf-color */
@@ -588,12 +613,6 @@
   margin: 0;
 }
 
-/* High specificity (0-5-0) to beat .content a:not(...) (0-4-1) and its hover (0-4-2) */
-.model-docs .docs__content .content .bf-practices .bf-practice,
-.model-docs .docs__content .content .bf-practices .bf-practice:hover {
-  text-decoration: none;
-  color: inherit;
-}
 
 /* --- Page header (title band above content) --- */
 .page-header {
@@ -714,7 +733,8 @@
   margin-top: var(--space-xs);
 }
 
-/* Practice: maturity overview table */
+/* Practice: maturity overview table
+   .content prefix bumps specificity to 0-2-1, beating .content th/td in table.css (0-1-1) */
 .practice-maturity {
   width: 100%;
   border-collapse: separate;
@@ -726,32 +746,33 @@
   margin-bottom: var(--space-xl);
 }
 
-.practice-maturity th,
-.practice-maturity td {
+.content .practice-maturity th,
+.content .practice-maturity td {
   padding: var(--space-sm) var(--space-md);
   border-right: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   font-size: var(--text-sm);
   vertical-align: top;
-}
-
-.practice-maturity th:last-child,
-.practice-maturity td:last-child {
-  border-right: 0;
-}
-
-.practice-maturity tr:last-child td {
-  border-bottom: 0;
-}
-
-.practice-maturity th {
-  background: var(--color-dark);
-  color: var(--color-offwhite);
-  font-weight: 600;
   text-align: left;
 }
 
-.practice-maturity__label {
+.content .practice-maturity th:last-child,
+.content .practice-maturity td:last-child {
+  border-right: 0;
+}
+
+.content .practice-maturity tr:last-child td {
+  border-bottom: 0;
+}
+
+.content .practice-maturity th {
+  background: var(--color-dark);
+  color: var(--color-offwhite);
+  font-weight: 600;
+  white-space: normal;
+}
+
+.content .practice-maturity__label {
   font-weight: 600;
   background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
 }
@@ -768,9 +789,8 @@
   margin-bottom: var(--space-sm);
 }
 
-/* Specificity 0-7-2 beats .content a:not(…)×6 (0-7-1).
-   agenda-program__link was added to the :not() list, bumping it from 0-6-1 to 0-7-1
-   and breaking the previous 0-6-2 rule. Added .practice-content to recover the win. */
+/* Stream heading links: bf-colored, no underline on desktop.
+   Mobile override (responsive.css) adds underline for tap affordance. */
 .docs.model-docs .docs__content .content.practice-content .practice-streams .practice-stream h3 a {
   color: var(--bf-color, var(--color-dark));
   text-decoration: none;
@@ -797,31 +817,32 @@
   overflow: hidden;
 }
 
-.practice-stream__table th,
-.practice-stream__table td {
+.content .practice-stream__table th,
+.content .practice-stream__table td {
   padding: var(--space-sm) var(--space-md);
   border-right: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
   font-size: var(--text-sm);
   vertical-align: top;
-}
-
-.practice-stream__table th:last-child,
-.practice-stream__table td:last-child {
-  border-right: 0;
-}
-
-.practice-stream__table tr:last-child td {
-  border-bottom: 0;
-}
-
-.practice-stream__table th {
-  background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
-  font-weight: 600;
   text-align: left;
 }
 
-.practice-stream__table td a {
+.content .practice-stream__table th:last-child,
+.content .practice-stream__table td:last-child {
+  border-right: 0;
+}
+
+.content .practice-stream__table tr:last-child td {
+  border-bottom: 0;
+}
+
+.content .practice-stream__table th {
+  background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
+  font-weight: 600;
+  white-space: normal;
+}
+
+.content .practice-stream__table td a {
   color: inherit;
 }
 
@@ -922,7 +943,11 @@
   text-wrap: pretty;
 }
 
-.content a:not(.btn):not(.resource-card):not(.blog-card):not(.docs__card):not(.card):not(.agenda-program__link) {
+/* Prose link styling — applies only where .prose is set on the container.
+   Templates with .prose: docs/single, blog/single, _default/single, contact/single,
+   user-day/single, stream/single, samm-identity/single, practice .practice-description.
+   Card/list templates intentionally omit .prose. See design-system.md → Link Patterns. */
+.prose a:not(.btn):not(.agenda-program__link) {
   color: var(--color-mid);
   text-decoration: underline;
   text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
@@ -933,7 +958,7 @@
     text-decoration-color var(--duration) var(--ease);
 }
 
-.content a:not(.btn):not(.resource-card):not(.blog-card):not(.docs__card):not(.card):not(.agenda-program__link):hover {
+.prose a:not(.btn):not(.agenda-program__link):hover {
   color: var(--color-primary);
   text-decoration-color: currentColor;
   text-decoration-thickness: 2px;
@@ -1067,6 +1092,7 @@ a:hover .external-link-icon {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: var(--space-lg);
+  margin-top: var(--space-lg);
 }
 
 .card {
@@ -1074,6 +1100,8 @@ a:hover .external-link-icon {
   border: 2px solid var(--color-border);
   border-radius: 0.5rem;
   padding: var(--space-lg);
+  text-decoration: none;
+  color: inherit;
   transition:
     box-shadow var(--duration) var(--ease),
     transform var(--duration) var(--ease),
@@ -1108,6 +1136,11 @@ a:hover .external-link-icon {
 
 .card--sm p {
   font-size: var(--text-sm);
+}
+
+/* Wrapper for "Learn more" resource block on docs list pages */
+.docs__learn-more {
+  margin-top: var(--space-xl);
 }
 
 /* --- Skills Framework --- */
@@ -1151,9 +1184,8 @@ a:hover .external-link-icon {
 .skills-bf-group--verification   { --bf-color: var(--color-verification);   --bf-color-light: var(--color-verification-light); }
 .skills-bf-group--operations     { --bf-color: var(--color-operations);     --bf-color-light: var(--color-operations-light); }
 
-/* Practice + stream links: bf-colored, no underline on desktop.
-   Specificity 0-7-2 beats .content a:not(…)×5 (0-6-1).
-   Same pattern as model page stream links. */
+/* Skills mapping — practice/stream heading links: bf-colored, no underline.
+   High specificity (0-7-2) overrides global link styles and .prose a (0-3-1) where applicable. */
 .docs .docs__content .docs__body.content .skills-mapping .skills-bf-group h3 a,
 .docs .docs__content .docs__body.content .skills-mapping .skills-bf-group strong a {
   color: var(--bf-color, var(--color-dark));

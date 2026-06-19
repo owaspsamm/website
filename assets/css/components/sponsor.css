@@ -1,6 +1,6 @@
 /* --- Sponsors ---
    Grouped by tier with tier headings.
-   Logos start greyscale at reduced opacity; colour and scale on hover.
+   Logos start greyscale at reduced opacity; color and scale on hover.
    Tier modifiers control logo size: higher tiers get larger logos. */
 .sponsor-tier {
   font-family: var(--font-brand);
@@ -42,7 +42,7 @@
 .sponsor-grid img {
   width: auto;
   height: auto;
-  max-height: 6rem;
+  max-height: var(--space-3xl);
   opacity: 0.7;
   filter: grayscale(100%);
   transition:
@@ -57,11 +57,28 @@
   transform: scale(1.18);
 }
 
+/* Inline sponsor row (user-day pages) */
+.sponsor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  align-items: center;
+  justify-content: center;
+  margin: var(--space-xs) 0;
+}
+
+.sponsor-row img {
+  width: var(--space-3xl);
+  height: var(--space-3xl);
+}
+
 /* Supporters page — full color, larger logos */
 .content .sponsor-grid img {
   opacity: 1;
   filter: none;
-  max-height: 8rem;
+  /* 8rem has no direct token equivalent; nearest is --space-3xl (6.854rem).
+     TODO: add a --size-logo-lg token if this value needs adjustment. */
+  max-height: var(--space-3xl);
 }
 
 .content .sponsor-grid--platinum img { max-width: 18rem; }

@@ -12,7 +12,7 @@
     <time class="page-header__date" datetime="{{ . }}">{{ . | time.Format "January 2, 2006" }}</time>
   {{ end }}
 </div>
-<article class="content">
+<article class="content prose">
   {{ .Content }}
 </article>
 {{ end }}

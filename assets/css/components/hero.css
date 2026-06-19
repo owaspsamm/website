@@ -54,4 +54,5 @@
   margin-bottom: var(--space-xl);
   max-width: 22rem;
   opacity: 0.92;
+  text-wrap: pretty;
 }

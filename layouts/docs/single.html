@@ -13,14 +13,14 @@
   <div class="docs__content">
     {{ partial "docs/breadcrumb.html" . }}
 
-    <article class="docs__body content">
+    <article class="docs__body content prose">
       <h1>{{ .Title }}</h1>
       {{ with .Params.author }}
         <p class="docs__meta">{{ . }}</p>
       {{ end }}
       {{ .Content }}
-      {{ partial "docs/prev-next.html" . }}
     </article>
+    {{ partial "docs/prev-next.html" . }}
   </div>
 
   {{ if .Params.toc }}
