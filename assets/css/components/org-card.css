@@ -73,15 +73,10 @@
 
 .org-card__meta {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
+  flex-direction: column;
+  gap: var(--space-xs);
   font-size: var(--text-sm);
   color: var(--color-text-muted);
-}
-
-.org-card__meta span:not(:last-child)::after {
-  content: "\00b7";
-  margin-left: var(--space-sm);
 }
 
 .org-card__quote {

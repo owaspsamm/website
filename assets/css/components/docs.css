@@ -431,6 +431,7 @@
   grid-template-areas:
     "sidebar header"
     "sidebar content";
+  grid-template-rows: auto 1fr;
 }
 
 .model-docs > .docs__sidebar {
@@ -593,16 +594,20 @@
 .bf-practice {
   display: block;
   padding: var(--space-md) var(--space-lg);
-  background: var(--color-offwhite);
-  border: 1px solid var(--color-border, rgba(var(--color-dark-rgb), .12));
+  background: color-mix(in srgb, var(--bf-color-light, var(--color-primary)) 6%, var(--color-offwhite));
+  border: 1px solid color-mix(in srgb, var(--bf-color, var(--color-primary)) 25%, transparent);
   border-radius: var(--space-sm);
   text-decoration: none;
-  transition: transform var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
+  transition:
+    transform var(--duration) var(--ease),
+    box-shadow var(--duration) var(--ease),
+    border-color var(--duration) var(--ease);
 }
 
 .bf-practice:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 16px rgba(var(--color-dark-rgb), .1);
+  border-color: var(--bf-color, var(--color-primary));
   text-decoration: none;
 }
 
@@ -945,8 +950,9 @@
 
 /* Prose link styling — applies only where .prose is set on the container.
    Templates with .prose: docs/single, blog/single, _default/single, contact/single,
-   user-day/single, stream/single, samm-identity/single, practice .practice-description.
-   Card/list templates intentionally omit .prose. See design-system.md → Link Patterns. */
+   user-day/single, stream/single, samm-identity/single, practice .practice-description,
+   _default/list.html. Card/list templates intentionally omit .prose.
+   See design-system.md → Link Patterns. */
 .prose a:not(.btn):not(.agenda-program__link) {
   color: var(--color-mid);
   text-decoration: underline;

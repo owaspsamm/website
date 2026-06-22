@@ -41,8 +41,9 @@ Single source of truth for hours spent on v2. Keep entries short — date, work 
 | 2026-06-08 | 1 | OG image (`static/img/og.png`, 1200×630) and full Open Graph / Twitter Card meta tags in `baseof.html`. |
 | 2026-06-08 | 1 | CI: bump checkout to v6 and cache to v5 for Node.js 24. Fix toreon.yaml tab character and stream_guidance `hugo.Data` deprecation. Expand presentations backlog with hosting options. |
 | 2026-06-15 | 4 | SAMM Identity section (new section, sidebar, breadcrumb partials, writing guidelines, design system content). Global JS extraction to `global.js`. New practitioners (aph10, code-guardian). User-day talk updates, baseof cleanup. |
-| 2026-06-14 → 2026-06-15 | 5 | Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, `.prose` class refactor (replaces `.content a:not(â€¦)` exclusion list), docs and memory updates. |
-| **Total** | **~79.5** | |
+| 2026-06-14 → 2026-06-15 | 5 | Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, `.prose` class refactor (replaces `.content a:not(…)` exclusion list), docs and memory updates. |
+| 2026-06-22 | 3 | Pre-cutover prep: dinner sponsors, team photo, Asterisk Research sponsor + practitioner. Practitioners list fix (where → inline if), user testimonials hidden, sponsorship links. CSS: org-card meta stacking, prose link underlines scoped to section classes, bf-practice card tint, bf-page-header row height fix. |
+| **Total** | **~82.5** | |
 
 ## How to use
 

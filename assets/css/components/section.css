@@ -75,6 +75,23 @@
   text-decoration-thickness: 2px;
 }
 
+.section__subtitle a:not(.btn),
+.section__footer a:not(.btn) {
+  color: var(--color-mid);
+  text-decoration: underline;
+  text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1.5px;
+  transition: color var(--duration) var(--ease), text-decoration-color var(--duration) var(--ease);
+}
+
+.section__subtitle a:not(.btn):hover,
+.section__footer a:not(.btn):hover {
+  color: var(--color-primary);
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 2px;
+}
+
 .section__footnote details {
   margin-top: var(--space-sm);
 }
