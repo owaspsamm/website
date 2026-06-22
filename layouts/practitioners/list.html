@@ -10,22 +10,42 @@
 
     <div class="org-grid">
       {{/* Sponsors: Platinum → Gold → Silver → Bronze → no tier, A–Z within each */}}
-      {{ $sponsors := where .Site.Data.practitioners "sponsor" true }}
+      {{/* Note: where on .Site.Data maps produces empty results in Hugo; use inline if instead */}}
       {{ $knownTiers := slice "Platinum" "Gold" "Silver" "Bronze" }}
-      {{ $orderedSponsors := slice }}
       {{ range $knownTiers }}
-        {{ range sort (where $sponsors "tier" .) "company" }}
-          {{ $orderedSponsors = $orderedSponsors | append . }}
+        {{ $tier := . }}
+        {{ range sort $.Site.Data.practitioners "company" }}
+          {{ if and .enabled .sponsor (eq .tier $tier) }}
+          <div class="org-card org-card--sponsor">
+            <div class="org-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M12 8l1.12 2.27 2.5.36-1.81 1.77.43 2.5L12 13.77l-2.24 1.18.43-2.5-1.81-1.77 2.5-.36z"/>
+              </svg>
+            </div>
+            <div class="org-card__body">
+              <h3>
+                {{ if .url }}
+                  <a href="{{ .url }}" target="_blank" rel="noopener">{{ .company }}</a>
+                {{ else }}
+                  {{ .company }}
+                {{ end }}
+                <span class="org-card__badge">{{ with .tier }}{{ . }} {{ end }}Sponsor</span>
+              </h3>
+              <div class="org-card__meta">
+                {{ with .country }}<span>{{ . }}</span>{{ end }}
+                {{ with .contributors }}<span>SAMM contributor: {{ . }}</span>{{ end }}
+              </div>
+            </div>
+          </div>
+          {{ end }}
         {{ end }}
       {{ end }}
-      {{ range sort (where $sponsors "tier" "not in" $knownTiers) "company" }}
-        {{ $orderedSponsors = $orderedSponsors | append . }}
-      {{ end }}
-      {{ range $orderedSponsors }}
-        {{ if .enabled }}
+      {{/* Sponsors with no known tier */}}
+      {{ range sort .Site.Data.practitioners "company" }}
+        {{ if and .enabled .sponsor (not (in $knownTiers .tier)) }}
         <div class="org-card org-card--sponsor">
           <div class="org-card__icon" aria-hidden="true">
-            {{/* Shield with star — sponsor */}}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
               <path d="M12 8l1.12 2.27 2.5.36-1.81 1.77.43 2.5L12 13.77l-2.24 1.18.43-2.5-1.81-1.77 2.5-.36z"/>
@@ -38,7 +58,7 @@
               {{ else }}
                 {{ .company }}
               {{ end }}
-              <span class="org-card__badge">{{ with .tier }}{{ . }} {{ end }}Sponsor</span>
+              <span class="org-card__badge">Sponsor</span>
             </h3>
             <div class="org-card__meta">
               {{ with .country }}<span>{{ . }}</span>{{ end }}
@@ -48,11 +68,11 @@
         </div>
         {{ end }}
       {{ end }}
-      {{ range sort (where .Site.Data.practitioners "sponsor" "!=" true) "company" }}
-        {{ if .enabled }}
+      {{/* Non-sponsors */}}
+      {{ range sort .Site.Data.practitioners "company" }}
+        {{ if and .enabled (not .sponsor) }}
         <div class="org-card">
           <div class="org-card__icon" aria-hidden="true">
-            {{/* Briefcase — regular practitioner */}}
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="7" width="20" height="14" rx="2"/>
               <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>

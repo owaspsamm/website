@@ -12,15 +12,17 @@ Things that would improve the v2 site but aren't blocking the launch. Revisit af
 
 Rough sequencing once v2 is stable:
 
-1. **Multilingual model pages** — content already published by `owaspsamm/core`; pure site-side wiring.
-2. **Core module generator fixes** — two upstream cleanups (`url:` `/./` band-aid, `stream-a/` → `a/`). Both live in the same generator, so batch them.
-3. **Stream guidance redesign** — full rebuild per summit decision; replaces the v1 Google Doc port.
-4. **Monthly external link check (CI layer 2)** — scheduled job that reports dead external links in old blog posts.
-5. **Remove presentations from the repo** — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.
-6. **Netlify staging reconfiguration** — switch from serving pre-built `gh-pages-v2` to building from `main`; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.
-7. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
-8. **Playwright visual regression tests** — screenshot-based regression suite to catch CSS regressions silently introduced across sessions. High-value pages: docs single, model overview, business-function, practice, stream, blog post, user-day talk, homepage. Run on PR via GitHub Actions; baseline screenshots committed to repo. Prevents the class of bug where link underlines, nav tints, or pager styles break without any failing test.
-9. **Review `booxmedialtd/ws-action-parse-semver@v1` in the CI pipeline** — unmaintained third-party action used in the `updateHugoMod` job to parse the SAMM core release tag on `repository_dispatch` events. Not on the critical path for normal pushes. Assess whether it still works reliably; if not, replace with a maintained alternative or an inline `bash` semver parse. Low urgency; only bites when a new core release fires.
+1. **Restore SAMM Users testimonial quotes** — quotes are preserved in `data/users/*.yaml` (`testimonial` field) but hidden in the layout (`layouts/samm-users/list.html`) pending a content review. Re-enable the `<blockquote>` block and audit each entry for accuracy and tone before restoring.
+
+3. **Multilingual model pages** — content already published by `owaspsamm/core`; pure site-side wiring.
+4. **Core module generator fixes** — two upstream cleanups (`url:` `/./` band-aid, `stream-a/` → `a/`). Both live in the same generator, so batch them.
+5. **Stream guidance redesign** — full rebuild per summit decision; replaces the v1 Google Doc port.
+6. **Monthly external link check (CI layer 2)** — scheduled job that reports dead external links in old blog posts.
+7. **Remove presentations from the repo** — move to GitHub Releases, Google Drive, or Git LFS; repo-size optimisation, not user-visible. Decision needed before acting.
+8. **Netlify staging reconfiguration** — switch from serving pre-built `gh-pages-v2` to building from `main`; enables persistent staging URL and PR deploy previews for ongoing development. Do immediately post-cutover.
+9. **OG preview validation** — verify Open Graph and Twitter Card previews are rendering correctly post-launch using LinkedIn Post Inspector (`linkedin.com/post-inspector`), Twitter/X Card Validator (`cards-dev.twitter.com/validator`), and opengraph.xyz.
+10. **Playwright visual regression tests** — screenshot-based regression suite to catch CSS regressions silently introduced across sessions. High-value pages: docs single, model overview, business-function, practice, stream, blog post, user-day talk, homepage. Run on PR via GitHub Actions; baseline screenshots committed to repo. Prevents the class of bug where link underlines, nav tints, or pager styles break without any failing test.
+11. **Review `booxmedialtd/ws-action-parse-semver@v1` in the CI pipeline** — unmaintained third-party action used in the `updateHugoMod` job to parse the SAMM core release tag on `repository_dispatch` events. Not on the critical path for normal pushes. Assess whether it still works reliably; if not, replace with a maintained alternative or an inline `bash` semver parse. Low urgency; only bites when a new core release fires.
 
 ## Multilingual model pages
 

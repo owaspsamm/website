@@ -26,6 +26,8 @@ Your sponsorship ensures the ongoing refinement and evolution of SAMM, allowing 
 
 Join us in making the digital world safer. Your sponsorship of SAMM is not just a donation, it's a pledge to secure the future of software development.
 
+Our current sponsors are listed on the [Supporters](/supporters/) page. Sponsors at Bronze tier and above are also listed on the [Practitioners](/practitioners/) page.
+
 ## Sponsorship levels
 
 | | Platinum | Gold | Silver | Bronze | Community |
