@@ -1114,11 +1114,16 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
  &lt;tr&gt;
  &lt;td&gt;2026-06-14 → 2026-06-15&lt;/td&gt;
  &lt;td&gt;5&lt;/td&gt;
- &lt;td&gt;Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, &lt;code&gt;.prose&lt;/code&gt; class refactor (replaces &lt;code&gt;.content a:not(â€¦)&lt;/code&gt; exclusion list), docs and memory updates.&lt;/td&gt;
+ &lt;td&gt;Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, &lt;code&gt;.prose&lt;/code&gt; class refactor (replaces &lt;code&gt;.content a:not(…)&lt;/code&gt; exclusion list), docs and memory updates.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-22&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Pre-cutover prep: dinner sponsors, team photo, Asterisk Research sponsor + practitioner. Practitioners list fix (where → inline if), user testimonials hidden, sponsorship links. CSS: org-card meta stacking, prose link underlines scoped to section classes, bf-practice card tint, bf-page-header row height fix.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;strong&gt;~79.5&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;strong&gt;~82.5&lt;/strong&gt;&lt;/td&gt;
  &lt;td&gt;&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
