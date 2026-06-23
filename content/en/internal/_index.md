@@ -20,12 +20,9 @@ Plans carry a date stamp; check it against the current codebase before trusting 
 
 - [Roadmap](/roadmap/) — pending items and feature flags.
 - [Information architecture](/internal/ia/) — site-wide IA: nav structure and Docs IA.
-- [Docs section implementation plan](/internal/docs-plan/) — phased plan for the docs section: shell, content migration, stream import, search, model integration.
 - [Migration plan (v1 → v2)](/internal/migration-plan/) — how we replace the current production site with this v2 codebase.
-- [Release steps](/internal/release-steps/) — precise, hands-on instructions for the remaining prerequisites and cut-over.
-- [Workflow actions upgrade plan](/internal/actions-upgrade/) — Node-24 readiness and reliability bumps for the deploy pipeline.
-- [Performance check plan](/internal/performance-plan/) — baseline + audit + fixes; includes a mobile visualization pass.
-- [Staging site & PR previews](/internal/staging-previews/) — giving reviewers a clickable preview of every PR without running Hugo locally.
+- [Website updates process](/internal/website-updates-process/) — branch model and PR workflow for making changes after launch.
+- [Website updates process](/internal/website-updates-process/) — branch model and PR workflow for making changes after launch.
 - [Time log](/internal/time-log/) — ongoing time tracking for the v2 project.
 - [Backlog](/internal/backlog/) — post-launch optimizations and improvements.
 - [QA checklist](/internal/qa/) — pre-commit and pre-launch quality checks: code, CSS, content, and visual.

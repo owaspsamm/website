@@ -18,10 +18,10 @@ Everything a fresh session needs to start executing this plan without questions.
 - **Single repo on GitHub**: `github.com/owaspsamm/website`. Currently serves v1. Cut-over replaces its content with v2 in a single branch swap; the repo identity (stars, issues, Pages config, custom domain) is preserved. Local path of v1 clone: `c:/Users/Pat/Documents/work/OWASPSAMM/website`.
 - **v2 codebase**: lives only at `c:/Users/Pat/Documents/work/OWASPSAMM/website-v2` and is **not yet under git**. Prerequisite #0 below is `git init` + push to a branch on `owaspsamm/website`.
 - **Production domain**: `owaspsamm.org` (custom domain on GitHub Pages, served from `owaspsamm/website` `gh-pages` branch).
-- **v2 staging**: Netlify, configured to serve the pre-built `gh-pages-v2` branch (no build step — output is produced by GitHub Actions). Every push to `v2-preview` triggers the Actions pipeline, deploys to `gh-pages-v2`, and Netlify serves the result automatically. See the "v2 staging pipeline" section below and [/internal/staging-previews/](/internal/staging-previews/) for Netlify ownership guidance.
+- **v2 staging**: Netlify, configured to serve the pre-built `gh-pages-v2` branch (no build step — output is produced by GitHub Actions). Every push to `v2-preview` triggers the Actions pipeline, deploys to `gh-pages-v2`, and Netlify serves the result automatically. See the "v2 staging pipeline" section below and [/internal/website-updates-process/](/internal/website-updates-process/) for staging environment details.
 - **SAMM model content**: lives in `github.com/owaspsamm/core`, pulled as a Hugo Module by both v1 and v2. See v2's [go.mod](../../../go.mod).
 - **Analytics / trackers on v2**: Both enabled and gated on `hugo.IsProduction`. Google Analytics ID `G-44N5RHDT94` is configured in [config.toml](../../../config.toml) and injected by [layouts/partials/cookie-consent.html](../../../layouts/partials/cookie-consent.html) (consent-gated, default-denied). Scarf pixel (`x-pxid=6e76dfd3-e2e4-4864-a63b-0b361639db63`) fires on the four model-page layouts via [layouts/partials/scarf.html](../../../layouts/partials/scarf.html), gated inside the partial so Netlify previews don't pollute production metrics.
-- **Hugo version**: v1 pipeline pins `0.157.0`. v2 should match at migration time. See [/internal/actions-upgrade/](/internal/actions-upgrade/) for the workflow we're inheriting.
+- **Hugo version**: v1 pipeline pins `0.157.0`. v2 should match at migration time. See [/internal/archive/actions-upgrade/](/internal/archive/actions-upgrade/) for the workflow we're inheriting.
 
 ## Invocation
 
@@ -39,7 +39,7 @@ When ready to execute this plan in a new session: open this page, point me at it
 Each prerequisite is something that needs to be true *before* cut-over day, so the cut-over itself is a 5-minute branch swap rather than several hours of unexpected debugging. In rough order.
 
 - [x] **0. v2 under git and pushed as a branch (2026-06-08).** Committed and pushed to `v2-preview` on `owaspsamm/website`.
-- [x] **v2 workflow actions-upgraded (2026-06-08).** `.github/workflows/gh-pages.yaml` in the v2 codebase has all five actions bumped to Node 24-compatible versions and the `add-and-commit` v10 input format corrected. See [/internal/actions-upgrade/](/internal/actions-upgrade/) for the version table. v1's in-flight upgrade is independent and does not block v2 launch.
+- [x] **v2 workflow actions-upgraded (2026-06-08).** `.github/workflows/gh-pages.yaml` in the v2 codebase has all five actions bumped to Node 24-compatible versions and the `add-and-commit` v10 input format corrected. See [/internal/archive/actions-upgrade/](/internal/archive/actions-upgrade/) for the version table. v1's in-flight upgrade is independent and does not block v2 launch.
 - [x] **v2 pipeline smoke-tested on `v2-preview` (2026-06-08).** Workflow ran green; `gh-pages-v2` branch populated successfully.
 - [x] **Content parity audit.** Done 2026-05-12. All major sections covered. Two aliases added: `/resources/news/` → `community/newsletter.md`, `/resources/youtube-channel/` → `community/youtube.md`. `referencespoc/poc.md` confirmed ignorable.
 - [x] **URL parity audit.** Done 2026-05-12. 21 aliases already in place from the `/resources/` dissolution. Two gaps closed (see above). No redirect map needed — all cases handled via page-level `aliases:`.
@@ -74,7 +74,7 @@ Point Netlify at the `gh-pages-v2` branch of `owaspsamm/website` with:
 - Build command: *(empty — no build)*
 - Publish directory: `.`
 
-See [/internal/staging-previews/](/internal/staging-previews/) for Netlify ownership guidance.
+See [/internal/website-updates-process/](/internal/website-updates-process/) for staging environment details.
 
 **What happens at cut-over:**
 
