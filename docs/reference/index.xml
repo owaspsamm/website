@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Reference on OWASP SAMM</title><link>https://owaspsamm.org/docs/reference/</link><description>Recent content in Reference on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/docs/reference/index.xml" rel="self" type="application/rss+xml"/><item><title>FAQ</title><link>https://owaspsamm.org/docs/reference/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/reference/faq/</guid><description>&lt;p&gt;This document is work in progress. It grows with your questions and your feedback. You can always reach out through our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;
+ or our &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="the-model"&gt;The model&lt;/h2&gt;
+&lt;h4 id="is-there-a-general-description-available-for-the-3-maturity-levels"&gt;Is there a general description available for the 3 maturity levels?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;The first maturity level aims at achieving an ad-hoc, best effort implementation of a particular activity within a stream.&lt;/li&gt;
+&lt;li&gt;The second maturity level aims to establish a consistent, repeatable process that can be relied on.&lt;/li&gt;
+&lt;li&gt;The third maturity level aims to maximize effectiveness through continuous improvement, based on effective and timely feedback.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This content is part of our &lt;a href="https://github.com/owaspsamm/core/tree/develop/model" target="_blank" rel="noopener"&gt;data files on GitHub&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+. We&amp;rsquo;ll work on having it available on the website soon.&lt;/p&gt;</description></item><item><title>Mappings</title><link>https://owaspsamm.org/docs/reference/mappings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/reference/mappings/</guid><description>&lt;h2 id="direct-mappings"&gt;Direct mappings&lt;/h2&gt;
+&lt;p&gt;We maintain a &lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank" rel="noopener"&gt;comprehensive mappings spreadsheet&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ covering several standards:&lt;/p&gt;
+&lt;h3 id="microsoft-sdl-and-samm"&gt;Microsoft SDL and SAMM&lt;/h3&gt;
+&lt;p&gt;Read more in the &lt;a href="https://owaspsamm.org/blog/comparing-microsoft-sdl-and-samm/"&gt;Microsoft SDL and OWASP SAMM Mapping&lt;/a&gt;
+ blog post.&lt;/p&gt;
+&lt;h3 id="bsimm-14-and-samm"&gt;BSIMM 14 and SAMM&lt;/h3&gt;
+&lt;p&gt;Read more in the &lt;a href="https://owaspsamm.org/blog/samm-bsimm-mapping/"&gt;BSIMM Mapped to OWASP SAMM&lt;/a&gt;
+ blog post.&lt;/p&gt;
+&lt;h3 id="iec-62443-4-1-and-samm"&gt;IEC-62443-4-1 and SAMM&lt;/h3&gt;
+&lt;p&gt;Available in the same &lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank" rel="noopener"&gt;mappings spreadsheet&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;</description></item></channel></rss>

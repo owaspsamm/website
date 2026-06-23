@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Design System on OWASP SAMM</title><link>https://owaspsamm.org/internal/design-system/</link><description>Recent content in Design System on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/internal/design-system/index.xml" rel="self" type="application/rss+xml"/><item><title>Foundations</title><link>https://owaspsamm.org/internal/design-system/foundations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/foundations/</guid><description>&lt;style&gt;
+/* Design system examples — scoped to this page only */
+.ds-swatch-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-swatch {
+ width: 5rem; height: 5rem; border-radius: 0.375rem;
+ display: flex; flex-direction: column; align-items: center; justify-content: center;
+ font-size: 0.7rem; font-family: var(--font-mono); line-height: 1.4; text-align: center;
+ border: 1px solid rgba(0,0,0,0.08);
+}
+.ds-bf-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-bf-swatch {
+ padding: 0.5rem 1rem; border-radius: 0.375rem;
+ font-size: var(--text-sm); font-weight: 600; color: #fff;
+}
+.ds-surface-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0; }
+.ds-surface {
+ flex: 1 1 10rem; min-height: 4rem; border-radius: 0.375rem;
+ border: 1px solid var(--color-border);
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding: 0.5rem; font-size: var(--text-sm); font-family: var(--font-mono);
+}
+.ds-type-scale { border: 1px solid var(--color-border); border-radius: 0.375rem; overflow: hidden; margin: 1rem 0; }
+.ds-type-row {
+ display: grid; grid-template-columns: 7rem 5rem 1fr 6rem;
+ align-items: center; gap: 1rem; padding: 0.625rem 1rem;
+ border-bottom: 1px solid var(--color-border);
+}
+.ds-type-row:last-child { border-bottom: none; }
+.ds-type-row:nth-child(4) { background: rgba(var(--color-primary-rgb), 0.05); }
+.ds-token { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-px { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-use { font-size: var(--text-xs); color: var(--color-text-muted); text-align: right; }
+.ds-spacing-demo { display: flex; align-items: flex-end; gap: 0.75rem; margin: 1rem 0; flex-wrap: wrap; }
+.ds-space-bar {
+ background: var(--color-primary); opacity: 0.5; border-radius: 2px; width: 2rem;
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding-bottom: 0.25rem; align-items: center;
+}
+.ds-space-label { font-size: 0.6rem; font-family: var(--font-mono); color: var(--color-offwhite); line-height: 1; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+&lt;/style&gt;
+&lt;h2 id="colour-system"&gt;Colour system&lt;/h2&gt;
+&lt;h3 id="core-palette"&gt;Core palette&lt;/h3&gt;
+&lt;p&gt;Five named tokens. Light to dark:&lt;/p&gt;</description></item><item><title>Components</title><link>https://owaspsamm.org/internal/design-system/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/components/</guid><description>&lt;style&gt;
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.5rem;
+ margin: 1rem 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ align-items: center;
+}
+.ds-demo--dark { background: var(--color-dark); }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-card-preview {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+ gap: 1rem;
+ margin: 1rem 0;
+}
+.ds-card-bordered {
+ padding: 1.25rem;
+ border: 2px solid var(--color-border);
+ border-radius: 0.5rem;
+ text-decoration: none;
+ color: inherit;
+ display: block;
+ transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+ cursor: pointer;
+}
+.ds-card-bordered:hover {
+ border-color: var(--color-primary);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 28px rgba(44,48,48,0.1);
+ text-decoration: none;
+}
+.ds-card-feature {
+ padding: 1.5rem 1.25rem;
+ text-align: center;
+ background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+ background-size: 0% 2px;
+ background-repeat: no-repeat;
+ background-position: center bottom;
+ transition: background-size var(--duration) var(--ease);
+ cursor: pointer;
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+}
+.ds-card-feature:hover { background-size: 100% 2px; }
+.ds-card-title { font-size: var(--text-lg); font-weight: 600; color: var(--color-dark); margin-bottom: 0.5rem; }
+.ds-card-body { font-size: var(--text-sm); color: var(--color-text-light); line-height: var(--line-height); margin: 0; }
+.ds-icon-row { display: flex; flex-wrap: wrap; gap: 2rem; margin: 1rem 0; align-items: center; }
+.ds-icon-item { display: flex; align-items: center; gap: 0.5rem; font-size: var(--text-sm); color: var(--color-text-light); }
+&lt;/style&gt;
+&lt;h2 id="buttons"&gt;Buttons&lt;/h2&gt;
+&lt;p&gt;Three variants share a single base class (&lt;code&gt;.btn&lt;/code&gt;) and the same hover transformation: teal background fill. The text color on hover differs, not arbitrarily, but because each variant inverts its default text color.&lt;/p&gt;</description></item><item><title>Patterns</title><link>https://owaspsamm.org/internal/design-system/patterns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/patterns/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.25rem 1.5rem;
+ margin: 1rem 0;
+ font-size: var(--text-base);
+ line-height: var(--line-height);
+}
+.ds-link-example {
+ color: var(--color-mid);
+ text-decoration: underline;
+ text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+ text-underline-offset: 0.15em;
+ text-decoration-thickness: 1.5px;
+ transition: color var(--duration) var(--ease), text-decoration-color var(--duration) var(--ease);
+}
+.ds-link-example:hover {
+ color: var(--color-primary);
+ text-decoration-color: currentColor;
+ text-decoration-thickness: 2px;
+}
+.ds-bf-demo {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ margin: 1rem 0;
+}
+.ds-bf-link {
+ padding: 0.375rem 0.75rem;
+ border-radius: 0.25rem;
+ font-size: var(--text-sm);
+ font-weight: 500;
+ transition: background var(--duration) var(--ease);
+}
+/* .prose a (0-3-1) overrides text-decoration: none at 0-1-0.
+ Match its specificity here — page &lt;style&gt; comes later in cascade and wins the tie. */
+.content.prose a.ds-bf-link {
+ text-decoration: none;
+}
+.ds-bf-link:hover { opacity: 0.8; }
+&lt;/style&gt;
+&lt;h2 id="prose-links"&gt;Prose links&lt;/h2&gt;
+&lt;p&gt;Inline links inside flowing text are styled through the &lt;code&gt;.prose&lt;/code&gt; class on the container element. This approach scopes the link style to reading contexts only; card layouts, nav elements, and list templates are deliberately excluded.&lt;/p&gt;</description></item><item><title>Conventions</title><link>https://owaspsamm.org/internal/design-system/conventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/conventions/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-file-tree {
+ background: var(--color-dark);
+ color: var(--color-offwhite);
+ border-radius: 0.375rem;
+ padding: 1rem 1.25rem;
+ font-family: var(--font-mono);
+ font-size: var(--text-sm);
+ line-height: 2;
+ margin: 1rem 0;
+ overflow-x: auto;
+}
+.ds-file-tree .comment { color: rgba(249,246,246,0.4); }
+&lt;/style&gt;
+&lt;h2 id="css-architecture"&gt;CSS architecture&lt;/h2&gt;
+&lt;h3 id="file-structure"&gt;File structure&lt;/h3&gt;
+&lt;p&gt;All CSS lives in &lt;code&gt;assets/css/&lt;/code&gt;. The entry point is &lt;code&gt;main.css&lt;/code&gt;: it contains no rules, only a list of &lt;code&gt;@import&lt;/code&gt; statements in load order. Adding a new file requires adding it to &lt;code&gt;main.css&lt;/code&gt; and to the &lt;code&gt;resources.Concat&lt;/code&gt; call in &lt;code&gt;layouts/_default/baseof.html&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Accessibility</title><link>https://owaspsamm.org/internal/design-system/accessibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/accessibility/</guid><description>&lt;style&gt;
+.ds-pass { color: #3a5f26; font-weight: 600; }
+.ds-warn { color: #ad4b00; font-weight: 600; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-swatch-inline {
+ display: inline-block;
+ width: 0.85rem; height: 0.85rem;
+ border-radius: 2px;
+ vertical-align: middle;
+ margin-right: 0.25rem;
+ border: 1px solid rgba(0,0,0,0.12);
+}
+&lt;/style&gt;
+&lt;h2 id="wcag-compliance-overview"&gt;WCAG compliance overview&lt;/h2&gt;
+&lt;p&gt;The site targets &lt;strong&gt;WCAG 2.1 Level AA&lt;/strong&gt; throughout. The table below records the status of each criterion as of the last audit.&lt;/p&gt;</description></item></channel></rss>

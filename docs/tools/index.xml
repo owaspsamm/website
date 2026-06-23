@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tools &amp; Downloads on OWASP SAMM</title><link>https://owaspsamm.org/docs/tools/</link><description>Recent content in Tools &amp; Downloads on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/docs/tools/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment Tools</title><link>https://owaspsamm.org/docs/tools/assessment-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/tools/assessment-tools/</guid><description>&lt;p&gt;If you want to learn more about SAMM assessments, start with the &lt;a href="https://owaspsamm.org/assessment/"&gt;assessment page&lt;/a&gt;
+ or the &lt;a href="https://owaspsamm.org/docs/assessment/guide/"&gt;assessment guide&lt;/a&gt;
+, which includes practical advice, best practices, and &lt;a href="https://owaspsamm.org/docs/assessment/example-interview-questions/"&gt;example interview questions&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="spreadsheets"&gt;Spreadsheets&lt;/h2&gt;
+&lt;p&gt;We maintain two versions of the SAMM Toolbox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core/releases/latest" target="_blank" rel="noopener"&gt;Microsoft Excel Toolbox&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1jmLVltRhuG19AX5cLUcWH1Qox2Uic17rD29gMVG5zDE/view#gid=1716553355" target="_blank" rel="noopener"&gt;Google Spreadsheet Toolbox&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="online-assessment"&gt;Online assessment&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank" rel="noopener"&gt;SAMMwise&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is our self-hosted online assessment tool. You can find its GitHub repository and documentation there.&lt;/p&gt;</description></item><item><title>SAMM PDF</title><link>https://owaspsamm.org/docs/tools/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/tools/pdf/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/samm-pdf-cover.svg" alt="SAMM v2 model PDF cover" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;A long-awaited addition since SAMM v2: a printable PDF of the model.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" target="_blank" rel="noopener"&gt;View the SAMM PDF&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Feedback welcome on &lt;a href="https://owasp.slack.com/archives/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;GitHub Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, or our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;
+.&lt;/p&gt;</description></item></channel></rss>

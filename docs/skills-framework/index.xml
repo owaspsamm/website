@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Skills Framework on OWASP SAMM</title><link>https://owaspsamm.org/docs/skills-framework/</link><description>Recent content in Skills Framework on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/docs/skills-framework/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview</title><link>https://owaspsamm.org/docs/skills-framework/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/overview/</guid><description>&lt;p&gt;The OWASP SAMM Skills Framework maps each SAMM activity stream to defined responsibilities, helping organizations determine which roles lead and support each stream. Originally donated by Siemens, it complements SAMM by answering two questions the model itself does not: &lt;strong&gt;who&lt;/strong&gt; should do the work, and &lt;strong&gt;how&lt;/strong&gt; they can build the right expertise.&lt;/p&gt;
+&lt;h2 id="why-use-it"&gt;Why use it&lt;/h2&gt;
+&lt;p&gt;SAMM explains what to do. The skills framework reveals who should do it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clarity&lt;/strong&gt;: no more guessing whether developers or product managers own a security activity. The framework identifies who leads and who supports.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training&lt;/strong&gt;: for each role, it points to relevant training, certifications, and reading material.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;: whether you run one product team or dozens, it helps you visualize shared responsibilities across the organization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="how-to-apply-it"&gt;How to apply it&lt;/h2&gt;
+
+
+
+&lt;figure class="content-figure"&gt;
+ &lt;img src="https://owaspsamm.org/img/pages/SAMM_skills_implementation.svg" alt="Implementing the SAMM Skills Framework" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Map responsibilities to roles&lt;/strong&gt;
+Match each assignment in the framework with a role or person in your organization. This helps you visualize who needs to pick up an activity.&lt;/p&gt;</description></item><item><title>SAMM to Assignments</title><link>https://owaspsamm.org/docs/skills-framework/samm-to-assignments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/samm-to-assignments/</guid><description>&lt;p&gt;This mapping connects each SAMM stream to the assignment that leads it and the stakeholders that support it. Use it to identify who in your organization should own and contribute to each security activity.&lt;/p&gt;
+&lt;p&gt;For each stream, the &lt;strong&gt;lead&lt;/strong&gt; is the role that drives the work. &lt;strong&gt;Stakeholders&lt;/strong&gt; support or collaborate.&lt;/p&gt;
+&lt;div class="skills-mapping"&gt;
+&lt;h2 class="skills-bf--governance" id="governance"&gt;&lt;a href="https://owaspsamm.org/model/governance/"&gt;Governance&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="skills-bf-group skills-bf-group--governance"&gt;
+&lt;h3 id="strategy--metrics"&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/"&gt;Strategy &amp;amp; Metrics&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/stream-a/"&gt;A: Create and Promote&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lead&lt;/strong&gt;: Product Security Strategy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stakeholders&lt;/strong&gt;: Organizational Security Strategy, Business Strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;Rationale&lt;/summary&gt;
+Product security strategy takes the lead, in close collaboration with organizational security strategy. In smaller organizations, these responsibilities often sit in the same role. The larger executive management team needs to be on board for a security initiative to succeed.
+&lt;/details&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/stream-b/"&gt;B: Measure and Improve&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Assignment Profiles</title><link>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</guid><description>&lt;p&gt;Each assignment profile describes the security skills, training resources, books, and certifications relevant to a specific responsibility in the SAMM Skills Framework. Use these profiles to assess current capabilities and plan training.&lt;/p&gt;
+&lt;p&gt;Where available, profiles include a mapping to the &lt;a href="https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles" target="_blank" rel="noopener"&gt;EU Cybersecurity Skills Framework&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ role profiles.&lt;/p&gt;</description></item></channel></rss>

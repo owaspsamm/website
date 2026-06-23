@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Community on OWASP SAMM</title><link>https://owaspsamm.org/community/</link><description>Recent content in Community on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://owaspsamm.org/community/index.xml" rel="self" type="application/rss+xml"/><item><title>Community Calls</title><link>https://owaspsamm.org/community/community-calls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/community-calls/</guid><description>&lt;p&gt;We host community calls on the second Wednesday of every month. Calls may cover project updates, conversations with experts on SAMM-related topics, or open Q&amp;amp;A.&lt;/p&gt;
+&lt;h2 id="how-to-join"&gt;How to join&lt;/h2&gt;
+&lt;p&gt;Subscribe to our &lt;a href="https://owaspsamm.org/community/newsletter/"&gt;newsletter&lt;/a&gt;
+ to receive the call link and updates. You can also find event details on &lt;a href="https://www.meetup.com/owasp-samm/" target="_blank" rel="noopener"&gt;Meetup&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, though we plan to move away from Meetup in the near future.&lt;/p&gt;</description></item><item><title>GitHub Discussions</title><link>https://owaspsamm.org/community/github-discussions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/github-discussions/</guid><description>&lt;p&gt;&lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;GitHub Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is a space for longer conversations about the SAMM project: proposals, questions, and feedback that benefit from a threaded format.&lt;/p&gt;
+&lt;h2 id="good-use-cases"&gt;Good use cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Proposing changes or additions to the model&lt;/li&gt;
+&lt;li&gt;Sharing how you&amp;rsquo;ve applied SAMM in your organization&lt;/li&gt;
+&lt;li&gt;Providing detailed feedback on documentation or tooling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="getting-started"&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;Head to &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;SAMM Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ to start a conversation. You&amp;rsquo;ll need a GitHub account to participate.&lt;/p&gt;</description></item><item><title>Newsletter</title><link>https://owaspsamm.org/community/newsletter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/newsletter/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/mailchimp.png" alt="Mailchimp" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;We send one email per month. No more. It includes the link to that month&amp;rsquo;s &lt;a href="https://owaspsamm.org/community/community-calls/"&gt;community call&lt;/a&gt;
+, along with project updates, event announcements, and new blog posts when relevant.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://owaspsamm.us9.list-manage.com/subscribe?u=b83ce65c91239cb5e623ea83e&amp;amp;id=cbd0520923" target="_blank" rel="noopener"&gt;Subscribe here&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Slack</title><link>https://owaspsamm.org/community/slack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/slack/</guid><description>&lt;p&gt;Our &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is the quickest way to connect with the SAMM community. Core team members are active and typically respond within a day or two.&lt;/p&gt;
+&lt;h2 id="how-to-join"&gt;How to join&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you already have an OWASP Slack account, join the &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;#samm channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ directly&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re new to OWASP Slack, &lt;a href="https://owasp.org/slack/invite" target="_blank" rel="noopener"&gt;request an invitation&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-happens-there"&gt;What happens there&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Questions about the model, assessments, and implementation&lt;/li&gt;
+&lt;li&gt;Announcements about releases, events, and community calls&lt;/li&gt;
+&lt;li&gt;Discussions between practitioners sharing their experiences&lt;/li&gt;
+&lt;li&gt;Feedback on ideas, proposals, and contributions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-ways-to-connect"&gt;Other ways to connect&lt;/h2&gt;
+&lt;p&gt;For proposals and threaded conversations, use &lt;a href="https://owaspsamm.org/community/github-discussions/"&gt;GitHub Discussions&lt;/a&gt;
+. To join live conversations with the core team and practitioners, check out our &lt;a href="https://owaspsamm.org/community/community-calls/"&gt;Community Calls&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>YouTube Channel</title><link>https://owaspsamm.org/community/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/youtube/</guid><description>&lt;p&gt;From model deep-dive sessions to presentations and project updates, our &lt;a href="https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" target="_blank" rel="noopener"&gt;YouTube channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is a source of information you don&amp;rsquo;t want to miss.&lt;/p&gt;
+&lt;h2 id="featured-video"&gt;Featured video&lt;/h2&gt;
+&lt;p&gt;SAMM core team members discuss how to carry out SAMM assessments, covering self-assessment vs. external assessors, interview practicalities, and practical tips from industry experts.&lt;/p&gt;</description></item></channel></rss>
