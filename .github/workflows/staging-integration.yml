@@ -1,0 +1,129 @@
+name: Update staging integration branch
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened, closed, ready_for_review]
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    # Always run on closed (PR merged/abandoned); skip non-closed events if PR is still a draft
+    if: ${{ github.event.action == 'closed' || github.event.pull_request.draft == false }}
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Get open non-draft PRs
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              base: 'main',
+              per_page: 100
+            });
+            const nonDraft = prs
+              .filter(pr => !pr.draft)
+              .map(pr => ({ number: pr.number, sha: pr.head.sha }));
+            require('fs').writeFileSync('/tmp/prs.json', JSON.stringify(nonDraft));
+            core.info(`Found ${nonDraft.length} open non-draft PR(s)`);
+
+      - name: Build integration branch
+        shell: bash
+        run: |
+          git checkout -B staging
+
+          while IFS= read -r pr; do
+            NUMBER=$(echo "$pr" | jq -r '.number')
+            SHA=$(echo "$pr"    | jq -r '.sha')
+
+            echo "::group::PR #$NUMBER"
+            git fetch origin "refs/pull/$NUMBER/head:pr-$NUMBER"
+
+            if git merge --no-ff --no-edit "pr-$NUMBER"; then
+              echo "success" > "/tmp/status-$NUMBER"
+              echo "$SHA"   >> "/tmp/status-$NUMBER"
+              echo "✅ Merged cleanly"
+            else
+              git merge --abort
+              echo "failure" > "/tmp/status-$NUMBER"
+              echo "$SHA"   >> "/tmp/status-$NUMBER"
+              echo "❌ Conflict — skipping"
+            fi
+            echo "::endgroup::"
+          done < <(jq -c '.[]' /tmp/prs.json)
+
+          git push --force origin staging
+
+      - name: Post statuses and comments
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let prs = [];
+            try {
+              prs = JSON.parse(fs.readFileSync('/tmp/prs.json', 'utf8'));
+            } catch (_) { return; }
+
+            for (const { number, sha } of prs) {
+              let state = 'error';
+              let description = 'Integration did not run';
+
+              try {
+                const lines = fs.readFileSync(`/tmp/status-${number}`, 'utf8').trim().split('\n');
+                state       = lines[0];
+                description = state === 'success'
+                  ? 'Merged cleanly into staging'
+                  : 'Merge conflict — not included in staging';
+              } catch (_) {}
+
+              await github.rest.repos.createCommitStatus({
+                owner:       context.repo.owner,
+                repo:        context.repo.repo,
+                sha,
+                state,
+                context:     'staging / integration',
+                description,
+                target_url:  'https://owaspsamm.netlify.app/'
+              });
+
+              if (state === 'failure') {
+                await github.rest.issues.createComment({
+                  owner:        context.repo.owner,
+                  repo:         context.repo.repo,
+                  issue_number: number,
+                  body: [
+                    '⚠️ **This PR was not included in staging.**',
+                    '',
+                    'It conflicted with `main` or another open PR when building the integration branch. Staging has been updated without this PR.',
+                    '',
+                    'To fix: rebase on `main` and push again.',
+                    '```bash',
+                    'git fetch origin',
+                    'git rebase origin/main',
+                    'git push --force-with-lease',
+                    '```',
+                  ].join('\n')
+                });
+              }
+            }
