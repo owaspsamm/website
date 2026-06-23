@@ -5,8 +5,7 @@
 &lt;p&gt;&lt;strong&gt;Restore SAMM Users testimonial quotes&lt;/strong&gt; — quotes are preserved in &lt;code&gt;data/users/*.yaml&lt;/code&gt; (&lt;code&gt;testimonial&lt;/code&gt; field) but hidden in the layout (&lt;code&gt;layouts/samm-users/list.html&lt;/code&gt;) pending a content review. Re-enable the &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; block and audit each entry for accuracy and tone before restoring.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Multilingual model pages&lt;/strong&gt; — content already published by &lt;code&gt;owaspsamm/core&lt;/code&gt;; pure site-side wiring.&lt;/p&gt;</description></item><item><title>Docs section implementation plan</title><link>https://owaspsamm.org/internal/docs-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/docs-plan/</guid><description>&lt;h2 id="context"&gt;Context&lt;/h2&gt;
-&lt;p&gt;The SAMM website&amp;rsquo;s guidance section currently consists of 2 flat pages (agile guidance, quick-start guide) and a dropdown menu pointing to scattered locations. Meanwhile, 11 blog posts contain prescriptive how-to content that belongs in documentation, and 30 streams of implementation guidance live in external Google Docs. The goal is to build a ReadTheDocs-style documentation experience in website-v2: collapsible sidebar, on-this-page TOC, card-based landing pages, prev/next navigation, and client-side search. This transforms SAMM&amp;rsquo;s most valuable content into a proper, navigable knowledge base.&lt;/p&gt;</description></item><item><title>Information architecture</title><link>https://owaspsamm.org/internal/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/ia/</guid><description>&lt;h2 id="website-navigation"&gt;Website navigation&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Multilingual model pages&lt;/strong&gt; — content already published by &lt;code&gt;owaspsamm/core&lt;/code&gt;; pure site-side wiring.&lt;/p&gt;</description></item><item><title>Information architecture</title><link>https://owaspsamm.org/internal/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/ia/</guid><description>&lt;h2 id="website-navigation"&gt;Website navigation&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -57,29 +56,19 @@
 &lt;li&gt;&lt;strong&gt;Single repo on GitHub&lt;/strong&gt;: &lt;code&gt;github.com/owaspsamm/website&lt;/code&gt;. Currently serves v1. Cut-over replaces its content with v2 in a single branch swap; the repo identity (stars, issues, Pages config, custom domain) is preserved. Local path of v1 clone: &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;v2 codebase&lt;/strong&gt;: lives only at &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website-v2&lt;/code&gt; and is &lt;strong&gt;not yet under git&lt;/strong&gt;. Prerequisite #0 below is &lt;code&gt;git init&lt;/code&gt; + push to a branch on &lt;code&gt;owaspsamm/website&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Production domain&lt;/strong&gt;: &lt;code&gt;owaspsamm.org&lt;/code&gt; (custom domain on GitHub Pages, served from &lt;code&gt;owaspsamm/website&lt;/code&gt; &lt;code&gt;gh-pages&lt;/code&gt; branch).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;v2 staging&lt;/strong&gt;: Netlify, configured to serve the pre-built &lt;code&gt;gh-pages-v2&lt;/code&gt; branch (no build step — output is produced by GitHub Actions). Every push to &lt;code&gt;v2-preview&lt;/code&gt; triggers the Actions pipeline, deploys to &lt;code&gt;gh-pages-v2&lt;/code&gt;, and Netlify serves the result automatically. See the &amp;ldquo;v2 staging pipeline&amp;rdquo; section below and &lt;a href="https://owaspsamm.org/internal/staging-previews/"&gt;/internal/staging-previews/&lt;/a&gt;
- for Netlify ownership guidance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v2 staging&lt;/strong&gt;: Netlify, configured to serve the pre-built &lt;code&gt;gh-pages-v2&lt;/code&gt; branch (no build step — output is produced by GitHub Actions). Every push to &lt;code&gt;v2-preview&lt;/code&gt; triggers the Actions pipeline, deploys to &lt;code&gt;gh-pages-v2&lt;/code&gt;, and Netlify serves the result automatically. See the &amp;ldquo;v2 staging pipeline&amp;rdquo; section below and &lt;a href="https://owaspsamm.org/internal/website-updates-process/"&gt;/internal/website-updates-process/&lt;/a&gt;
+ for staging environment details.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;SAMM model content&lt;/strong&gt;: lives in &lt;code&gt;github.com/owaspsamm/core&lt;/code&gt;, pulled as a Hugo Module by both v1 and v2. See v2&amp;rsquo;s &lt;a href="../../../go.mod"&gt;go.mod&lt;/a&gt;
 .&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Analytics / trackers on v2&lt;/strong&gt;: Both enabled and gated on &lt;code&gt;hugo.IsProduction&lt;/code&gt;. Google Analytics ID &lt;code&gt;G-44N5RHDT94&lt;/code&gt; is configured in &lt;a href="../../../config.toml"&gt;config.toml&lt;/a&gt;
  and injected by &lt;a href="../../../layouts/partials/cookie-consent.html"&gt;layouts/partials/cookie-consent.html&lt;/a&gt;
  (consent-gated, default-denied). Scarf pixel (&lt;code&gt;x-pxid=6e76dfd3-e2e4-4864-a63b-0b361639db63&lt;/code&gt;) fires on the four model-page layouts via &lt;a href="../../../layouts/partials/scarf.html"&gt;layouts/partials/scarf.html&lt;/a&gt;
 , gated inside the partial so Netlify previews don&amp;rsquo;t pollute production metrics.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hugo version&lt;/strong&gt;: v1 pipeline pins &lt;code&gt;0.157.0&lt;/code&gt;. v2 should match at migration time. See &lt;a href="https://owaspsamm.org/internal/actions-upgrade/"&gt;/internal/actions-upgrade/&lt;/a&gt;
+&lt;li&gt;&lt;strong&gt;Hugo version&lt;/strong&gt;: v1 pipeline pins &lt;code&gt;0.157.0&lt;/code&gt;. v2 should match at migration time. See &lt;a href="https://owaspsamm.org/internal/archive/actions-upgrade/"&gt;/internal/archive/actions-upgrade/&lt;/a&gt;
  for the workflow we&amp;rsquo;re inheriting.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
-&lt;p&gt;When ready to execute this plan in a new session: open this page, point me at it, and say &amp;ldquo;run the migration plan&amp;rdquo;. I&amp;rsquo;ll work through the prerequisites before cut-over and stop for confirmation at each gate.&lt;/p&gt;</description></item><item><title>Performance check plan</title><link>https://owaspsamm.org/internal/performance-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/performance-plan/</guid><description>&lt;p&gt;Goal: measure current page-load performance on the v2 site, fix what&amp;rsquo;s cheap, and confirm we&amp;rsquo;re shipping a fast, professional-feeling site. Includes a separate mobile visualization pass for polish (audience is primarily desktop, but mobile presentation matters for credibility).&lt;/p&gt;
-&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: drafted 2026-05-21. Pre-launch phases (1â€“4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: GitHub Pages, custom domain &lt;code&gt;owaspsamm.org&lt;/code&gt;. Limited control over headers, no edge Brotli, no per-route cache rules. Performance wins must come from what is &lt;em&gt;delivered&lt;/em&gt; — image weight, JS payload, font strategy — not from infrastructure.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Third-party scripts&lt;/strong&gt;: Google Analytics (&lt;code&gt;G-44N5RHDT94&lt;/code&gt;) and Scarf pixel are consent-gated and default-denied. They don&amp;rsquo;t fire until a user accepts cookies. The consent banner itself runs on every page and is in the critical path — measure with consent both accepted and declined.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Build command for measurements&lt;/strong&gt;: &lt;code&gt;hugo --minify --environment production&lt;/code&gt;. Same command CI uses. Don&amp;rsquo;t measure against &lt;code&gt;hugo server&lt;/code&gt; — its livereload script and unminified output will skew everything.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Hugo image processing&lt;/strong&gt;: Hugo&amp;rsquo;s &lt;code&gt;resources.Image&lt;/code&gt; pipeline (&lt;code&gt;.Resize&lt;/code&gt;, &lt;code&gt;.Process&lt;/code&gt;, format conversion to WebP/AVIF, &lt;code&gt;srcset&lt;/code&gt; generation) is available. Whether it&amp;rsquo;s used today is part of the audit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
-&lt;p&gt;When ready to run this plan, open this page and say &amp;ldquo;run the performance plan&amp;rdquo;. I&amp;rsquo;ll start with phase 1 (baseline measurements) and stop for confirmation before applying any fixes.&lt;/p&gt;</description></item><item><title>QA checklist</title><link>https://owaspsamm.org/internal/qa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/qa/</guid><description>&lt;p&gt;Run these checks before any significant commit and before every release. They catch the classes of problem most likely to slip through review.&lt;/p&gt;
+&lt;p&gt;When ready to execute this plan in a new session: open this page, point me at it, and say &amp;ldquo;run the migration plan&amp;rdquo;. I&amp;rsquo;ll work through the prerequisites before cut-over and stop for confirmation at each gate.&lt;/p&gt;</description></item><item><title>QA checklist</title><link>https://owaspsamm.org/internal/qa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/qa/</guid><description>&lt;p&gt;Run these checks before any significant commit and before every release. They catch the classes of problem most likely to slip through review.&lt;/p&gt;
 &lt;h2 id="code-checks"&gt;Code checks&lt;/h2&gt;
 &lt;p&gt;Run from the repo root (&lt;code&gt;website-v2/&lt;/code&gt;).&lt;/p&gt;
 &lt;h3 id="inline-styles-in-templates"&gt;Inline styles in templates&lt;/h3&gt;
@@ -87,24 +76,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Acceptable exceptions: &lt;code&gt;contact/single.html&lt;/code&gt; honeypot field (&lt;code&gt;display:none&lt;/code&gt; must be inline to evade bot detection). Everything else is a violation of the no-hardcode rule and must be moved to a CSS class.&lt;/p&gt;
 &lt;h3 id="hardcoded-values-in-templates"&gt;Hardcoded values in templates&lt;/h3&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;grep -rn -E &amp;#39;[0-9]+(px|rem|em)|#[0-9a-fA-F]{3,6}&amp;#39; layouts/ --include=&amp;#34;*.html&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No raw units or hex values in templates. All sizing and colour must come from tokens via CSS classes.&lt;/p&gt;</description></item><item><title>Release steps</title><link>https://owaspsamm.org/internal/release-steps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/release-steps/</guid><description>&lt;p&gt;Companion to the &lt;a href="https://owaspsamm.org/internal/migration-plan/"&gt;migration plan&lt;/a&gt;
-. That doc covers strategy, context, and rollback. This page covers what to actually run and click.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: updated 2026-05-12. Prerequisites listed in order of priority.&lt;/p&gt;
-&lt;h2 id="1-complete-the-initial-push-prerequisite-0"&gt;1. Complete the initial push (prerequisite #0)&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; is done and all files are staged. Run these commands in &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website-v2&lt;/code&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#e6db74"&gt;&amp;#34;Initial v2 codebase&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote add origin https://github.com/owaspsamm/website.git
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push -u origin v2-preview
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Actions workflow only fires on &lt;code&gt;main&lt;/code&gt;, so pushing &lt;code&gt;v2-preview&lt;/code&gt; is safe — nothing deploys.&lt;/p&gt;</description></item><item><title>Staging site &amp; previews</title><link>https://owaspsamm.org/internal/staging-previews/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/staging-previews/</guid><description>&lt;h2 id="current-state-pre-cutover"&gt;Current state (pre-cutover)&lt;/h2&gt;
-&lt;p&gt;v2 staging uses a &lt;strong&gt;build-less Netlify setup&lt;/strong&gt;: GitHub Actions builds the site and deploys the output to a branch; Netlify serves that branch with no build step of its own. There is no &lt;code&gt;netlify.toml&lt;/code&gt; in the repo.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How it works:&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Push to &lt;code&gt;v2-preview&lt;/code&gt; on &lt;code&gt;owaspsamm/website&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;GitHub Actions runs &lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt; — Hugo builds the site, output deployed to the &lt;code&gt;gh-pages-v2&lt;/code&gt; branch.&lt;/li&gt;
-&lt;li&gt;Netlify is configured to serve &lt;code&gt;gh-pages-v2&lt;/code&gt; directly.&lt;/li&gt;
-&lt;li&gt;The staging URL updates automatically. No Netlify build step; no Go toolchain on Netlify.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;Netlify dashboard settings:&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Time log</title><link>https://owaspsamm.org/internal/time-log/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/time-log/</guid><description>&lt;p&gt;Single source of truth for hours spent on v2. Keep entries short — date, work done, hours, optional note. Pre-tracking entries were logged without specific dates; summarised entries cover periods not itemised at the time.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No raw units or hex values in templates. All sizing and colour must come from tokens via CSS classes.&lt;/p&gt;</description></item><item><title>Time log</title><link>https://owaspsamm.org/internal/time-log/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/time-log/</guid><description>&lt;p&gt;Single source of truth for hours spent on v2. Keep entries short — date, work done, hours, optional note. Pre-tracking entries were logged without specific dates; summarised entries cover periods not itemised at the time.&lt;/p&gt;
 &lt;h2 id="total-to-date"&gt;Total to date&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;~66 hours&lt;/strong&gt; (as of 2026-04-21)&lt;/p&gt;
 &lt;h2 id="log"&gt;Log&lt;/h2&gt;
@@ -255,17 +227,54 @@
 &lt;li&gt;Don&amp;rsquo;t aim for precision — 15-minute increments are fine.&lt;/li&gt;
 &lt;li&gt;Update the total when you add entries.&lt;/li&gt;
 &lt;li&gt;Lump trivially small sessions (under 15 min) into the next real session.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Workflow actions upgrade plan</title><link>https://owaspsamm.org/internal/actions-upgrade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/actions-upgrade/</guid><description>&lt;p&gt;Targets the deploy workflow at &lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt; (currently lives in the v1 repo — will be inherited by v2 at migration time, so doing this upgrade now means v2 launches on a clean pipeline).&lt;/p&gt;
-&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
-&lt;p&gt;Everything a fresh session needs to start executing this plan without questions.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: draft as of 2026-04-15. Check against the actual workflow file and action release dates before assuming these versions are still the right targets.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Repo to edit&lt;/strong&gt;: &lt;code&gt;github.com/owaspsamm/website&lt;/code&gt; (v1). Local path: &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website&lt;/code&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;File to edit&lt;/strong&gt;: &lt;a href="https://github.com/owaspsamm/website/blob/main/.github/workflows/gh-pages.yaml" target="_blank" rel="noopener"&gt;&lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt;&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
- in the v1 repo.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Current Hugo pin&lt;/strong&gt;: &lt;code&gt;0.157.0&lt;/code&gt; (do not change as part of this upgrade — Hugo bump is a separate plan).&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Production deploy target&lt;/strong&gt;: &lt;code&gt;gh-pages&lt;/code&gt; branch of &lt;code&gt;owaspsamm/website&lt;/code&gt;. &lt;strong&gt;Do not deploy to this branch during testing&lt;/strong&gt; — see test strategy.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Deadline&lt;/strong&gt;: before &lt;strong&gt;2026-06-02&lt;/strong&gt; (Node 24 forced at runtime). Hard deadline &lt;strong&gt;2026-09-16&lt;/strong&gt; (Node 20 removed).&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
-&lt;p&gt;When ready to execute: open this page, point me at it, and say &amp;ldquo;run the actions upgrade plan&amp;rdquo;. I&amp;rsquo;ll create the feature branch, edit the workflow, walk you through the test run on &lt;code&gt;gh-pages-test&lt;/code&gt;, and stop for confirmation before we merge to &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title>Website updates process</title><link>https://owaspsamm.org/internal/website-updates-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/website-updates-process/</guid><description>&lt;p&gt;How changes to owaspsamm.org are made, from local setup to going live.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="branches"&gt;Branches&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Branch&lt;/th&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;th&gt;Deploys to&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;main&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Production&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;owaspsamm.org&lt;/code&gt; via GitHub Pages&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;staging&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Integration / QA preview&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;owaspsamm.netlify.app&lt;/code&gt; via Netlify&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Feature branches&lt;/td&gt;
+ &lt;td&gt;Work in progress&lt;/td&gt;
+ &lt;td&gt;not deployed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="local-setup"&gt;Local setup&lt;/h2&gt;
+&lt;p&gt;Requires Hugo extended 0.157.0 and Go (version in &lt;code&gt;go.mod&lt;/code&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/owaspsamm/website
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd website
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout staging
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="contribution-workflow"&gt;Contribution workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a feature branch from &lt;code&gt;main&lt;/code&gt;:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout main &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git pull
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout -b feature/my-change
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Make changes and preview locally with &lt;code&gt;hugo server&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Open a Pull Request targeting &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Opening the PR (or pushing new commits to it) automatically rebuilds staging to include your changes. A &lt;strong&gt;staging / integration&lt;/strong&gt; status check on the PR confirms it merged cleanly. Review at &lt;strong&gt;&lt;a href="https://owaspsamm.netlify.app/" target="_blank" rel="noopener"&gt;https://owaspsamm.netlify.app/&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/strong&gt; — updates within ~2 minutes.&lt;/li&gt;
+&lt;li&gt;A team member (not the author) reviews on staging and merges the PR to &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main&lt;/code&gt; deploys to &lt;code&gt;owaspsamm.org&lt;/code&gt; automatically. Staging rebuilds from the new &lt;code&gt;main&lt;/code&gt; plus any other open PRs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;code&gt;staging&lt;/code&gt; branch is managed exclusively by automation. Do not push to it directly.&lt;/p&gt;</description></item></channel></rss>
