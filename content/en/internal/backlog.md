@@ -14,6 +14,8 @@ Rough sequencing once v2 is stable:
 
 1. **Restore SAMM Users testimonial quotes** — quotes are preserved in `data/users/*.yaml` (`testimonial` field) but hidden in the layout (`layouts/samm-users/list.html`) pending a content review. Re-enable the `<blockquote>` block and audit each entry for accuracy and tone before restoring.
 
+2. **Remove `v2-preview` from the build workflow** — `gh-pages.yaml` has a temporary `v2-preview` branch trigger and a three-way `publish_branch` expression kept for pre-cutover compatibility. After the cutover, `v2-preview` no longer exists; remove the branch entry and simplify `publish_branch` back to `github.ref_name == 'staging' && 'gh-pages-staging' || 'gh-pages'`. Good candidate for the first post-cutover PR to smoke-test the staging integration workflow.
+
 3. **Multilingual model pages** — content already published by `owaspsamm/core`; pure site-side wiring.
 4. **Core module generator fixes** — two upstream cleanups (`url:` `/./` band-aid, `stream-a/` → `a/`). Both live in the same generator, so batch them.
 5. **Stream guidance redesign** — full rebuild per summit decision; replaces the v1 Google Doc port.

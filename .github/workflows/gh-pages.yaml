@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - main
+      - v2-preview
       - staging
     paths-ignore:
       - .github/workflows/*.yml
@@ -112,4 +113,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          publish_branch: "${{ github.ref_name == 'staging' && 'gh-pages-staging' || 'gh-pages' }}"
+          publish_branch: "${{ (github.ref_name == 'v2-preview' && 'gh-pages-v2') || (github.ref_name == 'staging' && 'gh-pages-staging') || 'gh-pages' }}"
