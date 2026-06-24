@@ -74,6 +74,17 @@ jobs:
 
           git push --force origin staging
 
+      - name: Trigger staging deploy
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              workflow_id: 'gh-pages.yaml',
+              ref: 'staging'
+            });
+
       - name: Post statuses and comments
         if: always()
         uses: actions/github-script@v7
