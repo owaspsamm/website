@@ -21,7 +21,7 @@ This protects `main` from direct pushes and accidental force-pushes once v2 is l
 1. Go to `github.com/owaspsamm/website` → **Settings → Branches → Add branch protection rule**
 2. **Branch name pattern:** `main`
 3. Enable the following:
-   - ✅ **Require a pull request before merging** — set required approvals to **1**, enable **"Do not allow approving your own pull request"**
+   - ✅ **Require a pull request before merging** — set required approvals to **1**, enable **"Require approval of the most recent reviewable push"** (GitHub prevents self-approval by default — no extra setting needed)
    - ✅ **Require status checks to pass before merging** — search for and add **`deploy`**
    - ✅ **Require branches to be up to date before merging**
    - ✅ **Do not allow force pushes**
