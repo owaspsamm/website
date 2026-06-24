@@ -3,7 +3,7 @@ content/*/business-function/**
 
 # Hugo generated
 public/
-/resources/
+resources/
 .hugo_build.lock
 
 # Editor / OS
