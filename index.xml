@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OWASP SAMM</title><link>https://owaspsamm.org/</link><description>Recent content on OWASP SAMM</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://owaspsamm.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Assessment Guide</title><link>https://owaspsamm.org/docs/assessment/guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/guide/</guid><description>&lt;h2 id="the-goal-of-a-samm-assessment"&gt;The goal of a SAMM assessment&lt;/h2&gt;
+&lt;p&gt;The primary goal of a SAMM assessment is to evaluate the current software security posture. To achieve this, you need to gather and evaluate information regarding the various activities described by SAMM. The outcome of a SAMM assessment ideally presents both where the organization is in terms of their security posture and where they should be in terms of their improvement roadmap.&lt;/p&gt;
+&lt;h2 id="assessment-tools"&gt;Assessment tools&lt;/h2&gt;
+&lt;p&gt;There are several options when it comes to creating the assessment. We have two versions of the SAMM Toolbox: a Microsoft Excel Toolbox and a Google Spreadsheet Toolbox. You can also leverage the &lt;a href="https://github.com/owaspsamm/sammwise" target="_blank" rel="noopener"&gt;SAMMwise&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ or &lt;a href="https://codific.com/sammy/" target="_blank" rel="noopener"&gt;SAMMY&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ online tools for running SAMM Assessments.&lt;/p&gt;</description></item><item><title>Assessment Tools</title><link>https://owaspsamm.org/docs/tools/assessment-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/tools/assessment-tools/</guid><description>&lt;p&gt;If you want to learn more about SAMM assessments, start with the &lt;a href="https://owaspsamm.org/assessment/"&gt;assessment page&lt;/a&gt;
+ or the &lt;a href="https://owaspsamm.org/docs/assessment/guide/"&gt;assessment guide&lt;/a&gt;
+, which includes practical advice, best practices, and &lt;a href="https://owaspsamm.org/docs/assessment/example-interview-questions/"&gt;example interview questions&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="spreadsheets"&gt;Spreadsheets&lt;/h2&gt;
+&lt;p&gt;We maintain two versions of the SAMM Toolbox:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core/releases/latest" target="_blank" rel="noopener"&gt;Microsoft Excel Toolbox&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1jmLVltRhuG19AX5cLUcWH1Qox2Uic17rD29gMVG5zDE/view#gid=1716553355" target="_blank" rel="noopener"&gt;Google Spreadsheet Toolbox&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="online-assessment"&gt;Online assessment&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank" rel="noopener"&gt;SAMMwise&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is our self-hosted online assessment tool. You can find its GitHub repository and documentation there.&lt;/p&gt;</description></item><item><title>Defining Scope</title><link>https://owaspsamm.org/docs/preparation/defining-scope/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/preparation/defining-scope/</guid><description>&lt;p&gt;Determining the right scope is one of the most important decisions when starting a SAMM implementation. Should you assess the entire organization, a single business unit, or one team? The answer depends on your goals, context, and available resources, but if you&amp;rsquo;re starting out, the guidance is clear: start small.&lt;/p&gt;
+&lt;p&gt;A willing, representative team is the right entry point. It keeps the effort manageable, lets you demonstrate value quickly, and builds the foundation for expanding SAMM across the organization.&lt;/p&gt;</description></item><item><title>FAQ</title><link>https://owaspsamm.org/docs/reference/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/reference/faq/</guid><description>&lt;p&gt;This document is work in progress. It grows with your questions and your feedback. You can always reach out through our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;
+ or our &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="the-model"&gt;The model&lt;/h2&gt;
+&lt;h4 id="is-there-a-general-description-available-for-the-3-maturity-levels"&gt;Is there a general description available for the 3 maturity levels?&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;The first maturity level aims at achieving an ad-hoc, best effort implementation of a particular activity within a stream.&lt;/li&gt;
+&lt;li&gt;The second maturity level aims to establish a consistent, repeatable process that can be relied on.&lt;/li&gt;
+&lt;li&gt;The third maturity level aims to maximize effectiveness through continuous improvement, based on effective and timely feedback.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This content is part of our &lt;a href="https://github.com/owaspsamm/core/tree/develop/model" target="_blank" rel="noopener"&gt;data files on GitHub&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+. We&amp;rsquo;ll work on having it available on the website soon.&lt;/p&gt;</description></item><item><title>Foundations</title><link>https://owaspsamm.org/internal/design-system/foundations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/foundations/</guid><description>&lt;style&gt;
+/* Design system examples — scoped to this page only */
+.ds-swatch-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-swatch {
+ width: 5rem; height: 5rem; border-radius: 0.375rem;
+ display: flex; flex-direction: column; align-items: center; justify-content: center;
+ font-size: 0.7rem; font-family: var(--font-mono); line-height: 1.4; text-align: center;
+ border: 1px solid rgba(0,0,0,0.08);
+}
+.ds-bf-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+.ds-bf-swatch {
+ padding: 0.5rem 1rem; border-radius: 0.375rem;
+ font-size: var(--text-sm); font-weight: 600; color: #fff;
+}
+.ds-surface-row { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1rem 0; }
+.ds-surface {
+ flex: 1 1 10rem; min-height: 4rem; border-radius: 0.375rem;
+ border: 1px solid var(--color-border);
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding: 0.5rem; font-size: var(--text-sm); font-family: var(--font-mono);
+}
+.ds-type-scale { border: 1px solid var(--color-border); border-radius: 0.375rem; overflow: hidden; margin: 1rem 0; }
+.ds-type-row {
+ display: grid; grid-template-columns: 7rem 5rem 1fr 6rem;
+ align-items: center; gap: 1rem; padding: 0.625rem 1rem;
+ border-bottom: 1px solid var(--color-border);
+}
+.ds-type-row:last-child { border-bottom: none; }
+.ds-type-row:nth-child(4) { background: rgba(var(--color-primary-rgb), 0.05); }
+.ds-token { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-px { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-muted); }
+.ds-use { font-size: var(--text-xs); color: var(--color-text-muted); text-align: right; }
+.ds-spacing-demo { display: flex; align-items: flex-end; gap: 0.75rem; margin: 1rem 0; flex-wrap: wrap; }
+.ds-space-bar {
+ background: var(--color-primary); opacity: 0.5; border-radius: 2px; width: 2rem;
+ display: flex; flex-direction: column; justify-content: flex-end;
+ padding-bottom: 0.25rem; align-items: center;
+}
+.ds-space-label { font-size: 0.6rem; font-family: var(--font-mono); color: var(--color-offwhite); line-height: 1; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+&lt;/style&gt;
+&lt;h2 id="colour-system"&gt;Colour system&lt;/h2&gt;
+&lt;h3 id="core-palette"&gt;Core palette&lt;/h3&gt;
+&lt;p&gt;Five named tokens. Light to dark:&lt;/p&gt;</description></item><item><title>How to Contribute</title><link>https://owaspsamm.org/docs/contributing/how-to-contribute/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/how-to-contribute/</guid><description>&lt;h2 id="interested-in-contributing-to-samm"&gt;Interested in contributing to SAMM?&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how you can do it!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#users-and-practitioners"&gt;Users and practitioners&lt;/a&gt;
+&lt;/strong&gt;: Get listed as a SAMM user or practitioner.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/benchmark/"&gt;Benchmark&lt;/a&gt;
+&lt;/strong&gt;: How am I doing? What works for similar organizations? Donate SAMM data sets! Visit our benchmark page.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#github-issues"&gt;GitHub issues&lt;/a&gt;
+&lt;/strong&gt;: Read more about how we use GitHub for our content and how you can contribute.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="#translations"&gt;Translations&lt;/a&gt;
+&lt;/strong&gt;: Help us make SAMM available in more languages.&lt;/p&gt;</description></item><item><title>Overview</title><link>https://owaspsamm.org/docs/skills-framework/overview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/overview/</guid><description>&lt;p&gt;The OWASP SAMM Skills Framework maps each SAMM activity stream to defined responsibilities, helping organizations determine which roles lead and support each stream. Originally donated by Siemens, it complements SAMM by answering two questions the model itself does not: &lt;strong&gt;who&lt;/strong&gt; should do the work, and &lt;strong&gt;how&lt;/strong&gt; they can build the right expertise.&lt;/p&gt;
+&lt;h2 id="why-use-it"&gt;Why use it&lt;/h2&gt;
+&lt;p&gt;SAMM explains what to do. The skills framework reveals who should do it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Clarity&lt;/strong&gt;: no more guessing whether developers or product managers own a security activity. The framework identifies who leads and who supports.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Training&lt;/strong&gt;: for each role, it points to relevant training, certifications, and reading material.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalability&lt;/strong&gt;: whether you run one product team or dozens, it helps you visualize shared responsibilities across the organization.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="how-to-apply-it"&gt;How to apply it&lt;/h2&gt;
+
+
+
+&lt;figure class="content-figure"&gt;
+ &lt;img src="https://owaspsamm.org/img/pages/SAMM_skills_implementation.svg" alt="Implementing the SAMM Skills Framework" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Map responsibilities to roles&lt;/strong&gt;
+Match each assignment in the framework with a role or person in your organization. This helps you visualize who needs to pick up an activity.&lt;/p&gt;</description></item><item><title>SAMM Agile Guidance</title><link>https://owaspsamm.org/docs/guides/agile/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/guides/agile/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;This document explains how SAMM security practices work for Agile to attain the continuous building in of sufficient security during software development. It&amp;rsquo;s structured in the form of best practices and pitfalls.&lt;/p&gt;
+&lt;h3 id="why-samm-agile-guidance"&gt;Why SAMM Agile guidance&lt;/h3&gt;
+&lt;p&gt;The &lt;a href="https://owaspsamm.org/" target="_blank" rel="noopener"&gt;Software Assurance Maturity Model (SAMM)&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is an OWASP flagship project on how to set up and grow a secure development process. It is agnostic of the development approach, which is why Agile is not explicitly covered. Nevertheless, there appears to be a strong need in the industry for guidance on how to make secure software development work in an Agile environment. How do you squeeze all the necessary activities into a sprint, e.g. requirement selection, threat modeling, verification? What do you do with stories, with abuse stories and with the Definition Of Done? How do you get security teams and developers to co-operate instead of just setting up quality gates?&lt;/p&gt;</description></item><item><title>Step 1: Prepare</title><link>https://owaspsamm.org/docs/getting-started/step-1-prepare/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-1-prepare/</guid><description>&lt;p&gt;Define the scope, identify stakeholders, and build awareness before the assessment begins.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-prepare.svg" alt="Step 1: Prepare"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/docs/preparation/defining-scope/"&gt;Define the scope&lt;/a&gt;
+&lt;/strong&gt;&lt;br&gt;
+Set the target of the effort: the entire enterprise, a particular application or project, or a particular team.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Identify stakeholders&lt;/strong&gt;
+Ensure that important stakeholders are identified and well aligned to support the project. The &lt;a href="https://owaspsamm.org/docs/skills-framework/overview/"&gt;Skills Framework&lt;/a&gt;
+ can help you map SAMM activities to the right roles in your organization.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spread the word&lt;/strong&gt;&lt;br&gt;
+Communicate the initiative within the organization to build awareness and secure the support needed for the effort.&lt;/p&gt;</description></item><item><title>Writing guidelines</title><link>https://owaspsamm.org/samm-identity/writing-guidelines/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/samm-identity/writing-guidelines/</guid><description>&lt;p&gt;Reference for anyone writing or reviewing website content. Applies to all pages, blog posts, and docs.&lt;/p&gt;
+&lt;h2 id="language"&gt;Language&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;US English.&lt;/strong&gt; Use American spellings throughout.&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Use&lt;/th&gt;
+ &lt;th&gt;Not&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;color&lt;/td&gt;
+ &lt;td&gt;colour&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;organization&lt;/td&gt;
+ &lt;td&gt;organisation&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;behavior&lt;/td&gt;
+ &lt;td&gt;behaviour&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;center&lt;/td&gt;
+ &lt;td&gt;centre&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;recognize&lt;/td&gt;
+ &lt;td&gt;recognise&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;analyze&lt;/td&gt;
+ &lt;td&gt;analyse&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;tokenize&lt;/td&gt;
+ &lt;td&gt;tokenise&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Spell-check tools should be set to &lt;code&gt;en-US&lt;/code&gt;. Copy from external sources often carries British spellings; fix them on import.&lt;/p&gt;
+&lt;h2 id="tone"&gt;Tone&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Direct and confident.&lt;/strong&gt; State things. Don&amp;rsquo;t qualify them.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;No: &amp;ldquo;SAMM can help organizations potentially improve their security posture.&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Yes: &amp;ldquo;SAMM helps organizations improve their security posture.&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;No hedging language.&lt;/strong&gt; Remove: might, could, perhaps, potentially, in some cases, it is worth noting, it should be mentioned.&lt;/p&gt;</description></item><item><title>Components</title><link>https://owaspsamm.org/internal/design-system/components/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/components/</guid><description>&lt;style&gt;
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.5rem;
+ margin: 1rem 0;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ align-items: center;
+}
+.ds-demo--dark { background: var(--color-dark); }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-card-preview {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+ gap: 1rem;
+ margin: 1rem 0;
+}
+.ds-card-bordered {
+ padding: 1.25rem;
+ border: 2px solid var(--color-border);
+ border-radius: 0.5rem;
+ text-decoration: none;
+ color: inherit;
+ display: block;
+ transition: border-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease), transform var(--duration) var(--ease);
+ cursor: pointer;
+}
+.ds-card-bordered:hover {
+ border-color: var(--color-primary);
+ transform: translateY(-2px);
+ box-shadow: 0 8px 28px rgba(44,48,48,0.1);
+ text-decoration: none;
+}
+.ds-card-feature {
+ padding: 1.5rem 1.25rem;
+ text-align: center;
+ background-image: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+ background-size: 0% 2px;
+ background-repeat: no-repeat;
+ background-position: center bottom;
+ transition: background-size var(--duration) var(--ease);
+ cursor: pointer;
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+}
+.ds-card-feature:hover { background-size: 100% 2px; }
+.ds-card-title { font-size: var(--text-lg); font-weight: 600; color: var(--color-dark); margin-bottom: 0.5rem; }
+.ds-card-body { font-size: var(--text-sm); color: var(--color-text-light); line-height: var(--line-height); margin: 0; }
+.ds-icon-row { display: flex; flex-wrap: wrap; gap: 2rem; margin: 1rem 0; align-items: center; }
+.ds-icon-item { display: flex; align-items: center; gap: 0.5rem; font-size: var(--text-sm); color: var(--color-text-light); }
+&lt;/style&gt;
+&lt;h2 id="buttons"&gt;Buttons&lt;/h2&gt;
+&lt;p&gt;Three variants share a single base class (&lt;code&gt;.btn&lt;/code&gt;) and the same hover transformation: teal background fill. The text color on hover differs, not arbitrarily, but because each variant inverts its default text color.&lt;/p&gt;</description></item><item><title>Conducting Interviews</title><link>https://owaspsamm.org/docs/assessment/interview-based-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/interview-based-assessment/</guid><description>&lt;h2 id="planning-the-interview"&gt;Planning the interview&lt;/h2&gt;
+&lt;p&gt;An assessment interview requires careful planning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Setting up the meetings&lt;/strong&gt;&lt;br&gt;
+Be selective about who sets up the meetings. In some cultures, cooperation improves if a senior leader does this.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interview format&lt;/strong&gt;&lt;br&gt;
+Plan 3 to 5 interviews of 1.5–2 hours each, scoped per topic. SAMM&amp;rsquo;s business functions are typically a good starting point for your interview topics.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;List of stakeholders&lt;/strong&gt;&lt;br&gt;
+Select relevant stakeholders for each interview. For the Governance business function interview you might need people involved in governance and security champions. For the Verification business function interview you might need business analysts, application architects, developers, QA, and/or project managers. Keep the interview group size small and minimize spectators. People open up more in smaller groups.&lt;/p&gt;</description></item><item><title>GitHub Repositories</title><link>https://owaspsamm.org/docs/contributing/github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/contributing/github/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/Octocat.png" alt="GitHub Octocat" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;All SAMM repositories live under the &lt;a href="https://github.com/owaspsamm" target="_blank" rel="noopener"&gt;OWASP SAMM GitHub organization&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/core" target="_blank" rel="noopener"&gt;Core Model&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/website" target="_blank" rel="noopener"&gt;Website&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/owaspsamm/sammwise" target="_blank" rel="noopener"&gt;SAMMwise (assessment tool)&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Don&amp;rsquo;t miss the &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ section for ideas, questions, and feedback.&lt;/p&gt;</description></item><item><title>Mappings</title><link>https://owaspsamm.org/docs/reference/mappings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/reference/mappings/</guid><description>&lt;h2 id="direct-mappings"&gt;Direct mappings&lt;/h2&gt;
+&lt;p&gt;We maintain a &lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank" rel="noopener"&gt;comprehensive mappings spreadsheet&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ covering several standards:&lt;/p&gt;
+&lt;h3 id="microsoft-sdl-and-samm"&gt;Microsoft SDL and SAMM&lt;/h3&gt;
+&lt;p&gt;Read more in the &lt;a href="https://owaspsamm.org/blog/comparing-microsoft-sdl-and-samm/"&gt;Microsoft SDL and OWASP SAMM Mapping&lt;/a&gt;
+ blog post.&lt;/p&gt;
+&lt;h3 id="bsimm-14-and-samm"&gt;BSIMM 14 and SAMM&lt;/h3&gt;
+&lt;p&gt;Read more in the &lt;a href="https://owaspsamm.org/blog/samm-bsimm-mapping/"&gt;BSIMM Mapped to OWASP SAMM&lt;/a&gt;
+ blog post.&lt;/p&gt;
+&lt;h3 id="iec-62443-4-1-and-samm"&gt;IEC-62443-4-1 and SAMM&lt;/h3&gt;
+&lt;p&gt;Available in the same &lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank" rel="noopener"&gt;mappings spreadsheet&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Roles &amp; Skills</title><link>https://owaspsamm.org/docs/preparation/roles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/preparation/roles/</guid><description>&lt;p&gt;Mapping SAMM practices to roles, responsibilities, and skill requirements across your organization.&lt;/p&gt;
+&lt;p&gt;For a detailed breakdown of which roles lead and support each SAMM stream, and the skills, training, and certifications each role needs, see the &lt;a href="https://owaspsamm.org/docs/skills-framework/overview/"&gt;Skills Framework&lt;/a&gt;
+ section.&lt;/p&gt;</description></item><item><title>SAMM PDF</title><link>https://owaspsamm.org/docs/tools/pdf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/tools/pdf/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/samm-pdf-cover.svg" alt="SAMM v2 model PDF cover" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;A long-awaited addition since SAMM v2: a printable PDF of the model.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://drive.google.com/file/d/1cI3Qzfrly_X89z7StLWI5p_Jfqs0-OZv/view?usp=sharing" target="_blank" rel="noopener"&gt;View the SAMM PDF&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;Feedback welcome on &lt;a href="https://owasp.slack.com/archives/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;GitHub Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, or our &lt;a href="https://owaspsamm.org/contact/"&gt;contact form&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>SAMM to Assignments</title><link>https://owaspsamm.org/docs/skills-framework/samm-to-assignments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/samm-to-assignments/</guid><description>&lt;p&gt;This mapping connects each SAMM stream to the assignment that leads it and the stakeholders that support it. Use it to identify who in your organization should own and contribute to each security activity.&lt;/p&gt;
+&lt;p&gt;For each stream, the &lt;strong&gt;lead&lt;/strong&gt; is the role that drives the work. &lt;strong&gt;Stakeholders&lt;/strong&gt; support or collaborate.&lt;/p&gt;
+&lt;div class="skills-mapping"&gt;
+&lt;h2 class="skills-bf--governance" id="governance"&gt;&lt;a href="https://owaspsamm.org/model/governance/"&gt;Governance&lt;/a&gt;&lt;/h2&gt;
+&lt;div class="skills-bf-group skills-bf-group--governance"&gt;
+&lt;h3 id="strategy--metrics"&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/"&gt;Strategy &amp;amp; Metrics&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/stream-a/"&gt;A: Create and Promote&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lead&lt;/strong&gt;: Product Security Strategy&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stakeholders&lt;/strong&gt;: Organizational Security Strategy, Business Strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details&gt;
+&lt;summary&gt;Rationale&lt;/summary&gt;
+Product security strategy takes the lead, in close collaboration with organizational security strategy. In smaller organizations, these responsibilities often sit in the same role. The larger executive management team needs to be on board for a security initiative to succeed.
+&lt;/details&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="https://owaspsamm.org/model/governance/strategy-and-metrics/stream-b/"&gt;B: Measure and Improve&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Step 2: Assess</title><link>https://owaspsamm.org/docs/getting-started/step-2-assess/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-2-assess/</guid><description>&lt;p&gt;Identify and understand the maturity of your chosen scope in each of the 15 software security practices.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-assess.svg" alt="Step 2: Assess"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evaluate current practices&lt;/strong&gt;&lt;br&gt;
+Organize interviews with relevant stakeholders to understand the current state of practices within your organization. You could evaluate this yourself if you understand the organization sufficiently. SAMM provides lightweight and detailed assessments: the detailed assessment is evidence-based, so use it only when you need absolute certainty about the scores.&lt;/p&gt;</description></item><item><title>Stream Guidance</title><link>https://owaspsamm.org/docs/guides/stream-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/guides/stream-guidance/</guid><description>&lt;h2 id="guidance-per-stream-in-the-model"&gt;Guidance per stream in the model&lt;/h2&gt;
+&lt;h3 id="whats-samm-guidance"&gt;What&amp;rsquo;s SAMM guidance?&lt;/h3&gt;
+&lt;p&gt;SAMM is a prescriptive security maturity model that is technology, process, and organization agnostic. The model fits any software development process, industry or environment. However, thanks to that, the prescriptive advice is high level by design. That&amp;rsquo;s where we bring the guidance documents into play. Their purpose is to provide concrete examples and recommendations to help organizations kickstart their security assurance programme based on SAMM.&lt;/p&gt;</description></item><item><title>Assignment Profiles</title><link>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/skills-framework/assignment-profiles/</guid><description>&lt;p&gt;Each assignment profile describes the security skills, training resources, books, and certifications relevant to a specific responsibility in the SAMM Skills Framework. Use these profiles to assess current capabilities and plan training.&lt;/p&gt;
+&lt;p&gt;Where available, profiles include a mapping to the &lt;a href="https://www.enisa.europa.eu/publications/european-cybersecurity-skills-framework-role-profiles" target="_blank" rel="noopener"&gt;EU Cybersecurity Skills Framework&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ role profiles.&lt;/p&gt;</description></item><item><title>Example Interview Questions</title><link>https://owaspsamm.org/docs/assessment/example-interview-questions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/assessment/example-interview-questions/</guid><description>&lt;p&gt;These open-ended questions are designed to trigger conversations that cover the range of SAMM questions as much as possible. Keep the SAMM assessment sheet at the side as a checklist to see if you need to ask additional questions.&lt;/p&gt;
+&lt;p&gt;The scenario is an interview with a development team. The questions follow the order of the SAMM assessment sheet 2.0, with a slight change for more natural flow: Education &amp;amp; Guidance comes after Secure Architecture.&lt;/p&gt;</description></item><item><title>Patterns</title><link>https://owaspsamm.org/internal/design-system/patterns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/patterns/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-demo {
+ background: var(--color-offwhite);
+ border: 1px solid var(--color-border);
+ border-radius: 0.375rem;
+ padding: 1.25rem 1.5rem;
+ margin: 1rem 0;
+ font-size: var(--text-base);
+ line-height: var(--line-height);
+}
+.ds-link-example {
+ color: var(--color-mid);
+ text-decoration: underline;
+ text-decoration-color: rgba(var(--color-primary-rgb), 0.35);
+ text-underline-offset: 0.15em;
+ text-decoration-thickness: 1.5px;
+ transition: color var(--duration) var(--ease), text-decoration-color var(--duration) var(--ease);
+}
+.ds-link-example:hover {
+ color: var(--color-primary);
+ text-decoration-color: currentColor;
+ text-decoration-thickness: 2px;
+}
+.ds-bf-demo {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ margin: 1rem 0;
+}
+.ds-bf-link {
+ padding: 0.375rem 0.75rem;
+ border-radius: 0.25rem;
+ font-size: var(--text-sm);
+ font-weight: 500;
+ transition: background var(--duration) var(--ease);
+}
+/* .prose a (0-3-1) overrides text-decoration: none at 0-1-0.
+ Match its specificity here — page &lt;style&gt; comes later in cascade and wins the tie. */
+.content.prose a.ds-bf-link {
+ text-decoration: none;
+}
+.ds-bf-link:hover { opacity: 0.8; }
+&lt;/style&gt;
+&lt;h2 id="prose-links"&gt;Prose links&lt;/h2&gt;
+&lt;p&gt;Inline links inside flowing text are styled through the &lt;code&gt;.prose&lt;/code&gt; class on the container element. This approach scopes the link style to reading contexts only; card layouts, nav elements, and list templates are deliberately excluded.&lt;/p&gt;</description></item><item><title>Step 3: Set the Target</title><link>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-3-set-the-target/</guid><description>&lt;p&gt;Decide where you want to be: set a target maturity level for each security practice.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-set-the-target.svg" alt="Step 3: Set the Target"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Define the target&lt;/strong&gt;&lt;br&gt;
+Set or update the target by identifying which activities your organization should implement. Typically, this will include more lower-level than higher-level activities. Ensure that the total set of selected activities makes sense and take into account dependencies between activities.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estimate overall impact&lt;/strong&gt;&lt;br&gt;
+Estimate the impact of the chosen target on the organization. Try to express this in budgetary terms.&lt;/p&gt;</description></item><item><title>Conventions</title><link>https://owaspsamm.org/internal/design-system/conventions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/conventions/</guid><description>&lt;style&gt;
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-file-tree {
+ background: var(--color-dark);
+ color: var(--color-offwhite);
+ border-radius: 0.375rem;
+ padding: 1rem 1.25rem;
+ font-family: var(--font-mono);
+ font-size: var(--text-sm);
+ line-height: 2;
+ margin: 1rem 0;
+ overflow-x: auto;
+}
+.ds-file-tree .comment { color: rgba(249,246,246,0.4); }
+&lt;/style&gt;
+&lt;h2 id="css-architecture"&gt;CSS architecture&lt;/h2&gt;
+&lt;h3 id="file-structure"&gt;File structure&lt;/h3&gt;
+&lt;p&gt;All CSS lives in &lt;code&gt;assets/css/&lt;/code&gt;. The entry point is &lt;code&gt;main.css&lt;/code&gt;: it contains no rules, only a list of &lt;code&gt;@import&lt;/code&gt; statements in load order. Adding a new file requires adding it to &lt;code&gt;main.css&lt;/code&gt; and to the &lt;code&gt;resources.Concat&lt;/code&gt; call in &lt;code&gt;layouts/_default/baseof.html&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>Step 4: Define the Plan</title><link>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-4-define-the-plan/</guid><description>&lt;p&gt;Turn your target into a phased roadmap with timelines and priorities.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-define-the-plan.svg" alt="Step 4: Define the Plan"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Determine change schedule&lt;/strong&gt;&lt;br&gt;
+Choose a realistic change strategy in terms of number and duration of phases. A typical roadmap consists of 4 to 6 phases lasting 3 to 12 months each.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Develop or update the roadmap plan&lt;/strong&gt;&lt;br&gt;
+Distribute the implementation of additional activities over the different roadmap phases, taking into account the effort required to implement them. Try to balance the implementation effort across periods and respect dependencies between activities.&lt;/p&gt;</description></item><item><title>Accessibility</title><link>https://owaspsamm.org/internal/design-system/accessibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/design-system/accessibility/</guid><description>&lt;style&gt;
+.ds-pass { color: #3a5f26; font-weight: 600; }
+.ds-warn { color: #ad4b00; font-weight: 600; }
+.ds-rationale {
+ background: rgba(var(--color-primary-rgb), 0.06);
+ border-left: 3px solid var(--color-primary);
+ border-radius: 0 0.25rem 0.25rem 0;
+ padding: 0.75rem 1rem;
+ font-size: var(--text-sm);
+ margin: 1rem 0;
+}
+.ds-swatch-inline {
+ display: inline-block;
+ width: 0.85rem; height: 0.85rem;
+ border-radius: 2px;
+ vertical-align: middle;
+ margin-right: 0.25rem;
+ border: 1px solid rgba(0,0,0,0.12);
+}
+&lt;/style&gt;
+&lt;h2 id="wcag-compliance-overview"&gt;WCAG compliance overview&lt;/h2&gt;
+&lt;p&gt;The site targets &lt;strong&gt;WCAG 2.1 Level AA&lt;/strong&gt; throughout. The table below records the status of each criterion as of the last audit.&lt;/p&gt;</description></item><item><title>Step 5: Implement</title><link>https://owaspsamm.org/docs/getting-started/step-5-implement/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-5-implement/</guid><description>&lt;p&gt;Execute the roadmap, addressing people, processes, and tools phase by phase.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-implement.svg" alt="Step 5: Implement"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Implement activities&lt;/strong&gt;&lt;br&gt;
+Implement all activities that are part of the current phase. Consider their impact on processes, people, knowledge, and tools. The SAMM model contains prescriptive advice on how to do this. OWASP projects may help to facilitate implementation.&lt;/p&gt;
+&lt;div class="docs__note"&gt;Once activities are in place, shift focus to making them stick across the organization. That is step 6.&lt;/div&gt;
+&lt;h2 id="best-practices"&gt;Best practices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Treat legacy software separately. Do not mandate migration unless it is truly important.&lt;/li&gt;
+&lt;li&gt;Avoid operational bottlenecks, particularly for the security team.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Step 6: Roll Out</title><link>https://owaspsamm.org/docs/getting-started/step-6-roll-out/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/docs/getting-started/step-6-roll-out/</guid><description>&lt;p&gt;Ensure that improvements are available and effectively used within the organization.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://owaspsamm.org/img/docs/samm-steps-roll-out.svg" alt="Step 6: Roll Out"&gt;&lt;/p&gt;
+&lt;h2 id="activities"&gt;Activities&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Evangelize improvements&lt;/strong&gt;&lt;br&gt;
+Make the steps and improvements visible to everyone involved by organizing training and communicating with management stakeholders.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Measure effectiveness&lt;/strong&gt;&lt;br&gt;
+Measure the adoption and effectiveness of implemented improvements by analyzing usage and impact.&lt;/p&gt;
+&lt;h2 id="best-practices"&gt;Best practices&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Categorize applications according to their impact on the organization. Focus on high-impact applications.&lt;/li&gt;
+&lt;li&gt;Use team champions to spread new activities throughout the organization.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>CRA Compliance with OWASP SAMM</title><link>https://owaspsamm.org/blog/cra-compliance-with-owasp-samm/</link><pubDate>Fri, 27 Feb 2026 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/cra-compliance-with-owasp-samm/</guid><description>&lt;h2 id="an-introduction-to-the-cra"&gt;An introduction to the CRA&lt;/h2&gt;
+&lt;p&gt;The Cyber Resilience Act (CRA) is a European regulation that introduces cybersecurity requirements as part of CE marking for products that are placed on the European market after the 11th of December 2027.&lt;/p&gt;
+&lt;img class="text-wrap-img" src="https://owaspsamm.org/img/banners/ce-mark.png" alt="CE mark"&gt;
+
+&lt;p&gt;Most of you will be familiar with the &amp;ldquo;CE&amp;rdquo; mark, a label indicating that the product where it is affixed to is compliant with relevant EU legislation, and may therefore be sold anywhere in the European Economic Area (EEA) without having to import it in each European country separately.&lt;/p&gt;</description></item><item><title>Navigating the AI Frontier: How OWASP SAMM Secures the Next Generation of Software</title><link>https://owaspsamm.org/blog/navigating-the-ai-frontier-how-owasp-samm-secures-the-next-generation-of-software/</link><pubDate>Tue, 20 Jan 2026 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/navigating-the-ai-frontier-how-owasp-samm-secures-the-next-generation-of-software/</guid><description>&lt;p&gt;A &lt;strong&gt;&lt;a href="https://youtu.be/Ylr2i4OVBYg?si=HJO8EK7Hyl2WcSYS" target="_blank" rel="noopener"&gt;recent episode of the SAMM Podcast&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/strong&gt;, featuring SAMM Core Team members Sebastien Deleersnyder (Seba) and Nariman Aga-Tagiyev with Bart De Win as host, explored a critical question: As organizations rapidly adopt AI and build AI-powered applications, how does the OWASP Software Assurance Maturity Model (SAMM) apply to securing this new frontier?
+Here is a look into the discussion on the current applicability of SAMM, the unique risks of AI, and the model&amp;rsquo;s path forward.&lt;/p&gt;</description></item><item><title>Introducing the SAMM Benchmark Report</title><link>https://owaspsamm.org/blog/introducing-the-samm-benchmark-report/</link><pubDate>Wed, 07 May 2025 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/introducing-the-samm-benchmark-report/</guid><description>&lt;h2 id="unlocking-new-insights-in-application-security"&gt;Unlocking New Insights in Application Security&lt;/h2&gt;
+&lt;p&gt;The world of software security evolves rapidly, with new challenges and best practices emerging every day. For organizations striving to build robust application security programs, the ability to compare practices and measure progress against industry peers is invaluable. This is where the &lt;strong&gt;SAMM Benchmark Report&lt;/strong&gt; steps in: a comprehensive analysis based on real-world data that provides actionable insights into the current state of application security maturity.&lt;/p&gt;</description></item><item><title>Enabling teams with the OWASP SAMM Skills Framework</title><link>https://owaspsamm.org/blog/owasp-samm-skills-framework/</link><pubDate>Sun, 09 Feb 2025 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/owasp-samm-skills-framework/</guid><description>&lt;h3 id="introduction"&gt;Introduction&lt;/h3&gt;
+&lt;p&gt;Picture this: your team is tasked with building secure, compliant software, but you’re not sure where to begin and who to involve. In today’s cloud-driven world, even solid security plans can stall if teams don’t know what tasks they own or believe they do not have the right skills to get started. Across teams, many organizations lack a clear view on ownership and shared responsibilities, whether they work with company internal service providers or external public service providers. This leads to confusion and delays the rollout of security practices.&lt;/p&gt;</description></item><item><title>SAMM Scoring: Percent to Target and Progress to Date Metrics</title><link>https://owaspsamm.org/blog/samm-relative-scoring/</link><pubDate>Tue, 21 Jan 2025 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm-relative-scoring/</guid><description>&lt;h1 id="samm-scoring-percent-to-target-and-progress-to-date-metrics"&gt;SAMM Scoring: Percent to Target and Progress to Date Metrics&lt;/h1&gt;
+&lt;h2 id="introduction-the-not-applicable-answer"&gt;Introduction: the “not applicable” answer&lt;/h2&gt;
+&lt;p&gt;A common question among SAMM users is whether specific activities, streams, or entire practices can be marked as &lt;strong&gt;not applicable&lt;/strong&gt;. This seems reasonable: some security activities might not fit an organization’s current reality. For example, the Supplier Security stream focuses on supply-chain risks in outsourced development. If your organization doesn’t outsource, it might seem irrelevant.
+The SAMM core team acknowledges this, but emphasizes future readiness. While an activity may not apply today, it could become relevant later. This leaves organizations with two unsatisfactory choices:&lt;/p&gt;</description></item><item><title>Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis</title><link>https://owaspsamm.org/blog/comparing-microsoft-sdl-and-samm/</link><pubDate>Mon, 20 Jan 2025 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/comparing-microsoft-sdl-and-samm/</guid><description>&lt;h1 id="microsoft-sdl-and-owasp-samm-mapping-a-comprehensive-analysis"&gt;Microsoft SDL and OWASP SAMM Mapping: A Comprehensive Analysis&lt;/h1&gt;
+&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The Microsoft Security Development Lifecycle (SDL) was introduced in 2004 as Microsoft’s response to the security challenges that plagued its Windows operating system. As the first formal secure SDLC framework, it laid the foundation for many secure software development practices.&lt;/p&gt;
+&lt;p&gt;Today in its latest version, Microsoft SDL comprises 10 security practices, each containing a set of requirements designed to reduce security risks across the software development lifecycle. While Microsoft does not specify terminology, we refer to these as &amp;ldquo;requirements.&amp;rdquo; In total, there are 49 requirements across SDL&amp;rsquo;s 10 practices.&lt;/p&gt;</description></item><item><title>SAMM BSIMM Mapping</title><link>https://owaspsamm.org/blog/samm-bsimm-mapping/</link><pubDate>Tue, 10 Dec 2024 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm-bsimm-mapping/</guid><description>&lt;h3 id="building-security-in-maturity-model-bsimm-mapped-to-owasp-samm"&gt;Building Security In Maturity Model (BSIMM) Mapped to OWASP SAMM&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1WiQcn7wFzSM8xg78SqkIM1QF2C48jBCYi_N_6kOq174" target="_blank" rel="noopener"&gt;The full mapping sheet between BSIMM 14 and OWASP SAMM.&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/p&gt;
+&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;The Building Security In Maturity Model (BSIMM) and OWASP Software Assurance Maturity Model (SAMM) share a common history. Both were conceived around 2008-2009 and are based on OpenSAMM, which was created by Pravir Chandra. Over time, however, these two models have evolved independently, with distinct conceptual differences. We have previously &lt;a href="https://owaspsamm.org/blog/2020/10/29/comparing-bsimm-and-samm/" target="_blank" rel="noopener"&gt;explored these differences in detail&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+. Despite their divergence, both frameworks aim to help organizations enhance their application security programs. Recognizing this shared mission, we have developed a detailed mapping between SAMM and BSIMM, highlighting their similarities and points of alignment.&lt;/p&gt;</description></item><item><title>OWASP SAMM now connects to OpenCRE</title><link>https://owaspsamm.org/blog/owasp-samm-now-connects-to-opencre/</link><pubDate>Wed, 20 Sep 2023 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/owasp-samm-now-connects-to-opencre/</guid><description>&lt;p&gt;We are excited to announce that each OWASP-SAMM stream now uses &lt;a href="https://opencre.org" target="_blank" rel="noopener"&gt;OpenCRE.org&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ to link to other standards and guidelines.
+OpenCRE stands for Open Common Requirement Enumeration, and it aims to provide a common language and framework for mapping and comparing different security standards, guidelines, and frameworks.
+By linking SAMM to OpenCRE, we’ve made it easier for our users to find relevant and useful resources with every stream, as well as to see how SAMM aligns with other security standards such as NIST SSDF, ISO27K, PCI-DSS, OWASP ASVS, and NIST 800-53.&lt;/p&gt;</description></item><item><title>Determining scope when implementing SAMM</title><link>https://owaspsamm.org/blog/determining-scope-when-implementing-samm/</link><pubDate>Wed, 24 May 2023 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/determining-scope-when-implementing-samm/</guid><description>&lt;p&gt;When performing a SAMM assessment, should the scope be the whole organization or something smaller, like a business unit or a single team? The short answer: start small.&lt;/p&gt;
+&lt;p&gt;The right scope depends on your goals, organizational context, and available resources. If this is your first assessment, begin with a willing, representative team: it keeps the effort manageable and lets you demonstrate value before expanding.&lt;/p&gt;
+&lt;p&gt;We’ve moved the full guide to the docs: &lt;a href="https://owaspsamm.org/docs/preparation/defining-scope/"&gt;Defining Scope →&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>How ISO and SAMM complement each other</title><link>https://owaspsamm.org/blog/how-iso-and-samm-complement-each-other/</link><pubDate>Tue, 21 Mar 2023 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/how-iso-and-samm-complement-each-other/</guid><description>&lt;p&gt;October 2022 brought us the third revision of the ISO/IEC 27001 standard.&lt;/p&gt;
+&lt;p&gt;The revisions included simplifying the domains and controls, using more practical language, and introducing new controls. The addition of a separate control for &amp;ldquo;Secure Coding.&amp;rdquo; provides an opportunity to highlight how OWASP SAMM and ISO 27001 are complementary standards.&lt;/p&gt;
+&lt;p&gt;In this blog post, we shine light on how they intersect and how, implemented together, you can maximize their effectiveness and value.&lt;/p&gt;</description></item><item><title>The "Not Applicable" Question</title><link>https://owaspsamm.org/blog/the-not-applicable-question/</link><pubDate>Tue, 28 Feb 2023 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/the-not-applicable-question/</guid><description>&lt;h3 id="the-core-teams-thoughts"&gt;The Core Team&amp;rsquo;s Thoughts&lt;/h3&gt;
+&lt;p&gt;Since the initial publication of SAMM 2.0, several SAMM users have asked how to address Activities or Quality Criteria they believe are not applicable to their assessment’s scope.
+At the recent SAMM Core Team Summit in Boston, we discussed this question at some length, and this article summarizes that conversation.
+The topic really involves several questions, which we’ll address one at a time.&lt;/p&gt;
+&lt;h4 id="is-it-valid-to-declare-an-activity-not-applicable"&gt;Is it valid to declare an Activity Not Applicable?&lt;/h4&gt;
+&lt;p&gt;Yes, it is – strictly speaking – valid to declare an Activity not applicable to the current assessment’s scope. But…we contend it’s very rarely true. Consider a couple common scenarios:&lt;/p&gt;</description></item><item><title>Tackling App Security with SAMM-NIST SSDF Mapping</title><link>https://owaspsamm.org/blog/samm-ssdf-mapping/</link><pubDate>Mon, 06 Feb 2023 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm-ssdf-mapping/</guid><description>&lt;h3 id="the-application-security-challenge"&gt;The Application Security Challenge&lt;/h3&gt;
+&lt;p&gt;The increasing dependence on software in our daily lives has made the challenge of ensuring its security more pressing. Despite being a critical concern, cybersecurity is often not a priority for organizations until there is an incident or breach. This has resulted in the cost of cyber insurance doubling in the past two years and the total cost of cybercrime in 2022 reaching &lt;a href="https://www.secureworks.com/resources/rp-boardroom-cybersecurity-report" target="_blank" rel="noopener"&gt;$7 trillion&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+. To address this challenge, organizations are &lt;a href="https://go.cynet.com/2022_ciso_survey" target="_blank" rel="noopener"&gt;increasing their cyber budgets&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ but are still struggling to adopt an effective security program that can provide a return on investment. The need for a comprehensive and effective security program is more important than ever to maintain the protection of sensitive information and the stability of digital infrastructure.&lt;/p&gt;</description></item><item><title>Introducing SAMM Practitioners</title><link>https://owaspsamm.org/blog/introducing-samm-practitioners/</link><pubDate>Mon, 05 Dec 2022 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/introducing-samm-practitioners/</guid><description>&lt;h3 id="why-samm-practitioners"&gt;Why SAMM Practitioners?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;We want to adopt OWASP SAMM 2.0 at my workplace. Can you recommend a company to help us do this?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;SAMM team members get asked this a lot through the different channels of communication like our Slack channel and the contact form on the website.&lt;/p&gt;
+&lt;p&gt;Obviously, we know many companies, organizations, and individuals who can do this. We are a community-driven project and a number of volunteers have contributed to SAMM so it wasn’t an easy answer for us to provide. We needed to do this in a way that is useful to the community, that points to quality services, and is not biased.&lt;/p&gt;</description></item><item><title>Addressing Log4J vulnerabilities with SAMM</title><link>https://owaspsamm.org/blog/addressing-log4j-vulnerabilities-with-samm/</link><pubDate>Mon, 07 Feb 2022 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/addressing-log4j-vulnerabilities-with-samm/</guid><description>&lt;figure class="content-figure"&gt;
+ &lt;img src="https://owaspsamm.org/img/blog/undraw_hacker_mind_6y85.png" alt="SAMM assessment" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;It’s that dreaded notification. The one that holds the threat, and later the reality, of many sleepless nights. The newest vulnerability is here and its severity is considered critical.&lt;/p&gt;
+&lt;p&gt;This Log4J vulnerability (CVE-2021-44228) has caused quite the stir, and rightfully so. It’s kept security peeps on our toes for the last few months so it was interesting to see this topic come up during our last SAMM monthly community call. One participant asked the very relevant question:&lt;/p&gt;</description></item><item><title>OWASP SAMM Train the Trainer</title><link>https://owaspsamm.org/blog/owasp-samm-train-the-trainer/</link><pubDate>Tue, 30 Nov 2021 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/owasp-samm-train-the-trainer/</guid><description>&lt;h2 id="expanding-awareness-of-owasp-samm"&gt;Expanding awareness of OWASP SAMM&lt;/h2&gt;
+&lt;p&gt;To introduce new users to the OWASP Software Assurance Maturity Model (SAMM), the SAMM project team has presented their one-day overview training class several times each year. These classes often run in conjunction with OWASP&amp;rsquo;s global and regional conference events. The instructors for that training class - currently titled &amp;ldquo;Secure Your SDLC using OWASP SAMM - ASAP!&amp;rdquo; - have usually been the project&amp;rsquo;s leaders, Sebastien (Seba) Deleersnyder and Bart de Win, or other SAMM team members.&lt;/p&gt;</description></item><item><title>Towards a well-governed SAMM Suite</title><link>https://owaspsamm.org/blog/samm-suite/</link><pubDate>Tue, 23 Mar 2021 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm-suite/</guid><description>&lt;h2 id="improving-the-velocity-of-owasp-samm"&gt;Improving the velocity of OWASP SAMM&lt;/h2&gt;
+&lt;p&gt;Some years back, SAMM was a typical old school documentation project. Creation of all the documents was a purely manual and error-prone process. We fought a very complicated manual build procedure of the project PDF which only a few people knew how to deal with. Already fixed errors kept reappearing and it was hard to know who actually had the latest version in their mailbox.&lt;/p&gt;</description></item><item><title>OWASP SAMM Roadmap</title><link>https://owaspsamm.org/blog/owasp-samm-roadmap/</link><pubDate>Tue, 09 Feb 2021 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/owasp-samm-roadmap/</guid><description>&lt;h2 id="what-happened-in-2020"&gt;What happened in 2020?&lt;/h2&gt;
+&lt;p&gt;This was a special year but still a lot happened for SAMM. The team worked hard to continue delivering and adding value for our users.&lt;/p&gt;
+
+
+
+&lt;figure class="content-figure"&gt;
+ &lt;img src="https://owaspsamm.org/img/blog/2020.png" alt="2020" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;h3 id="new-version-new-website-new-ways-of-getting-together"&gt;New version, new website, new ways of getting together&lt;/h3&gt;
+&lt;p&gt;In 2020 we launched OWASP SAMM v2.0, more than 10 years after OpenSAMM v1.0 was launched on March 25th, 2009 by Pravir Chandra.&lt;/p&gt;
+&lt;p&gt;Throughout 2020 we developed and released a new website and promoted the launch of SAMM v2.0 to our community. We had a dynamic and rewarding online SAMM User Day on 16th of June 2020.&lt;/p&gt;</description></item><item><title>Comparing BSIMM &amp; SAMM</title><link>https://owaspsamm.org/blog/comparing-bsimm-and-samm/</link><pubDate>Thu, 29 Oct 2020 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/comparing-bsimm-and-samm/</guid><description>&lt;h2 id="building-security-in-maturity-model-bsimm-compared-to-software-assurance-maturity-model-samm"&gt;Building Security In Maturity Model (BSIMM) compared to Software Assurance Maturity Model (SAMM)&lt;/h2&gt;
+&lt;br/&gt;
+&lt;h3 id="a-common-origin"&gt;A common origin&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.bsimm.com/" target="_blank" rel="noopener"&gt;BSIMM (Building Security In Maturity Model)&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ and SAMM (Software Assurance Maturity Model) have similar origins dating back to a common origin back in 2008-2009. I’m frequently asked about what is similar and what is different between the two models, so I wrote up this comparison to help organizations understand which of these two models may be a better fit for their needs.
+&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;</description></item><item><title>SAMM is doing CI/CD</title><link>https://owaspsamm.org/blog/samm-is-doing-cicd/</link><pubDate>Tue, 31 Mar 2020 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm-is-doing-cicd/</guid><description>&lt;h3 id="what-version-2-brought-along"&gt;What version 2 brought along&lt;/h3&gt;
+&lt;p&gt;A significant change that happened behind the scenes for SAMM 2.0 was the addition of a CI/CD pipeline, the automated version of all the steps we need to deliver SAMM. It has enhanced our productivity, providing standardization and enabling faster iterations.
+At the core of Continuous Integration and Continuous Delivery are speed of delivery, reliability, and visibility. This process encourages frequent updates, allows quick fixes, and ensures a set of checks before deployment. It increases visibility, since every team member can see what is going on with the code.&lt;/p&gt;</description></item><item><title>OWASP SAMM version 2 - public release</title><link>https://owaspsamm.org/blog/samm2-release/</link><pubDate>Fri, 31 Jan 2020 00:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/samm2-release/</guid><description>&lt;h4 id="after-three-years-of-preparation-our-samm-project-team-has-delivered-version-2-of-samm"&gt;After three years of preparation, our SAMM project team has delivered version 2 of SAMM!&lt;/h4&gt;
+&lt;p&gt;OWASP SAMM (Software Assurance Maturity Model) is the OWASP framework to help organizations assess, formulate, and implement, through our self-assessment model, a strategy for software security they can integrate into their existing Software Development Lifecycle (SDLC).&lt;/p&gt;
+&lt;p&gt;The new SAMM v2 consists of the following components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href="https://owaspsamm.org/model/"&gt;SAMM Model&lt;/a&gt;
+ overview and introduction, explaining the maturity model in detail&lt;/li&gt;
+&lt;li&gt;A &lt;a href="https://owaspsamm.org/docs/getting-started/"&gt;Getting Started guide&lt;/a&gt;
+ with different steps to improve your secure software practice&lt;/li&gt;
+&lt;li&gt;An updated &lt;a href="https://owaspsamm.org/assessment/"&gt;SAMM Toolbox&lt;/a&gt;
+ to perform SAMM assessments and create SAMM roadmaps&lt;/li&gt;
+&lt;li&gt;A new &lt;a href="https://owaspsamm.org/benchmark/"&gt;SAMM Benchmark initiative&lt;/a&gt;
+ to compare your maturity and progress with other similar organizations and teams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="whats-changed-with-samm-v2"&gt;What&amp;rsquo;s changed with SAMM v2?&lt;/h3&gt;
+&lt;p&gt;For those organizations using earlier versions of SAMM, it’s important to take the time to understand how the framework has evolved in favor of automation and better alignment with development teams. Organizationally, some important changes worth noting:&lt;/p&gt;</description></item><item><title>SAMM V2 community release</title><link>https://owaspsamm.org/blog/version2-community-release/</link><pubDate>Fri, 20 Dec 2019 12:00:00 +0200</pubDate><guid>https://owaspsamm.org/blog/version2-community-release/</guid><description>&lt;h2 id="samm-v2-community-launch"&gt;SAMM v2 community launch!&lt;/h2&gt;
+&lt;p&gt;After three years of preparation, our SAMM project team has delivered release 2 of SAMM!&lt;/p&gt;
+&lt;p&gt;First, we&amp;rsquo;re releasing SAMM v2 to the OWASP community and then plan our public release for mid-January 2020. We value your feedback and questions. To contribute, do one of the following, in decreasing order of preference:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;add issues to our &lt;a href="https://github.com/OWASP/samm/issues" target="_blank" rel="noopener"&gt;SAMM Github repository&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Complete the &lt;a href="https://goo.gl/forms/c5fYJIgzxV7DRmdE2" target="_blank" rel="noopener"&gt;Google form&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ per issue&lt;/li&gt;
+&lt;li&gt;Start a discussion on our &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;#project-samm Slack channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ on OWASP. Confirm that a member of the SAMM team picks up your discussion to make sure we consider your feedback.&lt;/li&gt;
+&lt;li&gt;Send us an email: &lt;a href="mailto:info@owaspsamm.org"&gt;info@owaspsamm.org&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SAMM’s mission is to raise awareness and educate organizations on how to design, develop, and implement secure software through our self-assessment model.
+The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>Open Security Summit 2019</title><link>https://owaspsamm.org/blog/open-security-summit-2019/</link><pubDate>Wed, 10 Jul 2019 13:07:31 +0200</pubDate><guid>https://owaspsamm.org/blog/open-security-summit-2019/</guid><description>&lt;h2 id="samm-track-an-overview-and-commentary-of-the-event"&gt;SAMM track, an overview and commentary of the event&lt;/h2&gt;
+&lt;p&gt;The Open Security Summit 2019 focused on the collaboration between Developers and Application Security and was organised with the support of OWASP. The 5-day sprint on SAMMv2 enabled attendees to work and collaborate intensively towards specific Application Security challenges with a focus on actionable outcomes. In addition to specific Maturity Models sessions, a large number of &lt;a href="https://2019.open-security-summit.org/tracks/owasp-samm/" target="_blank" rel="noopener"&gt;OWASP SAMM&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ Working Sessions took place at the Summit.&lt;/p&gt;</description></item><item><title>Version 2 Beta</title><link>https://owaspsamm.org/blog/version2-beta/</link><pubDate>Sat, 02 Feb 2019 21:49:20 +0200</pubDate><guid>https://owaspsamm.org/blog/version2-beta/</guid><description>&lt;p&gt;The original model (v1.0) was written by Pravir Chandra and dates back from 2009. Over the last 10 years, it has proven a widely distributed and effective model for improving secure software practices in different types of organisations throughout the world. Translations and supporting tools have been contributed by the community to facilitate adoption and alignment. With version 2.0, we further improve the model to deal with some of its current limitations.&lt;/p&gt;</description></item><item><title>Acronyms and Abbreviations</title><link>https://owaspsamm.org/acronyms-and-abbreviations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/acronyms-and-abbreviations/</guid><description>&lt;dl&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;dt&amp;gt;AA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Architecture Assessment (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ADFS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Active Directory Federation Services&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ASVS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;OWASP Application Security Verification Standard&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;AV&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Anti-Virus&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;BOM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Bill of Materials&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;CBT&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Computer-Based Training&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;CPE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Common Platform Enumeration&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;CVE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Common Vulnerabilities and Exposures&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;CVSS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Common Vulnerability Scoring System&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;CWE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Common Weakness Enumeration&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DAST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Dynamic Application Security Testing&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DDoS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Distributed Denial of Service&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DevOps&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Integrated Development and Operations&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DevSecOps&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Integrated Development, Security, and Operations&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Defect Management (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DOD&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Definition of Done&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DOR&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Definition of Ready&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DoS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Denial of Service&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;DSL&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Domain-Specific Language&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;EM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Environment Management (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;EG&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Education and Guidance (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ESB&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Enterprise Service Bus&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;GDPR&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;General Data Protection Regulation (European Union law)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;HSM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Hardware Security Module&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;IAM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Identity and Access Management&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;IAST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Interactive Application Security Testing&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;IDE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Integrated Development Environment&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;IM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Incident Management (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;IP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Internet Protocol&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ISO&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;International Standards Organization&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;KPI&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Key Performance Indicator&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;LDAP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Lightweight Directory Access Protocol&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;LMS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Learning Management System&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;NIST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;National Institute of Standards and Technology (US Agency)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;NVD&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;National Vulnerability Database (US)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;OM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Operational Management (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;OS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Operating System&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;OWASP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Open Web Application Security Project&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;PC&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Policy and Compliance (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;PCI&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Payment Card Industry&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;PCI DSS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Payment Card Industry Data Security Standard&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;QA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Quality Assurance&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;RASP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Runtime Application Self-Protection&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;RCA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Root Cause Analysis&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;RT&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Requirements-driven Testing (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;REST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;REpresentational State Transfer&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Security Architecture (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SAMM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Software Assurance Maturity Model&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SAST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Static Application Security Testing&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SB&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Secure Build (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SD&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Secure Deployment (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SDK&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Software Development Kit&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SDLC&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Software Development Life Cycle&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SIEM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Security Information and Event Management&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SIP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Session Initiation Protocol&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SLA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Service Level Agreement&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Strategy and Metrics (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SMART&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Specific, Measurable, Actionable, Relevant, and Time-bound&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SME&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Subject Matter Expert&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SOAP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Simple Object Access Protocol&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Special Publication (NIST Document)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SR&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Security Requirements (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SSCE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Secure Software Center of Excellence&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SSO&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Single Sign-On&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ST&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Security Testing (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;STRIDE&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, and Elevation of privilege&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;SWIFT&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Society for Worldwide Interbank Financial Telecommunication&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;TA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Threat Assessment (SAMM Practice)&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;TLS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Transport Layer Security&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;TPM&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Trusted Platform Module&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;UAT&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;User Acceptance Test&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;VA&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Vulnerability Analysis&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;VCS&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Version Control System&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;WAF&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;Web Application Firewall&amp;lt;/dd&amp;gt;
+
+&amp;lt;dt&amp;gt;ZAP&amp;lt;/dt&amp;gt;
+&amp;lt;dd&amp;gt;OWASP Zed Attack Proxy&amp;lt;/dd&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/dl&gt;</description></item><item><title>AI Alignment — 2026 Core Team Summit</title><link>https://owaspsamm.org/summits/2026/ai-alignment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/summits/2026/ai-alignment/</guid><description>&lt;p&gt;&lt;strong&gt;Barcelona · April 2026&lt;/strong&gt;
+&lt;em&gt;Consolidated from the session&amp;rsquo;s Notion AI summary, the in-room scratch notes, and the per-activity worksheet &amp;ldquo;SAMM for AI generated code&amp;rdquo;.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;The shift isn&amp;rsquo;t &lt;em&gt;what&lt;/em&gt; gets built — it&amp;rsquo;s &lt;em&gt;who&lt;/em&gt; builds it. Code is increasingly written by agents, and standards documents are increasingly read by agents too. SAMM has to be useful in that world, which means two parallel jobs: (a) make SAMM legible and operational for the humans guiding AI-generated code, and (b) make SAMM legible and operational for the AI itself.&lt;/p&gt;</description></item><item><title>Application Risk Profile</title><link>https://owaspsamm.org/./model/design/threat-assessment/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/threat-assessment/stream-a/</guid><description/></item><item><title>Architecture Assessment</title><link>https://owaspsamm.org/./model/verification/architecture-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/architecture-assessment/</guid><description>&lt;p&gt;The Architecture Assessment (AA) practice ensures that the application and infrastructure architecture adequately meets all relevant security and compliance requirements, and sufficiently mitigates identified security threats. The first stream focuses on verifying that the security and compliance requirements identified in the Policy and Compliance, and Security Requirements, practices are met, first in an ad-hoc manner, then more systematically for each interface in the system. The second stream reviews the architecture, first for mitigations against typical threats, then against the specific threats identified in the Threat Assessment practice.&lt;/p&gt;</description></item><item><title>Architecture Design</title><link>https://owaspsamm.org/./model/design/secure-architecture/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/secure-architecture/stream-a/</guid><description/></item><item><title>Architecture Mitigation</title><link>https://owaspsamm.org/./model/verification/architecture-assessment/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/architecture-assessment/stream-b/</guid><description/></item><item><title>Architecture Validation</title><link>https://owaspsamm.org/./model/verification/architecture-assessment/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/architecture-assessment/stream-a/</guid><description/></item><item><title>Backlog</title><link>https://owaspsamm.org/internal/backlog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/backlog/</guid><description>&lt;p&gt;Things that would improve the v2 site but aren&amp;rsquo;t blocking the launch. Revisit after v2 is stable in production.&lt;/p&gt;
+&lt;p&gt;Rough sequencing once v2 is stable:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Restore SAMM Users testimonial quotes&lt;/strong&gt; — quotes are preserved in &lt;code&gt;data/users/*.yaml&lt;/code&gt; (&lt;code&gt;testimonial&lt;/code&gt; field) but hidden in the layout (&lt;code&gt;layouts/samm-users/list.html&lt;/code&gt;) pending a content review. Re-enable the &lt;code&gt;&amp;lt;blockquote&amp;gt;&lt;/code&gt; block and audit each entry for accuracy and tone before restoring.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Remove &lt;code&gt;v2-preview&lt;/code&gt; from the build workflow&lt;/strong&gt; — &lt;code&gt;gh-pages.yaml&lt;/code&gt; has a temporary &lt;code&gt;v2-preview&lt;/code&gt; branch trigger and a three-way &lt;code&gt;publish_branch&lt;/code&gt; expression kept for pre-cutover compatibility. After the cutover, &lt;code&gt;v2-preview&lt;/code&gt; no longer exists; remove the branch entry and simplify &lt;code&gt;publish_branch&lt;/code&gt; back to &lt;code&gt;github.ref_name == 'staging' &amp;amp;&amp;amp; 'gh-pages-staging' || 'gh-pages'&lt;/code&gt;. Good candidate for the first post-cutover PR to smoke-test the staging integration workflow.&lt;/p&gt;</description></item><item><title>Benchmark Terms and Conditions</title><link>https://owaspsamm.org/benchmark/benchmark-terms-and-conditions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/benchmark/benchmark-terms-and-conditions/</guid><description>&lt;h2 id="terms-and-conditions"&gt;Terms and Conditions&lt;/h2&gt;
+&lt;h3 id="1-introduction"&gt;1. Introduction&lt;/h3&gt;
+&lt;p&gt;Welcome to the OWASP SAMM Benchmark data collection platform. These Terms and Conditions govern your use of our platform including the collection, storage, and processing of data from OWASP SAMM assessments and related metadata.&lt;/p&gt;
+&lt;p&gt;By accessing or using the platform, you agree to comply with and be bound by these terms in full. If you disagree with any part of these terms, please do not use our platform.&lt;/p&gt;</description></item><item><title>Build Process</title><link>https://owaspsamm.org/./model/implementation/secure-build/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/stream-a/</guid><description/></item><item><title>Community Calls</title><link>https://owaspsamm.org/community/community-calls/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/community-calls/</guid><description>&lt;p&gt;We host community calls on the second Wednesday of every month. Calls may cover project updates, conversations with experts on SAMM-related topics, or open Q&amp;amp;A.&lt;/p&gt;
+&lt;h2 id="how-to-join"&gt;How to join&lt;/h2&gt;
+&lt;p&gt;Subscribe to our &lt;a href="https://owaspsamm.org/community/newsletter/"&gt;newsletter&lt;/a&gt;
+ to receive the call link and updates. You can also find event details on &lt;a href="https://www.meetup.com/owasp-samm/" target="_blank" rel="noopener"&gt;Meetup&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+, though we plan to move away from Meetup in the near future.&lt;/p&gt;</description></item><item><title>Compliance Management</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-b/</guid><description/></item><item><title>Configuration Hardening</title><link>https://owaspsamm.org/./model/operations/environment-management/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/environment-management/stream-a/</guid><description/></item><item><title>Contact</title><link>https://owaspsamm.org/contact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/contact/</guid><description>&lt;p&gt;Questions, feedback, ideas: we want to hear from you.&lt;/p&gt;</description></item><item><title>Control Verification</title><link>https://owaspsamm.org/./model/verification/requirements-driven-testing/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/requirements-driven-testing/stream-a/</guid><description/></item><item><title>CRA &amp; Formalization — 2026 Core Team Summit</title><link>https://owaspsamm.org/summits/2026/cra-and-formalization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/summits/2026/cra-and-formalization/</guid><description>&lt;p&gt;&lt;strong&gt;Barcelona · April 2026&lt;/strong&gt;
+&lt;em&gt;Consolidated from the session&amp;rsquo;s Notion summary and the CRA &amp;amp; Formalization scratch notes.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Two linked discussions surfaced the same underlying issue: SAMM&amp;rsquo;s language and implicit persona (&amp;ldquo;a team that builds &lt;em&gt;and&lt;/em&gt; operates its own SaaS&amp;rdquo;) are too narrow for product-security use cases driven by the Cyber Resilience Act (CRA) and for the realities of manufacturer/consumer/vendor supply chains.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agreed direction (pragmatic, guidance-first):&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ship &lt;strong&gt;CRA-specific guidance&lt;/strong&gt; first — use it to surface where the base model creaks.&lt;/li&gt;
+&lt;li&gt;In parallel, &lt;strong&gt;clean up model language&lt;/strong&gt; (remove deployment-type assumptions, replace &amp;ldquo;application&amp;rdquo; with &amp;ldquo;software&amp;rdquo; where appropriate, flag the rest).&lt;/li&gt;
+&lt;li&gt;Formalize a &lt;strong&gt;glossary&lt;/strong&gt; and an &lt;strong&gt;explicit shared-responsibility / persona layer&lt;/strong&gt;, most likely in the Quick Start guide rather than in the core model.&lt;/li&gt;
+&lt;li&gt;Keep &lt;strong&gt;evidence/artifact prescriptions in guidance&lt;/strong&gt;, not in the model. The model says &lt;em&gt;what&lt;/em&gt;; guidance says &lt;em&gt;what good looks like for this context&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Guiding quote from the room: &lt;em&gt;&amp;ldquo;The maturity model is the north star. Guidance is how to use it.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Create and Promote</title><link>https://owaspsamm.org/./model/governance/strategy-and-metrics/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/strategy-and-metrics/stream-a/</guid><description/></item><item><title>Cutover handoff</title><link>https://owaspsamm.org/internal/cutover-handoff/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/cutover-handoff/</guid><description>&lt;p&gt;This page is for the person with admin access to &lt;code&gt;github.com/owaspsamm/website&lt;/code&gt;. It covers two things: setting up branch protection (do this now, before cut-over day) and executing the cut-over itself (do this when Pat gives the go-ahead).&lt;/p&gt;
+&lt;p&gt;The staging site is at &lt;strong&gt;&lt;a href="https://owaspsamm.netlify.app/" target="_blank" rel="noopener"&gt;https://owaspsamm.netlify.app/&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Data Protection</title><link>https://owaspsamm.org/./model/operations/operational-management/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/operational-management/stream-a/</guid><description/></item><item><title>Deep Understanding</title><link>https://owaspsamm.org/./model/verification/security-testing/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/security-testing/stream-b/</guid><description/></item><item><title>Defect Management</title><link>https://owaspsamm.org/./model/implementation/defect-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/defect-management/</guid><description>&lt;p&gt;The Defect Management (DM) practice focuses on collecting, recording, and analyzing software security defects and enriching them with information to drive metrics-based decisions.&lt;/p&gt;
+&lt;p&gt;The practice’s first stream deals with the process of handling and managing defects to ensure released software has a given assurance level. The second stream focuses on enriching the information about the defects and deriving metrics to guide decisions about the security of individual projects and of the security assurance program as a whole.&lt;/p&gt;</description></item><item><title>Defect Tracking</title><link>https://owaspsamm.org/./model/implementation/defect-management/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/defect-management/stream-a/</guid><description/></item><item><title>Deployment Process</title><link>https://owaspsamm.org/./model/implementation/secure-deployment/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-deployment/stream-a/</guid><description/></item><item><title>Design</title><link>https://owaspsamm.org/./model/design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/</guid><description>&lt;p&gt;Design concerns the processes and activities related to how an organization defines goals and creates software within development projects. In general, this will include requirements gathering, high-level architecture specification and detailed design.&lt;/p&gt;</description></item><item><title>Docs section implementation plan</title><link>https://owaspsamm.org/internal/archive/docs-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/archive/docs-plan/</guid><description>&lt;h2 id="context"&gt;Context&lt;/h2&gt;
+&lt;p&gt;The SAMM website&amp;rsquo;s guidance section currently consists of 2 flat pages (agile guidance, quick-start guide) and a dropdown menu pointing to scattered locations. Meanwhile, 11 blog posts contain prescriptive how-to content that belongs in documentation, and 30 streams of implementation guidance live in external Google Docs. The goal is to build a ReadTheDocs-style documentation experience in website-v2: collapsible sidebar, on-this-page TOC, card-based landing pages, prev/next navigation, and client-side search. This transforms SAMM&amp;rsquo;s most valuable content into a proper, navigable knowledge base.&lt;/p&gt;</description></item><item><title>Education and Guidance</title><link>https://owaspsamm.org/./model/governance/education-and-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/education-and-guidance/</guid><description>&lt;p&gt;The Education and Guidance (EG) practice focuses on arming personnel involved in the software lifecycle with knowledge and resources to design, develop, and deploy secure software. With improved access to information, project teams can proactively identify and mitigate the specific security risks that apply to their organization.&lt;/p&gt;
+&lt;p&gt;One major theme for improvement across the Objectives is providing training for employees and increasing their security awareness, either through instructor-led sessions or computer-based modules. As an organization progresses, it builds a broad base of training starting with developers and moving to other roles, culminating with the addition of role-based training to ensure applicability and effectiveness.&lt;/p&gt;</description></item><item><title>Environment Management</title><link>https://owaspsamm.org/./model/operations/environment-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/environment-management/</guid><description>&lt;p&gt;The organization&amp;rsquo;s work on application security doesn&amp;rsquo;t end once the application becomes operational. New security features and patches are regularly released for the various elements of the technology stack you&amp;rsquo;re using, until they become obsolete or are no longer supported.&lt;/p&gt;
+&lt;p&gt;Most of the technologies in any application stack are not secure by default. This is frequently intentional, to enhance backwards compatibility or ease of setup. For this reason, ensuring the secure operation of the organization&amp;rsquo;s technology stack requires the consistent application of secure baseline configurations to all components. The Environment Management (EM) practice focuses on keeping your environment clean and secure.&lt;/p&gt;</description></item><item><title>GitHub Discussions</title><link>https://owaspsamm.org/community/github-discussions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/github-discussions/</guid><description>&lt;p&gt;&lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;GitHub Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is a space for longer conversations about the SAMM project: proposals, questions, and feedback that benefit from a threaded format.&lt;/p&gt;
+&lt;h2 id="good-use-cases"&gt;Good use cases&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Proposing changes or additions to the model&lt;/li&gt;
+&lt;li&gt;Sharing how you&amp;rsquo;ve applied SAMM in your organization&lt;/li&gt;
+&lt;li&gt;Providing detailed feedback on documentation or tooling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="getting-started"&gt;Getting started&lt;/h2&gt;
+&lt;p&gt;Head to &lt;a href="https://github.com/orgs/owaspsamm/discussions/" target="_blank" rel="noopener"&gt;SAMM Discussions&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ to start a conversation. You&amp;rsquo;ll need a GitHub account to participate.&lt;/p&gt;</description></item><item><title>Governance</title><link>https://owaspsamm.org/./model/governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/</guid><description>&lt;p&gt;Governance focuses on the processes and activities related to how an organization manages overall software development activities. More specifically, this includes concerns that impact cross-functional groups involved in development, as well as business processes established at the organization level.&lt;/p&gt;</description></item><item><title>Implementation</title><link>https://owaspsamm.org/./model/implementation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/</guid><description>&lt;p&gt;Implementation is focused on the processes and activities related to how an organization builds and deploys software components and its related defects.&lt;/p&gt;
+&lt;p&gt;Activities within the Implementation function have the most impact on the daily life of developers. The joint goal is to ship reliably working software with minimum defects.&lt;/p&gt;</description></item><item><title>Incident Detection</title><link>https://owaspsamm.org/./model/operations/incident-management/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/incident-management/stream-a/</guid><description/></item><item><title>Incident Management</title><link>https://owaspsamm.org/./model/operations/incident-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/incident-management/</guid><description>&lt;p&gt;Once your organization has applications in operation, you are likely to face security incidents. In this model, we define a security incident as a breach, or the threat of an imminent breach, of at least one asset&amp;rsquo;s security goals, whether due to malicious or negligent behavior. Examples of security incidents might include: a successful Denial of Service (DoS) attack against a cloud application, an application user accessing private data of another by abusing a security vulnerability, or an attacker modifying application source code. The Incident Management (IM) practice focuses on dealing with these in your organization.&lt;/p&gt;</description></item><item><title>Incident Response</title><link>https://owaspsamm.org/./model/operations/incident-management/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/incident-management/stream-b/</guid><description/></item><item><title>Information architecture</title><link>https://owaspsamm.org/internal/ia/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/ia/</guid><description>&lt;h2 id="website-navigation"&gt;Website navigation&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Item&lt;/th&gt;
+ &lt;th&gt;Type&lt;/th&gt;
+ &lt;th&gt;Notes&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;About SAMM&lt;/td&gt;
+ &lt;td&gt;Dropdown&lt;/td&gt;
+ &lt;td&gt;What is SAMM, The Team&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;The Model&lt;/td&gt;
+ &lt;td&gt;Link&lt;/td&gt;
+ &lt;td&gt;PDF download linked from this page&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Docs&lt;/td&gt;
+ &lt;td&gt;Link&lt;/td&gt;
+ &lt;td&gt;See Docs IA below&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Blog&lt;/td&gt;
+ &lt;td&gt;Link&lt;/td&gt;
+ &lt;td&gt;Standalone editorial section&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Community&lt;/td&gt;
+ &lt;td&gt;Dropdown + landing page&lt;/td&gt;
+ &lt;td&gt;User Day, SAMM Users, Practitioners, Sponsors&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;Not in nav:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Benchmark: featured on home page; linked from Docs/Tools and Community landing page&lt;/li&gt;
+&lt;li&gt;Training course: featured section on home page; linked from Docs/Reference and Quick Start Guide&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="community-landing-page"&gt;Community landing page&lt;/h2&gt;
+&lt;p&gt;Surfaces everything community-related: Slack, newsletter, YouTube, GitHub, contributing, User Day, SAMM Users, Practitioners, Sponsors.&lt;/p&gt;</description></item><item><title>Mapping SAMM 1.5 to 2.0</title><link>https://owaspsamm.org/mapping-versions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/mapping-versions/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
+&lt;p&gt;For those organizations using 1.0 or 1.5 versions of SAMM it&amp;rsquo;s important to take the time to understand how the framework has evolved. Organizations that implemented security initiatives and are looking for SAMM scores to validate effectiveness will need to take these changes into consideration since in most cases expectations for maturity level 3 have been significantly increased in favor of automation and better alignment with development teams.&lt;/p&gt;
+&lt;p&gt;Organizationally, some important changes worth noting:&lt;/p&gt;</description></item><item><title>Measure and Improve</title><link>https://owaspsamm.org/./model/governance/strategy-and-metrics/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/strategy-and-metrics/stream-b/</guid><description/></item><item><title>Metrics and Feedback</title><link>https://owaspsamm.org/./model/implementation/defect-management/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/defect-management/stream-b/</guid><description/></item><item><title>Migration plan: v1 → v2</title><link>https://owaspsamm.org/internal/migration-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/migration-plan/</guid><description>&lt;p&gt;Goal: replace the content of the &lt;code&gt;owaspsamm/website&lt;/code&gt; repo (which currently serves v1) with the &lt;code&gt;website-v2&lt;/code&gt; codebase, preserving the public URL (&lt;code&gt;owaspsamm.org&lt;/code&gt;), the repo identity, and GitHub Pages config. No broken links.&lt;/p&gt;
+&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
+&lt;p&gt;Everything a fresh session needs to start executing this plan without questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: updated 2026-04-22. Previously assumed a &lt;code&gt;github.com/owaspsamm/website-v2&lt;/code&gt; repo existed and that cut-over would be a repo rename — neither was true. Check this date against the current state before trusting details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Single repo on GitHub&lt;/strong&gt;: &lt;code&gt;github.com/owaspsamm/website&lt;/code&gt;. Currently serves v1. Cut-over replaces its content with v2 in a single branch swap; the repo identity (stars, issues, Pages config, custom domain) is preserved. Local path of v1 clone: &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v2 codebase&lt;/strong&gt;: lives only at &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website-v2&lt;/code&gt; and is &lt;strong&gt;not yet under git&lt;/strong&gt;. Prerequisite #0 below is &lt;code&gt;git init&lt;/code&gt; + push to a branch on &lt;code&gt;owaspsamm/website&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production domain&lt;/strong&gt;: &lt;code&gt;owaspsamm.org&lt;/code&gt; (custom domain on GitHub Pages, served from &lt;code&gt;owaspsamm/website&lt;/code&gt; &lt;code&gt;gh-pages&lt;/code&gt; branch).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;v2 staging&lt;/strong&gt;: Netlify, configured to serve the pre-built &lt;code&gt;gh-pages-v2&lt;/code&gt; branch (no build step — output is produced by GitHub Actions). Every push to &lt;code&gt;v2-preview&lt;/code&gt; triggers the Actions pipeline, deploys to &lt;code&gt;gh-pages-v2&lt;/code&gt;, and Netlify serves the result automatically. See the &amp;ldquo;v2 staging pipeline&amp;rdquo; section below and &lt;a href="https://owaspsamm.org/internal/website-updates-process/"&gt;/internal/website-updates-process/&lt;/a&gt;
+ for staging environment details.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SAMM model content&lt;/strong&gt;: lives in &lt;code&gt;github.com/owaspsamm/core&lt;/code&gt;, pulled as a Hugo Module by both v1 and v2. See v2&amp;rsquo;s &lt;a href="../../../go.mod"&gt;go.mod&lt;/a&gt;
+.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Analytics / trackers on v2&lt;/strong&gt;: Both enabled and gated on &lt;code&gt;hugo.IsProduction&lt;/code&gt;. Google Analytics ID &lt;code&gt;G-44N5RHDT94&lt;/code&gt; is configured in &lt;a href="../../../config.toml"&gt;config.toml&lt;/a&gt;
+ and injected by &lt;a href="../../../layouts/partials/cookie-consent.html"&gt;layouts/partials/cookie-consent.html&lt;/a&gt;
+ (consent-gated, default-denied). Scarf pixel (&lt;code&gt;x-pxid=6e76dfd3-e2e4-4864-a63b-0b361639db63&lt;/code&gt;) fires on the four model-page layouts via &lt;a href="../../../layouts/partials/scarf.html"&gt;layouts/partials/scarf.html&lt;/a&gt;
+, gated inside the partial so Netlify previews don&amp;rsquo;t pollute production metrics.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo version&lt;/strong&gt;: v1 pipeline pins &lt;code&gt;0.157.0&lt;/code&gt;. v2 should match at migration time. See &lt;a href="https://owaspsamm.org/internal/archive/actions-upgrade/"&gt;/internal/archive/actions-upgrade/&lt;/a&gt;
+ for the workflow we&amp;rsquo;re inheriting.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
+&lt;p&gt;When ready to execute this plan in a new session: open this page, point me at it, and say &amp;ldquo;run the migration plan&amp;rdquo;. I&amp;rsquo;ll work through the prerequisites before cut-over and stop for confirmation at each gate.&lt;/p&gt;</description></item><item><title>Misuse/Abuse Testing</title><link>https://owaspsamm.org/./model/verification/requirements-driven-testing/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/requirements-driven-testing/stream-b/</guid><description/></item><item><title>Newsletter</title><link>https://owaspsamm.org/community/newsletter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/newsletter/</guid><description>&lt;figure class="content-figure content-figure--small"&gt;
+ &lt;img src="https://owaspsamm.org/img/resources/mailchimp.png" alt="Mailchimp" loading="lazy"&gt;
+ 
+&lt;/figure&gt;
+
+&lt;p&gt;We send one email per month. No more. It includes the link to that month&amp;rsquo;s &lt;a href="https://owaspsamm.org/community/community-calls/"&gt;community call&lt;/a&gt;
+, along with project updates, event announcements, and new blog posts when relevant.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://owaspsamm.us9.list-manage.com/subscribe?u=b83ce65c91239cb5e623ea83e&amp;amp;id=cbd0520923" target="_blank" rel="noopener"&gt;Subscribe here&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Operating Cadence &amp; Ownership — 2026 Core Team Summit</title><link>https://owaspsamm.org/summits/2026/operating-cadence/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/summits/2026/operating-cadence/</guid><description>&lt;p&gt;&lt;strong&gt;Barcelona · April 2026&lt;/strong&gt;
+&lt;em&gt;Consolidated from the session&amp;rsquo;s Notion AI summary, the recorded transcript, and the &amp;ldquo;What needs to be done&amp;rdquo; scratch notes.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;A lot of the project&amp;rsquo;s recurring work — newsletter, podcast, sponsor engagement, community calls, user-day organisation, training, budgeting — is happening organically, undertracked, and concentrated on Pat. The session&amp;rsquo;s job was to make that work visible, give each activity an owner and a realistic cadence, and be honest about which activities are actually earning the time we put into them.&lt;/p&gt;</description></item><item><title>Operational Management</title><link>https://owaspsamm.org/./model/operations/operational-management/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/operational-management/</guid><description>&lt;p&gt;The Operational Management (OM) practice focuses on activities to ensure security is maintained throughout operational support functions. Although these functions are not performed directly by an application, the overall security of the application and its data depends on their proper performance. Deploying an application on an unsupported operating system with unpatched vulnerabilities, or failing to store backup media securely, can make the protections built into that application irrelevant.&lt;/p&gt;
+&lt;p&gt;The functions covered by this practice include, but are not limited to: system provisioning, administration, and decommissioning; database provisioning and administration; and data backup, restore, and archival.&lt;/p&gt;</description></item><item><title>Operations</title><link>https://owaspsamm.org/./model/operations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/</guid><description>&lt;p&gt;The Operations Business Function encompasses those activities necessary to ensure confidentiality, integrity, and availability are maintained throughout the operational lifetime of an application and its associated data. Increased maturity with regard to this Business Function provides greater assurance that the organization is resilient in the face of operational disruptions, and responsive to changes in the operational landscape.&lt;/p&gt;</description></item><item><title>Organization and Culture</title><link>https://owaspsamm.org/./model/governance/education-and-guidance/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/education-and-guidance/stream-b/</guid><description/></item><item><title>Patching and Updating</title><link>https://owaspsamm.org/./model/operations/environment-management/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/environment-management/stream-b/</guid><description/></item><item><title>Performance check plan</title><link>https://owaspsamm.org/internal/archive/performance-plan/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/archive/performance-plan/</guid><description>&lt;p&gt;Goal: measure current page-load performance on the v2 site, fix what&amp;rsquo;s cheap, and confirm we&amp;rsquo;re shipping a fast, professional-feeling site. Includes a separate mobile visualization pass for polish (audience is primarily desktop, but mobile presentation matters for credibility).&lt;/p&gt;
+&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: drafted 2026-05-21. Pre-launch phases (1â€“4 below) run on a local production build or Netlify drag-and-drop preview before cut-over. Phase 5 is post-launch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hosting&lt;/strong&gt;: GitHub Pages, custom domain &lt;code&gt;owaspsamm.org&lt;/code&gt;. Limited control over headers, no edge Brotli, no per-route cache rules. Performance wins must come from what is &lt;em&gt;delivered&lt;/em&gt; — image weight, JS payload, font strategy — not from infrastructure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Third-party scripts&lt;/strong&gt;: Google Analytics (&lt;code&gt;G-44N5RHDT94&lt;/code&gt;) and Scarf pixel are consent-gated and default-denied. They don&amp;rsquo;t fire until a user accepts cookies. The consent banner itself runs on every page and is in the critical path — measure with consent both accepted and declined.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Build command for measurements&lt;/strong&gt;: &lt;code&gt;hugo --minify --environment production&lt;/code&gt;. Same command CI uses. Don&amp;rsquo;t measure against &lt;code&gt;hugo server&lt;/code&gt; — its livereload script and unminified output will skew everything.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hugo image processing&lt;/strong&gt;: Hugo&amp;rsquo;s &lt;code&gt;resources.Image&lt;/code&gt; pipeline (&lt;code&gt;.Resize&lt;/code&gt;, &lt;code&gt;.Process&lt;/code&gt;, format conversion to WebP/AVIF, &lt;code&gt;srcset&lt;/code&gt; generation) is available. Whether it&amp;rsquo;s used today is part of the audit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
+&lt;p&gt;When ready to run this plan, open this page and say &amp;ldquo;run the performance plan&amp;rdquo;. I&amp;rsquo;ll start with phase 1 (baseline measurements) and stop for confirmation before applying any fixes.&lt;/p&gt;</description></item><item><title>Policy and Compliance</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/</guid><description>&lt;p&gt;The Policy and Compliance (PC) practice focuses on understanding and meeting external legal and regulatory requirements while driving internal security standards to ensure compliance in a way that’s aligned with the business purpose of the organization.&lt;/p&gt;
+&lt;p&gt;A driving theme for improvement within this practice is describing organization’s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are met.&lt;/p&gt;</description></item><item><title>Policy and Standards</title><link>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/policy-and-compliance/stream-a/</guid><description/></item><item><title>QA checklist</title><link>https://owaspsamm.org/internal/qa/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/qa/</guid><description>&lt;p&gt;Run these checks before any significant commit and before every release. They catch the classes of problem most likely to slip through review.&lt;/p&gt;
+&lt;h2 id="code-checks"&gt;Code checks&lt;/h2&gt;
+&lt;p&gt;Run from the repo root (&lt;code&gt;website-v2/&lt;/code&gt;).&lt;/p&gt;
+&lt;h3 id="inline-styles-in-templates"&gt;Inline styles in templates&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;grep -rn &amp;#39;style=&amp;#34;&amp;#39; layouts/ --include=&amp;#34;*.html&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Acceptable exceptions: &lt;code&gt;contact/single.html&lt;/code&gt; honeypot field (&lt;code&gt;display:none&lt;/code&gt; must be inline to evade bot detection). Everything else is a violation of the no-hardcode rule and must be moved to a CSS class.&lt;/p&gt;
+&lt;h3 id="hardcoded-values-in-templates"&gt;Hardcoded values in templates&lt;/h3&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;grep -rn -E &amp;#39;[0-9]+(px|rem|em)|#[0-9a-fA-F]{3,6}&amp;#39; layouts/ --include=&amp;#34;*.html&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No raw units or hex values in templates. All sizing and colour must come from tokens via CSS classes.&lt;/p&gt;</description></item><item><title>Release notes OWASP SAMM version 2</title><link>https://owaspsamm.org/release-notes-v2/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/release-notes-v2/</guid><description>&lt;h2 id="key-changes-in-owasp-samm-v2"&gt;Key changes in OWASP SAMM v2&lt;/h2&gt;
+&lt;p&gt;The new SAMM version 2 consists of the following components:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the &lt;a href="https://owaspsamm.org/model/"&gt;SAMM Model&lt;/a&gt;
+ overview and introduction, explaining the maturity model in detail&lt;/li&gt;
+&lt;li&gt;a &lt;a href="https://owaspsamm.org/docs/getting-started/"&gt;Getting Started guide&lt;/a&gt;
+ with different steps to improve your secure software practice&lt;/li&gt;
+&lt;li&gt;an updated &lt;a href="https://owaspsamm.org/assessment/"&gt;SAMM Toolbox&lt;/a&gt;
+ to perform SAMM assessments and create SAMM roadmaps&lt;/li&gt;
+&lt;li&gt;a new &lt;a href="https://owaspsamm.org/benchmark/"&gt;SAMM Benchmark initiative&lt;/a&gt;
+ to compare your maturity and progress with other similar organizations and teams&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The original model &lt;a href="https://www.opensamm.org/" target="_blank" rel="noopener"&gt;OpenSAMM 1.0&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ was written by Pravir Chandra and dates back to 2009. Over the last 10 years, it has proven a widely distributed and effective model for improving secure software practices in different types of organizations. With SAMM v2, further improvements have been made to deal with some of its perceived limitations.&lt;/p&gt;</description></item><item><title>Release steps</title><link>https://owaspsamm.org/internal/archive/release-steps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/archive/release-steps/</guid><description>&lt;p&gt;Companion to the &lt;a href="https://owaspsamm.org/internal/migration-plan/"&gt;migration plan&lt;/a&gt;
+. That doc covers strategy, context, and rollback. This page covers what to actually run and click.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: updated 2026-05-12. Prerequisites listed in order of priority.&lt;/p&gt;
+&lt;h2 id="1-complete-the-initial-push-prerequisite-0"&gt;1. Complete the initial push (prerequisite #0)&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;git init&lt;/code&gt; is done and all files are staged. Run these commands in &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website-v2&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git commit -m &lt;span style="color:#e6db74"&gt;&amp;#34;Initial v2 codebase&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git remote add origin https://github.com/owaspsamm/website.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git push -u origin v2-preview
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Actions workflow only fires on &lt;code&gt;main&lt;/code&gt;, so pushing &lt;code&gt;v2-preview&lt;/code&gt; is safe — nothing deploys.&lt;/p&gt;</description></item><item><title>Requirements-driven Testing</title><link>https://owaspsamm.org/./model/verification/requirements-driven-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/requirements-driven-testing/</guid><description>&lt;p&gt;The goal of the Requirements-driven Testing (RT) practice is to ensure that the implemented security controls operate as expected and satisfy the project&amp;rsquo;s stated security requirements. It does so by incrementally building a set of security test and regression cases and executing them regularly.&lt;/p&gt;
+&lt;p&gt;A key aspect of this practice is its attention to both positive and negative testing. The former verifies that the application&amp;rsquo;s security controls satisfy stated security requirements and validates their correct functioning. These requirements are typically functional in nature. Negative testing addresses the quality of the implementation of the security controls and aims to detect unexpected design flaws and implementation bugs through misuse and abuse testing. In its more advanced forms, the practice promotes security stress testing, such as denial of service, and strives to continuously improve application security by consistently automating security unit tests and creating security regression tests for all bugs identified and fixed.&lt;/p&gt;</description></item><item><title>Roadmap</title><link>https://owaspsamm.org/roadmap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/roadmap/</guid><description>&lt;p&gt;Internal reference page for pending items. Not linked from navigation or sitemap.&lt;/p&gt;
+&lt;p&gt;This page tracks &lt;strong&gt;pre-launch open items only&lt;/strong&gt;. Post-launch work lives in &lt;a href="https://owaspsamm.org/internal/backlog/"&gt;/internal/backlog/&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id="open-items"&gt;Open items&lt;/h2&gt;
+&lt;h3 id="docspdf-page-image"&gt;Docs/PDF page image&lt;/h3&gt;
+&lt;p&gt;The image on the docs PDF download page looks bad. Either remove it or find a replacement.&lt;/p&gt;
+&lt;h3 id="model-pages--skills-framework-links"&gt;Model pages → Skills Framework links&lt;/h3&gt;
+&lt;p&gt;Add links from model practice/stream pages to the corresponding Skills Framework page. Recommended approach: modify the practice layout template (&lt;code&gt;layouts/practice/single.html&lt;/code&gt;) to auto-generate an anchor link to the SAMM to Assignments page using the practice name from front matter.&lt;/p&gt;</description></item><item><title>SAMM Assessment</title><link>https://owaspsamm.org/assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/assessment/</guid><description>&lt;h2 id="measuring-your-software-assurance-posture"&gt;Measuring your software assurance posture&lt;/h2&gt;
+&lt;p&gt;The SAMM assessment toolbox lets you measure the quality of your software assurance maturity performance. Review your security activities against defined quality criteria and calculate your maturity score.&lt;/p&gt;
+&lt;p&gt;We suggest reading our &lt;a href="https://owaspsamm.org/docs/getting-started/"&gt;Quick Start Guide&lt;/a&gt;
+ before you begin.&lt;/p&gt;
+&lt;h2 id="self-assessment"&gt;Self-assessment&lt;/h2&gt;
+&lt;p&gt;Your first step towards improvement is to measure where you are now. Start with a self-assessment to get an overview of the status of software security activities in your organization. You can also run a self-assessment together with other people involved in your software development process.&lt;/p&gt;</description></item><item><title>Scalable Baseline</title><link>https://owaspsamm.org/./model/verification/security-testing/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/security-testing/stream-a/</guid><description/></item><item><title>Secret Management</title><link>https://owaspsamm.org/./model/implementation/secure-deployment/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-deployment/stream-b/</guid><description/></item><item><title>Secure Architecture</title><link>https://owaspsamm.org/./model/design/secure-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/secure-architecture/</guid><description>&lt;p&gt;The Secure Architecture (SA) practice focuses on the security linked to components and technology you deal with during the architectural design of your software. Secure Architecture Design looks at the selection and composition of components that form the foundation of your solution, focusing on its security properties. Technology Management looks at the security of supporting technologies used during development, deployment and operations, such as development stacks and tooling, deployment tooling, and operating systems and tooling.&lt;/p&gt;</description></item><item><title>Secure Build</title><link>https://owaspsamm.org/./model/implementation/secure-build/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/</guid><description>&lt;p&gt;The Secure Build (SB) practice emphasises the importance of building software in a standardised, repeatable manner, and of doing so using secure components, including 3rd party software dependencies.&lt;/p&gt;
+&lt;p&gt;The first stream focuses on removing any subjectivity from the build process by striving for full automation. An automated build pipeline can include additional automated security checks such as SAST and DAST to gain further assurance and flag security regressions early by failing the build, for example.&lt;/p&gt;</description></item><item><title>Secure Deployment</title><link>https://owaspsamm.org/./model/implementation/secure-deployment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-deployment/</guid><description>&lt;p&gt;One of the final stages in delivering secure software is ensuring the security and integrity of developed applications are not compromised during deployment. The Secure Deployment (SD) practice focuses on this. To this end, the practice’s first stream focuses on removing manual error by automating the deployment process as much as possible, and making its success contingent upon the outcomes of integrated security verification checks. It also fosters Separation of Duties by making adequately trained, non-developers responsible for deployment.&lt;/p&gt;</description></item><item><title>Security Requirements</title><link>https://owaspsamm.org/./model/design/security-requirements/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/</guid><description>&lt;p&gt;The Security Requirements (SR) practice focuses on security requirements that are important in the context of secure software. A first type deals with typical software-related requirements, to specify objectives and expectations to protect the service and data at the core of the application. A second type deals with requirements relative to supplier organizations that are part of the development context of the application, in particular for outsourced development. It is important to streamline the expectations in terms of secure development because outsourced development can have significant impact on the security of the application. The security of 3rd party (technical) libraries is part of the software supply chains stream (see Secure Build), and it is not included in this practice.&lt;/p&gt;</description></item><item><title>Security Testing</title><link>https://owaspsamm.org/./model/verification/security-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/security-testing/</guid><description>&lt;p&gt;The Security Testing (ST) practice leverages the fact that, while automated security testing is fast and scales well to numerous applications, in-depth testing based on good knowledge of an application and its business logic is often only possible via slower, manual expert security testing. Each stream therefore has one approach at its core.&lt;/p&gt;
+&lt;p&gt;The first stream focuses on establishing a common security baseline to automatically detect so-called &amp;ldquo;low hanging fruit&amp;rdquo;. Progressively customize the automated tests for each application and increase their frequency of execution to detect more bugs and regressions earlier, as close as possible to their inception. The more bugs the automated processes can detect, the more time experts have to use their knowledge and creativity to focus on more complex attack vectors and ensure in-depth application testing in the second stream. As manual review is slow and hard to scale, reviewers prioritize testing components based on their risk, recent relevant changes, or upcoming major releases. Organizations can also access external expertise by participating in bug bounty programs, for example.&lt;/p&gt;</description></item><item><title>Slack</title><link>https://owaspsamm.org/community/slack/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/slack/</guid><description>&lt;p&gt;Our &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;Slack channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is the quickest way to connect with the SAMM community. Core team members are active and typically respond within a day or two.&lt;/p&gt;
+&lt;h2 id="how-to-join"&gt;How to join&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you already have an OWASP Slack account, join the &lt;a href="https://owasp.slack.com/messages/C0VF1EJGH" target="_blank" rel="noopener"&gt;#samm channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ directly&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re new to OWASP Slack, &lt;a href="https://owasp.org/slack/invite" target="_blank" rel="noopener"&gt;request an invitation&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ first&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="what-happens-there"&gt;What happens there&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Questions about the model, assessments, and implementation&lt;/li&gt;
+&lt;li&gt;Announcements about releases, events, and community calls&lt;/li&gt;
+&lt;li&gt;Discussions between practitioners sharing their experiences&lt;/li&gt;
+&lt;li&gt;Feedback on ideas, proposals, and contributions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="other-ways-to-connect"&gt;Other ways to connect&lt;/h2&gt;
+&lt;p&gt;For proposals and threaded conversations, use &lt;a href="https://owaspsamm.org/community/github-discussions/"&gt;GitHub Discussions&lt;/a&gt;
+. To join live conversations with the core team and practitioners, check out our &lt;a href="https://owaspsamm.org/community/community-calls/"&gt;Community Calls&lt;/a&gt;
+.&lt;/p&gt;</description></item><item><title>Software Dependencies</title><link>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/implementation/secure-build/stream-b/</guid><description/></item><item><title>Software Requirements</title><link>https://owaspsamm.org/./model/design/security-requirements/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/stream-a/</guid><description/></item><item><title>Strategy and Metrics</title><link>https://owaspsamm.org/./model/governance/strategy-and-metrics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/strategy-and-metrics/</guid><description>&lt;p&gt;Software assurance entails many different activities and concerns. Without an overall plan, you might be spending a lot of effort to build in security, while in fact your efforts may be unaligned, disproportional or even counterproductive. The goal of the Strategy and Metrics (SM) practice is to build an efficient and effective plan for realizing your software security objectives within your organization.&lt;/p&gt;
+&lt;p&gt;A software security program, that selects and prioritizes activities of the rest of the model, serves as the foundation for your efforts. The practice works on building the plan, maintaining and disseminating it.&lt;/p&gt;</description></item><item><title>Stream Guidance — 2026 Core Team Summit</title><link>https://owaspsamm.org/summits/2026/stream-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/summits/2026/stream-guidance/</guid><description>&lt;p&gt;&lt;strong&gt;Barcelona · April 2026&lt;/strong&gt;
+&lt;em&gt;Consolidated from the session&amp;rsquo;s Notion AI summary, the recorded transcript, and the in-room scratch notes.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="tldr"&gt;TL;DR&lt;/h2&gt;
+&lt;p&gt;Current stream guidance is inconsistent and often unhelpful — good enough to frustrate trainers, not good enough to trust. The session debated whether to invest in authoritative SAMM guidance at all, given that practitioners will increasingly ask AI directly.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Agreed direction:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Keep guidance, but restructure it.&lt;/strong&gt; Merge &lt;em&gt;community guidance&lt;/em&gt; and &lt;em&gt;supporting guidance&lt;/em&gt; into one unified structure.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Migrate off Google Docs.&lt;/strong&gt; Guidance lives in the repo as Markdown, rendered to HTML in the website&amp;rsquo;s Docs section, with cross-links from streams/activities.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Two owners.&lt;/strong&gt; A &lt;strong&gt;technical owner&lt;/strong&gt; drives the Google Docs → MD/HTML migration; a &lt;strong&gt;content owner&lt;/strong&gt; facilitates and oversees that guidance is written and kept fresh. &lt;em&gt;Pat — technical. Aram — content.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Be smart, not exhaustive.&lt;/strong&gt; Don&amp;rsquo;t force ourselves to write 20 pages per stream. Favour useful snippets, links, mappings, and &lt;strong&gt;case studies&lt;/strong&gt; over long-form prose.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Co-create with AI, then curate.&lt;/strong&gt; AI drafts, humans review. Persist prompts and skills so we can rerun them as the model evolves. Our differentiator is the human-in-the-loop, not the word count.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Assessment guidance with personas.&lt;/strong&gt; On each activity, surface &amp;ldquo;how you assess this as a &lt;em&gt;producer / consumer / operator&lt;/em&gt;&amp;rdquo; — pairs with the morning&amp;rsquo;s decision to make activity narratives more generic.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Guiding quote from the room: &lt;em&gt;&amp;ldquo;The maturity model is the north star. Guidance is how to use it.&amp;rdquo;&lt;/em&gt;&lt;/p&gt;</description></item><item><title>Supplier Security</title><link>https://owaspsamm.org/./model/design/security-requirements/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/security-requirements/stream-b/</guid><description/></item><item><title>System Decommissioning / Legacy Management</title><link>https://owaspsamm.org/./model/operations/operational-management/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/operations/operational-management/stream-b/</guid><description/></item><item><title>Technology Management</title><link>https://owaspsamm.org/./model/design/secure-architecture/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/secure-architecture/stream-b/</guid><description/></item><item><title>The SAMM Benchmark Report</title><link>https://owaspsamm.org/benchmark/benchmark-report/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/benchmark/benchmark-report/</guid><description>&lt;h2 id="goals"&gt;Goals&lt;/h2&gt;
+&lt;p&gt;The OWASP Software Assurance Maturity Model (SAMM) is rapidly becoming the go-to framework for application security programs, and it&amp;rsquo;s easy to see why. SAMM offers a structured, measurement-driven approach to improving software security. It helps organizations assess and elevate their software security maturity on a scale from 0 to 3. However, many organizations face challenges after completing their initial SAMM assessment. There&amp;rsquo;s growing interest in understanding how other organizations are progressing, making real-world data one of the hottest topics in the SAMM community. The SAMM Benchmark initiative is designed to address these challenges by offering a centralized source of real-world data, enabling organizations to compare their progress, identify trends, and learn from the broader community. In this first Benchmark Report, we provide an in-depth analysis and interpretation of the OWASP SAMM Benchmark data.&lt;/p&gt;</description></item><item><title>Threat Assessment</title><link>https://owaspsamm.org/./model/design/threat-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/threat-assessment/</guid><description>&lt;p&gt;The Threat Assessment (TA) practice focuses on identifying and understanding of project-level risks based on the functionality of the software being developed and characteristics of the runtime environment. From details about threats and likely attacks against each project, the organization as a whole operates more effectively through better decisions about prioritization of initiatives for security. Additionally, decisions for risk acceptance are more informed, therefore better aligned to the business.&lt;/p&gt;
+&lt;p&gt;By starting with simple threat models and building application risk profiles, an organization improves over time. Ultimately, a sophisticated organization would maintain this information in a way that is tightly coupled to the compensating factors and pass-through risks from external entities. This provides greater breadth of understanding for potential downstream impacts from security issues, tradeoffs, or flaws, while keeping a close watch on the organization’s current performance against known threats.&lt;/p&gt;</description></item><item><title>Threat Modeling</title><link>https://owaspsamm.org/./model/design/threat-assessment/stream-b/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/design/threat-assessment/stream-b/</guid><description/></item><item><title>Time log</title><link>https://owaspsamm.org/internal/time-log/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/time-log/</guid><description>&lt;p&gt;Single source of truth for hours spent on v2. Keep entries short — date, work done, hours, optional note. Pre-tracking entries were logged without specific dates; summarised entries cover periods not itemised at the time.&lt;/p&gt;
+&lt;h2 id="total-to-date"&gt;Total to date&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;~66 hours&lt;/strong&gt; (as of 2026-04-21)&lt;/p&gt;
+&lt;h2 id="log"&gt;Log&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Date&lt;/th&gt;
+ &lt;th&gt;Hours&lt;/th&gt;
+ &lt;th&gt;Work done&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Home page (hero, sections, announcement banner, sponsor grid)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;About pages (What is SAMM, The Team), community landing page&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Sponsors, Practitioners, SAMM Users pages&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Blog migration, blog card grid, category/tag pills&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Model landing page (5x3 grid, bf colors)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Model page layouts (practice, stream, maturity tabs)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Resources section (later dissolved into docs + community)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Docs section (sidebar, layout, TOC, breadcrumbs, card grid)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Docs content (quick start steps, assessment, reference, tools, contributing, guides)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Contact page, mobile responsiveness, button system&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Community internal pages (YouTube, Calls, Newsletter, Slack, GitHub Discussions), content reviews&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Footer&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Pre-tracking&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;SAMM identity and voice definition&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-03-26&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Model mobile fix, pager nav, skills framework (3 pages), IA restructure, SAMM to Assignments styling, DS/identity/roadmap pages&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-03-27 → 2026-04-13&lt;/td&gt;
+ &lt;td&gt;15&lt;/td&gt;
+ &lt;td&gt;Docs IA expansion, resources section dissolution into docs + community, community section restructure. Estimated — not itemised at the time.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-04-14&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;User day pages: Vienna content &amp;amp; talks ported, agenda shortcode/data, announcement banner, blog post styling, placeholder avatar, Scarf commented out in v2 layouts.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-04-16&lt;/td&gt;
+ &lt;td&gt;2&lt;/td&gt;
+ &lt;td&gt;Internal docs (migration plan, actions upgrade plan, staging previews, time log), Netlify/deploy discussion, small iterations.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-04-21&lt;/td&gt;
+ &lt;td&gt;6&lt;/td&gt;
+ &lt;td&gt;v1→v2 migration plan drafting and parity audit. Dissolved &lt;code&gt;/resources/&lt;/code&gt; section: added meta-refresh aliases on 11 destination pages (docs + community), deleted content dir and custom layout, updated migration plan smoke-test list and IA doc. Moved IA and docs plan into &lt;code&gt;/internal/&lt;/code&gt; with proper frontmatter.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-04&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;Hero section refinements: tightened line-height to &lt;code&gt;1&lt;/code&gt;, equalised padding, responsive &lt;code&gt;min-height&lt;/code&gt; with &lt;code&gt;clamp()&lt;/code&gt; for wide viewports, fixed right-panel SVG background position (&lt;code&gt;top center&lt;/code&gt;) for high-resolution monitors, asymmetric flex alignment (title &lt;code&gt;flex-start&lt;/code&gt; / subtitle &lt;code&gt;flex-end&lt;/code&gt;). CSS tokens and property-ordering cleanup.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-04&lt;/td&gt;
+ &lt;td&gt;1.5&lt;/td&gt;
+ &lt;td&gt;CSS architecture: split 4352-line &lt;code&gt;main.css&lt;/code&gt; into 27 layered files (&lt;code&gt;tokens.css&lt;/code&gt;, &lt;code&gt;base.css&lt;/code&gt;, &lt;code&gt;utilities.css&lt;/code&gt;, &lt;code&gt;components/*&lt;/code&gt;, &lt;code&gt;responsive.css&lt;/code&gt;) with CSS &lt;code&gt;@layer&lt;/code&gt;. BEM block = one file. All media queries consolidated into &lt;code&gt;responsive.css&lt;/code&gt;.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-08&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;OG image (&lt;code&gt;static/img/og.png&lt;/code&gt;, 1200×630) and full Open Graph / Twitter Card meta tags in &lt;code&gt;baseof.html&lt;/code&gt;.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-08&lt;/td&gt;
+ &lt;td&gt;1&lt;/td&gt;
+ &lt;td&gt;CI: bump checkout to v6 and cache to v5 for Node.js 24. Fix toreon.yaml tab character and stream_guidance &lt;code&gt;hugo.Data&lt;/code&gt; deprecation. Expand presentations backlog with hosting options.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-15&lt;/td&gt;
+ &lt;td&gt;4&lt;/td&gt;
+ &lt;td&gt;SAMM Identity section (new section, sidebar, breadcrumb partials, writing guidelines, design system content). Global JS extraction to &lt;code&gt;global.js&lt;/code&gt;. New practitioners (aph10, code-guardian). User-day talk updates, baseof cleanup.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-14 → 2026-06-15&lt;/td&gt;
+ &lt;td&gt;5&lt;/td&gt;
+ &lt;td&gt;Model sidebar active state (BF + practice tint), hover teal fix, Hugo cache clear, bf-practice and pager underline fixes, pager caret fake-bold, &lt;code&gt;.prose&lt;/code&gt; class refactor (replaces &lt;code&gt;.content a:not(…)&lt;/code&gt; exclusion list), docs and memory updates.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;2026-06-22&lt;/td&gt;
+ &lt;td&gt;3&lt;/td&gt;
+ &lt;td&gt;Pre-cutover prep: dinner sponsors, team photo, Asterisk Research sponsor + practitioner. Practitioners list fix (where → inline if), user testimonials hidden, sponsorship links. CSS: org-card meta stacking, prose link underlines scoped to section classes, bf-practice card tint, bf-page-header row height fix.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Total&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;strong&gt;~82.5&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id="how-to-use"&gt;How to use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Add one row per working session going forward.&lt;/li&gt;
+&lt;li&gt;Don&amp;rsquo;t aim for precision — 15-minute increments are fine.&lt;/li&gt;
+&lt;li&gt;Update the total when you add entries.&lt;/li&gt;
+&lt;li&gt;Lump trivially small sessions (under 15 min) into the next real session.&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Training and Awareness</title><link>https://owaspsamm.org/./model/governance/education-and-guidance/stream-a/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/governance/education-and-guidance/stream-a/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/agile-guidance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/agile-guidance/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/content-security-in-federated-media-cloud-workflows/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/content-security-in-federated-media-cloud-workflows/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/contributing-to-samm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/contributing-to-samm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/integrating-samm-into-consulting-assessments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/integrating-samm-into-consulting-assessments/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/lean-security-in-devsecops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/lean-security-in-devsecops/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/owasp-categories-for-security-champions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/owasp-categories-for-security-champions/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/samm-benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/samm-benchmark/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/samm-dashboard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/samm-dashboard/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/samm-to-kickstart-the-tssdlc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/samm-to-kickstart-the-tssdlc/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/samm-tools-of-the-trade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/samm-tools-of-the-trade/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/samm-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/samm-update/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/sins-of-samm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/sins-of-samm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2020/user-day-wrap-up/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2020/user-day-wrap-up/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/from-samm-project-towards-samm-suite/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/from-samm-project-towards-samm-suite/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/organizational-scope-of-an-owasp-samm-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/organizational-scope-of-an-owasp-samm-assessment/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/owasp-samm-to-the-rescue/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/owasp-samm-to-the-rescue/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/implementation-of-samm-in-k12-schools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/implementation-of-samm-in-k12-schools/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/samm-update/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/samm-update/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2021/strategic-usage-of-samm-and-dsomm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2021/strategic-usage-of-samm-and-dsomm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/introducing-owasp-samm-at-a-fortune-500-company-lessons-learned/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/introducing-owasp-samm-at-a-fortune-500-company-lessons-learned/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/mastering-samm-fast-track-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/mastering-samm-fast-track-guide/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/measuring-maturity-of-pasta-threat-modeling-activities-using-samm-threat-analysis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/measuring-maturity-of-pasta-threat-modeling-activities-using-samm-threat-analysis/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/opencre-and-the-art-of-performing-samm-assessments/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/opencre-and-the-art-of-performing-samm-assessments/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/round-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/round-table/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/samm-benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/samm-benchmark/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/samm-deep-dive/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/samm-deep-dive/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2023/wrap-up/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2023/wrap-up/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/fast-tracking-security-by-design/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/fast-tracking-security-by-design/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/influencing-boardroom-strategy-samm-as-a-communication-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/influencing-boardroom-strategy-samm-as-a-communication-tool/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/maturing-sdlc-at-a-fortune-500-company-based-on-owasp-samm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/maturing-sdlc-at-a-fortune-500-company-based-on-owasp-samm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/owasp-samm-from-zero-to-hero/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/owasp-samm-from-zero-to-hero/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/practical-advice-for-application-risk-profiles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/practical-advice-for-application-risk-profiles/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/round-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/round-table/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/samm-benchmark-top-ten-lessons-learned/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/samm-benchmark-top-ten-lessons-learned/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024lisbon/threat-modeling-discussion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024lisbon/threat-modeling-discussion/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/implementing-5-levels-of-cmm-for-ssdlc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/implementing-5-levels-of-cmm-for-ssdlc/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/influencing-boardroom-strategy-samm-as-a-communication-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/influencing-boardroom-strategy-samm-as-a-communication-tool/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/maturing-sdlc-at-a-fortune-500-company-based-on-owasp-samm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/maturing-sdlc-at-a-fortune-500-company-based-on-owasp-samm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/rolling-out-samm-in-established-and-diverse-corporations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/rolling-out-samm-in-established-and-diverse-corporations/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/round-table/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/round-table/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/samm-benchmark-updates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/samm-benchmark-updates/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2024sf/security-champions-an-owasp-samm-level-booster/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2024sf/security-champions-an-owasp-samm-level-booster/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/a-samm-implementation-map-to-find-the-elusive-culture-fit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/a-samm-implementation-map-to-find-the-elusive-culture-fit/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/appsec-as-a-habit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/appsec-as-a-habit/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/between-helpful-guidance-and-overwhelming-information/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/between-helpful-guidance-and-overwhelming-information/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/cra-are-we-ready/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/cra-are-we-ready/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/from-none-to-done/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/from-none-to-done/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/the-road-to-devsecops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/the-road-to-devsecops/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025barcelona/the-security-godfather/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/the-security-godfather/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/an-ordinary-dev-team-meets-dsomm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/an-ordinary-dev-team-meets-dsomm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/an-overview-and-comparison-of-samm-and-dsomm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/an-overview-and-comparison-of-samm-and-dsomm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/from-policy-to-proof-automating-testing-for-compliance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/from-policy-to-proof-automating-testing-for-compliance/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/launching-appsec-with-owasp-samm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/launching-appsec-with-owasp-samm/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/pitfalls-and-lessons-in-scaling-samm-at-a-fortune-500-company/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/pitfalls-and-lessons-in-scaling-samm-at-a-fortune-500-company/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/samm-benchmark-updates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/samm-benchmark-updates/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2025dc/stacking-frameworks/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025dc/stacking-frameworks/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/beyond-the-assessment/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/beyond-the-assessment/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/bridging-security-maturity-and-regulatory-compliance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/bridging-security-maturity-and-regulatory-compliance/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/connecting-the-dots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/connecting-the-dots/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/cutting-through-the-noise/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/cutting-through-the-noise/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/from-maturity-to-compliance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/from-maturity-to-compliance/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/preparing-for-eu-cra/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/preparing-for-eu-cra/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/samm-and-dsomm-together-in-practice/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/samm-and-dsomm-together-in-practice/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/samm-for-devs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/samm-for-devs/</guid><description/></item><item><title>User day</title><link>https://owaspsamm.org/user-day/2026vienna/the-sme-maturity-trap/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2026vienna/the-sme-maturity-trap/</guid><description/></item><item><title>User Day</title><link>https://owaspsamm.org/user-day/2025barcelona/cfp/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/user-day/2025barcelona/cfp/</guid><description>&lt;h2 id="2024-samm-user-day"&gt;2024 SAMM User Day!&lt;/h2&gt;
+&lt;p&gt;The OWASP SAMM team is thrilled to announce its upcoming User Day, as part of &lt;b&gt;&lt;a href="https://lisbon.globalappsec.org/" target="_blank" rel="noopener"&gt;Global AppSec Lisbon&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/b&gt;, on Wednesday, June 26th.&lt;/p&gt;
+&lt;p&gt;The User Day focuses on advancing software security and promoting the use of OWASP SAMM. We invite industry professionals, researchers, and enthusiasts to submit their presentation proposals for this exciting event.&lt;/p&gt;</description></item><item><title>Verification</title><link>https://owaspsamm.org/./model/verification/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/./model/verification/</guid><description>&lt;p&gt;Verification focuses on the processes and activities related to how an organization checks and tests artifacts produced throughout software development. This typically includes quality assurance work such as testing, but it can also include other review and evaluation activities.&lt;/p&gt;</description></item><item><title>Version 1.5</title><link>https://owaspsamm.org/v1-5/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/v1-5/</guid><description>&lt;p&gt;While we recommend to use the latest version of SAMM, here is version 1.5:&lt;/p&gt;
+&lt;h2 id="downloads"&gt;Downloads&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;&lt;a href="https://drive.google.com/file/d/11wBBroAaOXf15FnHJ8BT1wuLErLgfL4i/view?usp=sharing" target="_blank" rel="noopener"&gt;Core Model&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;&lt;a href="https://drive.google.com/file/d/1LThH-Gv7hZ6f2LUbTJtxHXTk9OA_D8LS/view?usp=sharing" target="_blank" rel="noopener"&gt;How-to Guide&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/th&gt;
+ &lt;th style="text-align: center"&gt;&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;&lt;a href="https://drive.google.com/file/d/1aCcgN_4V6qW3Os5ek4g8Bro4H3Y5PMAA/view?usp=sharing" target="_blank" rel="noopener"&gt;Quick Start Guide&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;a href="https://drive.google.com/file/d/11wBBroAaOXf15FnHJ8BT1wuLErLgfL4i/view?usp=sharing" target="_blank" rel="noopener"&gt;&lt;img src="https://owaspsamm.org/img/v_1_5/samm1.5_core_cover_small.png" alt="Core Model"&gt;&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;a href="https://drive.google.com/file/d/1LThH-Gv7hZ6f2LUbTJtxHXTk9OA_D8LS/view?usp=sharing" target="_blank" rel="noopener"&gt;&lt;img src="https://owaspsamm.org/img/v_1_5/samm1.5_howto_cover_small.png" alt="How-to Guide"&gt;&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/td&gt;
+ &lt;td style="text-align: center"&gt;&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;&lt;a href="https://drive.google.com/file/d/1aCcgN_4V6qW3Os5ek4g8Bro4H3Y5PMAA/view?usp=sharing" target="_blank" rel="noopener"&gt;&lt;img src="https://owaspsamm.org/img/v_1_5/samm1.5_quick_cover_small.png" alt="Quick Start Guide"&gt;&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="see-also"&gt;See also&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1xVUtsf5Ve3C0zfxeecaM3FxFCQpcQCbC/edit?usp=sharing&amp;amp;ouid=116253604509606300730&amp;amp;rtpof=true&amp;amp;sd=true" target="_blank" rel="noopener"&gt;SAMM 1.5 Assessment Toolbox&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.google.com/spreadsheets/d/1HRIFQW112HsrDaVk47x9qDjJuNWNPxb6/edit?usp=sharing&amp;amp;ouid=116253604509606300730&amp;amp;rtpof=true&amp;amp;sd=true" target="_blank" rel="noopener"&gt;SAMM 1.5 Assessment Toolbox Example&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://owasp.org/www-project-samm/" target="_blank" rel="noopener"&gt;SAMM project page - OWASP website&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Website updates process</title><link>https://owaspsamm.org/internal/website-updates-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/website-updates-process/</guid><description>&lt;p&gt;How changes to owaspsamm.org are made, from local setup to going live.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="branches"&gt;Branches&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Branch&lt;/th&gt;
+ &lt;th&gt;Purpose&lt;/th&gt;
+ &lt;th&gt;Deploys to&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;main&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Production&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;owaspsamm.org&lt;/code&gt; via GitHub Pages&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;staging&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Integration / QA preview&lt;/td&gt;
+ &lt;td&gt;&lt;code&gt;owaspsamm.netlify.app&lt;/code&gt; via Netlify&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Feature branches&lt;/td&gt;
+ &lt;td&gt;Work in progress&lt;/td&gt;
+ &lt;td&gt;not deployed&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id="local-setup"&gt;Local setup&lt;/h2&gt;
+&lt;p&gt;Requires Hugo extended 0.157.0 and Go (version in &lt;code&gt;go.mod&lt;/code&gt;).&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/owaspsamm/website
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd website
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout staging
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;hugo server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id="contribution-workflow"&gt;Contribution workflow&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a feature branch from &lt;code&gt;main&lt;/code&gt;:
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout main &lt;span style="color:#f92672"&gt;&amp;amp;&amp;amp;&lt;/span&gt; git pull
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout -b feature/my-change
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;Make changes and preview locally with &lt;code&gt;hugo server&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Open a Pull Request targeting &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Opening the PR (or pushing new commits to it) automatically rebuilds staging to include your changes. A &lt;strong&gt;staging / integration&lt;/strong&gt; status check on the PR confirms it merged cleanly. Review at &lt;strong&gt;&lt;a href="https://owaspsamm.netlify.app/" target="_blank" rel="noopener"&gt;https://owaspsamm.netlify.app/&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+&lt;/strong&gt; — updates within ~2 minutes.&lt;/li&gt;
+&lt;li&gt;A team member (not the author) reviews on staging and merges the PR to &lt;code&gt;main&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;main&lt;/code&gt; deploys to &lt;code&gt;owaspsamm.org&lt;/code&gt; automatically. Staging rebuilds from the new &lt;code&gt;main&lt;/code&gt; plus any other open PRs.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;code&gt;staging&lt;/code&gt; branch is managed exclusively by automation. Do not push to it directly.&lt;/p&gt;</description></item><item><title>Workflow actions upgrade plan</title><link>https://owaspsamm.org/internal/archive/actions-upgrade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/archive/actions-upgrade/</guid><description>&lt;p&gt;Targets the deploy workflow at &lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt; (currently lives in the v1 repo — will be inherited by v2 at migration time, so doing this upgrade now means v2 launches on a clean pipeline).&lt;/p&gt;
+&lt;h2 id="context-for-execution"&gt;Context for execution&lt;/h2&gt;
+&lt;p&gt;Everything a fresh session needs to start executing this plan without questions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Plan status&lt;/strong&gt;: draft as of 2026-04-15. Check against the actual workflow file and action release dates before assuming these versions are still the right targets.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Repo to edit&lt;/strong&gt;: &lt;code&gt;github.com/owaspsamm/website&lt;/code&gt; (v1). Local path: &lt;code&gt;c:/Users/Pat/Documents/work/OWASPSAMM/website&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;File to edit&lt;/strong&gt;: &lt;a href="https://github.com/owaspsamm/website/blob/main/.github/workflows/gh-pages.yaml" target="_blank" rel="noopener"&gt;&lt;code&gt;.github/workflows/gh-pages.yaml&lt;/code&gt;&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ in the v1 repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Current Hugo pin&lt;/strong&gt;: &lt;code&gt;0.157.0&lt;/code&gt; (do not change as part of this upgrade — Hugo bump is a separate plan).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Production deploy target&lt;/strong&gt;: &lt;code&gt;gh-pages&lt;/code&gt; branch of &lt;code&gt;owaspsamm/website&lt;/code&gt;. &lt;strong&gt;Do not deploy to this branch during testing&lt;/strong&gt; — see test strategy.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deadline&lt;/strong&gt;: before &lt;strong&gt;2026-06-02&lt;/strong&gt; (Node 24 forced at runtime). Hard deadline &lt;strong&gt;2026-09-16&lt;/strong&gt; (Node 20 removed).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="invocation"&gt;Invocation&lt;/h2&gt;
+&lt;p&gt;When ready to execute: open this page, point me at it, and say &amp;ldquo;run the actions upgrade plan&amp;rdquo;. I&amp;rsquo;ll create the feature branch, edit the workflow, walk you through the test run on &lt;code&gt;gh-pages-test&lt;/code&gt;, and stop for confirmation before we merge to &lt;code&gt;main&lt;/code&gt;.&lt;/p&gt;</description></item><item><title>YouTube Channel</title><link>https://owaspsamm.org/community/youtube/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/community/youtube/</guid><description>&lt;p&gt;From model deep-dive sessions to presentations and project updates, our &lt;a href="https://www.youtube.com/channel/UCEZDbvQrj5APg5cEET49A_g" target="_blank" rel="noopener"&gt;YouTube channel&lt;svg class="external-link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"&gt;&lt;path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/&gt;&lt;polyline points="15 3 21 3 21 9"/&gt;&lt;line x1="10" y1="14" x2="21" y2="3"/&gt;&lt;/svg&gt;&lt;/a&gt;
+ is a source of information you don&amp;rsquo;t want to miss.&lt;/p&gt;
+&lt;h2 id="featured-video"&gt;Featured video&lt;/h2&gt;
+&lt;p&gt;SAMM core team members discuss how to carry out SAMM assessments, covering self-assessment vs. external assessors, interview practicalities, and practical tips from industry experts.&lt;/p&gt;</description></item></channel></rss>
