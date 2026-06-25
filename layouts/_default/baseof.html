@@ -7,6 +7,7 @@
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <link rel="shortcut icon" href="{{ "img/favicon.ico" | relURL }}" type="image/x-icon">
   <link rel="apple-touch-icon" href="{{ "img/apple-touch-icon.png" | relURL }}">
+  <meta name="x-cache-bust" content="reclaim-check-v2">
   {{/* Open Graph / Twitter Card */}}
   <meta property="og:site_name"   content="{{ .Site.Title }}">
   <meta property="og:type"        content="{{ if .IsPage }}article{{ else }}website{{ end }}">
