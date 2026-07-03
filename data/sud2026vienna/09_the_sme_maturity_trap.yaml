@@ -4,4 +4,4 @@ name: "The SME Maturity Trap"
 type: "Presentation"
 presenter: "Koen Gilissen"
 time: "1:30 pm"
-archive: false
+archive: true

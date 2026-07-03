@@ -6,19 +6,27 @@ aliases:
   - /events/
 ---
 
-## Vienna SAMM & DSOMM User Day 
+## San Francisco SAMM & DSOMM User Day
 
-Join us in Vienna, Austria, on June 24 for the SAMM & DSOMM User Day, a full day dedicated to learning, sharing, and connecting with the community.
+We're heading to San Francisco! Join us on **November 4, 2026**, alongside OWASP Global AppSec USA, for a full day of talks, discussions, and networking with the SAMM and DSOMM community.
 
-This event brings together practitioners, teams, and experts working with SAMM and DSOMM to exchange real-world experiences, explore practical use cases, and discuss how these models are applied across different organizations and contexts.
+We are currently accepting talk submissions. {{< external-link "https://forms.gle/MYdy6YsJXXMicsds6" "Submit your presentation." >}}
 
-Registration is now open. <b>{{< external-link "https://owasp.glueup.com/event/162243/register/" "Secure your spot." >}}</b>
+Registration is available through the OWASP Global AppSec USA event page — look for the **OWASP SAMM and DSOMM User Day** option. {{< external-link "https://owasp.glueup.com/event/167174/register/" "Register here." >}}
+
+<br/>
+
+## Vienna SAMM & DSOMM User Day — Thank You!
+
+Thank you to everyone who joined us in Vienna, Austria on June 24 for the SAMM & DSOMM User Day. It was a fantastic day of learning, sharing, and connecting with the community.
+
+This event brought together practitioners, teams, and experts working with SAMM and DSOMM to exchange real-world experiences, explore practical use cases, and discuss how these models are applied across different organizations and contexts.
 
 ### Agenda
 
 Here's the line-up of talks and discussions for the day. Click any title for more details on the talk and the speaker.
 
-{{< user_day_agenda_2026_vienna >}}
+{{< user-day-agenda data="sud2026vienna" mode="archive" >}}
 
 As in previous editions, participants are invited to a **sponsored dinner** courtesy of Codific, SecureHabits, and Toreon.
 
@@ -28,7 +36,7 @@ As in previous editions, participants are invited to a **sponsored dinner** cour
 
 ## Vienna SAMM Training
 
-We also have a 1-day training during the OWASP Global AppSec EU event, on June, Tuesday 23. You can learn more about it {{< external-link "https://owaspglobalappseceuvienna20.sched.com/event/2Ft16/1-day-training-build-your-appsec-program-with-owasp-samm-tuesday-only" "here" >}}. Don't forget to {{< external-link "https://owasp.glueup.com/event/162243/register/" "register" >}}!
+We also have a 1-day training during the OWASP Global AppSec EU event, on June, Tuesday 23. You can learn more about it {{< external-link "https://owaspglobalappseceuvienna20.sched.com/event/2Ft16/1-day-training-build-your-appsec-program-with-owasp-samm-tuesday-only" "here" >}}.
 
 <br/><br/>
 

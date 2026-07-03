@@ -4,4 +4,4 @@ name: "SAMM for Devs: What's in it for Me?"
 type: "Presentation"
 presenter: "Clemens Hübner"
 time: "11:00 am"
-archive: false
+archive: true
