@@ -4,4 +4,4 @@ name: "Beyond the Assessment: Charting a Security Future with SAMM"
 type: "Presentation"
 presenter: "Sunny Sharma"
 time: "1:00 pm"
-archive: false
+archive: true

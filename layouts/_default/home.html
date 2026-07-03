@@ -24,7 +24,7 @@
       {{ with .buttons }}
       <div class="announcement__actions">
         {{ range . }}
-          <a href="{{ .url }}" class="btn btn--{{ .style | default "outline" }}">{{ .label }}</a>
+          <a href="{{ .url }}" class="btn btn--{{ .style | default "outline" }}"{{ if hasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .label }}</a>
         {{ end }}
       </div>
       {{ end }}

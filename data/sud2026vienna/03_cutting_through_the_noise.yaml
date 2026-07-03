@@ -4,4 +4,4 @@ name: "Cutting Through the Noise: Mapping Security Tools and Initiatives to DSOM
 type: "Presentation"
 presenter: "John Smith"
 time: "10:00 am"
-archive: false
+archive: true
