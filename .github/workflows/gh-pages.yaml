@@ -11,12 +11,19 @@ on:
   repository_dispatch:
     types: [samm-core-released]
   workflow_dispatch:
+    inputs:
+      release:
+        description: 'SAMM release version (e.g. v1.2.3)'
+        required: true
+        type: string
 env:
   hugo_version: '0.157.0'
 jobs:
   updateHugoMod:
     runs-on: ubuntu-latest
-    if: github.event_name == 'repository_dispatch'
+    if: |
+      github.event_name == 'repository_dispatch' ||
+      github.event_name == 'workflow_dispatch'
     outputs:
       pr_number: ${{ steps.cpr.outputs.pull-request-number }}
     steps:
@@ -24,7 +31,7 @@ jobs:
         id: semver_parser
         uses: booxmedialtd/ws-action-parse-semver@v1
         with:
-          input_string: ${{ github.event.client_payload.release }}
+          input_string: ${{ github.event.client_payload.release || inputs.release }}
           version_extractor_regex: 'v(.*)$'
       - name: Check release semver sanity
         env:
@@ -53,10 +60,10 @@ jobs:
           cat go.mod
       - name: Set commit message
         run: |
-          if [ -z "${{ github.event.client_payload.release }}" ]; then
-             echo "COMMIT_MESSAGE=Updated translations" >> $GITHUB_ENV
+          if [ -z "${{ github.event.client_payload.release || inputs.release }}" ]; then
+            echo "COMMIT_MESSAGE=Updated translations" >> $GITHUB_ENV
           else
-             echo "COMMIT_MESSAGE=New SAMM release: ${{ github.event.client_payload.release }}" >> $GITHUB_ENV
+            echo "COMMIT_MESSAGE=New SAMM release: ${{ github.event.client_payload.release || inputs.release }}" >> $GITHUB_ENV
           fi
       - name: Create Pull Request with updated files
         id: cpr
@@ -77,7 +84,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: updateHugoMod
-    if: ${{ always() && github.event_name != 'repository_dispatch' && (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
+    if: ${{ always() &&
+      github.event_name != 'repository_dispatch' &&
+      github.event_name != 'workflow_dispatch' &&
+      (needs.updateHugoMod.result == 'success' || needs.updateHugoMod.result == 'skipped') }}
     steps:
       - uses: actions/checkout@v6
         with:
