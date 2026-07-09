@@ -1,0 +1,69 @@
+name: Update Hugo module
+
+on:
+  repository_dispatch:
+    types: [samm-core-released]
+  workflow_dispatch:
+    inputs:
+      release:
+        description: 'SAMM release version (e.g. v1.2.3)'
+        required: true
+        type: string
+
+jobs:
+  updateHugoMod:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Parse semver string
+        id: semver_parser
+        uses: booxmedialtd/ws-action-parse-semver@v1
+        with:
+          input_string: ${{ github.event.client_payload.release || inputs.release }}
+          version_extractor_regex: 'v(.*)$'
+      - name: Check release semver sanity
+        env:
+          RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
+        run: |
+          if [ "${RELEASE}" = "v" ]; then
+            echo "::error title={Bad Semver}::{Release version is not semver compatible}"
+            exit 1
+          fi
+      - uses: actions/checkout@v6
+        with:
+          submodules: true
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.157.0'
+          extended: true
+      - name: Get new release
+        env:
+          RELEASE: "v${{ steps.semver_parser.outputs.fullversion }}"
+        run: |
+          echo "We got a new SAMM release: ${RELEASE}"
+          hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
+          cat go.mod
+      - name: Set commit message
+        run: |
+          if [ -z "${{ github.event.client_payload.release || inputs.release }}" ]; then
+            echo "COMMIT_MESSAGE=Updated translations" >> $GITHUB_ENV
+          else
+            echo "COMMIT_MESSAGE=New SAMM release: ${{ github.event.client_payload.release || inputs.release }}" >> $GITHUB_ENV
+          fi
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          add-paths: |
+            go.mod
+            go.sum
+          commit-message: "${{ env.COMMIT_MESSAGE }}"
+          committer: github_actions <github-actions@github.com>
+          branch: automated/hugo-mod-update
+          delete-branch: true
+          title: "${{ env.COMMIT_MESSAGE }}"
+          body: |
+            Automated update of `go.mod`/`go.sum` triggered by a new SAMM release.
+          base: ${{ github.ref_name }}
