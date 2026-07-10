@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Sets of security basic principles available to product teams
+            Basic security principles available to product teams
         activity: |
             During design, technical staff on the product team use a short checklist of security principles. Typically, security principles include defense in depth, securing the weakest link, use of secure defaults, simplicity in design of security functionality, secure failure, balance of security and usability, running with least privilege, avoidance of security by obscurity, etc.
 
@@ -43,15 +43,15 @@ maturity_levels:
         benefit: |
             Reusable security services available for product teams
         activity: |
-            Identify shared infrastructure or services with security functionality. These typically include single-sign-on services, access control or entitlements services, logging and monitoring services or application-level firewalling. Collect and evaluate reusable systems to assemble a list of such resources and categorize them by the security mechanism they fulfill. Consider each resource in terms of why a product team would want to integrate with it, i.e. the benefits of using the shared resource.
+            Identify shared infrastructure or services with security functionality. These typically include single-sign-on services, access control or entitlements services, logging and monitoring services or application-level firewalling. Collect and evaluate reusable systems to assemble a list of such resources and categorize them by the security mechanism they fulfill. Consider each resource in terms of why a product team would want to integrate with it, i.e., the benefits of using the shared resource.
 
             If multiple resources exist in each category, select and standardize on one or more shared services per category. Because future software development will rely on these services, review each thoroughly to ensure understanding of the baseline security posture. For each selected service, create design guidance for product teams to understand how to integrate with the system. Make the guidance available through training, mentorship, guidelines, and standards.
 
             Establish a set of best practices representing sound methods of implementing security functionality. You can research them or purchase them, and it is often more effective if you customize them so they are more specific to your organization. Example patterns include a single-sign-on subsystem, a cross-tier delegation model, a separation-of-duties authorization model, a centralized logging pattern, etc.
 
-            These patterns can originate from specific projects or applications, but make sure you share them between different teams across the organization for efficient and consistent application of appropriate security solutions.
+            These patterns can originate from specific projects or applications, but make sure you share them among different teams across the organization for efficient and consistent application of appropriate security solutions.
 
-            To increase adoption of these patterns, link them to the shared security services, or implement them into actual component solutions that can be easily integrated into an application during development. Support the key technologies within the organization, for instance in case of different development stacks. Treat these solutions as actual applications with proper support in case of questions or issues.
+            To increase adoption of these patterns, link them to the shared security services, or implement them into actual component solutions that can be easily integrated into an application during development. Support the key technologies within the organization, for instance in the case of different development stacks. Treat these solutions as actual applications with proper support in case of questions or issues.
 
         question: Do you use shared security services during design?
         quality_criteria:

@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Identification of unused of software assets or components
+            Identification of unused software assets or components
         activity: |
             Identify unused applications on an _ad hoc_ basis, either by chance observation, or by occasionally performing a review. When you identify unused applications, process those findings for further action. If you have established a formal process for decommissioning unused applications, ensure teams are aware of and use it.
 

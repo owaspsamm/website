@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Limited risk of human error during build process minimizing security issues
+            Limited risk of human error during the build process, minimizing security issues
         activity: |
             Define the build process, breaking it down into a set of clear instructions to either be followed by a person or an automated tool. The build process definition describes the whole process end-to-end so that the person or tool can follow it consistently each time and produce the same result. The definition is stored centrally and accessible to any tools or people. Avoid storing multiple copies as they may become unaligned and outdated.
 
@@ -33,7 +33,7 @@ maturity_levels:
         question: Is your full build process formally described?
         quality_criteria:
             - You have enough information to recreate the build processes
-            - Your build documentation up to date
+            - Your build documentation is up to date
             - Your build documentation is stored in an accessible location
             - Produced artifact checksums are created during build to support later verification
             - You harden the tools that are used within the build process

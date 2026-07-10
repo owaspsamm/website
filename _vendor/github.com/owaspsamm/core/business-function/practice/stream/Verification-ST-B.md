@@ -47,7 +47,7 @@ maturity_levels:
 
             Penetration testing cases include both application-specific tests to check soundness of business logic, and common vulnerability tests to check the design and implementation. Once specified, security-savvy quality assurance or development staff can execute security test cases. The central software security group monitors first-time execution of security test cases for a project team to assist and coach the team security champions.
 
-            Many organizations offer "Bug Bounty" programmes which invite security researchers to find vulnerabilities in applications and report them responsibly in exchange for rewards. The approach allows organizations to access a bigger pool of talent, especially those lacking sufficient internal capacity or requiring the additional assurance.
+            Many organizations offer "Bug Bounty" programs which invite security researchers to find vulnerabilities in applications and report them responsibly in exchange for rewards. The approach allows organizations to access a bigger pool of talent, especially those lacking sufficient internal capacity or requiring the additional assurance.
 
             Prior to release or mass deployment, stakeholders review results of security tests and accept the risks indicated by failing security tests at release time. Establish a concrete timeline to address the gaps over time. Spread the knowledge of manual security testing and the results across the development team to improve security knowledge and awareness inside the organization.
 
@@ -56,7 +56,7 @@ maturity_levels:
             - Penetration testing uses application-specific security test cases to evaluate security
             - Penetration testing looks for both technical and logical issues in the application
             - Stakeholders review the test results and handle them in accordance with the organization's risk management
-            - Qualified personnel performs penetration testing
+            - Qualified personnel perform penetration testing
 
         answers:
             - "No"
@@ -69,13 +69,13 @@ maturity_levels:
         benefit: |
             Identification of manually identifiable security issues in earliest possible stages
         activity: |
-            Integrate security testing in parallel to all other development activities, including requirement analysis, software design and construction.
+            Integrate security testing in parallel with all other development activities, including requirement analysis, software design and construction.
 
             With the multiplicity of security tools running at every phase of development, remediating security issues at a designated stage (such as pre-release testing) is no longer appropriate or desirable. Security issues must be quickly triaged and fixes planned in a tradeoff between risk and cost of remediation. Continuously striving to detect issues earlier in the development lifecycle, via specific, low-friction automated tests integrated into development tools and build processes, lowers the cost of remediation thereby increasing the likelihood of issues being quickly resolved.
 
             Proactively improve the security testing effort integrated into the development process by adequately propagating the results of other security test activities. For example, if a security penetration test identifies issues with session management, any changes to session management should trigger explicit security tests before pushing the changes to production.
 
-            Security champions and the central secure software group continuously review results from automated and manual security tests during development, including these results as part of the security awareness trainings for the development teams. Integrate lessons learned in overall playbooks to improve security testing as part of the organization development. If there are unaddressed findings that remain as accepted risks for the release, stakeholders and development managers should work together to establish a concrete timeframe for addressing them.
+            Security champions and the central secure software group continuously review results from automated and manual security tests during development, including these results as part of the security awareness trainings for the development teams. Integrate lessons learned in overall playbooks to improve security testing as part of organizational development. If there are unaddressed findings that remain as accepted risks for the release, stakeholders and development managers should work together to establish a concrete timeframe for addressing them.
 
         question: Do you use the results of security testing to improve the development lifecycle?
         quality_criteria:
@@ -86,7 +86,7 @@ maturity_levels:
         answers:
             - "No"
             - Yes, but we improve it ad-hoc
-            - Yes, we improve it at regular times
-            - Yes, we improve it at least annually
+            - Yes, we improve it regularly
+            - Yes, we improve it continuously
 
 ---

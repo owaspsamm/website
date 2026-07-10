@@ -16,12 +16,12 @@ stream_a: Deployment Process
 
 stream_a_maturity_1_activity: Formalize the deployment process and secure the used tooling and processes.
 stream_a_maturity_2_activity: Automate the deployment process over all stages and introduce sensible security verification tests.
-stream_a_maturity_3_activity: Automatically verify integrity of all deployed software, independently on whether it's internally or externally developed.
+stream_a_maturity_3_activity: Automatically verify the integrity of all deployed software, regardless of whether it's internally or externally developed.
 
 stream_b: Secret Management
 
 stream_b_maturity_1_activity: Introduce basic protection measures to limit access to your production secrets.
-stream_b_maturity_2_activity: Inject secrets dynamically during deployment process from hardened storages and audit all human access to them.
+stream_b_maturity_2_activity: Inject secrets dynamically during the deployment process from hardened storage and audit all human access to them.
 stream_b_maturity_3_activity: Improve the lifecycle of application secrets by regularly generating them and by ensuring proper use.
 ---
 

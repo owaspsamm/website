@@ -22,7 +22,7 @@ maturity_levels:
         activity: |
             People often take the path of least resistance in developing, deploying or operating a software solution. New technologies are often included when they can facilitate or speed up the effort or enable the solution to scale better. These new technologies might, however, introduce new risks to the organization that you need to manage.
 
-            Identify the most important technologies, frameworks, tools and integrations being used for each application. Use the knowledge of the architect to study the development and operating environment as well as artefacts. Then evaluate them for their security quality and raise important findings to be managed.
+            Identify the most important technologies, frameworks, tools and integrations being used for each application. Use the knowledge of the architect to study the development and operating environment as well as artifacts. Then evaluate them for their security quality and raise important findings to be managed.
 
         question: Do you evaluate the security quality of important technologies used for development?
         quality_criteria:
@@ -41,7 +41,7 @@ maturity_levels:
         benefit: |
             Technologies with appropriate security level available to product teams
         activity: |
-            Identify commonly used technologies, frameworks and tools in use across software projects in the organization, whereby you focus on capturing the high-level technologies.
+            Identify commonly used technologies, frameworks, and tools in use across software projects in the organization, focusing on capturing the high-level technologies.
 
             Create a list and share it across the development organization as recommended technologies. When selecting them, consider incident history, track record for responding to vulnerabilities, appropriateness of functionality for the organization, excessive complexity in usage of the third-party component, and sufficient knowledge within the organization.
 
@@ -65,14 +65,14 @@ maturity_levels:
         benefit: |
             Limited attack surface due to usage of vetted technologies
         activity: |
-            For all proprietary development (in-house or acquired), impose and monitor the use of standardized technology. Depending on your organization, either implement these restrictions into build or deployment tools, by means of after-the-fact automated analysis of application artefacts (e.g., source code, configuration files or deployment artefacts), or periodically review focusing on the correct use of these frameworks.
+            For all proprietary development (in-house or acquired), impose and monitor the use of standardized technology. Depending on your organization, either implement these restrictions into build or deployment tools, by means of after-the-fact automated analysis of application artifacts (e.g., source code, configuration files or deployment artifacts), or periodically review focusing on the correct use of these frameworks.
 
             Verify several factors with project teams. Identify use of non-recommended technologies to determine if there are gaps in recommendations versus the organization's needs. Examine unused or incorrectly used design patterns and reference platform modules to determine if updates are needed. Additionally, implement functionality in the reference platforms as the organization evolves and project teams request it.
 
         question: Do you enforce the use of recommended technologies within the organization?
         quality_criteria:
             - You monitor applications regularly for the correct use of the recommended technologies
-            - You solve violations against the list accoranding to organizational policies
+            - You solve violations against the list according to organizational policies
             - You take action if the number of violations falls outside the yearly objectives
 
         answers:

@@ -9,7 +9,7 @@ aliases:
 type: practice
 
 practice_maturity_1_description: All defects are tracked within each project.
-practice_maturity_2_description: Defect tracking used to influence the deployment process.
+practice_maturity_2_description: Defect tracking is used to influence the deployment process.
 practice_maturity_3_description: Defect tracking across multiple components is used to help reduce the number of new defects.
 
 stream_a: Defect Tracking
@@ -29,5 +29,5 @@ The Defect Management (DM) practice focuses on collecting, recording, and analyz
 
 The practice’s first stream deals with the process of handling and managing defects to ensure released software has a given assurance level. The second stream focuses on enriching the information about the defects and deriving metrics to guide decisions about the security of individual projects and of the security assurance program as a whole.
 
-In a sophisticated form, the practice requires formalised, independent defect management and real-time, correlated information to detect trends and influence security strategy.
+In a sophisticated form, the practice requires formalized, independent defect management and real-time, correlated information to detect trends and influence security strategy.
 

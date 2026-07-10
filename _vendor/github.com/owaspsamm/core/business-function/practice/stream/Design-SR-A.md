@@ -24,7 +24,7 @@ maturity_levels:
 
             At the same time, review the functionality from an attacker perspective to understand how it could be misused. This way you can identify extra protective requirements for the software project at hand.
 
-            Security objectives can relate to specific security functionality you need to add to the application (e.g., "Identify the user of the application at all times") or to the overall application quality and behavior (e.g., "Ensure personal data is properly protected in transit"), which does not necessarily lead to new functionality. Follow good practices for writing security requirements. Make them specific, measurable, actionable, relevant and time-bound (SMART). Beware of adding requirements too general-purpose to not relate to the application at hand (e.g., The application should protect against the OWASP Top 10). While they can be true, they don't add value to the discussion.
+            Security objectives can relate to specific security functionality you need to add to the application (e.g., "Identify the user of the application at all times") or to the overall application quality and behavior (e.g., "Ensure personal data is properly protected in transit"), which does not necessarily lead to new functionality. Follow good practices for writing security requirements. Make them specific, measurable, actionable, relevant and time-bound (SMART). Beware of adding requirements too general-purpose to specifically relate to the application at hand (e.g., The application should protect against the OWASP Top 10). While they can be true, they don't add value to the discussion.
 
         question: Do project teams specify security requirements during development?
         quality_criteria:
@@ -43,17 +43,17 @@ maturity_levels:
         benefit: |
             Alignment of security requirements with other types of requirements
         activity: |
-            Security requirements can originate from other sources including policies and legislation, known problems within the application, and intelligence from metrics and feedback. At this level, a more systematic elicitation of security requirements must be achieved by analysing different sources of such requirements. Ensure that appropriate input is received from these sources to help the elicitation of requirements. For example, organize interviews or brainstorm sessions (e.g., in the case of policy and legislation), analyze historical logs or vulnerability systems.
+            Security requirements can originate from other sources including policies and legislation, known problems within the application, and intelligence from metrics and feedback. At this level, a more systematic elicitation of security requirements must be achieved by analyzing different sources of such requirements. Ensure that appropriate input is received from these sources to help the elicitation of requirements. For example, organize interviews or brainstorm sessions (e.g., in the case of policy and legislation), analyze historical logs or vulnerability systems.
 
             Use a structured notation of security requirements across applications and an appropriate formalism that integrates well with how you specify other (functional) requirements for the project. This could mean, for example, extending analysis documents, writing user stories, etc.
 
-            When requirements are specified, it is important to ensure that these requirements are taken into account during product development. Setup a mechanism to stimulate or force project teams to meet these requirements in the product. For example, annotate requirements with priorities, or influence the handling of requirements to enforce sufficient security appetite (while balancing against other non-functional requirements).
+            When requirements are specified, it is important to ensure that these requirements are taken into account during product development. Set up a mechanism to stimulate or force project teams to meet these requirements in the product. For example, annotate requirements with priorities, or influence the handling of requirements to enforce sufficient security appetite (while balancing against other non-functional requirements).
 
         question: Do you define, structure, and include prioritization in the artifacts of the security requirements gathering process?
         quality_criteria:
-            - Security requirements take into consideration domain specific knowledge when applying policies and guidance to product development
+            - Security requirements take into consideration domain-specific knowledge when applying policies and guidance to product development
             - Domain experts are involved in the requirements definition process
-            - You have an agreed upon structured notation for security requirements
+            - You have an agreed-upon structured notation for security requirements
             - Development teams have a security champion dedicated to reviewing security requirements and outcomes
 
         answers:
@@ -67,9 +67,9 @@ maturity_levels:
         benefit: |
             Efficient and effective handling of security requirements in your organization
         activity: |
-            Setup a security requirements framework to help projects elicit an appropriate and complete requirements set for their project. This framework considers the different types of requirements and sources of requirements. It should be adapted to the organizational habits and culture, and provide effective methodology and guidance in the elicitation and formation of requirements.
+            Set up a security requirements framework to help projects elicit an appropriate and complete requirements set for their project. This framework considers the different types of requirements and sources of requirements. It should be adapted to the organizational habits and culture, and provide effective methodology and guidance in the elicitation and formation of requirements.
 
-            The framework helps project teams increase the efficiency and effectiveness of requirements engineering. It can provide a categorisation of common requirements and a number of reusable requirements. Do remember that, while thoughtless copying is ineffective, the fact of having potential relevant requirements to reason about is often productive.
+            The framework helps project teams increase the efficiency and effectiveness of requirements engineering. It can provide a categorization of common requirements and a number of reusable requirements. Do remember that, while thoughtless copying is ineffective, the fact of having potential relevant requirements to reason about is often productive.
 
             The framework also gives clear guidance on the quality of requirements and formalizes how to describe them. For user stories, for instance, concrete guidance can explain what to describe in the definition of done, definition of ready, story description, and acceptance criteria.
 

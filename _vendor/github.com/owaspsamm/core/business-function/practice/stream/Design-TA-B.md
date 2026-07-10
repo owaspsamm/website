@@ -24,7 +24,7 @@ maturity_levels:
 
             Threat modeling is a team exercise, including product owners, architects, security champions, and security testers. At this maturity level, expose teams and stakeholders to threat modeling to increase security awareness and to create a shared vision on the security of the system.
 
-            At maturity level 1, you perform threat modeling ad-hoc for high-risk applications and use simple threat checklists, such as STRIDE. Avoid lengthy workshops and overly detailed lists of low-relevant threats. Perform threat modeling iteratively to align to more iterative development paradigms. If you add new functionality to an existing application, look only into the newly added functions instead of trying to cover the entire scope. A good starting point is the existing diagrams that you annotate during discussion workshops. Always persist the outcome of a threat modeling discussion for later use.
+            At maturity level 1, you perform threat modeling ad-hoc for high-risk applications and use simple threat checklists, such as STRIDE. Avoid lengthy workshops and overly detailed lists of low-relevance threats. Perform threat modeling iteratively to align to more iterative development paradigms. If you add new functionality to an existing application, look only into the newly added functions instead of trying to cover the entire scope. A good starting point is the existing diagrams that you annotate during discussion workshops. Always persist the outcome of a threat modeling discussion for later use.
 
             Your most important tool to start threat modeling is a whiteboard, smartboard, or a piece of paper. Aim for security awareness, a simple process, and actionable outcomes that you agree upon with your team.
 
@@ -47,7 +47,7 @@ maturity_levels:
         activity: |
             Use a standardized threat modeling methodology for your organization and align this on your application risk levels. Think about ways to support the scaling of threat modeling throughout the organization.
 
-            Train your architects, security champions, and other stakeholders on how to do practical threat modeling.  Threat modeling requires understanding, clear playbooks and templates, organization-specific examples, and experience, which is hard to automate.
+            Train your architects, security champions, and other stakeholders on how to do practical threat modeling. Threat modeling requires understanding, clear playbooks and templates, organization-specific examples, and experience, which is hard to automate.
 
             Your threat modeling methodology includes at least diagramming, threat identification, design flaw mitigations, and how to validate your threat model artifacts. Your threat model diagram allows a detailed understanding of the environment and the mechanics of the application. You discover threats to your application with checklists, such as STRIDE or more organization-specific threats. For identified design flaws (ranked according to risk for your organization), you add mitigating controls to support stakeholders in dealing with particular threats. Define what triggers updating a threat model, for example, a technology change or deployment of an application in a new environment.
 
@@ -71,22 +71,22 @@ maturity_levels:
         benefit: |
             Assurance of continuous improvement of threat modeling activities
         activity: |
-            Threat modeling is integrated into your SDLC and has become part of the developer security culture.  Reusable risk patterns, comprising related threat libraries, design flaws, and security mitigations, are created and improved, based on the organization's threat models. You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications.
+            Threat modeling is integrated into your SDLC and has become part of the developer security culture. Reusable risk patterns, comprising related threat libraries, design flaws, and security mitigations, are created and improved, based on the organization's threat models. You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications.
 
-            You optimize your threat modeling methodology. You capture lessons learned from threat models and use these to improve your threat modeling methodology.  You review the threat categories relevant to your organization and update your methodology appropriately. From time to time, you evaluate the quality of your threat models independently.
+            You optimize your threat modeling methodology. You capture lessons learned from threat models and use these to improve your threat modeling methodology. You review the threat categories relevant to your organization and update your methodology appropriately. From time to time, you evaluate the quality of your threat models independently.
 
             You automate parts of your threat modeling process with threat modeling tools. You integrate your threat modeling tools with other security tools, such as security verification tools and risk tracking tools. You consider "threat modeling as code" practices to integrate threat modeling artifacts with application code.
 
         question: Do you regularly review and update the threat modeling methodology for your applications?
         quality_criteria:
-            - The threat model methodology considers historical feedback for improvement
+            - The threat modeling methodology considers historical feedback for improvement
             - You regularly (e.g., yearly) review the existing threat models to verify that no new threats are relevant for your applications
             - You automate parts of your threat modeling process with threat modeling tools
 
         answers:
             - "No"
             - Yes, but review is ad-hoc
-            - Yes, we review it at regular times
-            - Yes, we review it at least annually
+            - Yes, we review it regularly
+            - Yes, we review it continuously
 
 ---

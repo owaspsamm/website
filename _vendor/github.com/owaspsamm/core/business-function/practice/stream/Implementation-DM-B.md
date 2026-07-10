@@ -24,16 +24,16 @@ maturity_levels:
 
             * The total number of defects versus total number of verification activities. This could give you an idea whether you're looking for defects with an adequate intensity and quality.
             * The software components the defects reside in. This is indicative of where attention might be most required, and where security flaws might be more likely to appear in the future again.
-            * The type or category of the defect, which suggests areas where the development team need further training.
+            * The type or category of the defect, which suggests areas where the development team needs further training.
             * The severity of the defect, which can help the team understand the software's risk exposure.
 
-            Identify and carry out sensible quick win activities which you can derive from the newly acquired knowledge. These might include things like a knowledge sharing session about one particular vulnerability type or carrying out / automating a security scan.
+            Identify and carry out sensible quick win activities which you can derive from the newly acquired knowledge. These might include things like a knowledge sharing session about one particular vulnerability type or carrying out or automating a security scan.
 
-        question: Do you use basic metrics about recorded security defects to carry out quick win improvement activities?
+        question: Do you use basic metrics about recorded security defects to carry out quick-win improvement activities?
         quality_criteria:
-            - You analyzed your recorded metrics at least once in the last year
+            - You have analyzed your recorded metrics at least once in the last year
             - At least basic information about this initiative is recorded and available
-            - You have identified and carried out at least one quick win activity based on the data
+            - You have identified and carried out at least one quick-win activity based on the data
 
         answers:
             - "No"
@@ -57,7 +57,7 @@ maturity_levels:
             * Amount of accepted risk.
             * Ratio of security incidents caused due to unknown or undocumented security defects.
 
-            Generate a regular (e.g. monthly) report for a suitable audience. This would typically reach audience like managers and security officer and engineers. Use the information in the report as an input for your security strategy, e.g. improving trainings or security verification activities.
+            Generate a regular (e.g. monthly) report for a suitable audience. This would typically reach audiences like managers, security officers, and engineers. Use the information in the report as an input for your security strategy, e.g. improving trainings or security verification activities.
 
             Share the most prominent or interesting technical details about security defects including the fixing strategy to other teams once these defects are fixed, e.g. in a regular knowledge sharing meeting. This will help scale the learning effect from defects to the whole organization and limit their occurrence in the future.
 
@@ -78,22 +78,22 @@ maturity_levels:
         benefit: |
             Optimized security strategy based on defect information
         activity: |
-            Regularly (at least once per year) revisit the defect management metrics you're collecting and compare the effort needed to collect and track these to the expected outcomes. Make knowledgeable decision about removing metrics which don't deliver the overall expected value. Wherever possible, include and automate verification activities for the quality of the collected data and ensure sustainable improvement if any differences are detected.
+            Regularly (at least once per year) revisit the defect management metrics you're collecting and compare the effort needed to collect and track these to the expected outcomes. Make knowledgeable decisions about removing metrics which don't deliver the overall expected value. Wherever possible, include and automate verification activities for the quality of the collected data and ensure sustainable improvement if any differences are detected.
 
             Aggregate the data with your threat intelligence and incident management metrics and use the results as input for other initiatives over the whole organization, such as:
 
             * Planning security trainings for various personnel
-            * Improvement of security verification activities for both internally and externally develeoped collected
+            * Improvement of security verification activities for both internally and externally developed collected
             * Supply chain management, e.g. carrying out security audits of partner organizations
             * Monitoring of attacks against your infrastructure and applications
             * Investing in security infrastructure or compensating controls
             * Staffing your security team and setting up the security budget
 
-        question: Do you regularly evaluate the effectiveness of your security metrics so that its input helps drive your security strategy?
+        question: Do you regularly evaluate the effectiveness of your security metrics so that their input helps drive your security strategy?
         quality_criteria:
             - You have analyzed the effectiveness of the security metrics at least once in the last year
             - Where possible, you verify the correctness of the data automatically
-            - The metrics is aggregated with other sources like threat intelligence or incident management
+            - The metrics are aggregated with other sources like threat intelligence or incident management
             - You derived at least one strategic activity from the metrics in the last year
 
         answers:

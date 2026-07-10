@@ -48,7 +48,7 @@ maturity_levels:
 
             Create guidance for prioritizing component patching, reflecting your risk tolerance and management objectives. Consider operational factors (e.g., criticality of the application, severity of the vulnerabilities addressed) in determining priorities for testing and applying patches.
 
-            In the event receive a notification for a critical vulnerability in a component, while no patch is yet available, triage and handle the situation as a risk management issue (e.g., implement compensating controls, obtain customer risk acceptance, or disable affected applications/features).
+            In the event you receive a notification for a critical vulnerability in a component, while no patch is yet available, triage and handle the situation as a risk management issue (e.g., implement compensating controls, obtain customer risk acceptance, or disable affected applications/features).
 
         question: Do you follow an established process for updating components of your technology stacks?
         quality_criteria:
@@ -76,7 +76,7 @@ maturity_levels:
         question: Do you regularly evaluate components and review patch level status?
         quality_criteria:
             - You update the list with components and versions
-            - You identify and update missing updates according to existing SLA
+            - You identify and apply missing updates according to the existing SLA
             - You review and update the process based on feedback from the people who perform patching
 
         answers:
