@@ -44,6 +44,7 @@ jobs:
         run: |
           echo "We got a new SAMM release: ${RELEASE}"
           hugo mod get "github.com/owaspsamm/core@markdown/${RELEASE}"
+          hugo mod vendor
           cat go.mod
       - name: Set commit message
         run: |
@@ -59,6 +60,7 @@ jobs:
           add-paths: |
             go.mod
             go.sum
+            _vendor
           commit-message: "${{ env.COMMIT_MESSAGE }}"
           committer: github_actions <github-actions@github.com>
           branch: automated/hugo-mod-update
