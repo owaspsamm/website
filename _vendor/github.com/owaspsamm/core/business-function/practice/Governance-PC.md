@@ -25,9 +25,9 @@ stream_b_maturity_2_activity: Publish compliance-specific application requiremen
 stream_b_maturity_3_activity: Measure and report on individual application's compliance with 3rd party requirements.
 ---
 
-The Policy and Compliance (PC) practice focuses on understanding and meeting external legal and regulatory requirements while driving internal security standards to ensure compliance in a way that’s aligned with the business purpose of the organization.
+The Policy and Compliance (PC) practice focuses on understanding and meeting external legal and regulatory requirements while driving internal security standards to ensure compliance in a way that is aligned with the business purpose of the organization.
 
-A driving theme for improvement within this practice is describing organization’s standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are met.
+A driving theme for improvement within this practice is describing the organization's standards and 3rd party obligations as application requirements, enabling efficient and automated audits that may be leveraged within the SDLC and continuously demonstrate that all expectations are met.
 
 In a sophisticated form, provision of this practice entails an organization-wide understanding of both internal standards and external compliance drivers while also maintaining low-latency checkpoints with project teams to ensure no project is operating outside expectations without visibility.
 

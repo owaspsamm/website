@@ -29,7 +29,7 @@ maturity_levels:
         question: Do you understand the enterprise-wide risk appetite for your applications?
         quality_criteria:
             - You capture the risk appetite of your organization's executive leadership
-            - The organization's leadership vet and approve the set of risks
+            - The organization's leadership vets and approves the set of risks
             - You identify the main business and technical threats to your assets and data
             - You document risks and store them in an accessible location
 
@@ -60,7 +60,7 @@ maturity_levels:
 
         answers:
             - "No"
-            - Yes, we review it annually
+            - Yes, we have a plan that can be used for decision making
             - Yes, we consult the plan before making significant decisions
             - Yes, we consult the plan often, and it is aligned with our application security strategy
 
@@ -85,7 +85,7 @@ maturity_levels:
         answers:
             - "No"
             - Yes, but review is ad-hoc
-            - Yes, we review it at regular times
-            - Yes, we review it at least annually
+            - Yes, we review it regularly
+            - Yes, we review it continuously
 
 ---

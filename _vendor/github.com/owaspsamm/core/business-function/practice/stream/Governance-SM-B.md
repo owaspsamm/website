@@ -20,7 +20,7 @@ maturity_levels:
         benefit: |
             Basic insights into your AppSec program's effectiveness and efficiency
         activity: |
-            Define and document metrics to evaluate the effectiveness and efficiency of the application security program. This way improvements are measurable and you can use them to secure future support and funding for the program. Considering the dynamic nature of most development environments, metrics should be comprised of measurements in the following categories
+            Define and document metrics to evaluate the effectiveness and efficiency of the application security program. This way, improvements are measurable and you can use them to secure future support and funding for the program. Considering the dynamic nature of most development environments, metrics should consist of measurements in the following categories
 
             * `Effort` metrics measure the effort spent on security. For example training hours, time spent performing code reviews, and number of applications scanned for vulnerabilities.
             * `Result` metrics measure the results of security efforts. Examples include number of outstanding patches with security defects and number of security incidents involving application vulnerabilities.
@@ -40,7 +40,7 @@ maturity_levels:
         question: Do you use a set of metrics to measure the effectiveness and efficiency of the application security program across applications?
         quality_criteria:
             - You document each metric, including a description of the sources, measurement coverage, and guidance on how to use it to explain application security trends
-            - Metrics include measures of efforts, results, and the environment measurement categories
+            - Metrics include measures of effort, results, and environment measurement categories
             - Most of the metrics are frequently measured, easy or inexpensive to gather, and expressed as a cardinal number or a percentage
             - Application security and development teams publish metrics
 
@@ -57,14 +57,14 @@ maturity_levels:
         activity: |
             Once the organization has defined its application security metrics, collect enough information to establish realistic goals. Test identified metrics to ensure you can gather data consistently and efficiently over a short period. After the initial testing period, the organization should have enough information to commit to goals and objectives expressed through Key Performance Indicators (KPIs).
 
-            While several measurements are useful for monitoring the information security program and its effectiveness, KPIs are comprised of the most meaningful and effective metrics. Aim to remove volatility common in application development environments from KPIs to reduce chances of unfavorable numbers resulting from temporary or misleading individual measurements. Base KPIs on metrics considered valuable not only to Information Security professionals but also to individuals responsible for the overall success of the application, and organization's leadership. View KPIs as definitive indicators of the success of the whole program and consider them actionable.
+            While several measurements are useful for monitoring the information security program and its effectiveness, KPIs consist of the most meaningful and effective metrics. Aim to remove volatility common in application development environments from KPIs to reduce the chances of unfavorable numbers resulting from temporary or misleading individual measurements. Base KPIs on metrics considered valuable not only to Information Security professionals but also to individuals responsible for the overall success of the application, and the organization's leadership. View KPIs as definitive indicators of the success of the whole program and consider them actionable.
 
-            Fully document KPIs and distribute them to the teams contributing to the success of the program as well as organization's leadership. Ideally, include a brief explanation of the information sources for each KPI and the meaning if the numbers are high or low. Include short and long-term goals, and ranges for unacceptable measurements requiring immediate intervention. Share action plans with application security and application development teams to ensure full transparency in understanding of the organization's objectives and goals.
+            Fully document KPIs and distribute them to the teams contributing to the success of the program as well as the organization's leadership. Ideally, include a brief explanation of the information sources for each KPI and the meaning when the numbers are high or low. Include short and long-term goals, and ranges for unacceptable measurements requiring immediate intervention. Share action plans with application security and application development teams to ensure full transparency in understanding of the organization's objectives and goals.
 
-        question: Did you define Key Performance Indicators (KPI) from available application security metrics?
+        question: Have you defined Key Performance Indicators (KPIs) from available application security metrics?
         quality_criteria:
-            - You defined KPIs after gathering enough information to establish realistic objectives
-            - You developed KPIs with the buy-in from the leadership and teams responsible for application security
+            - You define KPIs after gathering enough information to establish realistic objectives
+            - You develop KPIs with buy-in from the leadership and teams responsible for application security
             - KPIs are available to the application teams and include acceptability thresholds and guidance in case teams need to take action
             - Success of the application security program is clearly visible based on defined KPIs
 
@@ -79,12 +79,12 @@ maturity_levels:
         benefit: |
             Continuous improvement of your program according to results
         activity: |
-            Define guidelines for influencing the Application Security program based on the KPIs and other application security metrics. These guidelines  combine the maturity of the application development process and procedures  with different metrics to make the program more efficient. The following examples show a relationship between measurements and ways of evolving and improving application security
+            Define guidelines for influencing the Application Security program based on the KPIs and other application security metrics. These guidelines combine the maturity of the application development process and procedures with different metrics to make the program more efficient. The following examples show a relationship between measurements and ways of evolving and improving application security:
 
             * Focus on maturity of the development lifecycle makes the relative cost per defect lower by applying security proactively.
             * Monitoring the balance between effort, result, and environment metrics improves the program's efficiency and justifies additional automation and other methods for improving the overall application security baselines.
             * Individual Security Practices could provide indicators of success or failure of individual application security initiatives.
-            * Effort metrics helps ensure application security work is directed at the more relevant and important technologies and disciplines.
+            * Effort metrics help ensure application security work is directed at the more relevant and important technologies and disciplines.
 
             When defining the overall metrics strategy, keep the end-goal in mind and define what decisions can be made as a result of changes in KPIs and metrics as soon as possible, to help guide development of metrics.
 
@@ -96,7 +96,7 @@ maturity_levels:
         answers:
             - "No"
             - Yes, but review is ad-hoc
-            - Yes, we review it at regular times
-            - Yes, we review it at least annually
+            - Yes, we review it regularly
+            - Yes, we review it continuously
 
 ---

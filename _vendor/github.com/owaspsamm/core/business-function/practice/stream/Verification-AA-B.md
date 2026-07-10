@@ -18,9 +18,9 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Assures that the architecture protects against typical security threats.
+            Assurance that the architecture protects against typical security threats.
         activity: |
-            Review the architecture for typical security threats. Security-savvy technical staff conduct this analysis with input from architects, developers, managers, and business owners as needed, to ensure the architecture addresses all common threats which development teams lacking specialised security expertise may have overlooked.
+            Review the architecture for typical security threats. Security-savvy technical staff conduct this analysis with input from architects, developers, managers, and business owners as needed, to ensure the architecture addresses all common threats which development teams lacking specialized security expertise may have overlooked.
 
             Typical threats in an architecture can relate to incorrect assumptions in, or overly reliance on, the provisioning of security mechanisms such as authentication, authorization, user and rights management, secure communication, data protection, key management and log management. Threats, on the other hand, can also relate to known limitations of, or issues in, technological components or frameworks that are part of the solution and for which insufficient mitigation has been put in place.
 
@@ -41,7 +41,7 @@ maturity_levels:
         benefit: |
             All identified threats to the application are adequately handled.
         activity: |
-            Systematically review each threat identified during the Threat Assessment activities and examine how the architecture mitigates them. Use a standardised process for analyzing system architectures and the flow of data within them. This is typically linked to the threat model used (e.g. STRIDE) in order to identify the relevant security objectives which address each type of threat. For each threat, identify the design-level features of the architecture which counter it and assess their effectiveness in doing so.
+            Systematically review each threat identified during the Threat Assessment activities and examine how the architecture mitigates them. Use a standardized process for analyzing system architectures and the flow of data within them. This is typically linked to the threat model used (e.g. STRIDE) in order to identify the relevant security objectives which address each type of threat. For each threat, identify the design-level features of the architecture which counter it and assess their effectiveness in doing so.
 
             Where available, review architectural decision records to understand the architectural constraints and tradeoffs made during design. Take their impact into consideration along with any security assumptions on which the safe operation of the system relies and re-evaluate them.
 
@@ -50,7 +50,7 @@ maturity_levels:
         question: Do you regularly evaluate the threats to your architecture?
         quality_criteria:
             - You systematically review each threat identified in the Threat Assessment
-            - Trained or experienced people lead review exercise
+            - Trained or experienced people lead the review exercise
             - You identify mitigating design-level features for each identified threat
             - You log unhandled threats as defects
 
@@ -65,7 +65,7 @@ maturity_levels:
         benefit: |
             Continuous improvement of enterprise architecture based on architecture reviews
         activity: |
-            As an organization, you can further improve your software security posture by understanding which threats remain unaddressed in the software architectures and adapting your tactics to prevent this. Formalize a process to use recurring architecture findings as a trigger to identify the causes of gaps in the security assessment and deal with them. Feed findings back to the Design phase by creating, or updating relevant reference architectures, existing security solutions, or organisation design principles and patterns.
+            As an organization, you can further improve your software security posture by understanding which threats remain unaddressed in the software architectures and adapting your tactics to prevent this. Formalize a process to use recurring architecture findings as a trigger to identify the causes of gaps in the security assessment and deal with them. Feed findings back to the Design phase by creating, or updating relevant reference architectures, existing security solutions, or organization design principles and patterns.
 
         question: Do you regularly update your reference architectures based on architecture assessment findings?
         quality_criteria:

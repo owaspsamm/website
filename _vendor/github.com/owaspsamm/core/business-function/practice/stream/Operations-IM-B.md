@@ -44,7 +44,7 @@ maturity_levels:
         activity: |
             Establish and document the formal security incident response process. Ensure documentation includes information like&#58;
 
-            * most probable/common scenarios of security incidents and high-level instructions for handling them; for such scenarios, also use public knowledge about possibly relevant third-party incidents
+            * most probable or common scenarios of security incidents and high-level instructions for handling them; for such scenarios, also use public knowledge about possibly relevant third-party incidents
             * rules for triaging each incident
             * rules for involvement of different stakeholders including senior management, Public Relations, Legal, privacy, Human Resources, external (law enforcement) authorities, and customers; specify mandatory timeframe to do so, if needed
             * the process for performing root-cause analysis and documentation of its results
@@ -73,7 +73,7 @@ maturity_levels:
 
             Document detailed incident response procedures and keep them up to date. Automate procedures where appropriate. Keep all resources necessary for these procedures (e.g., separate communicating infrastructure or reliable external location) ready to use. Detect and correct unavailability of these resources in a timely manner.
 
-            Carry out incident and emergency exercises are regularly. Use the results for process improvement.
+            Carry out incident and emergency exercises regularly. Use the results for process improvement.
 
             Define, gather, evaluate, and act upon metrics on the incident response process, including its continuous improvement.
 

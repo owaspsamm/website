@@ -20,8 +20,8 @@ stream_a_maturity_3_activity: Perform regression testing (with security unit tes
 
 stream_b: Misuse/Abuse Testing
 
-stream_b_maturity_1_activity: Perform security fuzzing testing.
-stream_b_maturity_2_activity: Create and test abuse cases and business logic flaw test.
+stream_b_maturity_1_activity: Perform security fuzz testing.
+stream_b_maturity_2_activity: Create and test abuse cases and business logic flaw tests.
 stream_b_maturity_3_activity: Denial of service and security stress testing.
 ---
 

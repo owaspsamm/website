@@ -29,7 +29,7 @@ maturity_levels:
 
             Foster a culture of transparency and avoid blaming any teams for introducing or identifying security defects. Record and track all security defects in a defined location. This location doesn't necessarily have to be centralized for the whole organization, however ensure that you're able to get an overview of all defects affecting a particular application at any single point in time. Define and apply access rules for the tracked security defects to mitigate the risk of leakage and abuse of this information.
 
-            Introduce at least rudimentary qualitative classificiation of security defects so that you are able to prioritize fixing efforts accordingly. Strive for limiting duplication of information and presence of false positives to increase the trustworthiness of the process.
+            Introduce at least rudimentary qualitative classification of security defects so that you are able to prioritize fixing efforts accordingly. Strive for limiting duplication of information and presence of false positives to increase the trustworthiness of the process.
 
         question: Do you track all known security defects in accessible locations?
         quality_criteria:
@@ -72,7 +72,7 @@ maturity_levels:
         benefit: |
             Assurance that security defects are handled within predefined SLAs
         activity: |
-            Implement an automated alerting on security defects if the fix time breaches the defined SLAs. Ensure that these defects are automatically transferred into the risk management process and rated by a consistent quantitative methodology. Evaluate how particular defects influence / amplify each other not only on the level of separate teams, but on the level of the whole organization. Use the knowledge of the full kill chain to prioritize, introduce and track compensating controls mitigating the respective business risks.
+            Implement an automated alerting on security defects if the fix time breaches the defined SLAs. Ensure that these defects are automatically transferred into the risk management process and rated by a consistent quantitative methodology. Evaluate how particular defects influence or amplify each other not only on the level of separate teams, but on the level of the whole organization. Use the knowledge of the full kill chain to prioritize, introduce and track compensating controls mitigating the respective business risks.
 
             Integrate your defect management system with the automated tooling introduced by other practices, e.g.:
 
@@ -81,7 +81,7 @@ maturity_levels:
 
         question: Do you enforce SLAs for fixing security defects?
         quality_criteria:
-            - You automatically alert of SLA breaches and transfer respective defects to the risk management process
+            - You automatically generate alerts for SLA breaches and transfer respective defects to the risk management process
             - You integrate relevant tooling (e.g. monitoring, build, deployment) with the defect management system
 
         answers:

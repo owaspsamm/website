@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Understanding of sensitivity of processed data with derived quick-win measures
+            Understanding of the sensitivity of processed data with derived quick-win measures
         activity: |
             Understand the types and sensitivity of data stored and processed by your applications, and maintain awareness of the fate of processed data (e.g., backups, sharing with external partners). At this level of maturity, the information gathered may be captured in varying forms and different places; no organization-wide data catalog is assumed to exist. Protect and handle all data associated with a given application according to protection requirements applying to the most sensitive data stored and processed.
 
@@ -71,7 +71,7 @@ maturity_levels:
 
             Regularly audit compliance with established administrative controls, and closely monitor performance and operation of automated mechanisms, including backups and record deletions. Monitoring tools quickly detect and report failures in automation, permitting you to take timely corrective action.
 
-            Reviews and update the data catalog regularly, to maintain its accurate reflection of your data landscape. Regular reviews and updates of processes and procedures maintain their alignment with your policies and priorities.
+            Review and update the data catalog regularly, to maintain its accurate reflection of your data landscape. Regular reviews and updates of processes and procedures maintain their alignment with your policies and priorities.
 
         question: Do you regularly review and update the data catalog and your data protection policies and procedures?
         quality_criteria:
@@ -81,8 +81,8 @@ maturity_levels:
 
         answers:
             - "No"
-            - Yes, we do it when requested
-            - Yes, we do it every few years
-            - Yes, we do it at least annually
+            - Yes, but we do it ad-hoc
+            - Yes, we do it regularly
+            - Yes, we do it continuously
 
 ---

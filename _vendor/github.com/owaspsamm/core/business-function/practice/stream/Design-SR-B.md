@@ -44,12 +44,12 @@ maturity_levels:
         activity: |
             Increase your confidence in the capability of your suppliers for software security. Discuss concrete responsibilities and expectations from your suppliers and your own organization and establish a contract with the supplier. The responsibilities can be specific quality requirements or particular tasks, and minimal service can be detailed in a Service Level Agreement (SLA). A quality requirement example is that they will deliver software that is protected against the OWASP Top 10, and in case issues are detected, these will be fixed. A task example is that they have to perform continuous static code analysis, or perform an independent penetration test before a major release. The agreement stipulates liabilities and caps in case an important issue arises.
 
-            Once you have implemented this for a few suppliers, work towards a standard agreement for suppliers that forms the basis of your negotiations. You can deviate from this standard agreement on a case by case basis, but it will help you to ensure you do not overlook important topics.
+            Once you have implemented this for a few suppliers, work toward a standard agreement for suppliers that forms the basis of your negotiations. You can deviate from this standard agreement on a case-by-case basis, but it will help you to ensure you do not overlook important topics.
 
         question: Do vendors meet the security responsibilities and quality measures of service level agreements defined by the organization?
         quality_criteria:
             - You discuss security requirements with the vendor when creating vendor agreements
-            - Vendor agreements provide specific guidance on security defect remediation within an agreed upon timeframe
+            - Vendor agreements provide specific guidance on security defect remediation within an agreed-upon timeframe
             - The organization has a templated agreement of responsibilities and service levels for key vendor security processes
             - You measure key performance indicators
 
@@ -66,7 +66,7 @@ maturity_levels:
         activity: |
             The best way to minimize the risk of issues in software is to align maximally and integrate closely between the different parties. From a process perspective, this means using similar development paradigms and introducing regular milestones to ensure proper alignment and qualitative progress. From a tools perspective, this might mean using similar build, verification and deployment environments, and sharing other supporting tools (e.g. requirements, architecture tools, or code repositories).
 
-            In case suppliers cannot meet the objectives that you have set, implement compensating controls so that, overall, you meet your objectives. Execute extra activities (e.g., threat modelling before starting the actual implementation cycle) or implement extra tooling (e.g., 3rd party library analysis at solution intake). The more suppliers deviate from your requirements, the more work will be required to compensate.
+            In case suppliers cannot meet the objectives that you have set, implement compensating controls so that, overall, you meet your objectives. Execute extra activities (e.g., threat modeling before starting the actual implementation cycle) or implement extra tooling (e.g., third-party library analysis at solution intake). The more suppliers deviate from your requirements, the more work will be required to compensate.
 
         question: Are vendors aligned with standard security controls and software development tools and processes that the organization utilizes?
         quality_criteria:

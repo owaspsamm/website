@@ -20,9 +20,9 @@ maturity_levels:
         benefit: |
             Understanding of high-level architecture and sensible security measures
         activity: |
-            Create a view of the overall architecture and examine it for the correct provision of general security mechanisms such as authentication, authorization, user and rights management, secure communication, data protection, key management and log management. Also consider the support for privacy. Do this based on project artifacts such as architecture or design documents, or interviews with business owners and technical staff. Also consider the infrastructure components - these are all the systems, components and libraries (including SDKs) that are not specific to the application, but provide direct support to use or manage the application(s) in the organisation.
+            Create a view of the overall architecture and examine it for the correct provision of general security mechanisms such as authentication, authorization, user and rights management, secure communication, data protection, key management and log management. Also consider the support for privacy. Do this based on project artifacts such as architecture or design documents, or interviews with business owners and technical staff. Also consider the infrastructure components - these are all the systems, components and libraries (including SDKs) that are not specific to the application, but provide direct support to use or manage the application(s) in the organization.
 
-            Note any security-related functionality in the architecture and review its correct provision. Do this in an ad-hoc manner, from the point of view of anonymous users, authorized users, and specific application roles.
+            Note any security-related functionality in the architecture and review its correct provision. Do this in an ad hoc manner, from the point of view of anonymous users, authorized users, and specific application roles.
 
         question: Do you review the application architecture for key security objectives on an ad-hoc basis?
         quality_criteria:

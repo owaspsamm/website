@@ -25,7 +25,7 @@ stream_b_maturity_2_activity: Evaluate used dependencies and ensure timely react
 stream_b_maturity_3_activity: Analyze used dependencies for security issues in a comparable way to your own code.
 ---
 
-The Secure Build (SB) practice emphasises the importance of building software in a standardised, repeatable manner, and of doing so using secure components, including 3rd party software dependencies.
+The Secure Build (SB) practice emphasizes the importance of building software in a standardized, repeatable manner, and of doing so using secure components, including 3rd party software dependencies.
 
 The first stream focuses on removing any subjectivity from the build process by striving for full automation. An automated build pipeline can include additional automated security checks such as SAST and DAST to gain further assurance and flag security regressions early by failing the build, for example.
 

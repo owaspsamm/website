@@ -18,7 +18,7 @@ maturity_levels:
     level1:
         level: 1
         benefit: |
-            Limited risk of human error during deployment process minimizing security issues
+            Limited risk of human error during the deployment process, minimizing security issues
         activity: |
             Define the deployment process over all stages, breaking it down into a set of clear instructions to either be followed by a person or an automated tooling. The deployment process definition should describe the whole process end-to-end so that it can be consistently followed each time to produce the same result. The definition is stored centrally and accessible to all relevant personnel. Do not store or distribute multiple copies, some of which may become outdated.
 
@@ -31,7 +31,7 @@ maturity_levels:
         question: Do you use repeatable deployment processes?
         quality_criteria:
             - You have enough information to run the deployment processes
-            - Your deployment documentation up to date
+            - Your deployment documentation is up to date
             - Your deployment documentation is accessible to relevant stakeholders
             - You ensure that only defined qualified personnel can trigger a deployment
             - You harden the tools that are used within the deployment process
@@ -49,7 +49,7 @@ maturity_levels:
         activity: |
             Automate the deployment process to cover various stages, so that no manual configuration steps are needed and the risk of isolated human errors is eliminated. Ensure and verify that the deployment is consistent over all stages.
 
-            Integrate automated security checks in your deployment process, e.g. using Dynamic Application Security Testing (DAST) and vulnerability scanning tools. Also, verify the integrity of the deployed artefacts where this makes sense. Log the results from these tests centrally and take any necessary actions. Ensure that in case any defects are detected, relevant personnel is notified automatically. In case any issues exceeding predefined criticality are identified, stop or reverse the deployment  either automatically, or introduce a separate manual approval workflow so that this decision is recorded, containing an explanation for the exception.
+            Integrate automated security checks in your deployment process, e.g. using Dynamic Application Security Testing (DAST) and vulnerability scanning tools. Also, verify the integrity of the deployed artefacts where this makes sense. Log the results from these tests centrally and take any necessary actions. Ensure that in case any defects are detected, relevant personnel is notified automatically. In case any issues exceeding predefined criticality are identified, stop or reverse the deployment either automatically, or introduce a separate manual approval workflow so that this decision is recorded, containing an explanation for the exception.
 
             Account for and audit all deployments to all stages. Have a system in place to record each deployment, including information about who conducted it, the software version that was deployed, and any relevant variables specific to the deploy.
 
@@ -81,7 +81,7 @@ maturity_levels:
         quality_criteria:
             - You prevent or roll back deployment if you detect an integrity breach
             - The verification is done against signatures created during the build time
-            - If checking of signatures is not possible (e.g. externally build software), you introduce compensating measures
+            - If checking of signatures is not possible (e.g. externally built software), you introduce compensating measures
 
         answers:
             - "No"
