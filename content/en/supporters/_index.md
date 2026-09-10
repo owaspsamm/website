@@ -2,6 +2,7 @@
 title = "Supporters"
 description = "Organizations supporting SAMM"
 keywords = ["Sponsors","supporters"]
+aliases = ["/sponsors/"]
 +++
 
 ## Organizations supporting SAMM
