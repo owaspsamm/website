@@ -33,7 +33,11 @@
       </button>
       <div class="docs-nav__children{{ if $bfOpen }} is-open{{ end }}">
         {{ $practices := where $allPractices ".Params.business_function" $bf.Title }}
-        {{ range $practices.ByTitle }}
+        {{/* Canonical practice order comes from the BF page's own practice_1/2/3 params (set by owaspsamm/core) — do not sort .ByTitle, it's alphabetical and wrong. */}}
+        {{ $practiceOrder := slice $bf.Params.practice_1 $bf.Params.practice_2 $bf.Params.practice_3 }}
+        {{ range $practiceOrder }}
+          {{ $practiceTitle := . }}
+          {{ range where $practices "Title" $practiceTitle }}
           {{ $practice := . }}
           {{ $pActive   := eq $current.RelPermalink $practice.RelPermalink }}
           {{ $pAncestor := and (ne $current.RelPermalink $practice.RelPermalink) (strings.HasPrefix $current.RelPermalink $practice.RelPermalink) }}
@@ -52,7 +56,8 @@
             </button>
             <div class="docs-nav__children{{ if $pOpen }} is-open{{ end }}">
               {{ $streams := where $allStreams ".Params.practice" $practice.Title }}
-              {{ range $streams.ByTitle }}
+              {{/* Streams carry their own canonical order via the "stream" param (A, B) — sort on that, not title. */}}
+              {{ range $streams.ByParam "stream" }}
                 {{ $stream  := . }}
                 {{ $sActive := eq $current.RelPermalink $stream.RelPermalink }}
                 <a href="{{ $stream.RelPermalink | replaceRE `^/?\./` `/` }}"
@@ -61,7 +66,8 @@
               {{ end }}
             </div>
           </div>
-        {{ end }}
+          {{ end }}{{/* end range where $practices "Title" */}}
+        {{ end }}{{/* end range $practiceOrder */}}
       </div>
     </div>
     {{ end }}{{/* end range where $bfPages */}}
