@@ -55,7 +55,7 @@ Glad you asked, here is a list of suggestions:
 * Donate SAMM data sets to our [Benchmark initiative](https://owaspsamm.org/benchmark/). Get in touch with [Brian](mailto:brian.glas@owasp.org).
 * Check out the list of open issues in any of our [GitHub repositories](https://github.com/owaspsamm) and let us know if you can help with any of these.
 * Help us translate SAMM to other languages on [CrowdIn](https://crowdin.com/project/owasp-samm).
-* Sponsor SAMM. Get more information [here](https://owaspsamm.org/sponsors/).
+* Sponsor SAMM. Get more information [here](/sponsorship/).
 
 #### Is there a process for translation efforts of SAMM into other languages?
 Yes! We're using [CrowdIn](https://crowdin.com/project/owasp-samm) and the help of the community to have SAMM translated to other languages.
