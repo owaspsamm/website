@@ -229,7 +229,15 @@
 &lt;li&gt;Don&amp;rsquo;t aim for precision — 15-minute increments are fine.&lt;/li&gt;
 &lt;li&gt;Update the total when you add entries.&lt;/li&gt;
 &lt;li&gt;Lump trivially small sessions (under 15 min) into the next real session.&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>Website updates process</title><link>https://owaspsamm.org/internal/website-updates-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/website-updates-process/</guid><description>&lt;p&gt;How changes to owaspsamm.org are made, from local setup to going live.&lt;/p&gt;
+&lt;/ul&gt;</description></item><item><title>User Day how-to</title><link>https://owaspsamm.org/internal/user-day-howto/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/user-day-howto/</guid><description>&lt;p&gt;How to build the agenda for a new SAMM User Day (SUD), and what changes once the event is over. Written from the San Francisco 2026 build-out; check it against the current codebase before trusting the details.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="how-it-fits-together"&gt;How it fits together&lt;/h2&gt;
+&lt;p&gt;Two independent pieces, linked only by filename convention (no explicit cross-reference field):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;data/sud&amp;lt;slug&amp;gt;/*.yaml&lt;/code&gt;&lt;/strong&gt; - one file per agenda row (talk, round table, break, welcome, dinner). Feeds the agenda listing via the &lt;code&gt;user-day-agenda&lt;/code&gt; shortcode.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;content/en/user-day/&amp;lt;slug&amp;gt;/*.md&lt;/code&gt;&lt;/strong&gt; - one page per talk with a confirmed speaker/abstract. Optional - a yaml row with no matching page just shows as plain text in the agenda list.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Always use the generic shortcode:&lt;/p&gt;</description></item><item><title>Website updates process</title><link>https://owaspsamm.org/internal/website-updates-process/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://owaspsamm.org/internal/website-updates-process/</guid><description>&lt;p&gt;How changes to owaspsamm.org are made, from local setup to going live.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id="branches"&gt;Branches&lt;/h2&gt;
 &lt;table&gt;
