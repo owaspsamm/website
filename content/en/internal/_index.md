@@ -22,10 +22,10 @@ Plans carry a date stamp; check it against the current codebase before trusting 
 - [Information architecture](/internal/ia/) — site-wide IA: nav structure and Docs IA.
 - [Migration plan (v1 → v2)](/internal/migration-plan/) — how we replace the current production site with this v2 codebase.
 - [Website updates process](/internal/website-updates-process/) — branch model and PR workflow for making changes after launch.
-- [Website updates process](/internal/website-updates-process/) — branch model and PR workflow for making changes after launch.
 - [Time log](/internal/time-log/) — ongoing time tracking for the v2 project.
 - [Backlog](/internal/backlog/) — post-launch optimizations and improvements.
 - [QA checklist](/internal/qa/) — pre-commit and pre-launch quality checks: code, CSS, content, and visual.
+- [User Day how-to](/internal/user-day-howto/) - building and archiving a SAMM User Day (SUD) agenda.
 
 ## Design and identity
 

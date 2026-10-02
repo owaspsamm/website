@@ -1465,6 +1465,7 @@ a:hover .external-link-icon {
   height: 10rem;
   object-fit: cover;
   border-radius: 0.5rem;
+  border: 1.5px solid var(--color-border);
 }
 
 .talk-speaker__meta {
