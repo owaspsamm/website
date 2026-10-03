@@ -20,12 +20,16 @@
 
   {{ with .Params.abstract }}
   <h2>Abstract</h2>
-  {{ . | markdownify }}
+  {{/* markdownify silently drops the wrapping <p> when the input is a single paragraph
+       (no blank line); restore it ourselves in that case so single-paragraph content
+       doesn't render as an unwrapped text node. Multi-paragraph content already gets
+       <p> tags per paragraph from markdownify, so leave it untouched. */}}
+  {{ if strings.Contains . "\n\n" }}{{ . | markdownify }}{{ else }}<p>{{ . | markdownify }}</p>{{ end }}
   {{ end }}
 
   {{ with .Params.bio }}
   <h2>Speaker Bio</h2>
-  {{ . | markdownify }}
+  {{ if strings.Contains . "\n\n" }}{{ . | markdownify }}{{ else }}<p>{{ . | markdownify }}</p>{{ end }}
   {{ end }}
 
   {{ .Content }}

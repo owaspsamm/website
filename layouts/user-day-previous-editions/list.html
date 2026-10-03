@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="page-header page-header--child">
+  <h1>{{ .Title }}</h1>
+</div>
+<section class="section">
+  <div class="container">
+    <div class="section__header">
+      {{ with .Content }}<div class="section__subtitle section__subtitle--left">{{ . }}</div>{{ end }}
+    </div>
+
+    <div class="org-grid">
+      {{ range .Params.editions }}
+      <div class="org-card">
+        <div class="org-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="5"/></svg>
+        </div>
+        <div class="org-card__body">
+          <h3><a href="{{ .url }}">{{ .title }}</a></h3>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -2,10 +2,17 @@
      Usage:
        Archive mode:  {{< user-day-agenda data="sud2025dc" mode="archive" >}}
        Live mode:     {{< user-day-agenda data="sud2025bcn" mode="live" >}}
-       With video:    {{< user-day-agenda data="sud" mode="archive" video=true >}} */}}
+       With video:    {{< user-day-agenda data="sud" mode="archive" video=true >}}
+       Embedded elsewhere: {{< user-day-agenda data="sud2026sf" mode="archive" base="2026sf" >}}
+         `base` prefixes talk links — needed when this shortcode is invoked from a page other
+         than the event's own `content/en/user-day/<slug>/_index.md` (e.g. embedded on the
+         top-level `/user-day/` page), since talk `url:` values in the data are bare slugs
+         resolved relative to wherever the shortcode is called from. Omit `base` when called
+         from the event's own page — the default relative behavior is what you want there. */}}
 {{ $dataKey := .Get "data" }}
 {{ $mode := .Get "mode" | default "archive" }}
 {{ $showVideo := eq (.Get "video") "true" }}
+{{ $base := .Get "base" }}
 {{ $data := index .Site.Data $dataKey }}
 {{ if $data }}
 
@@ -31,7 +38,8 @@
     <div class="agenda__talk">
       <span class="agenda__time">{{ .time }}</span>
       <div class="agenda__info">
-        <span class="agenda__title">{{ if .url }}<a href="{{ .url }}/">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
+        {{ $href := cond (ne $base "") (printf "%s/%s/" $base .url) (printf "%s/" .url) }}
+        <span class="agenda__title">{{ if .url }}<a href="{{ $href }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
         {{ with .presenter }}<span class="agenda__speaker">{{ . }}</span>{{ end }}
       </div>
     </div>
@@ -41,7 +49,8 @@
           {{ if or (not (isset . "archive")) .archive }}
     <div class="agenda__talk">
       <div class="agenda__info">
-        <span class="agenda__title">{{ if .url }}<a href="{{ .url }}/">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
+        {{ $href := cond (ne $base "") (printf "%s/%s/" $base .url) (printf "%s/" .url) }}
+        <span class="agenda__title">{{ if .url }}<a href="{{ $href }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end }}</span>
         {{ with .presenter }}<span class="agenda__speaker">{{ . }}</span>{{ end }}
       </div>
       <div class="agenda__actions">
