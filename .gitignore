@@ -16,3 +16,4 @@ public/
 
 # Claude Code project folder
 .claude/
+.idea/
