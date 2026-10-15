@@ -3,6 +3,7 @@ type: user-day
 title: User day
 name: "Rebuilding Security for the AI-Native SDLC"
 speaker: Ken Johnson
+image: /img/people/Ken_Johnson.jpg
 affiliation: DryRun Security
 role: CTO
 abstract: |
