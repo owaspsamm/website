@@ -3,6 +3,7 @@ type: user-day
 title: User day
 name: "From Report to Fix: Applying SAMM to AI Products"
 speaker: Arshi Chadha
+image: /img/people/Arshi.jpg
 role: Senior PSIRT Engineer
 abstract: |
   Vulnerability reporting gives organizations another way to discover security problems. This talk addresses a practical challenge: collecting enough information to reproduce a reported problem with an AI feature and check the fix.
