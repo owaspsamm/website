@@ -115,13 +115,15 @@ Extend the policy library with explicit positions on AI-assisted development, co
 
 Derive standards from these policies. For example, the approved tools policy translates into a standard containing the maintained list of approved AI coding agents, models, IDE plugins, MCP servers, and other tool integrations, including their permitted configuration and permissions. Standards may also need to cover other AI-specific topics, such as handling of AI-suggested dependencies and secure configuration of agent harnesses.
 
-**Level 2: Develop test procedures**
-
-Prepare the test scripts and run-books for interpretation by AI tools as well as by development teams. Where teams were previously briefed on key policies, now also capture them in AI-consumable formats, such as agent instruction files (e.g., AGENTS.md, CLAUDE.md, .github/copilot-instructions.md, Cursor rules) and prompts. Publish these in a central location where teams can easily find them and add them to their projects. Version them with change logs, link each rule to its source policy, and protect them with adequate change control, since tampered instructions silently weaken every change an AI tool produces.
+Where teams were previously briefed on key policies, now also capture them in AI-consumable formats, such as agent instruction files (e.g., AGENTS.md, CLAUDE.md, .github/copilot-instructions.md, Cursor rules) and prompts. Publish these in a central location where teams can easily find them and add them to their projects. Version them with change logs, link each rule to its source policy, and protect them with adequate change control, since tampered instructions silently weaken every change an AI tool produces.
 
 Structure the AI-consumable formats in two layers. The policy layer states what must be done (e.g., protect against injection attacks). The standard layer states how to do it for a specific technology or development methodology (e.g., which query APIs to use and which constructs are forbidden for a given stack). Teams would typically use the standard layer that matches their technologies.
 
-For each rule, define how compliance is verified independently of the AI tool, preferably deterministically (e.g., static analysis rules, policy-as-code, automated tests, pipeline gates). AI tools may use these checks on their own output, but this does not replace independent verification.
+**Level 2: Develop test procedures**
+
+Prepare the test scripts and run-books for interpretation by AI tools as well as by development teams. 
+
+For each AI-consumable rule, define how compliance is verified independently of the AI tool, preferably deterministically (e.g., static analysis rules, policy-as-code, automated tests, pipeline gates). AI tools may use these checks on their own output, but this does not replace independent verification.
 
 **Level 3: Measure compliance to policies and standards**
 
