@@ -1017,7 +1017,8 @@ The new SAMM release v2 consists of:&lt;/p&gt;</description></item><item><title>
 &lt;li&gt;&lt;strong&gt;Analytics / trackers on v2&lt;/strong&gt;: Both enabled and gated on &lt;code&gt;hugo.IsProduction&lt;/code&gt;. Google Analytics ID &lt;code&gt;G-44N5RHDT94&lt;/code&gt; is configured in &lt;a href="../../../config.toml"&gt;config.toml&lt;/a&gt;
  and injected by &lt;a href="../../../layouts/partials/cookie-consent.html"&gt;layouts/partials/cookie-consent.html&lt;/a&gt;
  (consent-gated, default-denied). Scarf pixel (&lt;code&gt;x-pxid=6e76dfd3-e2e4-4864-a63b-0b361639db63&lt;/code&gt;) fires on the four model-page layouts via &lt;a href="../../../layouts/partials/scarf.html"&gt;layouts/partials/scarf.html&lt;/a&gt;
-, gated inside the partial so Netlify previews don&amp;rsquo;t pollute production metrics.&lt;/li&gt;
+, gated inside the partial on &lt;code&gt;hugo.IsProduction&lt;/code&gt;. Staging is also built in production mode, so &lt;a href="../../../static/js/cookie-consent.js"&gt;static/js/cookie-consent.js&lt;/a&gt;
+ only fires the pixel when the hostname is &lt;code&gt;owaspsamm.org&lt;/code&gt;. The pixel is cookieless and fires without cookie consent (#410).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Hugo version&lt;/strong&gt;: v1 pipeline pins &lt;code&gt;0.157.0&lt;/code&gt;. v2 should match at migration time. See &lt;a href="https://owaspsamm.org/internal/archive/actions-upgrade/"&gt;/internal/archive/actions-upgrade/&lt;/a&gt;
  for the workflow we&amp;rsquo;re inheriting.&lt;/li&gt;
 &lt;/ul&gt;

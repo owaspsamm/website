@@ -22,6 +22,8 @@
   }
 
   function fireScarfPixels() {
+    // Production only. Staging is built in production mode, so the template gate alone isn't enough.
+    if (location.hostname !== 'owaspsamm.org') return;
     var pixels = document.querySelectorAll('.scarf-pixel[data-scarf-src]');
     pixels.forEach(function (el) {
       if (el.dataset.scarfFired) return;
@@ -38,8 +40,14 @@
   function applyConsent(consent) {
     if (consent && consent.analytics) {
       enableGA();
-      fireScarfPixels();
     }
+  }
+
+  // Scarf pixels are cookieless, so they fire regardless of analytics consent.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fireScarfPixels);
+  } else {
+    fireScarfPixels();
   }
 
   function showBanner() { if (banner) banner.classList.add('is-visible'); }
@@ -50,11 +58,7 @@
   // If already consented, apply and exit
   var existing = getConsent();
   if (existing !== null) {
-    // GA can init immediately; Scarf pixels need the DOM
     if (existing.analytics) enableGA();
-    document.addEventListener('DOMContentLoaded', function () {
-      if (existing.analytics) fireScarfPixels();
-    });
     return;
   }
 
