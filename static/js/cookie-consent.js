@@ -38,8 +38,14 @@
   function applyConsent(consent) {
     if (consent && consent.analytics) {
       enableGA();
-      fireScarfPixels();
     }
+  }
+
+  // Scarf pixels are cookieless, so they fire regardless of analytics consent.
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', fireScarfPixels);
+  } else {
+    fireScarfPixels();
   }
 
   function showBanner() { if (banner) banner.classList.add('is-visible'); }
@@ -50,11 +56,7 @@
   // If already consented, apply and exit
   var existing = getConsent();
   if (existing !== null) {
-    // GA can init immediately; Scarf pixels need the DOM
     if (existing.analytics) enableGA();
-    document.addEventListener('DOMContentLoaded', function () {
-      if (existing.analytics) fireScarfPixels();
-    });
     return;
   }
 
