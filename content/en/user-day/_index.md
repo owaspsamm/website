@@ -6,15 +6,13 @@ aliases:
   - /events/
 ---
 
-## San Francisco SAMM User Day
+## San Francisco SAMM User Day - Thank You!
 
-We're heading to San Francisco! Join us on **November 4, 2026**, alongside OWASP Global AppSec USA, for a full day of talks, discussions, and networking with the SAMM community.
-
-Registration is available through the OWASP Global AppSec USA event page - look for the **OWASP SAMM User Day** option. {{< external-link "https://owasp.glueup.com/event/167174/register/" "Register here." >}}
+Thank you to everyone who joined us in San Francisco on November 4, 2026, alongside OWASP Global AppSec USA. It was a great day of talks, discussions, and networking with the SAMM community.
 
 ### Agenda
 
-Here's the tentative line-up of talks for the day. Click any title for more details on the talk and the speaker.
+Here's the line-up of talks for the day. Click any title for more details on the talk and the speaker.
 
 {{< user-day-agenda data="sud2026sf" mode="archive" base="2026sf" >}}
 
