@@ -22,6 +22,8 @@
   }
 
   function fireScarfPixels() {
+    // Production only. Staging is built in production mode, so the template gate alone isn't enough.
+    if (location.hostname !== 'owaspsamm.org') return;
     var pixels = document.querySelectorAll('.scarf-pixel[data-scarf-src]');
     pixels.forEach(function (el) {
       if (el.dataset.scarfFired) return;
