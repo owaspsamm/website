@@ -4,6 +4,8 @@ description: Previous SAMM User Day editions
 keywords: ["about","what is","questions", "event", "user"]
 type: user-day-previous-editions
 editions:
+  - title: "2026 San Francisco User Day"
+    url: "/user-day/2026sf/"
   - title: "2026 Vienna User Day"
     url: "/user-day/2026vienna/"
   - title: "2025 Washington DC User Day"
